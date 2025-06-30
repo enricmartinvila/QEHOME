@@ -1,0 +1,24 @@
+{
+    "menu": {
+        "main": "Home",
+        "aboutus": "About us",
+        "spaces": "Spaces",
+        "contact": "Contact"
+    },
+    "titles": {
+        "main": "Home",
+        "aboutus": "About us",
+        "spaces": "Our Spaces",
+        "contact": "Contact"
+    },
+    "aboutustexts": {
+        "titleinside": "HEALTH, MEALS, TERRITORY, AND EMOTIONS.",
+        "firstText": "Cal Masses is a farmhouse located in Sant Salvador de Guardiola, in the Bages region, next to the natural park of Montserrat Mountain, near Manresa and within the D.O. Pla de Bages.",
+        "secondText": "Since 2014, we have been practicing organic farming, primarily focusing on ecological vegetable cultivation with local sales. However, due to the drought in recent years, we have shifted towards other crops.",
+        "thirdText": "During the year 2023, we have recovered a portion of the vineyards that were once present on the estate.",
+        "fourthText": "We always work and seek the most sustainable way to cultivate the land, incorporating regenerative agriculture practices."
+    },
+    "maintexts": {
+        "text": "ENJOY AND STOP THE TIME."
+    }
+}

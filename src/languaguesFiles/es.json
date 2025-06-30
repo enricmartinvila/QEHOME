@@ -1,0 +1,25 @@
+{
+    "menu": {
+        "main": "Inicio",
+        "aboutus": "Sobre nosotros",
+        "spaces": "Espacios",
+        "contact": "Contacto"
+    },
+    "titles": {
+        "main": "Inicio",
+        "aboutus": "Sobre nosotros",
+        "spaces": "Espacios",
+        "contact": "Contacto"
+    },
+    "aboutustexts": {
+        "titleinside": "Salud, Nutrición, Territorio y Emociones.",
+        "firstText": "Cal Masses es una masía ubicada en Sant Salvador de Guardiola, en la comarca de Bages, junto al parque natural de la Montaña de Montserrat, cerca de Manresa y dentro de la D.O. Pla de Bages.",
+        "secondText": "Desde el año 2014, hemos estado practicando la agricultura ecológica, centrándonos principalmente en el cultivo ecológico de hortalizas con ventas locales. Sin embargo, debido a la sequía de los últimos años, hemos pasado a otros cultivos.",
+        "thirdText": "Durante el año 2023, recuperamos una parte de las viñas que existían anteriormente en la finca.",
+        "fourthText": "Trabajamos y buscamos siempre la manera más sostenible de cultivar la tierra, introduciendo prácticas de agricultura regenerativa."
+    },
+    "maintexts": {
+        "text": "DISFRUTA Y DETÉN EL TIEMPO"
+    }
+    
+}
