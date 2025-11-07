@@ -1,5 +1,5 @@
 // i18nContext.js
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import traduccionesCat from "../languaguesFiles/cat.json";
 import traduccionesEng from "../languaguesFiles/eng.json";
 import traduccionesEs from "../languaguesFiles/es.json";

@@ -1,0 +1,26 @@
+/* Scrollbar personalizada más separada del contenedor */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 10px; /* más grande */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+  margin-inline: 8px; /* opcional para espacio horizontal */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #ecb434;
+  border-radius: 10px;
+
+  /* Este borde actúa como padding externo */
+  border: 4px solid transparent;
+
+  /* Crea separación al combinar con background-clip */
+  background-clip: content-box;
+}
+
+/* Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #ecb434 transparent;
+}

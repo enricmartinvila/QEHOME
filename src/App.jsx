@@ -1,15 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { I18nProvider } from "./Components/i18nContext"
+import Contacte from './Pages/Contacto'
+import Descripcion from './Pages/Descripcion'
+import Header from './Pages/Header'
 import './Pages/MainPage'
 import MainPage from './Pages/MainPage'
-import Descripcion from './Pages/Descripcion'
-import Espacios from './Pages/Espacios'
-import Contacto from './Pages/Contacto'
-import Header from './Pages/Header'
-import { I18nProvider } from "./Components/i18nContext";
-import DownloadingDiv from './Pages/DownloadingDiv'
 
 
 function App() {
@@ -20,8 +15,7 @@ function App() {
         <Header/>
         <MainPage/>
         <Descripcion/>
-        <Espacios/>
-        <Contacto/>
+        <Contacte />
         {/* <DownloadingDiv /> */}
     </I18nProvider>
 

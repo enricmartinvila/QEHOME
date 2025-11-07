@@ -1,7 +1,5 @@
 
-import { PDFDownloadLink, Document, Page, PDFViewer } from '@react-pdf/renderer';
 import { useState } from 'react';
-import EngPDF from '../Components/pdfFiles/engPDF';
 
 
 export default function DownloadingDiv() {
