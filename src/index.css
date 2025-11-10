@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 
-:root{
-    font-family: 'Cabin';
+
+.roboto-root {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
-
-

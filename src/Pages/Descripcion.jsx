@@ -19,16 +19,13 @@ export default function Descripcion() {
       id="descripcionID"
       className="text-center mx-auto px-4 py-20 bg-[#ca9b2c] text-white"
     >
-      <h1 className="text-4xl font-bold mb-24">
+      <h1 className="text-5xl font-bold mb-24">
         {translations.titles.aboutus}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center m-4 sm:m-20">
         {/* ---- Texto ---- */}
         <div className="md:order-2 text-left">
-          <p className="text-3xl font-bold mb-24 text-center my-auto">
-            {translations.aboutustexts.titleinside}
-          </p>
           <p className="text-xl mx-4 mb-6">
             {translations.aboutustexts.firstText}
           </p>

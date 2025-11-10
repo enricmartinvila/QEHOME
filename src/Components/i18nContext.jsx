@@ -1,11 +1,11 @@
 // i18nContext.js
 import { createContext, useContext, useState } from "react";
+import PropTypes from "prop-types";
 import traduccionesCat from "../languaguesFiles/cat.json";
 import traduccionesEng from "../languaguesFiles/eng.json";
 import traduccionesEs from "../languaguesFiles/es.json";
 
 const i18nContext = createContext();
-
 export const I18nProvider = ({ children }) => {
   const [currLang, setCurrLang] = useState("cat");
   const [translations, setTranslations] = useState(traduccionesCat);
@@ -39,6 +39,10 @@ export const I18nProvider = ({ children }) => {
       {children}
     </i18nContext.Provider>
   );
+};
+
+I18nProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export const useI18n = () => {

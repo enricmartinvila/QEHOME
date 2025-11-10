@@ -2,24 +2,26 @@
     "menu": {
         "main": "Inicio",
         "aboutus": "Sobre nosotros",
-        "spaces": "Espacios",
         "contact": "Contacto"
     },
     "titles": {
         "main": "Inicio",
         "aboutus": "Sobre nosotros",
-        "spaces": "Espacios",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "book_now": "Reserva ahora"
     },
     "aboutustexts": {
-        "titleinside": "Salud, Nutrición, Territorio y Emociones.",
-        "firstText": "Cal Masses es una masía ubicada en Sant Salvador de Guardiola, en la comarca de Bages, junto al parque natural de la Montaña de Montserrat, cerca de Manresa y dentro de la D.O. Pla de Bages.",
-        "secondText": "Desde el año 2014, hemos estado practicando la agricultura ecológica, centrándonos principalmente en el cultivo ecológico de hortalizas con ventas locales. Sin embargo, debido a la sequía de los últimos años, hemos pasado a otros cultivos.",
-        "thirdText": "Durante el año 2023, recuperamos una parte de las viñas que existían anteriormente en la finca.",
-        "fourthText": "Trabajamos y buscamos siempre la manera más sostenible de cultivar la tierra, introduciendo prácticas de agricultura regenerativa."
+         "firstText": "Somos un pequeño equipo apasionado por la hospitalidad sostenible y el confort. Este apartamento nace con la idea de ofrecer una experiencia diferente en Manresa: un espacio moderno, funcional y con conciencia ambiental, pensado tanto para viajes de trabajo como para escapadas tranquilas.",
+        "secondText": "Cuidamos cada detalle para que te sientas como en casa: mobiliario de calidad, ambientes luminosos y un equipamiento completo que combina diseño y practicidad. Creemos en una forma de viajar más responsable, por eso ofrecemos parking privado gratuito y cargador para vehículos eléctricos EV+, contribuyendo a una movilidad más limpia.",
+        "thirdText": "Nos encanta nuestra ciudad y su entorno: el paisaje del Bages, la cercanía de Montserrat, las rutas de vino y las propuestas culturales que hacen de Manresa el corazón de Cataluña. Estaremos encantados de compartir contigo recomendaciones locales, rincones gastronómicos y lugares que no aparecen en las guías.",
+        "fourthText": "Nuestro compromiso es que disfrutes de una estancia cómoda, sostenible y auténtica. ¡Te esperamos!"
     },
     "maintexts": {
-        "text": "DISFRUTA Y DETÉN EL TIEMPO"
+        "text": "Bienvenido",
+        "disfruta": "Disfruta de de la mejor estancia con nosotros!"
+    },
+    "contacto": {
+        "ask_for": "Pide información"
     }
     
 }

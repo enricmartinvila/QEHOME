@@ -38,94 +38,116 @@ export default function Header() {
         } 
       `}
     >
-      {/* ---- MENU ---- */}
-      <div className="flex items-center ml-12 relative">
+      {/* ---- MOBILE: Only logo and Book Now ---- */}
+      <div className="flex w-full items-center justify-center sm:hidden px-4">
+        <div className="relative h-10 w-32 flex-shrink-0 flex justify-center mx-auto">
+          <img
+            src="/logo/logosintexto.webp"
+            alt="Logo default"
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
+              isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
+            }`}
+            style={{ cursor: 'pointer' }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+          <img
+            src="/logo/logoshort.webp"
+            alt="Logo scrolled"
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
+              isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"
+            }`}
+            style={{ cursor: 'pointer' }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+        </div>
         <button
-          onClick={toggleDropdown}
-          className="text-[#ECB434] font-bold text-2xl hover:text-[#c79525] focus:outline-none"
+          className="text-white bg-[#ECB434] px-3 py-1 rounded-full text-base font-semibold"
+          style={{ minWidth: 90 }}
+          onClick={() => {
+            const contactSection = document.getElementById('contacto');
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
         >
-          Menu
+          {translations.titles.book_now}
         </button>
-
-        {isDropdownOpen && (
-          <div className="absolute top-10 left-0 bg-white shadow-lg rounded-lg py-2 w-48 z-20">
-            <a
-              href="#main"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              onClick={() => setIsDropdownOpen(false)}
-            >
-              {translations.menu.main}
-            </a>
-            <a
-              href="#descripcionID"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              onClick={() => setIsDropdownOpen(false)}
-            >
-              {translations.menu.aboutus}
-            </a>
-            <a
-              href="#espaciosID"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              onClick={() => setIsDropdownOpen(false)}
-            >
-              {translations.menu.spaces}
-            </a>
-            <a
-              href="#contacto"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              onClick={() => setIsDropdownOpen(false)}
-            >
-              {translations.menu.contact}
-            </a>
-          </div>
-        )}
       </div>
 
-      {/* ---- LOGO ---- */}
-      {/* ---- LOGO ---- */}
-      <div className="mx-auto flex justify-center relative h-10 w-36 sm:h-24 sm:w-60 lg:h-20 lg:w-48 transition-all duration-500">
-        {/* Original logo */}
-        <img
-          src="/logo/logosintexto.webp"
-          alt="Logo default"
-          className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
-            isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
-          }`}
-        />
-
-        {/* Scrolled logo */}
-        <img
-          src="/logo/wewwe.webp"
-          alt="Logo scrolled"
-          className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
-            isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"
-          }`}
-        />
-      </div>
-
-      {/* ---- SELECTOR IDIOMA + ICONO ---- */}
-      <div className="flex items-center mr-12">
-        {/* <select
-          className="bg-transparent text-[#ECB434] text-lg font-bold rounded-lg border-2 border-[#ECB434] shadow-sm cursor-pointer p-5 py-2"
-          onChange={handleChange}
-        >
-          <option value="cat">Catalan</option>
-          <option value="es">Español</option>
-          <option value="en">English</option>
-        </select>
-
-        <div className="md:hidden ml-5">
+      {/* ---- DESKTOP: Full header ---- */}
+  <div className="hidden sm:flex w-full items-center relative">
+        {/* ---- MENU ---- */}
+        <div className="flex items-center ml-12 relative">
           <button
-            className="text-[#ECB434] text-xl focus:outline-none"
-            aria-label="Abrir menú"
-            onClick={toggleMenu}
+            onClick={toggleDropdown}
+            className="text-[#ECB434] font-bold text-2xl hover:text-[#c79525] focus:outline-none"
           >
-            {isMenuOpen ? "✖" : "☰"}
+            Menu
           </button>
-        </div> */}
-        <button className="text-white bg-[#ECB434] px-4 py-1 rounded-full text-2xl">
-            Book Now
-        </button>
+
+          {isDropdownOpen && (
+            <div className="absolute top-10 left-0 bg-white shadow-lg rounded-lg py-2 w-48 z-20">
+              <a
+                href="#main"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                {translations.menu.main}
+              </a>
+              <a
+                href="#descripcionID"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                {translations.menu.aboutus}
+              </a>
+              <a
+                href="#contacto"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                {translations.menu.contact}
+              </a>
+            </div>
+          )}
+        </div>
+
+        {/* ---- LOGO ---- */}
+  <div className="absolute left-1/2 -translate-x-1/2 flex justify-center h-10 w-36 sm:h-24 sm:w-60 lg:h-20 lg:w-48 transition-all duration-500">
+          <img
+            src="/logo/logosintexto.webp"
+            alt="Logo default"
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
+              isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
+            }`}
+            style={{ cursor: 'pointer' }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+          <img
+            src="/logo/logoshort.webp"
+            alt="Logo scrolled"
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
+              isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"
+            }`}
+            style={{ cursor: 'pointer' }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+        </div>
+
+        {/* ---- SELECTOR IDIOMA + ICONO ---- */}
+        <div className="flex items-center mr-12">
+          <button
+            className="text-white bg-[#ECB434] px-4 py-1 rounded-full text-2xl"
+            onClick={() => {
+              const contactSection = document.getElementById('contacto');
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
+            {translations.titles.book_now}
+          </button>
+        </div>
       </div>
     </header>
   );
