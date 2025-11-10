@@ -24,9 +24,9 @@ export default function Contacte() {
         </h1>
 
         {/* Contenedor de tarjetas */}
-        <div className="flex flex-col sm:flex-row gap-10 justify-center flex-wrap w-full">
+  <div className="flex flex-col sm:flex-row gap-10 justify-center items-stretch flex-wrap w-full">
           {/* ---- Tarjeta Quico & Enric ---- */}
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 w-[90%] sm:w-[420px] flex flex-col items-center border border-white/20">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 w-full sm:w-[420px] flex flex-col items-center border border-white/20">
             <p className="text-2xl font-semibold mb-6 text-yellow-300">
               Quico
             </p>
@@ -65,7 +65,7 @@ export default function Contacte() {
           </div>
 
           {/* ---- Tarjeta Check availability ---- */}
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 w-[90%] sm:w-[420px] flex flex-col items-center border border-white/20">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-10 w-full sm:w-[420px] flex flex-col items-center border border-white/20">
             <p className="text-2xl font-semibold mb-6 text-yellow-300">
               Check for availability!
             </p>
