@@ -40,7 +40,7 @@ export default function Header() {
     >
       {/* ---- MOBILE: Only logo and Book Now ---- */}
       <div className="flex w-full items-center justify-between sm:hidden px-4">
-        <div className="relative h-10 w-32 flex-shrink-0 flex justify-start">
+  <div className="relative h-8 w-24 flex-shrink-0 flex justify-start">
           <img
             src="/logo/logosintexto.webp"
             alt="Logo default"
@@ -113,7 +113,7 @@ export default function Header() {
         </div>
 
         {/* ---- LOGO ---- */}
-  <div className="mx-auto flex justify-center h-10 w-36 sm:h-24 sm:w-60 lg:h-20 lg:w-48 transition-all duration-500">
+  <div className="mx-auto flex justify-center h-8 w-28 sm:h-16 sm:w-40 lg:h-16 lg:w-32 transition-all duration-500">
           <img
             src="/logo/logosintexto.webp"
             alt="Logo default"
