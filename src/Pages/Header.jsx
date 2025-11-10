@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full py-3 flex items-center fixed top-0 z-10 transition-all duration-300 
+      className={`w-full py-3 flex items-center fixed top-0 transition-all duration-300 z-[999]
         ${
           isScrolled
             ? "bg-gray-100/50 backdrop-blur-md shadow-md"
