@@ -5,7 +5,7 @@ import Descripcion from './Pages/Descripcion'
 import Header from './Pages/Header'
 import './Pages/MainPage'
 import MainPage from './Pages/MainPage'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
