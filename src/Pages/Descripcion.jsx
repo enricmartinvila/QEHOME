@@ -46,8 +46,6 @@ export default function Descripcion() {
             <img
               key={index}
               src={src}
-              loading="lazy"
-              decoding="async"
               alt={`Slide ${index + 1}`}
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
