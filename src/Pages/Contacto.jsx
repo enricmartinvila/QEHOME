@@ -11,7 +11,7 @@ export default function Contacte() {
       id="contacto"
       className="relative flex flex-col items-center justify-center text-center bg-fixed bg-cover bg-center min-h-screen"
       style={{
-        backgroundImage: "url('/d/hab3.jpg')",
+        backgroundImage: "url('/images/hab3.webp')",
       }}
     >
       {/* Overlay oscuro */}

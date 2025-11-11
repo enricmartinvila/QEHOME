@@ -1,8 +1,8 @@
 export const imagesMainPage = [
-    "/d/menjador12.jpg",
-    "/d/hab2.jpg",
-    "/d/hab3.jpg",
-    "/d/menjador11.jpg",
-    "/d/lavabo1.jpg",
-    "/d/cuina2.jpg",
+    "/images/menjador12.webp",
+    "/images/hab2.webp",
+    "/images/hab3.webp",
+    "/images/menjador11.webp",
+    "/images/lavabo1.webp",
+    "/images/cuina2.webp",
 ];
