@@ -5,7 +5,7 @@ import Descripcion from './Pages/Descripcion'
 import Header from './Pages/Header'
 import './Pages/MainPage'
 import MainPage from './Pages/MainPage'
-
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
         <MainPage/>
         <Descripcion/>
         <Contacte />
+        <Analytics />
         {/* <DownloadingDiv /> */}
     </I18nProvider>
 
