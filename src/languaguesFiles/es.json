@@ -1,27 +1,37 @@
 {
-    "menu": {
-        "main": "Inicio",
-        "aboutus": "Sobre nosotros",
-        "contact": "Contacto"
-    },
-    "titles": {
-        "main": "Inicio",
-        "aboutus": "Sobre nosotros",
-        "contact": "Contacto",
-        "book_now": "Reserva ahora"
-    },
-    "aboutustexts": {
-         "firstText": "Somos un pequeño equipo apasionado por la hospitalidad sostenible y el confort. Este apartamento nace con la idea de ofrecer una experiencia diferente en Manresa: un espacio moderno, funcional y con conciencia ambiental, pensado tanto para viajes de trabajo como para escapadas tranquilas.",
-        "secondText": "Cuidamos cada detalle para que te sientas como en casa: mobiliario de calidad, ambientes luminosos y un equipamiento completo que combina diseño y practicidad. Creemos en una forma de viajar más responsable, por eso ofrecemos parking privado gratuito y cargador para vehículos eléctricos EV+, contribuyendo a una movilidad más limpia.",
-        "thirdText": "Nos encanta nuestra ciudad y su entorno: el paisaje del Bages, la cercanía de Montserrat, las rutas de vino y las propuestas culturales que hacen de Manresa el corazón de Cataluña. Estaremos encantados de compartir contigo recomendaciones locales, rincones gastronómicos y lugares que no aparecen en las guías.",
-        "fourthText": "Nuestro compromiso es que disfrutes de una estancia cómoda, sostenible y auténtica. ¡Te esperamos!"
-    },
-    "maintexts": {
-        "text": "Bienvenido",
-        "disfruta": "Disfruta de de la mejor estancia con nosotros!"
-    },
-    "contacto": {
-        "ask_for": "Pide información"
-    }
-    
+  "menu": {
+    "main": "Inicio",
+    "aboutus": "Sobre nosotros",
+    "contact": "Contacto"
+  },
+  "titles": {
+    "main": "Inicio",
+    "aboutus": "Sobre nosotros",
+    "contact": "Contacto",
+    "book_now": "Reserva ahora",
+    "whats": "640 95 55 72"
+  },
+  "aboutustexts": {
+    "intro": "Apartamento moderno con enfoque sostenible, ideal para disfrutar de Manresa y su entorno con total comodidad.",
+    "highlights": [
+      "Parking privado en el edificio",
+      "Cargador EV+ gratuito",
+      "A 5 minutos de la FUB, la UPC y el centro",
+      "2 habitaciones · 1 baño completo",
+      "Trastero para bicicletas o equipaje",
+      "Cocina totalmente equipada"
+    ],
+    "cta": "Reserva / Contacto"
+  },
+  "maintexts": {
+    "text": "Bienvenido",
+    "disfruta": "¡Disfruta de la mejor estancia con nosotros!"
+  },
+  "contacto": {
+    "ask_for": "Pide información",
+    "check": "Consultar disponibilidad!"
+  },
+  "scrollcta": {
+    "exp": "Explorar"
+  }
 }

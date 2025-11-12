@@ -1,74 +1,89 @@
 import { useI18n } from "../Components/i18nContext";
-import { useState, useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import { imagesMainPage } from "../constants/mainImagesArray";
 
 export default function Descripcion() {
   const { translations } = useI18n();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const t = translations || {};
+  const title = t?.titles?.aboutus || "Sobre nosaltres";
 
-  // --- Carrusel automático ---
+  const about = t?.aboutustexts || {};
+  const intro = about?.intro || "";
+  const highlights = about?.highlights || [];
+
+  const [i, setI] = useState(0);
+  const timer = useRef(null);
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % imagesMainPage.length);
-    }, 4000);
-    return () => clearInterval(interval);
+    if (!imagesMainPage?.length) return;
+    timer.current = setInterval(
+      () => setI((p) => (p + 1) % imagesMainPage.length),
+      4500
+    );
+    return () => clearInterval(timer.current);
   }, []);
 
   return (
-    <div
-      id="descripcionID"
-      className="text-center mx-auto px-4 py-20 bg-[#ca9b2c] text-white"
-    >
-      <h1 className="text-5xl font-bold mb-24">
-        {translations.titles.aboutus}
-      </h1>
+    <section id="descripcionID" className="bg-[#ca9b2c] text-white py-14 md:py-20">
+      <div className="mx-auto max-w-6xl px-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16">
+          {title}
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center m-4 sm:m-20">
-        {/* ---- Texto ---- */}
-        <div className="md:order-2 text-left">
-          <p className="text-xl mx-4 mb-6">
-            {translations.aboutustexts.firstText}
-          </p>
-          <p className="text-xl mx-4 mb-6">
-            {translations.aboutustexts.secondText}
-          </p>
-          <p className="text-xl mx-4 mb-6">
-            {translations.aboutustexts.thirdText}
-          </p>
-          <p className="text-xl mx-4 mb-6">
-            {translations.aboutustexts.fourthText}
-          </p>
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-start">
+          {/* Imatge (altura automàtica) */}
+          <div className="md:col-span-7 w-full h-full">
+            <div className="relative w-full overflow-hidden rounded-2xl shadow-xl aspect-[4/3] md:aspect-auto md:h-full">
+              {imagesMainPage?.map((src, idx) => (
+                <img
+                  key={idx}
+                  src={src}
+                  alt={`QEHOME ${idx + 1}`}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                    idx === i ? "opacity-100" : "opacity-0"
+                  }`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              ))}
+              {imagesMainPage?.length > 1 && (
+                <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
+                  {imagesMainPage.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setI(idx)}
+                      aria-label={`Imatge ${idx + 1}`}
+                      className={`h-2.5 w-2.5 rounded-full transition ${
+                        idx === i ? "bg-white" : "bg-white/50"
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
 
-        {/* ---- Carrusel ---- */}
-        <div className="relative md:order-1 w-full md:w-[85%] mx-auto overflow-hidden rounded-lg shadow-lg aspect-[4/3]">
-          {imagesMainPage.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Slide ${index + 1}`}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          ))}
+          {/* Targeta informativa */}
+          <div className="md:col-span-5">
+            <div className="bg-black/10 rounded-2xl p-6 md:p-8 backdrop-blur-[1px] shadow-xl flex flex-col h-auto">
+              {intro && (
+                <p className="text-white/95 text-lg leading-relaxed mb-5">{intro}</p>
+              )}
 
-          {/* ---- Indicadores ---- */}
-          <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
-            {imagesMainPage.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`h-3 w-3 rounded-full transition-all ${
-                  index === currentIndex
-                    ? "bg-white scale-110"
-                    : "bg-gray-400/60"
-                }`}
-              ></button>
-            ))}
+              {highlights.length > 0 && (
+                <ul className="space-y-3 text-[15px] leading-relaxed mb-6">
+                  {highlights.map((h, idx) => (
+                    <li key={idx} className="flex gap-3">
+                      <span className="mt-2 inline-block h-2 w-2 rounded-full bg-white/85 flex-shrink-0" />
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

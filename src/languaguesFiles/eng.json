@@ -1,28 +1,37 @@
 {
-    "menu": {
-        "main": "Home",
-        "aboutus": "About us",
-        "contact": "Contact"
-
-    },
-    "titles": {
-        "main": "Home",
-        "aboutus": "About us",
-        "contact": "Contact",
-        "book_now": "Book now"
-
-    },
-    "aboutustexts": {
-        "firstText": "We are a small team passionate about sustainable hospitality and comfort. This apartment was created with the idea of offering a different experience in Manresa: a modern, functional space with environmental awareness, designed both for business trips and peaceful getaways.",
-        "secondText": "We take care of every detail so you feel at home: quality furniture, bright spaces, and complete equipment that combines design and practicality. We believe in a more responsible way of traveling, which is why we offer free private parking and a charger for electric vehicles (EV+), contributing to cleaner mobility.",
-        "thirdText": "We love our city and its surroundings: the landscape of Bages, the proximity to Montserrat, the wine routes, and the cultural offerings that make Manresa the heart of Catalonia. We will be happy to share with you local recommendations, gastronomic spots, and places that do not appear in the guides.",
-        "fourthText": "Our commitment is that you enjoy a comfortable, sustainable, and authentic stay. We look forward to welcoming you!"
-    },
-    "maintexts": {
-        "text": "Welcome",
-        "disfruta": "Enjoy the best stay with us!"
-    },
-    "contacto": {
-        "ask_for": "Request information"
-    }
+  "menu": {
+    "main": "Home",
+    "aboutus": "About us",
+    "contact": "Contact"
+  },
+  "titles": {
+    "main": "Home",
+    "aboutus": "About us",
+    "contact": "Contact",
+    "book_now": "Book now",
+    "whats": "640 95 55 72"
+  },
+  "aboutustexts": {
+    "intro": "Modern apartment with a sustainable focus, ideal to enjoy Manresa and its surroundings in total comfort.",
+    "highlights": [
+      "Private parking in the building",
+      "Free EV+ charger",
+      "5 minutes from FUB/UPC and city center",
+      "2 bedrooms · 1 full bathroom",
+      "Private storage for bikes or luggage",
+      "Fully equipped kitchen"
+    ],
+    "cta": "Book / Contact"
+  },
+  "maintexts": {
+    "text": "Welcome",
+    "disfruta": "Enjoy the best stay with us!"
+  },
+  "contacto": {
+    "ask_for": "Request information",
+    "check": "Check availability!"
+  },
+  "scrollcta": {
+    "exp": "Explore"
+  }
 }

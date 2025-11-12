@@ -1,27 +1,37 @@
 {
-    "menu": {
-        "main": "Inici",
-        "aboutus": "Sobre nosaltres",
-        "contact": "Contacte"
-    },
-    "titles": {
-        "main": "Inici",
-        "aboutus": "Sobre nosaltres",
-        "contact": "Contacte",
-        "book_now": "Reserva ara"
-    },
-    "aboutustexts": {
-        "firstText": "Som un petit equip apassionat per l'hospitalitat sostenible i el confort. Aquest apartament neix amb la idea d'oferir una experiència diferent a Manresa: un espai modern, funcional i amb consciència ambiental, pensat tant per a viatges de feina com per a escapades tranquil·les.",
-        "secondText": "Cuidem cada detall perquè et sentis com a casa: mobiliari de qualitat, ambients lluminosos i un equipament complet que combina disseny i practicitat. Creiem en una manera de viatjar més responsable, per això oferim pàrquing privat gratuït i carregador per a vehicles elèctrics EV+, contribuint a una mobilitat més neta.",
-        "thirdText": "Ens encanta la nostra ciutat i el seu entorn: el paisatge del Bages, la proximitat de Montserrat, les rutes de vi i les propostes culturals que fan de Manresa el cor de Catalunya. Estarem encantats de compartir amb tu recomanacions locals, racons gastronòmics i llocs que no apareixen a les guies.",
-        "fourthText": "El nostre compromís és que gaudeixis d'una estada còmoda, sostenible i autèntica. T'hi esperem!"
-    },
-    "maintexts": {
-        "text": "Benvingut",
-        "disfruta": "Gaudeix de la millor estada amb nosaltres!"
-    },
-    "contacto": {
-        "ask_for": "Pide información"
-    }
-
+  "menu": {
+    "main": "Inici",
+    "aboutus": "Sobre nosaltres",
+    "contact": "Contacte"
+  },
+  "titles": {
+    "main": "Inici",
+    "aboutus": "Sobre nosaltres",
+    "contact": "Contacte",
+    "book_now": "Reserva ara",
+    "whats": "640 95 55 72"
+  },
+  "aboutustexts": {
+    "intro": "Apartament modern amb enfocament sostenible, ideal per gaudir de Manresa i el seu entorn amb total comoditat.",
+    "highlights": [
+      "Pàrquing privat a l’edifici",
+      "Carregador EV+ gratuït",
+      "A 5’ de la FUB/UPC i del centre",
+      "2 habitacions · 1 bany complet",
+      "Traster per bicicletes o equipatge",
+      "Cuina totalment equipada"
+    ],
+    "cta": "Reserva / Contacte"
+  },
+  "maintexts": {
+    "text": "Benvingut",
+    "disfruta": "Gaudeix de la millor estada amb nosaltres!"
+  },
+  "contacto": {
+    "ask_for": "Pide información",
+    "check": "Consultar disponibilitat!"
+  },
+  "scrollcta": {
+    "exp": "Explorar"
+  }
 }

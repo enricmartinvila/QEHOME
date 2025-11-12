@@ -1,148 +1,112 @@
 import { useState, useEffect } from "react";
 import { useI18n } from "../Components/i18nContext";
+import { WhatsappIcon } from "../assets/icons/whatsapp_icon";
 
 export default function Header() {
-  const { translations, handleSelectLanguage } = useI18n();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { translations } = useI18n();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const handleChange = (event) => {
-    handleSelectLanguage(event.target.value);
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen((prev) => !prev);
-  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setIsScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const whatsappUrl =
+    "https://wa.me/34640955572?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20apartamento.";
 
   return (
     <header
       className={`w-full py-3 flex items-center fixed top-0 transition-all duration-300 z-[999]
-        ${
-          isScrolled
-            ? "bg-gray-100/50 backdrop-blur-md shadow-md"
-            : "bg-black/10"
-        } 
+        ${isScrolled ? "bg-black/10 backdrop-blur-md shadow-md" : "bg-black/10"}
       `}
     >
-      {/* ---- MOBILE: Only logo and Book Now ---- */}
+      {/* ---- MOBILE ---- */}
       <div className="flex w-full items-center justify-between sm:hidden px-4">
-  <div className="relative h-8 w-24 flex-shrink-0 flex justify-start">
+        <div className="relative h-8 w-24 flex-shrink-0">
           <img
             src="/logo/logosintexto.webp"
             alt="Logo default"
-            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
-              isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
-            }`}
-            style={{ cursor: 'pointer' }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out pointer-events-none
+              ${isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"}
+            `}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer" }}
           />
           <img
             src="/logo/logoshort.webp"
             alt="Logo scrolled"
-            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
-              isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"
-            }`}
-            style={{ cursor: 'pointer' }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out pointer-events-none
+              ${isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"}
+            `}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer" }}
           />
         </div>
+
         <button
-          className="text-white bg-[#ECB434] px-3 py-1 rounded-full text-base font-semibold"
+          className={`px-3 py-1 rounded-full text-base font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60
+            ${
+              isScrolled
+                ? "bg-[#ECB434] text-slate-900 hover:bg-[#d3a32e]"
+                : "bg-[#ECB434] text-white hover:bg-[#d3a32e]"
+            }
+          `}
           style={{ minWidth: 90 }}
           onClick={() => {
-            const contactSection = document.getElementById('contacto');
-            if (contactSection) {
-              contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
+            const contactSection = document.getElementById("contacto");
+            if (contactSection) contactSection.scrollIntoView({ behavior: "smooth" });
           }}
         >
           {translations.titles.book_now}
         </button>
       </div>
 
-      {/* ---- DESKTOP: Full header ---- */}
-  <div className="hidden sm:flex w-full items-center relative">
-        {/* ---- MENU ---- */}
-        <div className="flex items-center ml-12 relative">
-          <button
-            onClick={toggleDropdown}
-            className="text-[#ECB434] font-bold text-2xl hover:text-[#c79525] focus:outline-none"
-          >
-            Menu
-          </button>
+      {/* ---- DESKTOP ---- */}
+      <div className="hidden sm:grid w-full grid-cols-[1fr_auto_1fr] items-center px-0 relative">
+        <div />
 
-          {isDropdownOpen && (
-            <div className="absolute top-10 left-0 bg-white shadow-lg rounded-lg py-2 w-48 z-20">
-              <a
-                href="#main"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                onClick={() => setIsDropdownOpen(false)}
-              >
-                {translations.menu.main}
-              </a>
-              <a
-                href="#descripcionID"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                onClick={() => setIsDropdownOpen(false)}
-              >
-                {translations.menu.aboutus}
-              </a>
-              <a
-                href="#contacto"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                onClick={() => setIsDropdownOpen(false)}
-              >
-                {translations.menu.contact}
-              </a>
-            </div>
-          )}
-        </div>
-
-        {/* ---- LOGO ---- */}
-  <div className="mx-auto flex justify-center h-8 w-28 sm:h-16 sm:w-40 lg:h-16 lg:w-32 transition-all duration-500">
+        {/* LOGO CENTRO */}
+        <div className="relative justify-self-center h-8 w-28 sm:h-16 sm:w-40 lg:h-12 lg:w-32 transition-all duration-500">
           <img
             src="/logo/logosintexto.webp"
             alt="Logo default"
-            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
-              isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
-            }`}
-            style={{ cursor: 'pointer' }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out pointer-events-none
+              ${isScrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"}
+            `}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer" }}
           />
           <img
             src="/logo/logoshort.webp"
             alt="Logo scrolled"
-            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out ${
-              isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"
-            }`}
-            style={{ cursor: 'pointer' }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out pointer-events-none
+              ${isScrolled ? "opacity-100 scale-150" : "opacity-0 scale-95"}
+            `}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer" }}
           />
         </div>
 
-        {/* ---- SELECTOR IDIOMA + ICONO ---- */}
-        <div className="flex items-center mr-12">
+        {/* ACCIONES DERECHA */}
+        <div className="flex items-center justify-self-end mr-12 z-10">
+          <a
+            className="font-light px-4 py-1 rounded-full w-fit text-lg ml-4 flex gap-2 items-center transition-colors text-white hover:bg-[#ECB434]"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir WhatsApp"
+          >
+            <WhatsappIcon className="h-6 w-6" />
+            {translations.titles.whats}
+          </a>
+
           <button
-            className="text-white bg-[#ECB434] px-4 py-1 rounded-full text-2xl"
+            className="ml-3 px-4 py-1 rounded-full text-lg font-light transition-all duration-300 text-white bg-[#ECB434] hover:bg-[#d3a32e] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60"
             onClick={() => {
-              const contactSection = document.getElementById('contacto');
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-              }
+              const contactSection = document.getElementById("contacto");
+              if (contactSection) contactSection.scrollIntoView({ behavior: "smooth" });
             }}
           >
             {translations.titles.book_now}
