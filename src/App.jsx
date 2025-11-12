@@ -17,7 +17,6 @@ function App() {
         <Descripcion/>
         <Contacte />
         <Analytics />
-        {/* <DownloadingDiv /> */}
     </I18nProvider>
 
     </>
