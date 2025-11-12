@@ -38,7 +38,7 @@ export default function Header() {
             src="/logo/logoshort.webp"
             alt="Logo scrolled"
             className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ease-in-out pointer-events-none
-              ${isScrolled ? "opacity-100 scale-125" : "opacity-0 scale-95"}
+              ${isScrolled ? "opacity-100 scale-150" : "opacity-0 scale-95"}
             `}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             style={{ cursor: "pointer" }}
@@ -46,13 +46,7 @@ export default function Header() {
         </div>
 
         <button
-          className={`px-3 py-1 rounded-full text-base font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60
-            ${
-              isScrolled
-                ? "bg-[#ECB434] text-slate-900 hover:bg-[#d3a32e]"
-                : "bg-[#ECB434] text-white hover:bg-[#d3a32e]"
-            }
-          `}
+          className={"px-3 py-1 rounded-full text-xs font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60 bg-[#ECB434] text-white hover:bg-[#d3a32e]"}
           style={{ minWidth: 90 }}
           onClick={() => {
             const contactSection = document.getElementById("contacto");

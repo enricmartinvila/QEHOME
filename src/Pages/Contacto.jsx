@@ -2,7 +2,6 @@ import { AirbnbIcon } from "../assets/icons/airbnb_icon";
 import { BookingIcon } from "../assets/icons/booking_icon";
 import { useI18n } from "../Components/i18nContext";
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
-import { WhatsappIcon } from "../assets/icons/whatsapp_icon";
 
 export default function Contacte() {
   const { translations } = useI18n();
