@@ -126,9 +126,8 @@ export default function Contacte() {
 																<div
 																		className="absolute inset-0 bg-cover bg-center"
 																		style={{
-																				backgroundImage:
-																						"url('/images/foravermut.webp')",
-																						    backgroundPosition: "center 65%", // 👈 moves the focus DOWN
+																				backgroundImage: "url('/images/foravermut.webp')",
+																				backgroundPosition: "center 65%",
 																		}}
 																/>
 
