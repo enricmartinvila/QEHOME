@@ -1,37 +1,37 @@
 {
-  "menu": {
-    "main": "Inicio",
-    "aboutus": "Sobre nosotros",
-    "contact": "Contacto"
-  },
-  "titles": {
-    "main": "Inicio",
-    "aboutus": "Sobre nosotros",
-    "contact": "Contacto",
-    "book_now": "Reserva ahora",
-    "whats": "640 95 55 72"
-  },
-  "aboutustexts": {
-    "intro": "Apartamento moderno con enfoque sostenible, ideal para disfrutar de Manresa y su entorno con total comodidad.",
-    "highlights": [
-      "Parking privado en el edificio",
-      "Cargador EV+ gratuito",
-      "A 5 minutos de la FUB, la UPC y el centro",
-      "2 habitaciones · 1 baño completo",
-      "Trastero para bicicletas o equipaje",
-      "Cocina totalmente equipada"
-    ],
-    "cta": "Reserva / Contacto"
-  },
-  "maintexts": {
-    "text": "Bienvenido",
-    "disfruta": "¡Disfruta de la mejor estancia con nosotros!"
-  },
-  "contacto": {
-    "ask_for": "Pide información",
-    "check": "Consultar disponibilidad!"
-  },
-  "scrollcta": {
-    "exp": "Explorar"
-  }
+	"menu": {
+		"main": "Inicio",
+		"aboutus": "Sobre nosotros",
+		"contact": "Contacto"
+	},
+	"titles": {
+		"main": "Inicio",
+		"aboutus": "Sobre nosotros",
+		"contact": "Contacto",
+		"book_now": "Reserva ahora",
+		"whats": "640 95 55 72"
+	},
+	"aboutustexts": {
+		"intro": "Apartamento moderno con enfoque sostenible, ideal para disfrutar de Manresa y su entorno con total comodidad.",
+		"highlights": [
+			"Parking privado en el edificio",
+			"Cargador EV+ gratuito",
+			"A 5 minutos de la FUB, la UPC y el centro",
+			"2 habitaciones · 1 baño completo",
+			"Trastero para bicicletas o equipaje",
+			"Cocina totalmente equipada"
+		],
+		"cta": "Reserva / Contacto"
+	},
+	"maintexts": {
+		"text": "Bienvenido",
+		"disfruta": "¡Disfruta de la mejor estancia con nosotros!"
+	},
+	"contacto": {
+		"ask_for": "Descubre Cal Masses",
+		"check": "Consultar disponibilidad!"
+	},
+	"scrollcta": {
+		"exp": "Explorar"
+	}
 }

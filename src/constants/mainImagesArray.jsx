@@ -5,4 +5,4 @@ export const imagesMainPage = [
     "/images/menjador11.webp",
     "/images/lavabo1.webp",
     "/images/cuina2.webp",
-];
+]
