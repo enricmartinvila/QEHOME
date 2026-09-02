@@ -1,0 +1,50 @@
+---
+import {
+	SITE_URL,
+	LANGS,
+	DEFAULT_LANG,
+	OG_LOCALE,
+	type Lang,
+} from "../constants/site"
+
+interface Props {
+	lang: Lang
+	title: string
+	description: string
+	pathAfterLang?: string
+}
+
+const { lang, title, description, pathAfterLang = "" } = Astro.props
+
+const suffix = pathAfterLang.replace(/^\//, "")
+const canonicalPath = suffix ? `/${lang}/${suffix}/` : `/${lang}/`
+const canonical = `${SITE_URL}${canonicalPath}`
+const ogImage = `${SITE_URL}/images/hab3.webp`
+
+function hreflangPath(l: Lang) {
+	if (!suffix) return `${SITE_URL}/${l}/`
+	return `${SITE_URL}/${l}/${suffix}/`
+}
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{
+	LANGS.map((l) => (
+		<link rel="alternate" hreflang={l} href={hreflangPath(l)} />
+	))
+}
+<link rel="alternate" hreflang="x-default" href={hreflangPath(DEFAULT_LANG)} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content="QEhome Manresa" />
+<meta property="og:locale" content={OG_LOCALE[lang]} />
+<meta property="og:type" content="website" />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+<link rel="icon" type="image/svg+xml" href="/logo/logoshort.webp" />

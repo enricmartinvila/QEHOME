@@ -1,0 +1,28 @@
+---
+import { AIRBNB_URL, BOOKING_URL } from "../../constants/links"
+---
+
+<div class="mx-auto mt-12 flex max-w-md flex-col gap-4 px-4">
+	<a
+		href={BOOKING_URL}
+		target="_blank"
+		rel="noopener noreferrer"
+		class="inline-flex items-center justify-center gap-3 rounded-full bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-500"
+	>
+		<svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+			<path d="M24 0H0v24h24ZM8.575 6.563h2.658c2.108 0 3.473 1.15 3.473 2.898c0 1.15-.575 1.82-.91 2.108l-.287.263l.335.192c.815.479 1.318 1.389 1.318 2.395c0 1.988-1.51 3.257-3.857 3.257H7.449V7.713c0-.623.503-1.126 1.126-1.15m1.7 1.868c-.479.024-.694.264-.694.79v1.893h1.676c.958 0 1.294-.743 1.294-1.365c0-.815-.503-1.318-1.318-1.318zm-.096 4.36c-.407.071-.598.31-.598.79v2.251h1.868c.934 0 1.509-.55 1.509-1.533c0-.934-.599-1.509-1.51-1.509zm7.737 2.394c.743 0 1.341.599 1.341 1.342a1.34 1.34 0 0 1-1.341 1.341a1.355 1.355 0 0 1-1.341-1.341c0-.743.598-1.342 1.34-1.342z" />
+		</svg>
+		<span>Booking</span>
+	</a>
+	<a
+		href={AIRBNB_URL}
+		target="_blank"
+		rel="noopener noreferrer"
+		class="inline-flex items-center justify-center gap-3 rounded-full bg-[#FF5A5F] px-5 py-3 font-semibold text-white transition hover:bg-[#FF7A7F]"
+	>
+		<svg class="h-6 w-6 text-white" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+			<path d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18c-22.55-88 112.61-88 90.06 0c-5.45 24.25-20.29 52-45 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47c103.9-130.07 46.11-200-18.85-200c-54.92 0-85.16 46.51-73.28 100.5c6.93 29.19 25.23 62.39 54.43 99.5c-32.53 36.05-60.55 52.69-85.15 54.92c-50 7.43-89.11-41.06-71.3-91.09c15.1-39.16 111.72-231.18 115.87-241.56c15.75-30.07 25.56-57.4 59.38-57.4c32.34 0 43.4 25.94 60.37 59.87c36 70.62 89.35 177.48 114.84 239.09c13.17 33.07-1.37 71.29-37.01 86.64m47-136.12C280.27 35.93 273.13 32 224 32c-45.52 0-64.87 31.67-84.66 72.79C33.18 317.1 22.89 347.19 22 349.81C-3.22 419.14 48.74 480 111.63 480c21.71 0 60.61-6.06 112.37-62.4c58.68 63.78 101.26 62.4 112.37 62.4c62.89.05 114.85-60.86 89.61-130.19c.02-3.89-16.82-38.9-16.82-39.58z" />
+		</svg>
+		<span>Airbnb</span>
+	</a>
+</div>

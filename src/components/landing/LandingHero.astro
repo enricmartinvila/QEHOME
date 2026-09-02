@@ -1,0 +1,39 @@
+---
+import { getTranslations, type Lang } from "../../constants/i18n"
+import { localizedPath } from "../../constants/site"
+
+interface Props {
+	lang: Lang
+	heroImage: string
+	h1: string
+	heroSubtitle: string
+	breadcrumbHome: string
+	breadcrumbCurrent: string
+}
+
+const { lang, heroImage, h1, heroSubtitle, breadcrumbHome, breadcrumbCurrent } =
+	Astro.props
+const t = getTranslations(lang)
+---
+
+<section
+	class="relative flex min-h-[70vh] flex-col items-center justify-center bg-cover bg-center bg-no-repeat pt-20 text-white"
+	style={`background-image: url('${heroImage}')`}
+>
+	<div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/55"></div>
+	<div class="relative z-10 mx-auto max-w-3xl px-6 py-16 text-center">
+		<nav class="mb-6 text-sm text-white/80" aria-label="Breadcrumb">
+			<a href={localizedPath(lang)} class="hover:text-white">{breadcrumbHome}</a>
+			<span class="mx-2" aria-hidden="true">/</span>
+			<span aria-current="page">{breadcrumbCurrent}</span>
+		</nav>
+		<h1 class="text-3xl font-bold drop-shadow-lg sm:text-4xl lg:text-5xl">{h1}</h1>
+		<p class="mt-4 text-lg drop-shadow-md sm:text-xl">{heroSubtitle}</p>
+		<a
+			href="#contacto"
+			class="mt-10 inline-block rounded-full bg-brand-cta px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-brand-ctaHover"
+		>
+			{t.titles.book_now}
+		</a>
+	</div>
+</section>

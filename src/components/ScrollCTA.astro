@@ -1,0 +1,86 @@
+---
+import { uiChrome, type Lang } from "../constants/i18n"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const chrome = uiChrome[lang]
+---
+
+<button
+	type="button"
+	data-scroll-cta
+	data-label-explore={chrome.scrollExplore}
+	data-label-top={chrome.scrollTop}
+	aria-label={chrome.scrollExplore}
+	class="fixed bottom-6 right-10 z-50 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-cta to-amber-500 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-md transition-all duration-500 hover:brightness-105"
+>
+	<span data-scroll-cta-label class="tracking-wide">{chrome.scrollExplore}</span>
+	<svg
+		data-scroll-cta-icon-down
+		class="h-4 w-4"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		aria-hidden="true"
+	>
+		<path d="M6 9l6 6 6-6" />
+	</svg>
+	<svg
+		data-scroll-cta-icon-up
+		class="hidden h-5 w-5"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		aria-hidden="true"
+	>
+		<path d="M18 15l-6-6-6 6" />
+	</svg>
+</button>
+
+<script>
+	const btn = document.querySelector<HTMLButtonElement>("[data-scroll-cta]")
+	if (btn) {
+		const label = btn.querySelector("[data-scroll-cta-label]")
+		const iconDown = btn.querySelector("[data-scroll-cta-icon-down]")
+		const iconUp = btn.querySelector("[data-scroll-cta-icon-up]")
+		const labelExplore = btn.dataset.labelExplore || "Explore"
+		const labelTop = btn.dataset.labelTop || "Top"
+
+		const update = () => {
+			const y = window.scrollY
+			const atTop = y > 400
+			const hidden = y > 30 && !atTop
+
+			btn.classList.toggle("opacity-0", hidden)
+			btn.classList.toggle("pointer-events-none", hidden)
+			btn.classList.toggle("translate-y-4", hidden)
+			btn.classList.toggle("bg-[#ECB434]", atTop)
+			btn.classList.toggle("bg-gradient-to-r", !atTop)
+
+			if (label) {
+				label.textContent = atTop ? "" : labelExplore
+				label.classList.toggle("hidden", atTop)
+			}
+			iconDown?.classList.toggle("hidden", atTop)
+			iconUp?.classList.toggle("hidden", !atTop)
+			btn.setAttribute("aria-label", atTop ? labelTop : labelExplore)
+			btn.dataset.mode = atTop ? "top" : "explore"
+		}
+
+		btn.addEventListener("click", () => {
+			if (btn.dataset.mode === "top") {
+				window.scrollTo({ top: 0, behavior: "smooth" })
+			} else {
+				document.getElementById("descripcionID")?.scrollIntoView({ behavior: "smooth" })
+			}
+		})
+
+		window.addEventListener("scroll", update, { passive: true })
+		update()
+	}
+</script>

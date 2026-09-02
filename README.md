@@ -1,8 +1,18 @@
-# React + Vite
+# QEhome Manresa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio estático multilingüe (Astro SSG) del apartamento turístico QEhome en Manresa.
 
-Currently, two official plugins are available:
+## Comandos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Servidor de desarrollo Astro |
+| `npm run build` | Build SSG → `dist/` |
+| `npm run preview` | Preview del build |
+
+## Idiomas y URLs
+
+- `/ca/`, `/es/`, `/en/` (x-default → es)
+- 6 landings SEO × 3 idiomas = 18 URLs + 3 home = **21 páginas indexables**
+
+Ver `MIGRATION.md` para detalle de la migración desde React SPA.

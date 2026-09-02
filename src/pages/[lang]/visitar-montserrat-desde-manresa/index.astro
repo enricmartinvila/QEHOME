@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import TopicLandingPage from "../../../components/landing/TopicLandingPage.astro"
+import { getTranslations } from "../../../constants/i18n"
+import { lodgingJsonLd } from "../../../constants/schema"
+import { LANGS, localizedPath, type Lang } from "../../../constants/site"
+import { getTopicLanding } from "../../../constants/landings"
+
+export function getStaticPaths() {
+	return LANGS.map((lang) => ({ params: { lang } }))
+}
+
+const lang = Astro.params.lang as Lang
+const landing = getTopicLanding("montserrat")!
+const t = getTranslations(lang)
+const seo = t.seo.montserrat
+---
+
+<BaseLayout
+	lang={lang}
+	title={seo.title}
+	description={seo.metaDescription}
+	pathAfterLang={landing.slug}
+	jsonLd={lodgingJsonLd(localizedPath(lang, landing.slug), seo.metaDescription)}
+>
+	<TopicLandingPage lang={lang} landingKey="montserrat" />
+</BaseLayout>

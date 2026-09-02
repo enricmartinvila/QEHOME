@@ -1,0 +1,130 @@
+---
+import { getTranslations, type Lang } from "../../constants/i18n"
+import {
+	ADDRESS,
+	AIRBNB_URL,
+	BOOKING_URL,
+	CAL_MASSES_URL,
+	EMAIL,
+	MAPS_URL,
+	PHONE_DISPLAY,
+	PHONE_TEL,
+	WHATSAPP_URL,
+} from "../../constants/links"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const t = getTranslations(lang)
+---
+
+<section
+	id="contacto"
+	class="relative flex min-h-screen flex-col items-center justify-center bg-cover bg-center bg-fixed text-center"
+	style="background-image: url('/images/hab3.webp')"
+>
+	<div class="absolute inset-0 bg-black/60"></div>
+	<div class="relative z-10 flex w-full flex-col items-center px-4 py-20 text-white">
+		<h2 class="mb-16 text-4xl font-bold drop-shadow-lg">{t.titles.contact}</h2>
+		<div class="flex w-full flex-col flex-wrap items-stretch justify-center gap-10 sm:flex-row">
+			<div class="flex w-full flex-col items-center rounded-2xl border border-white/20 bg-white/10 p-10 shadow-2xl backdrop-blur-md sm:w-[420px]">
+				<p class="mb-6 text-2xl font-semibold text-yellow-300">Quico</p>
+				<ul class="flex flex-col gap-5 text-lg text-gray-100">
+					<li class="flex items-center gap-3">
+						<svg
+							class="mt-1 h-6 w-6 flex-shrink-0 self-start text-yellow-400"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							aria-hidden="true"
+						>
+							<path
+								fill-rule="evenodd"
+								d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.287-1.932 18.67 18.67 0 0 0 2.506-3.218c1.243-2.01 1.98-4.152 1.98-6.205C20.377 5.486 16.753 2 12.25 2S4.123 5.486 4.123 9.75c0 2.053.737 4.195 1.98 6.205a18.67 18.67 0 0 0 2.506 3.218 19.58 19.58 0 0 0 2.287 1.932 16.975 16.975 0 0 0 1.144.742ZM12.25 13a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<a
+							href={MAPS_URL}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="transition hover:text-yellow-300"
+						>
+							{ADDRESS}
+						</a>
+					</li>
+					<li class="flex items-center gap-3">
+						<svg class="h-6 w-6 flex-shrink-0 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+							<path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+						</svg>
+						<a href={`mailto:${EMAIL}`} class="transition hover:text-yellow-300">{EMAIL}</a>
+					</li>
+					<li class="flex items-center gap-3">
+						<svg class="h-6 w-6 flex-shrink-0 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								fill-rule="evenodd"
+								d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<a href={`tel:${PHONE_TEL}`} class="transition hover:text-yellow-300">{PHONE_DISPLAY}</a>
+					</li>
+					<li class="flex items-center gap-3">
+						<svg class="h-6 w-6 flex-shrink-0 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.67.15-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.521.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.204-.242-.58-.487-.5-.67-.51l-.57-.01c-.198 0-.521.074-.794.372s-1.04 1.016-1.04 2.48 1.064 2.876 1.213 3.074c.149.198 2.095 3.2 5.08 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z" />
+							<path d="M20.52 3.48A11.9 11.9 0 0 0 12 0C5.372 0 0 5.372 0 12c0 2.11.553 4.163 1.6 5.977L0 24l6.204-1.588A11.89 11.89 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.192-1.248-6.19-3.48-8.52zM12 21.8a9.76 9.76 0 0 1-4.992-1.367l-.357-.211-3.682.942.983-3.583-.232-.368A9.77 9.77 0 0 1 2.2 12c0-5.408 4.392-9.8 9.8-9.8 2.62 0 5.085 1.02 6.942 2.877A9.72 9.72 0 0 1 21.8 12c0 5.408-4.392 9.8-9.8 9.8z" />
+						</svg>
+						<a
+							href={WHATSAPP_URL}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="transition hover:text-yellow-300"
+						>
+							WhatsApp
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="flex w-full flex-col items-center rounded-2xl border border-white/20 bg-white/10 p-10 shadow-2xl backdrop-blur-md sm:w-[420px]">
+				<p class="mb-6 text-2xl font-semibold text-yellow-300">{t.contacto.check}</p>
+				<div class="flex w-full flex-col gap-4">
+					<a
+						href={BOOKING_URL}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex w-full transform items-center justify-center gap-3 rounded-full bg-blue-600/90 px-5 py-3 font-semibold text-white shadow-lg shadow-black/40 transition hover:-translate-y-0.5 hover:bg-blue-500"
+					>
+						<svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M24 0H0v24h24ZM8.575 6.563h2.658c2.108 0 3.473 1.15 3.473 2.898c0 1.15-.575 1.82-.91 2.108l-.287.263l.335.192c.815.479 1.318 1.389 1.318 2.395c0 1.988-1.51 3.257-3.857 3.257H7.449V7.713c0-.623.503-1.126 1.126-1.15m1.7 1.868c-.479.024-.694.264-.694.79v1.893h1.676c.958 0 1.294-.743 1.294-1.365c0-.815-.503-1.318-1.318-1.318zm-.096 4.36c-.407.071-.598.31-.598.79v2.251h1.868c.934 0 1.509-.55 1.509-1.533c0-.934-.599-1.509-1.51-1.509zm7.737 2.394c.743 0 1.341.599 1.341 1.342a1.34 1.34 0 0 1-1.341 1.341a1.355 1.355 0 0 1-1.341-1.341c0-.743.598-1.342 1.34-1.342z" />
+						</svg>
+						<span>Booking</span>
+					</a>
+					<a
+						href={AIRBNB_URL}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex w-full transform items-center justify-center gap-3 rounded-full bg-[#FF5A5F]/90 px-5 py-3 font-semibold text-white shadow-lg shadow-black/40 transition hover:-translate-y-0.5 hover:bg-[#FF7A7F]"
+					>
+						<svg class="h-6 w-6 text-white" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+							<path d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18c-22.55-88 112.61-88 90.06 0c-5.45 24.25-20.29 52-45 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47c103.9-130.07 46.11-200-18.85-200c-54.92 0-85.16 46.51-73.28 100.5c6.93 29.19 25.23 62.39 54.43 99.5c-32.53 36.05-60.55 52.69-85.15 54.92c-50 7.43-89.11-41.06-71.3-91.09c15.1-39.16 111.72-231.18 115.87-241.56c15.75-30.07 25.56-57.4 59.38-57.4c32.34 0 43.4 25.94 60.37 59.87c36 70.62 89.35 177.48 114.84 239.09c13.17 33.07-1.37 71.29-37.01 86.64m47-136.12C280.27 35.93 273.13 32 224 32c-45.52 0-64.87 31.67-84.66 72.79C33.18 317.1 22.89 347.19 22 349.81C-3.22 419.14 48.74 480 111.63 480c21.71 0 60.61-6.06 112.37-62.4c58.68 63.78 101.26 62.4 112.37 62.4c62.89.05 114.85-60.86 89.61-130.19c.02-3.89-16.82-38.9-16.82-39.58z" />
+						</svg>
+						<span>Airbnb</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<p class="mt-16 max-w-lg text-sm text-white/70 md:text-base">
+			{t.contacto.crossSell}
+			<a
+				href={CAL_MASSES_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-white/90 underline decoration-white/40 underline-offset-4 transition hover:text-yellow-300 hover:decoration-yellow-300"
+			>
+				{t.contacto.crossSellLink}
+			</a>
+		</p>
+	</div>
+</section>

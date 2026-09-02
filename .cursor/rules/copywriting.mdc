@@ -1,0 +1,47 @@
+---
+description: Directrices de redacción para textos de QEhome (web, i18n, SEO). Evitar copy genérico de IA y contenido de relleno.
+globs: src/languaguesFiles/**,index.html
+alwaysApply: true
+---
+
+# Redacción QEhome
+
+Todo texto visible o SEO debe ser **concreto, útil y natural**. Google penaliza contenido genérico o de relleno.
+
+## Prohibido
+
+- Guion largo (—) y guion medio decorativo (–) como separador de frases
+- Punto medio (·) para encadenar claims comerciales
+- Frases vacías: "base ideal", "sin complicaciones", "ubicación estratégica", "disfruta de la mejor estancia"
+- Abreviaturas crípticas (EV, VE+) si existe una forma clara: "cargador eléctrico"
+- Traducciones literales del castellano al catalán o del inglés al español
+- Exclamaciones de marketing ("¡Reserva ya!", "Consultar disponibilidad!")
+- Repetir el mismo argumento en hero, pilares y bullets
+
+## Obligatorio
+
+- **Hechos verificables**: parking en el edificio, cargador gratuito, distancia a FGC, 2 habitaciones, nota Booking
+- **Frases cortas**. Preferir punto y coma o dos frases antes que un guion largo
+- **Tres idiomas nativos**: escribir cada JSON (cat, es, eng) en ese idioma, no traducir palabra por palabra
+- **Una idea por frase** en badges y bullets
+- **Tono de anfitrión local**, no de agencia de marketing
+
+## Ejemplos
+
+```
+❌ Plaza de aparcamiento privada en el edificio — poco habitual en pleno centro.
+✅ Plaza de aparcamiento en el edificio. En el centro de Manresa cuesta aparcar en la calle.
+
+❌ FGC a pocos minutos · Barcelona en tren · Montserrat al alcance.
+✅ FGC a pocos minutos. Barcelona en tren. Montserrat y el Pla de Bages, a media hora.
+
+❌ Alojamiento sostenible sin complicaciones.
+✅ Recarga gratuita durante la estancia. No necesitas buscar un punto público.
+```
+
+## Archivos de copy
+
+- `src/languaguesFiles/cat.json`, `es.json`, `eng.json`
+- `index.html` (title, meta description, Schema.org)
+
+Antes de cerrar cualquier cambio de textos, buscar `—`, `–` y `·` en estos archivos.

@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	content: ["./src/**/*.{astro,html,js,jsx,ts,tsx,md,mdx}"],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				brand: {
+					DEFAULT: "#ca9b2c",
+					cta: "#ECB434",
+					ctaHover: "#d3a32e",
+				},
+			},
+			fontFamily: {
+				sans: ['"Fira Sans"', "Roboto", "system-ui", "sans-serif"],
+			},
+		},
 	},
 	plugins: [],
 }

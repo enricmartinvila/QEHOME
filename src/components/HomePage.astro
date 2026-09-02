@@ -1,0 +1,30 @@
+---
+import Hero from "./home/Hero.astro"
+import BookingReviews from "./home/BookingReviews.astro"
+import Differentiators from "./home/Differentiators.astro"
+import IdealFor from "./home/IdealFor.astro"
+import PhotoGallery from "./home/PhotoGallery.astro"
+import RelatedLandings from "./home/RelatedLandings.astro"
+import Apartment from "./home/Apartment.astro"
+import Contact from "./home/Contact.astro"
+import ScrollCTA from "./ScrollCTA.astro"
+import type { Lang } from "../constants/i18n"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+---
+
+<Hero lang={lang} />
+<BookingReviews lang={lang} />
+<Differentiators lang={lang} />
+<IdealFor lang={lang} />
+<PhotoGallery lang={lang} />
+<section class="bg-white pb-14 md:pb-16">
+	<RelatedLandings lang={lang} />
+</section>
+<Apartment lang={lang} />
+<Contact lang={lang} />
+<ScrollCTA lang={lang} />

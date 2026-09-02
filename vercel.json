@@ -1,0 +1,69 @@
+{
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "/es/",
+			"permanent": false
+		},
+		{
+			"source": "/apartamento-parking-manresa",
+			"destination": "/es/apartamento-parking-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/apartamento-parking-manresa/",
+			"destination": "/es/apartamento-parking-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/alojamiento-umanresa",
+			"destination": "/es/alojamiento-umanresa/",
+			"permanent": true
+		},
+		{
+			"source": "/alojamiento-umanresa/",
+			"destination": "/es/alojamiento-umanresa/",
+			"permanent": true
+		},
+		{
+			"source": "/que-ver-manresa",
+			"destination": "/es/que-ver-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/que-ver-manresa/",
+			"destination": "/es/que-ver-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/alojamiento-camino-ignaciano-manresa",
+			"destination": "/es/alojamiento-camino-ignaciano-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/alojamiento-camino-ignaciano-manresa/",
+			"destination": "/es/alojamiento-camino-ignaciano-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/visitar-montserrat-desde-manresa",
+			"destination": "/es/visitar-montserrat-desde-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/visitar-montserrat-desde-manresa/",
+			"destination": "/es/visitar-montserrat-desde-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/enoturismo-pla-de-bages",
+			"destination": "/es/enoturismo-pla-de-bages/",
+			"permanent": true
+		},
+		{
+			"source": "/enoturismo-pla-de-bages/",
+			"destination": "/es/enoturismo-pla-de-bages/",
+			"permanent": true
+		}
+	]
+}

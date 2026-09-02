@@ -1,0 +1,53 @@
+---
+import LandingHero from "./LandingHero.astro"
+import BookingCtas from "./BookingCtas.astro"
+import RelatedLandings from "../home/RelatedLandings.astro"
+import Contact from "../home/Contact.astro"
+import { getTranslations, type Lang } from "../../constants/i18n"
+import { localizedPath } from "../../constants/site"
+import { PARKING_LANDING } from "../../constants/landings"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const t = getTranslations(lang)
+const page = t.parkingPage
+const slug = PARKING_LANDING.slug
+---
+
+<LandingHero
+	lang={lang}
+	heroImage={PARKING_LANDING.heroImage}
+	h1={page.h1}
+	heroSubtitle={page.heroSubtitle}
+	breadcrumbHome={page.breadcrumbHome}
+	breadcrumbCurrent={page.breadcrumbCurrent}
+/>
+
+<section class="bg-stone-50 py-14 md:py-20">
+	<div class="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
+		<article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+			<h2 class="text-xl font-bold text-stone-900">{page.parkingTitle}</h2>
+			<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.parkingText}</p>
+		</article>
+		<article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+			<h2 class="text-xl font-bold text-stone-900">{page.evTitle}</h2>
+			<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.evText}</p>
+		</article>
+	</div>
+
+	<article class="mx-auto mt-10 max-w-3xl rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+		<h2 class="text-xl font-bold text-stone-900">{page.apartmentTitle}</h2>
+		<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.apartmentText}</p>
+		<a href={localizedPath(lang)} class="mt-6 inline-block font-medium text-brand hover:underline">
+			{page.backHome}
+		</a>
+	</article>
+
+	<BookingCtas />
+	<RelatedLandings lang={lang} excludeSlug={slug} />
+</section>
+
+<Contact lang={lang} />

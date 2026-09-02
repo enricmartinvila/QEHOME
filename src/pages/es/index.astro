@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import HomePage from "../../components/HomePage.astro"
+import { getTranslations } from "../../constants/i18n"
+import { lodgingJsonLd } from "../../constants/schema"
+import { localizedPath } from "../../constants/site"
+
+const lang = "es"
+const t = getTranslations(lang)
+const seo = t.seo.home
+---
+
+<BaseLayout
+	lang={lang}
+	title={seo.title}
+	description={seo.metaDescription}
+	jsonLd={lodgingJsonLd(localizedPath(lang), seo.jsonLdDescription)}
+>
+	<HomePage lang={lang} />
+</BaseLayout>

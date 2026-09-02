@@ -1,0 +1,374 @@
+{
+	"menu": {
+		"main": "Home",
+		"aboutus": "The apartment",
+		"contact": "Contact"
+	},
+	"titles": {
+		"main": "Home",
+		"aboutus": "The apartment",
+		"contact": "Contact",
+		"book_now": "Book now",
+		"whats": "640 95 55 72"
+	},
+	"seo": {
+		"home": {
+			"title": "QEhome Manresa | Holiday apartment in the centre",
+			"metaDescription": "Holiday apartment in central Manresa. 9.7 on Booking. Private parking, electric car charger, 2 bedrooms, WiFi, full kitchen and self check-in. FGC nearby.",
+			"jsonLdDescription": "Two-bedroom holiday apartment in central Manresa. 9.7 on Booking. Private parking, electric car charger, WiFi, full kitchen and self check-in. FGC a few minutes away."
+		},
+		"parking": {
+			"title": "Apartment with parking in Manresa | Electric charger | QEhome",
+			"metaDescription": "Apartment with private parking in central Manresa. Space in the building and free electric car charger included. 9.7 on Booking. Book on Booking or Airbnb."
+		},
+		"umanresa": {
+			"title": "Accommodation near UManresa | Apartment in Manresa | QEhome",
+			"metaDescription": "Apartment near UManresa and Manresa's university area. 2 bedrooms, WiFi, parking, self check-in and 9.7 on Booking."
+		},
+		"queVer": {
+			"title": "What to see in Manresa | Local guide from QEhome",
+			"metaDescription": "What to see and do in Manresa in 1 or 2 days: historic centre, Seu, Cave of Saint Ignatius and day trips to Montserrat and Pla de Bages."
+		},
+		"camino": {
+			"title": "Ignatian Way accommodation in Manresa | QEhome",
+			"metaDescription": "Apartment in Manresa for the Ignatian Way. Self check-in, 2 bedrooms, full kitchen, parking and 9.7 on Booking."
+		},
+		"montserrat": {
+			"title": "Visit Montserrat from Manresa | Where to stay | QEhome",
+			"metaDescription": "How to visit Montserrat from Manresa: distance, car and train. Central apartment with parking and 9.7 on Booking as your base."
+		},
+		"enoturismo": {
+			"title": "Wine tourism in Pla de Bages from Manresa | QEhome",
+			"metaDescription": "Wine route through Pla de Bages from Manresa. Wineries about 30 minutes away. Apartment with parking, full kitchen and 9.7 on Booking."
+		}
+	},
+	"relatedLandings": {
+		"title": "More guides and stays",
+		"labels": {
+			"parking": "Apartment with parking",
+			"umanresa": "Near UManresa",
+			"queVer": "What to see in Manresa",
+			"camino": "Ignatian Way",
+			"montserrat": "Montserrat from Manresa",
+			"enoturismo": "Pla de Bages wine tourism"
+		}
+	},
+	"differentiatorsLink": "More about parking and electric charger",
+	"idealFor": {
+		"title": "Couples, families and work stays",
+		"families": "Two bedrooms, full kitchen and parking in the building. Real space for two adults, or for a family with children.",
+		"work": "WiFi, desk and self check-in. Suitable for a week or longer without relying on a front desk.",
+		"items": [
+			"WiFi and desk",
+			"Self check-in",
+			"Full kitchen",
+			"Parking in the building"
+		]
+	},
+	"aboutustexts": {
+		"intro": "9.7 on Booking. Two-bedroom apartment in central Manresa with private parking in the building and a free electric car charger. WiFi, full kitchen and self check-in. The FGC station is a few minutes away.",
+		"differentiators": [
+			{
+				"title": "Private parking",
+				"description": "Parking space in the building. Street parking in central Manresa is hard to find."
+			},
+			{
+				"title": "Electric car charger",
+				"description": "Free charging during your stay. No need to find a public charger."
+			},
+			{
+				"title": "Central Manresa and FGC nearby",
+				"description": "FGC station a few minutes on foot. Barcelona by train. Montserrat and Pla de Bages, about 30 minutes away."
+			}
+		],
+		"highlights": [
+			"9.7/10 on Booking",
+			"Private parking in the building",
+			"Free electric car charger",
+			"2 bedrooms and full bathroom",
+			"WiFi and desk",
+			"Full kitchen",
+			"Self check-in",
+			"FGC a few minutes away"
+		],
+		"cta": "Book / Contact"
+	},
+	"maintexts": {
+		"headline": "Holiday apartment in central Manresa",
+		"subtitle": "Private parking and electric car charger included. Two bedrooms.",
+		"location": "WiFi, full kitchen and self check-in. FGC a few minutes away.",
+		"rating": {
+			"score": "9.7/10 on Booking",
+			"guests": "More than 50 verified reviews"
+		},
+		"badges": [
+			"Private parking",
+			"Electric charger",
+			"2 bedrooms",
+			"Self check-in"
+		]
+	},
+	"reviews": {
+		"title": "What guests say",
+		"cta": "Read the 50+ reviews on Booking",
+		"items": [
+			{
+				"quote": "La limpieza del alojamiento exquisita. Pasamos una estancia muy cómoda y tranquila.",
+				"author": "Maria",
+				"score": "10"
+			},
+			{
+				"quote": "El apartamento es muy bonito, decorado con gusto y muy cómodo.",
+				"author": "Merche",
+				"score": "10"
+			},
+			{
+				"quote": "El apartamento era muy cómodo y acogedor, todo muy elegante. Los anfitriones fueron muy acogedores.",
+				"author": "Algaba Álvarez",
+				"score": "10"
+			}
+		]
+	},
+	"gallery": {
+		"title": "The apartment in photos",
+		"subtitle": "Living room, bedrooms, kitchen and bathroom. Open any photo to inspect it.",
+		"all": "All",
+		"filterLabel": "Filter by room",
+		"openLabel": "View photo",
+		"close": "Close",
+		"prev": "Previous photo",
+		"next": "Next photo",
+		"categories": {
+			"living": "Living room",
+			"bedrooms": "Bedrooms",
+			"kitchen": "Kitchen",
+			"bathroom": "Bathroom"
+		},
+		"photos": {
+			"menjador12": {
+				"caption": "Living-dining room",
+				"alt": "Living-dining room at QEhome apartment in Manresa"
+			},
+			"menjador11": {
+				"caption": "Sitting area",
+				"alt": "Sitting area at QEhome apartment in Manresa"
+			},
+			"hab2": {
+				"caption": "Main bedroom",
+				"alt": "Main bedroom at QEhome apartment in Manresa"
+			},
+			"hab3": {
+				"caption": "Second bedroom",
+				"alt": "Second bedroom at QEhome apartment in Manresa"
+			},
+			"cuina2": {
+				"caption": "Kitchen",
+				"alt": "Kitchen at QEhome apartment in Manresa"
+			},
+			"lavabo1": {
+				"caption": "Bathroom",
+				"alt": "Bathroom at QEhome apartment in Manresa"
+			}
+		}
+	},
+	"umanresaPage": {
+		"h1": "Accommodation near UManresa",
+		"heroSubtitle": "Central Manresa apartment for university visits, training and short stays.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "UManresa",
+		"sections": [
+			{
+				"title": "Who it is useful for",
+				"paragraphs": [
+					"Parents visiting students, lecturers, conferences, training courses and short stays linked to UManresa, FUB or other faculties in the university area."
+				]
+			},
+			{
+				"title": "Location relative to the university",
+				"paragraphs": [
+					"QEhome is in central Manresa, not on campus. From here you reach the university area on foot or with short trips across the city.",
+					"The FGC station is a few minutes away. Useful if you combine university, the historic centre and travel around Catalonia."
+				]
+			},
+			{
+				"title": "What the apartment includes",
+				"items": [
+					"2 bedrooms and full bathroom",
+					"WiFi and desk",
+					"Self check-in",
+					"Full kitchen",
+					"Private parking in the building",
+					"9.7/10 on Booking"
+				]
+			}
+		],
+		"apartmentTitle": "Book near UManresa",
+		"apartmentText": "Same address, same facts: holiday apartment in central Manresa with parking and self check-in.",
+		"backHome": "See the holiday apartment"
+	},
+	"queVerPage": {
+		"h1": "What to see in Manresa",
+		"heroSubtitle": "Local guide for 1 or 2 days: historic centre, essentials and day trips to Montserrat and Pla de Bages.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "What to see in Manresa",
+		"sections": [
+			{
+				"title": "Manresa in one day",
+				"paragraphs": [
+					"Start with the historic centre and the Seu (Basilica of Santa Maria). Head down to the Cardener and the Cave of Saint Ignatius if you are interested in Ignatian heritage.",
+					"The old town is walkable. With parking in the building you do not depend on street parking to move around the centre."
+				],
+				"items": [
+					"Seu and old town",
+					"Cave of Saint Ignatius",
+					"Walk through the centre and shops",
+					"Viewpoints and the Cardener river area"
+				]
+			},
+			{
+				"title": "If you have two days",
+				"paragraphs": [
+					"Day two fits a day trip well: Montserrat is about 30 minutes by car, and Pla de Bages opens landscape and winery routes.",
+					"Manresa works as a base: sleep in the centre, go out by day and come back without depending on hotel hours."
+				]
+			},
+			{
+				"title": "Practical details",
+				"items": [
+					"Walkable centre",
+					"FGC a few minutes away for Barcelona",
+					"Private parking at QEhome",
+					"Full kitchen if you want to eat in the apartment"
+				]
+			}
+		],
+		"apartmentTitle": "Where to sleep while visiting Manresa",
+		"apartmentText": "QEhome: 2 bedrooms in the centre, 9.7 on Booking, parking and electric car charger included.",
+		"backHome": "See the holiday apartment"
+	},
+	"caminoPage": {
+		"h1": "Accommodation in Manresa for the Ignatian Way",
+		"heroSubtitle": "Central apartment for pilgrims and travellers on the Ignatian Way who finish or stay overnight in Manresa.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Ignatian Way",
+		"sections": [
+			{
+				"title": "Manresa on the Ignatian Way",
+				"paragraphs": [
+					"Manresa is a key point on the Ignatian Way, linked to Saint Ignatius's stay and the Cave of Saint Ignatius.",
+					"Whether you arrive on foot, by transport or by combining stages, the centre puts you near Ignatian sites and everyday services."
+				]
+			},
+			{
+				"title": "Why an apartment fits",
+				"paragraphs": [
+					"Self check-in: useful if you arrive outside reception hours. Full kitchen if you want a rest day or to cook. Two bedrooms if you travel as a couple or a small group."
+				],
+				"items": [
+					"Self check-in",
+					"Full kitchen",
+					"2 bedrooms",
+					"Parking in the building if you arrive by car",
+					"WiFi",
+					"9.7/10 on Booking"
+				]
+			},
+			{
+				"title": "After Manresa",
+				"paragraphs": [
+					"From here you can also connect to Montserrat, Barcelona by FGC or continue routes around Bages without changing base."
+				]
+			}
+		],
+		"apartmentTitle": "Book for the Ignatian Way",
+		"apartmentText": "QEhome is in central Manresa. Same facts as on the home page: parking, self check-in and a strong Booking score.",
+		"backHome": "See the holiday apartment"
+	},
+	"montserratPage": {
+		"h1": "Visit Montserrat from Manresa",
+		"heroSubtitle": "Montserrat about 30 minutes away. Manresa as your base: centre, parking and train to Barcelona.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Montserrat from Manresa",
+		"sections": [
+			{
+				"title": "Manresa as a base, not a «hotel at Montserrat»",
+				"paragraphs": [
+					"QEhome is in Manresa, not in Monistrol or on the mountain. The idea is to sleep in central Manresa and visit Montserrat for the day.",
+					"By car, Montserrat is about 30 minutes away. You can also combine the visit with Manresa's old town on the same trip."
+				]
+			},
+			{
+				"title": "How to plan the visit",
+				"items": [
+					"Morning departure to Montserrat",
+					"Monastery, reservoirs and walks depending on time",
+					"Return to Manresa in the afternoon",
+					"Dinner in the centre or in the apartment"
+				]
+			},
+			{
+				"title": "Why sleeping in Manresa helps",
+				"paragraphs": [
+					"Parking in the building if you drive. Self check-in. Two bedrooms. FGC nearby if you also want Barcelona another day."
+				]
+			}
+		],
+		"apartmentTitle": "Where to stay to visit Montserrat from Manresa",
+		"apartmentText": "Holiday apartment in central Manresa. 9.7 on Booking. Parking and electric car charger included.",
+		"backHome": "See the holiday apartment"
+	},
+	"enoturismoPage": {
+		"h1": "Wine tourism in Pla de Bages from Manresa",
+		"heroSubtitle": "Wineries and landscape about 30 minutes away. Sleep in central Manresa and drive out to the wine route.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Pla de Bages wine tourism",
+		"sections": [
+			{
+				"title": "Pla de Bages from the city",
+				"paragraphs": [
+					"Pla de Bages concentrates wineries, farmland and wine experiences a short distance from Manresa.",
+					"QEhome is not a rural house among vineyards. It is an urban apartment with parking: go out to wineries by day and return to the centre."
+				]
+			},
+			{
+				"title": "How a weekend fits",
+				"items": [
+					"Arrive in Manresa and self check-in",
+					"One day of wineries and landscape in Pla de Bages",
+					"Another day for central Manresa or Montserrat",
+					"Full kitchen if you want breakfast or dinner in the apartment"
+				]
+			},
+			{
+				"title": "What QEhome adds to this route",
+				"paragraphs": [
+					"Private parking in the building. Electric car charger if you drive an EV. 9.7 on Booking. Central location to combine wine, city and train."
+				]
+			}
+		],
+		"apartmentTitle": "Accommodation for wine tourism in Bages",
+		"apartmentText": "Base in Manresa with parking, 2 bedrooms and full kitchen. Book on Booking or Airbnb.",
+		"backHome": "See the holiday apartment"
+	},
+	"parkingPage": {
+		"h1": "Apartment with private parking in Manresa",
+		"heroSubtitle": "Parking space in the building and free electric car charger included.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Parking and electric charger",
+		"parkingTitle": "Private parking in the building",
+		"parkingText": "A private parking space in the same building. In central Manresa, street parking is hard to find and usually paid.",
+		"evTitle": "Electric car charger",
+		"evText": "Free charging while you stay. No need to find a public charger or pay for charging separately.",
+		"apartmentTitle": "The apartment",
+		"apartmentText": "Two bedrooms in central Manresa. 9.7 on Booking. Self check-in, full kitchen and FGC station a few minutes away.",
+		"backHome": "See the holiday apartment"
+	},
+	"contacto": {
+		"check": "Book QEhome",
+		"crossSell": "Looking for a rural stay?",
+		"crossSellLink": "Also discover Cal Masses"
+	},
+	"scrollcta": {
+		"exp": "Explore"
+	}
+}

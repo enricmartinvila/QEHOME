@@ -1,0 +1,137 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro"
+import { localizedPath, type Lang } from "../constants/site"
+import { getTranslations } from "../constants/i18n"
+import { PHONE_DISPLAY, WHATSAPP_URL } from "../constants/links"
+
+interface Props {
+	lang: Lang
+	pathAfterLang?: string
+}
+
+const { lang, pathAfterLang = "" } = Astro.props
+const t = getTranslations(lang)
+const homeHref = localizedPath(lang)
+const contactHref = pathAfterLang ? "#contacto" : `${homeHref}#contacto`
+---
+
+<header
+	data-site-header
+	class="fixed top-0 z-[999] flex w-full items-center bg-black/10 py-3 transition-all duration-300"
+>
+	<div class="flex w-full items-center justify-between px-4 sm:hidden">
+		<a
+			href={homeHref}
+			class="relative block h-8 w-24 flex-shrink-0"
+			aria-label="QEhome Manresa"
+			data-logo-home
+		>
+			<img
+				src="/logo/logosintexto.webp"
+				alt="QEhome Manresa"
+				class="absolute inset-0 h-full w-full object-contain transition-all duration-500"
+				data-logo-full
+			/>
+			<img
+				src="/logo/logoshort.webp"
+				alt=""
+				aria-hidden="true"
+				class="pointer-events-none absolute inset-0 h-full w-full scale-95 object-contain opacity-0 transition-all duration-500"
+				data-logo-short
+			/>
+		</a>
+		<div class="flex items-center gap-3">
+			<LanguageSwitcher lang={lang} pathAfterLang={pathAfterLang} />
+			<a
+				href={contactHref}
+				class="rounded-full bg-brand-cta px-3 py-1 text-center text-xs font-semibold text-white hover:bg-brand-ctaHover"
+				style="min-width: 90px;"
+			>
+				{t.titles.book_now}
+			</a>
+		</div>
+	</div>
+
+	<div class="relative hidden w-full grid-cols-[1fr_auto_1fr] items-center sm:grid">
+		<div class="justify-self-start pl-6">
+			<LanguageSwitcher lang={lang} pathAfterLang={pathAfterLang} />
+		</div>
+		<a
+			href={homeHref}
+			class="relative h-8 w-28 justify-self-center sm:h-16 sm:w-40 lg:h-12 lg:w-32"
+			aria-label="QEhome Manresa"
+			data-logo-home
+		>
+			<img
+				src="/logo/logosintexto.webp"
+				alt="QEhome Manresa"
+				class="absolute inset-0 h-full w-full object-contain transition-all duration-500"
+				data-logo-full
+			/>
+			<img
+				src="/logo/logoshort.webp"
+				alt=""
+				aria-hidden="true"
+				class="pointer-events-none absolute inset-0 h-full w-full scale-95 object-contain opacity-0 transition-all duration-500"
+				data-logo-short
+			/>
+		</a>
+		<div class="z-10 mr-12 flex items-center justify-self-end">
+			<a
+				class="ml-4 flex w-fit items-center gap-2 rounded-full px-4 py-1 text-lg font-light text-white hover:bg-brand-cta"
+				href={WHATSAPP_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="WhatsApp"
+			>
+				<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+					<path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+				</svg>
+				{PHONE_DISPLAY}
+			</a>
+			<a
+				href={contactHref}
+				class="ml-3 rounded-full bg-brand-cta px-4 py-1 text-lg font-light text-white hover:bg-brand-ctaHover"
+			>
+				{t.titles.book_now}
+			</a>
+		</div>
+	</div>
+</header>
+
+<script>
+	const header = document.querySelector("[data-site-header]")
+	if (header) {
+		const isHome = /^\/(ca|es|en)\/?$/.test(window.location.pathname)
+
+		const update = () => {
+			const compact = window.scrollY > 10 || !isHome
+			header.classList.toggle("bg-black/40", compact)
+			header.classList.toggle("backdrop-blur-md", compact)
+			header.classList.toggle("shadow-md", compact)
+			header.classList.toggle("bg-black/10", !compact)
+			header.querySelectorAll("[data-logo-full]").forEach((el) => {
+				el.classList.toggle("opacity-0", compact)
+				el.classList.toggle("scale-95", compact)
+				el.classList.toggle("pointer-events-none", compact)
+				el.classList.toggle("opacity-100", !compact)
+			})
+			header.querySelectorAll("[data-logo-short]").forEach((el) => {
+				el.classList.toggle("opacity-100", compact)
+				el.classList.toggle("scale-150", compact)
+				el.classList.toggle("opacity-0", !compact)
+				el.classList.toggle("scale-95", !compact)
+				el.classList.toggle("pointer-events-none", !compact)
+			})
+		}
+
+		header.querySelectorAll("[data-logo-home]").forEach((el) => {
+			el.addEventListener("click", () => {
+				if (isHome) window.scrollTo({ top: 0, behavior: "smooth" })
+			})
+		})
+
+		window.addEventListener("scroll", update, { passive: true })
+		update()
+	}
+</script>

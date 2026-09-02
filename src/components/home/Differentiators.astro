@@ -1,0 +1,57 @@
+---
+import { getTranslations, type Lang } from "../../constants/i18n"
+import { localizedPath } from "../../constants/site"
+import { PARKING_LANDING } from "../../constants/landings"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const t = getTranslations(lang)
+const items = t.aboutustexts.differentiators
+const parkingHref = localizedPath(lang, PARKING_LANDING.slug)
+---
+
+<section class="bg-brand py-14 md:py-16">
+	<div class="mx-auto max-w-6xl px-4">
+		<div class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-white/25">
+			<div class="flex flex-col px-0 md:px-8">
+				<div class="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/15">
+					<svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25ZM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 1 1 6 0h3a3 3 0 1 1 6 0h.375c1.035 0 1.875-.84 1.875-1.875V15h-6.75ZM6 18.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm9.75 0a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
+						<path d="M15 6.75a.75.75 0 0 0-.75.75v.75h-.75a.75.75 0 0 0 0 1.5h.75v.75a.75.75 0 0 0 1.5 0v-.75h.75a.75.75 0 0 0 0-1.5h-.75V7.5a.75.75 0 0 0-.75-.75ZM19.5 6.75a.75.75 0 0 0-.75.75v.75h-.75a.75.75 0 0 0 0 1.5h.75v.75a.75.75 0 0 0 1.5 0v-.75H21a.75.75 0 0 0 0-1.5h-.75V7.5a.75.75 0 0 0-.75-.75Z" />
+					</svg>
+				</div>
+				<h3 class="mb-2 text-lg font-bold text-white">{items[0].title}</h3>
+				<p class="text-[15px] leading-relaxed text-white/90">{items[0].description}</p>
+			</div>
+			<div class="flex flex-col px-0 md:px-8 border-t border-white/25 pt-10 md:border-t-0 md:pt-0">
+				<div class="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/15">
+					<svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
+					</svg>
+				</div>
+				<h3 class="mb-2 text-lg font-bold text-white">{items[1].title}</h3>
+				<p class="text-[15px] leading-relaxed text-white/90">{items[1].description}</p>
+			</div>
+			<div class="flex flex-col px-0 md:px-8 border-t border-white/25 pt-10 md:border-t-0 md:pt-0">
+				<div class="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/15">
+					<svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.287-1.932 18.67 18.67 0 0 0 2.506-3.218c1.243-2.01 1.98-4.152 1.98-6.205C20.377 5.486 16.753 2 12.25 2S4.123 5.486 4.123 9.75c0 2.053.737 4.195 1.98 6.205a18.67 18.67 0 0 0 2.506 3.218 19.58 19.58 0 0 0 2.287 1.932 16.975 16.975 0 0 0 1.144.742ZM12.25 13a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
+					</svg>
+				</div>
+				<h3 class="mb-2 text-lg font-bold text-white">{items[2].title}</h3>
+				<p class="text-[15px] leading-relaxed text-white/90">{items[2].description}</p>
+			</div>
+		</div>
+		<div class="mt-10 text-center md:mt-12">
+			<a
+				href={parkingHref}
+				class="text-base font-medium text-white underline decoration-white/50 underline-offset-4 transition hover:decoration-white"
+			>
+				{t.differentiatorsLink}
+			</a>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,38 @@
+---
+import { LANGS, localizedPath, type Lang } from "../constants/site"
+import { uiChrome } from "../constants/i18n"
+
+interface Props {
+	lang: Lang
+	pathAfterLang?: string
+}
+
+const { lang, pathAfterLang = "" } = Astro.props
+const ariaLabel = uiChrome[lang].langLabel
+---
+
+<nav aria-label={ariaLabel} class="flex items-center gap-1 text-xs font-medium tracking-wide">
+	{
+		LANGS.map((l, i) => (
+			<span class="inline-flex items-center gap-1">
+				{i > 0 && (
+					<span aria-hidden="true" class="select-none text-white/35">
+						·
+					</span>
+				)}
+				<a
+					href={localizedPath(l, pathAfterLang)}
+					class:list={[
+						"transition-colors",
+						l === lang
+							? "text-white"
+							: "text-white/55 hover:text-white",
+					]}
+					aria-current={l === lang ? "page" : undefined}
+				>
+					{l.toUpperCase()}
+				</a>
+			</span>
+		))
+	}
+</nav>

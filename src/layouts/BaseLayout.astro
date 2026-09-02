@@ -1,0 +1,47 @@
+---
+import Seo from "../components/Seo.astro"
+import Header from "../components/Header.astro"
+import { HTML_LANG, type Lang } from "../constants/site"
+import "../styles/global.css"
+
+interface Props {
+	lang: Lang
+	title: string
+	description: string
+	pathAfterLang?: string
+	jsonLd?: Record<string, unknown> | null
+}
+
+const { lang, title, description, pathAfterLang = "", jsonLd = null } = Astro.props
+---
+
+<!doctype html>
+<html lang={HTML_LANG[lang]}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<Seo
+			lang={lang}
+			title={title}
+			description={description}
+			pathAfterLang={pathAfterLang}
+		/>
+		{
+			jsonLd && (
+				<script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+			)
+		}
+	</head>
+	<body class="min-h-screen bg-stone-50 text-stone-900 antialiased">
+		<Header lang={lang} pathAfterLang={pathAfterLang} />
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>

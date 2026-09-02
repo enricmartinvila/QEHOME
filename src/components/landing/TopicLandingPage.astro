@@ -1,0 +1,84 @@
+---
+import LandingHero from "./LandingHero.astro"
+import BookingCtas from "./BookingCtas.astro"
+import RelatedLandings from "../home/RelatedLandings.astro"
+import Contact from "../home/Contact.astro"
+import { getTranslations, type Lang } from "../../constants/i18n"
+import { localizedPath } from "../../constants/site"
+import {
+	getTopicLanding,
+	type TopicLandingKey,
+} from "../../constants/landings"
+
+interface Props {
+	lang: Lang
+	landingKey: TopicLandingKey
+}
+
+const { lang, landingKey } = Astro.props
+const landing = getTopicLanding(landingKey)
+if (!landing) throw new Error(`Unknown landing key: ${landingKey}`)
+
+const t = getTranslations(lang)
+const page = t[landing.pageKey as keyof typeof t] as {
+	h1: string
+	heroSubtitle: string
+	breadcrumbHome: string
+	breadcrumbCurrent: string
+	sections: Array<{
+		title: string
+		paragraphs?: string[]
+		items?: string[]
+	}>
+	apartmentTitle: string
+	apartmentText: string
+	backHome: string
+}
+---
+
+<LandingHero
+	lang={lang}
+	heroImage={landing.heroImage}
+	h1={page.h1}
+	heroSubtitle={page.heroSubtitle}
+	breadcrumbHome={page.breadcrumbHome}
+	breadcrumbCurrent={page.breadcrumbCurrent}
+/>
+
+<section class="bg-stone-50 py-14 md:py-20">
+	<div class="mx-auto flex max-w-3xl flex-col gap-8 px-4">
+		{
+			page.sections.map((section) => (
+				<article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+					<h2 class="text-xl font-bold text-stone-900">{section.title}</h2>
+					{section.paragraphs?.map((p) => (
+						<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{p}</p>
+					))}
+					{section.items && (
+						<ul class="mt-4 space-y-2 text-[15px] leading-relaxed text-stone-600">
+							{section.items.map((item) => (
+								<li class="flex gap-3">
+									<span class="mt-2 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand" />
+									<span>{item}</span>
+								</li>
+							))}
+						</ul>
+					)}
+				</article>
+			))
+		}
+
+		<article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+			<h2 class="text-xl font-bold text-stone-900">{page.apartmentTitle}</h2>
+			<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.apartmentText}</p>
+			<a href={localizedPath(lang)} class="mt-6 inline-block font-medium text-brand hover:underline">
+				{page.backHome}
+			</a>
+		</article>
+	</div>
+
+	<BookingCtas />
+	<RelatedLandings lang={lang} excludeSlug={landing.slug} />
+</section>
+
+<Contact lang={lang} />

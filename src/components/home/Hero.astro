@@ -1,0 +1,52 @@
+---
+import { getTranslations, type Lang } from "../../constants/i18n"
+import { BOOKING_URL } from "../../constants/links"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const t = getTranslations(lang)
+const m = t.maintexts
+---
+
+<section
+	class="relative flex h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-white"
+	style="background-image: url('/images/menjador12.webp')"
+>
+	<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/50"></div>
+	<div class="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center">
+		<h1 class="text-3xl font-bold drop-shadow-lg sm:text-5xl lg:text-6xl">
+			{m.headline}
+		</h1>
+		<a
+			href={BOOKING_URL}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group mt-6 inline-flex flex-col items-center rounded-2xl border border-white/30 bg-white/10 px-6 py-4 backdrop-blur-sm transition hover:bg-white/20"
+		>
+			<span class="text-xl font-semibold tracking-wide sm:text-2xl">
+				★ {m.rating.score}
+			</span>
+			<span class="mt-1 text-sm text-white/85 sm:text-base">{m.rating.guests}</span>
+		</a>
+		<p class="mt-6 text-lg drop-shadow-md sm:text-xl">{m.subtitle}</p>
+		<p class="mt-2 text-base text-white/90 drop-shadow-md sm:text-lg">{m.location}</p>
+		<div class="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+			{
+				m.badges.map((badge) => (
+					<span class="inline-flex items-center rounded-full border border-white/25 bg-white/15 px-3 py-1.5 text-sm font-medium backdrop-blur-sm transition hover:bg-white/25">
+						{badge}
+					</span>
+				))
+			}
+		</div>
+		<a
+			href="#contacto"
+			class="mt-10 rounded-full bg-brand-cta px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-brand-ctaHover focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60"
+		>
+			{t.titles.book_now}
+		</a>
+	</div>
+</section>

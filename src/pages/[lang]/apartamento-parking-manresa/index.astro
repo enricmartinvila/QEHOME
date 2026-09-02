@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import ParkingLandingPage from "../../../components/landing/ParkingLandingPage.astro"
+import { getTranslations } from "../../../constants/i18n"
+import { parkingLodgingJsonLd } from "../../../constants/schema"
+import { LANGS, localizedPath, type Lang } from "../../../constants/site"
+import { PARKING_LANDING } from "../../../constants/landings"
+
+export function getStaticPaths() {
+	return LANGS.map((lang) => ({ params: { lang } }))
+}
+
+const lang = Astro.params.lang as Lang
+const t = getTranslations(lang)
+const seo = t.seo.parking
+const pathAfterLang = PARKING_LANDING.slug
+---
+
+<BaseLayout
+	lang={lang}
+	title={seo.title}
+	description={seo.metaDescription}
+	pathAfterLang={pathAfterLang}
+	jsonLd={parkingLodgingJsonLd(
+		localizedPath(lang, pathAfterLang),
+		seo.metaDescription,
+	)}
+>
+	<ParkingLandingPage lang={lang} />
+</BaseLayout>
