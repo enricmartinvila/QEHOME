@@ -98,8 +98,16 @@
 		"subtitle": "Parking privado y cargador eléctrico incluidos. Dos dormitorios.",
 		"location": "WiFi, cocina completa y entrada autónoma. FGC a pocos minutos.",
 		"rating": {
-			"score": "9,7/10 en Booking",
-			"guests": "Más de 50 valoraciones verificadas"
+			"booking": {
+				"score": "9,7/10",
+				"label": "Booking",
+				"guests": "Más de 50 valoraciones"
+			},
+			"airbnb": {
+				"score": "4,92/5",
+				"label": "Airbnb",
+				"guests": "24 valoraciones"
+			}
 		},
 		"badges": [
 			"Parking privado",

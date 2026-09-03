@@ -98,8 +98,16 @@
 		"subtitle": "Private parking and electric car charger included. Two bedrooms.",
 		"location": "WiFi, full kitchen and self check-in. FGC a few minutes away.",
 		"rating": {
-			"score": "9.7/10 on Booking",
-			"guests": "More than 50 verified reviews"
+			"booking": {
+				"score": "9.7/10",
+				"label": "Booking",
+				"guests": "More than 50 reviews"
+			},
+			"airbnb": {
+				"score": "4.92/5",
+				"label": "Airbnb",
+				"guests": "24 reviews"
+			}
 		},
 		"badges": [
 			"Private parking",
