@@ -9,11 +9,22 @@ interface Props {
 	heroSubtitle: string
 	breadcrumbHome: string
 	breadcrumbCurrent: string
+	ctaLabel?: string
+	ctaHref?: string
 }
 
-const { lang, heroImage, h1, heroSubtitle, breadcrumbHome, breadcrumbCurrent } =
-	Astro.props
+const {
+	lang,
+	heroImage,
+	h1,
+	heroSubtitle,
+	breadcrumbHome,
+	breadcrumbCurrent,
+	ctaLabel,
+	ctaHref = "#contacto",
+} = Astro.props
 const t = getTranslations(lang)
+const label = ctaLabel || t.titles.book_now
 ---
 
 <section
@@ -30,10 +41,10 @@ const t = getTranslations(lang)
 		<h1 class="text-3xl font-bold drop-shadow-lg sm:text-4xl lg:text-5xl">{h1}</h1>
 		<p class="mt-4 text-lg drop-shadow-md sm:text-xl">{heroSubtitle}</p>
 		<a
-			href="#contacto"
+			href={ctaHref}
 			class="mt-10 inline-block rounded-full bg-brand-cta px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-brand-ctaHover"
 		>
-			{t.titles.book_now}
+			{label}
 		</a>
 	</div>
 </section>

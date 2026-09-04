@@ -23,6 +23,7 @@ const t = getTranslations(lang)
 const page = t[landing.pageKey as keyof typeof t] as {
 	h1: string
 	heroSubtitle: string
+	ctaLabel?: string
 	breadcrumbHome: string
 	breadcrumbCurrent: string
 	sections: Array<{
@@ -30,6 +31,7 @@ const page = t[landing.pageKey as keyof typeof t] as {
 		paragraphs?: string[]
 		items?: string[]
 	}>
+	availabilityNote?: string
 	apartmentTitle: string
 	apartmentText: string
 	backHome: string
@@ -43,6 +45,7 @@ const page = t[landing.pageKey as keyof typeof t] as {
 	heroSubtitle={page.heroSubtitle}
 	breadcrumbHome={page.breadcrumbHome}
 	breadcrumbCurrent={page.breadcrumbCurrent}
+	ctaLabel={page.ctaLabel}
 />
 
 <section class="bg-stone-50 py-14 md:py-20">
@@ -77,7 +80,7 @@ const page = t[landing.pageKey as keyof typeof t] as {
 		</article>
 	</div>
 
-	<BookingCtas />
+	<BookingCtas heading={page.availabilityNote} />
 	<RelatedLandings lang={lang} excludeSlug={landing.slug} />
 </section>
 

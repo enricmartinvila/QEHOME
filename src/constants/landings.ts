@@ -2,6 +2,9 @@ export const PARKING_LANDING = {
 	key: "parking",
 	slug: "apartamento-parking-manresa",
 	heroImage: "/images/menjador12.webp",
+	/** Add real photos to public/images/ then set these paths */
+	parkingImage: null as string | null,
+	evImage: null as string | null,
 	pageKey: "parkingPage",
 	seoKey: "parking",
 } as const

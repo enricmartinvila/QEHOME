@@ -15,6 +15,8 @@ const { lang } = Astro.props
 const t = getTranslations(lang)
 const page = t.parkingPage
 const slug = PARKING_LANDING.slug
+const parkingImage = PARKING_LANDING.parkingImage
+const evImage = PARKING_LANDING.evImage
 ---
 
 <LandingHero
@@ -24,29 +26,85 @@ const slug = PARKING_LANDING.slug
 	heroSubtitle={page.heroSubtitle}
 	breadcrumbHome={page.breadcrumbHome}
 	breadcrumbCurrent={page.breadcrumbCurrent}
+	ctaLabel={page.ctaLabel}
 />
 
 <section class="bg-stone-50 py-14 md:py-20">
+	{
+		page.benefitLead && (
+			<p class="mx-auto mb-12 max-w-3xl px-4 text-center text-lg font-medium leading-relaxed text-stone-800 md:text-xl">
+				{page.benefitLead}
+			</p>
+		)
+	}
+
 	<div class="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
-		<article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
-			<h2 class="text-xl font-bold text-stone-900">{page.parkingTitle}</h2>
-			<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.parkingText}</p>
+		<article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+			{
+				parkingImage && (
+					<img
+						src={parkingImage}
+						alt={page.parkingImageAlt}
+						class="aspect-[4/3] w-full object-cover"
+						loading="lazy"
+						decoding="async"
+					/>
+				)
+			}
+			<div class="p-8">
+				<h2 class="text-xl font-bold text-stone-900">{page.parkingTitle}</h2>
+				<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.parkingText}</p>
+			</div>
 		</article>
-		<article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
-			<h2 class="text-xl font-bold text-stone-900">{page.evTitle}</h2>
-			<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.evText}</p>
+		<article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+			{
+				evImage && (
+					<img
+						src={evImage}
+						alt={page.evImageAlt}
+						class="aspect-[4/3] w-full object-cover"
+						loading="lazy"
+						decoding="async"
+					/>
+				)
+			}
+			<div class="p-8">
+				<h2 class="text-xl font-bold text-stone-900">{page.evTitle}</h2>
+				<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.evText}</p>
+			</div>
 		</article>
 	</div>
 
-	<article class="mx-auto mt-10 max-w-3xl rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+	{
+		page.facts?.length > 0 && (
+			<section class="mx-auto mt-12 max-w-3xl px-4">
+				<h2 class="text-center text-xl font-bold text-stone-900 md:text-2xl">
+					{page.factsTitle}
+				</h2>
+				<dl class="mt-8 space-y-5">
+					{page.facts.map((fact) => (
+						<div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+							<dt class="font-semibold text-stone-900">{fact.q}</dt>
+							<dd class="mt-2 text-[15px] leading-relaxed text-stone-600">{fact.a}</dd>
+						</div>
+					))}
+				</dl>
+			</section>
+		)
+	}
+
+	<article class="mx-auto mt-12 max-w-3xl rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
 		<h2 class="text-xl font-bold text-stone-900">{page.apartmentTitle}</h2>
 		<p class="mt-4 text-[15px] leading-relaxed text-stone-600">{page.apartmentText}</p>
-		<a href={localizedPath(lang)} class="mt-6 inline-block font-medium text-brand hover:underline">
+		<a
+			href={localizedPath(lang)}
+			class="mt-6 inline-block font-medium text-brand hover:underline"
+		>
 			{page.backHome}
 		</a>
 	</article>
 
-	<BookingCtas />
+	<BookingCtas heading={page.availabilityNote} />
 	<RelatedLandings lang={lang} excludeSlug={slug} />
 </section>
 

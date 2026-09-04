@@ -18,28 +18,28 @@
 			"jsonLdDescription": "Apartament turístic de dos dormitoris al centre de Manresa. 9,7 a Booking. Pàrquing privat, carregador elèctric, WiFi, cuina completa i entrada autònoma. FGC a pocs minuts."
 		},
 		"parking": {
-			"title": "Apartament amb pàrquing a Manresa | Carregador elèctric | QEhome",
-			"metaDescription": "Apartament amb pàrquing privat al centre de Manresa. Plaça a l'edifici i carregador elèctric gratuït inclosos. 9,7 a Booking. Reserva a Booking o Airbnb."
+			"title": "Apartament turístic amb pàrquing a Manresa | Carregador elèctric | QEhome",
+			"metaDescription": "Apartament turístic amb pàrquing privat a l'edifici, al centre de Manresa. Carregador elèctric gratuït inclòs. 9,7 a Booking. Consulta disponibilitat."
 		},
 		"umanresa": {
-			"title": "Allotjament a prop d'UManresa | Apartament a Manresa | QEhome",
-			"metaDescription": "Apartament a prop d'UManresa i la zona universitària de Manresa. 2 dormitoris, WiFi, pàrquing, entrada autònoma i 9,7 a Booking."
+			"title": "Allotjament a prop d'UManresa | Visites i estades curtes | QEhome",
+			"metaDescription": "Apartament per a familiars, docents i formacions a prop d'UManresa. WiFi, taula de treball, entrada autònoma, pàrquing i 9,7 a Booking. No és residència d'estudiants."
 		},
 		"queVer": {
-			"title": "Què veure a Manresa | Guia local des de QEhome",
-			"metaDescription": "Què veure i què fer a Manresa en 1 o 2 dies: centre històric, Seu, Cova de Sant Ignasi i excursions a Montserrat i el Pla de Bages."
+			"title": "Què veure a Manresa | Guia 1 o 2 dies | QEhome",
+			"metaDescription": "Què veure a Manresa en mig dia, un dia o dos: Seu, Carrer del Balç, Plaça Major, Pont Vell, Cova de Sant Ignasi i excursions a Montserrat o el Pla de Bages."
 		},
 		"camino": {
-			"title": "Allotjament Camí Ignasià Manresa | QEhome",
-			"metaDescription": "Apartament a Manresa per al Camí Ignasià. Entrada autònoma, 2 dormitoris, cuina completa, pàrquing i 9,7 a Booking."
+			"title": "Allotjament Camí Ignasià Manresa | Entrada autònoma | QEhome",
+			"metaDescription": "Apartament al centre de Manresa per al Camí Ignasià. Entrada autònoma si arribes tard, cuina, 2 dormitoris, pàrquing i 9,7 a Booking."
 		},
 		"montserrat": {
 			"title": "Visitar Montserrat des de Manresa | On allotjar-se | QEhome",
 			"metaDescription": "Com visitar Montserrat des de Manresa: distància, cotxe i tren. Apartament al centre amb pàrquing i 9,7 a Booking com a base de la visita."
 		},
 		"enoturismo": {
-			"title": "Enoturisme Pla de Bages des de Manresa | QEhome",
-			"metaDescription": "Ruta d'enoturisme pel Pla de Bages des de Manresa. Cellers a mitja hora. Apartament amb pàrquing, cuina completa i 9,7 a Booking."
+			"title": "Enoturisme Pla de Bages des de Manresa | Ruta del vi | QEhome",
+			"metaDescription": "Cap de setmana d'enoturisme al Pla de Bages allotjant-te a Manresa. Cellers a prop (Oller del Mas, Collbaix, Abadal). Pàrquing, carregador elèctric i 9,7 a Booking."
 		}
 	},
 	"relatedLandings": {
@@ -181,115 +181,220 @@
 	},
 	"umanresaPage": {
 		"h1": "Allotjament a prop d'UManresa",
-		"heroSubtitle": "Apartament al centre de Manresa per a visites a la universitat, formacions i estades curtes.",
+		"heroSubtitle": "Apartament per a familiars, docents i estades temporals vinculades a UManresa, amb pàrquing, WiFi i entrada autònoma.",
+		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "UManresa",
 		"sections": [
 			{
-				"title": "Per a qui és útil",
+				"title": "Per a qui és QEhome",
 				"paragraphs": [
-					"Pares que visiten estudiants, docents, jornades, formacions i estades curtes lligades a UManresa, la FUB o altres facultats de la zona universitària."
-				]
-			},
-			{
-				"title": "Ubicació respecte a la universitat",
-				"paragraphs": [
-					"QEhome és al centre de Manresa, no dins del campus. Des d'aquí arribes a la zona universitària a peu o amb trajectes curts per la ciutat.",
-					"L'estació FGC queda a pocs minuts. Útil si combines universitat, centre històric i desplaçaments per Catalunya."
-				]
-			},
-			{
-				"title": "Què inclou l'apartament",
+					"QEhome no és una residència universitària ni un pis per al curs sencer. És un apartament turístic per a visites i estades curtes lligades a UManresa, la FUB o altres facultats de la zona universitària.",
+					"Encaixa si vens uns dies: pares que visiten estudiants, docents convidats, formacions, jornades, congressos o pràctiques puntuals."
+				],
 				"items": [
-					"2 dormitoris i bany complet",
+					"Familiars d'estudiants en visita curta",
+					"Docents i investigadors de pas",
+					"Formacions, jornades i congressos",
+					"Estades temporals de diversos dies o una setmana"
+				]
+			},
+			{
+				"title": "Distàncies i com arribar-hi",
+				"paragraphs": [
+					"QEhome és al Carrer Doctor Esteve, al centre de Manresa, no dins del campus. UManresa recomana l'estació FGC Manresa-Baixador per arribar a la universitat. Des de l'apartament aquesta parada queda a pocs minuts a peu.",
+					"Temps orientatius a ritme de caminada (uns 4 a 5 km/h) o en cotxe amb trànsit normal."
+				],
+				"items": [
+					"UManresa (Av. Universitària): uns 10 a 15 minuts a peu, o uns 5 minuts en cotxe",
+					"Zona universitària: el mateix trajecte; el campus queda en aquest entorn",
+					"FGC Manresa-Baixador (parada recomanada per UManresa): uns 5 a 10 minuts a peu",
+					"Centre històric (Plaça Major): uns 20 a 25 minuts a peu, o uns 5 minuts en cotxe"
+				]
+			},
+			{
+				"title": "Per què QEhome encaixa",
+				"paragraphs": [
+					"Per a una visita curta importa poder treballar, cuinar i entrar a qualsevol hora. WiFi i taula de treball, cuina completa, dos dormitoris i entrada autònoma. Si vens en cotxe, pàrquing privat a l'edifici."
+				],
+				"items": [
 					"WiFi i taula de treball",
-					"Entrada autònoma",
 					"Cuina completa",
+					"2 dormitoris",
+					"Entrada autònoma",
 					"Pàrquing privat a l'edifici",
 					"9,7/10 a Booking"
 				]
+			},
+			{
+				"title": "Més a prop",
+				"paragraphs": [
+					"Si combines universitat i ciutat, també tens les guies de què veure a Manresa, pàrquing i carregador elèctric, i Camí Ignasià."
+				]
 			}
 		],
+		"availabilityNote": "Consulta disponibilitat per a les teves dates",
 		"apartmentTitle": "Reservar a prop d'UManresa",
-		"apartmentText": "Mateixa adreça, mateixos fets: apartament turístic al centre de Manresa amb pàrquing i entrada autònoma.",
+		"apartmentText": "Una opció còmoda per a estades vinculades a UManresa, amb cuina, zona de treball, entrada autònoma i pàrquing privat.",
 		"backHome": "Veure l'apartament turístic"
 	},
 	"queVerPage": {
 		"h1": "Què veure a Manresa",
-		"heroSubtitle": "Guia local per a 1 o 2 dies: centre històric, imprescindibles i sortides a Montserrat i el Pla de Bages.",
+		"heroSubtitle": "Guia local per a mig dia, 1 o 2 dies: centre històric, imprescindibles i sortides a Montserrat i el Pla de Bages.",
+		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "Què veure a Manresa",
 		"sections": [
 			{
-				"title": "Manresa en un dia",
+				"title": "La ruta senzilla si t'allotges 1 o 2 nits",
 				"paragraphs": [
-					"Comença pel centre històric i la Seu (basílica de Santa Maria). Baixa cap al Cardener i la Cova de Sant Ignasi si t'interessa el patrimoni ignasià.",
-					"El casc antic es recorre a peu. Amb pàrquing a l'edifici no has de dependre d'aparcar al carrer per moure't pel centre."
+					"Aquesta guia no pretén llistar tot el patrimoni de Manresa. És la ruta que recomanaríem a algú que es queda una o dues nits: l'essencial a peu pel centre, amb opcions clares si tens més temps.",
+					"El casc antic es recorre caminant. Si dorms a QEhome, l'estació FGC Manresa-Baixador queda a uns 5 a 10 minuts a peu i el centre històric a uns 20 a 25 minuts."
+				]
+			},
+			{
+				"title": "Si només tens unes hores (mig dia)",
+				"paragraphs": [
+					"Prioritza l'eix Seu, casc antic i riu. Cap en un matí o una tarda sense presses exagerades."
 				],
 				"items": [
-					"Seu i casc antic",
-					"Cova de Sant Ignasi",
-					"Passeig pel centre i comerços",
-					"Miradors i entorn del riu Cardener"
+					"La Seu (basílica de Santa Maria)",
+					"Carrer del Balç i carrers del Barri Antic",
+					"Plaça Major",
+					"Pont Vell",
+					"Cova de Sant Ignasi i passeig al costat del Cardener"
+				]
+			},
+			{
+				"title": "Manresa en un dia",
+				"paragraphs": [
+					"Una jornada completa pel centre. Combina patrimoni, carrers comercials i l'entorn del Cardener."
+				],
+				"items": [
+					"Matí: La Seu, Carrer del Balç, Plaça Major i casc antic.",
+					"Migdia: Passeig Pere III, comerços i dinar al centre.",
+					"Tarda: Pont Vell, Cova de Sant Ignasi i passeig al costat del riu Cardener.",
+					"Opcional si et queda temps: Museu del Barroc de Catalunya (a l'entorn de la Cova)."
+				]
+			},
+			{
+				"title": "Imprescindibles (selecció curta)",
+				"paragraphs": [
+					"Set punts concrets. Per a horaris i entrades, convé contrastar amb Manresa Turisme o la web de cada espai."
+				],
+				"items": [
+					"La Seu: la basílica gòtica marca el perfil del centre històric.",
+					"Carrer del Balç: carrer medieval cobert, molt representatiu del Barri Antic.",
+					"Plaça Major i casc antic: cor comercial i urbà de la ciutat.",
+					"Museu del Barroc de Catalunya: col·lecció barroca a l'entorn ignasià.",
+					"Pont Vell: pont històric sobre el Cardener, pas cap a la Cova.",
+					"Cova de Sant Ignasi: lloc clau del Camí Ignasià i de la memòria de Sant Ignasi a Manresa.",
+					"Passeig Pere III: passeig cèntric per dinar, comprar o tancar el dia."
 				]
 			},
 			{
 				"title": "Si tens dos dies",
 				"paragraphs": [
-					"El segon dia encaixa bé una excursió: Montserrat queda a mitja hora en cotxe, i el Pla de Bages obre rutes de paisatge i cellers.",
-					"Manresa funciona com a base: dorms al centre, surts de dia i tornes sense dependre d'horaris d'hotel."
+					"El segon dia no ha de ser només una excursió fora. Pots continuar a Manresa o sortir a la comarca."
+				],
+				"items": [
+					"Opció A, continuar a Manresa: Museu del Barroc, Parc de l'Agulla, modernisme al centre, o el Museu de l'Aigua i el Tèxtil / entorn de la Séquia.",
+					"Opció B, excursió: Montserrat (uns 30 minuts en cotxe, segons el trànsit), enoturisme al Pla de Bages, o Món Sant Benet.",
+					"Si tries Montserrat o cellers, deixa el cotxe al pàrquing de l'edifici i evita aparcar al centre en tornar."
 				]
 			},
 			{
 				"title": "Dades pràctiques",
+				"paragraphs": [
+					"Manresa s'entén millor a peu al centre. Per a Barcelona, la referència habitual és FGC des de Manresa-Baixador (línia R5 cap a Plaça Espanya)."
+				],
 				"items": [
-					"Centre caminable",
-					"FGC a pocs minuts per a Barcelona",
-					"Pàrquing privat a QEhome",
-					"Cuina completa si vols menjar a l'apartament"
+					"FGC Manresa-Baixador: uns 5 a 10 minuts a peu des de QEhome",
+					"Centre històric (Plaça Major): uns 20 a 25 minuts a peu",
+					"Pàrquing privat a l'edifici si vens en cotxe",
+					"Cuina completa si vols esmorzar o sopar a l'apartament",
+					"Oficina de Turisme: Plaça Major (horaris a manresaturisme.cat)"
+				]
+			},
+			{
+				"title": "Més guies des de Manresa",
+				"paragraphs": [
+					"Si aprofundeixes en una sortida concreta, fes servir les pàgines de visitar Montserrat des de Manresa, enoturisme Pla de Bages i allotjament Camí Ignasià. Per arribar en cotxe, la de pàrquing i carregador elèctric."
 				]
 			}
 		],
-		"apartmentTitle": "On dormir mentre visites Manresa",
-		"apartmentText": "QEhome: 2 dormitoris al centre, 9,7 a Booking, pàrquing i carregador elèctric inclosos.",
+		"availabilityNote": "Consulta disponibilitat per a les teves dates",
+		"apartmentTitle": "Et quedes una o dues nits?",
+		"apartmentText": "QEhome és al centre de Manresa, amb 2 dormitoris, pàrquing privat i carregador per a vehicle elèctric. 9,7 a Booking.",
 		"backHome": "Veure l'apartament turístic"
 	},
 	"caminoPage": {
 		"h1": "Allotjament a Manresa per al Camí Ignasià",
-		"heroSubtitle": "Apartament al centre per a pelegrins i viatgers del Camí Ignasià que acaben o fan etapa a Manresa.",
+		"heroSubtitle": "Apartament al centre per a qui acaba o fa etapa a Manresa. Entrada autònoma si arribes tard després de la jornada.",
+		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "Camí Ignasià",
 		"sections": [
 			{
-				"title": "Manresa al Camí Ignasià",
+				"title": "Manresa, final del Camí Ignasià",
 				"paragraphs": [
-					"Manresa és un punt clau del Camí Ignasià, lligat a l'estada de Sant Ignasi i a la Cova de Sant Ignasi.",
-					"Si arribes a peu, en transport o combinant etapes, el centre et deixa a prop del patrimoni ignasià i dels serveis."
+					"El Camí Ignasià arriba a Manresa, ciutat lligada a l'estada de Sant Ignasi i a la Cova de Sant Ignasi. Aquí acaba la ruta per a molts pelegrins, o és una etapa llarga abans de seguir viatge.",
+					"Al centre tens serveis, comerços i el patrimoni ignasià a poca distància a peu. QEhome és al Carrer Doctor Esteve, a prop de l'estació FGC Manresa-Baixador."
 				]
 			},
 			{
-				"title": "Per què un apartament encaixa",
+				"title": "En arribar a Manresa",
 				"paragraphs": [
-					"Entrada autònoma: útil si arribes fora d'horari de recepció. Cuina completa si vols descansar un dia o preparar menjar. Dos dormitoris si viatges en parella o en petit grup."
+					"El Centre d'Acollida de Pelegrins és a Via Sant Ignasi, 40 (baixos de l'antic col·legi de Sant Ignasi). Allà pots segellar la credencial. Horari habitual: de 10:00 a 18:00, de dilluns a diumenge. Tanca el 25 i 26 de desembre i l'1 i 6 de gener.",
+					"El certificat del Camí Ignasià (Ignaciana) es pot recollir a l'Oficina de Turisme de Manresa, a la Plaça Major, amb la credencial segellada segons els requisits de la ruta.",
+					"Si arribes fora de l'horari del Centre d'Acollida, pots segellar l'endemà. A QEhome l'entrada és autònoma: no depèn de recepció per dutxar-te i descansar."
+				],
+				"items": [
+					"Centre d'Acollida: Via Sant Ignasi, 40",
+					"Segell de la credencial al Centre d'Acollida",
+					"Certificat (Ignaciana): Oficina de Turisme, Plaça Major",
+					"Cova de Sant Ignasi: Camí de la Cova",
+					"Entrada autònoma a QEhome si arribes tard"
+				]
+			},
+			{
+				"title": "Un lloc per descansar després de l'etapa",
+				"paragraphs": [
+					"Després de caminar, el pràctic és arribar, entrar sense esperes i tenir espai per recuperar-te. L'entrada autònoma és el benefici principal d'aquesta pàgina: útil si la jornada s'allarga o el tren arriba tard.",
+					"Cuina completa per sopar o esmorzar sense sortir. Bany complet. Dos dormitoris si viatges en parella o en petit grup. WiFi. Si arribes en cotxe, pàrquing privat a l'edifici."
 				],
 				"items": [
 					"Entrada autònoma",
 					"Cuina completa",
+					"Bany complet per dutxar-te en arribar",
 					"2 dormitoris",
-					"Pàrquing a l'edifici si arribes en cotxe",
 					"WiFi",
+					"Pàrquing privat a l'edifici si vens en cotxe",
 					"9,7/10 a Booking"
 				]
 			},
 			{
-				"title": "Després de Manresa",
+				"title": "Ubicació i distàncies a peu",
 				"paragraphs": [
-					"Des d'aquí també pots enllaçar Montserrat, Barcelona en FGC o seguir rutes pel Bages sense canviar de base."
+					"Des de QEhome (Carrer Doctor Esteve) fins als punts ignasians del centre són trajectes caminables. Els temps són orientatius a ritme de caminada (uns 4 a 5 km/h), sense comptar pauses."
+				],
+				"items": [
+					"Centre d'Acollida de Pelegrins (Via Sant Ignasi, 40): uns 25 minuts a peu",
+					"Cova de Sant Ignasi: uns 30 minuts a peu",
+					"Plaça Major (Oficina de Turisme): uns 25 minuts a peu",
+					"Estació FGC Manresa-Baixador: a pocs minuts a peu"
+				]
+			},
+			{
+				"title": "Si et quedes un dia més",
+				"paragraphs": [
+					"Amb una nit extra pots visitar el centre històric o Montserrat. En aquest web també tens les guies de què veure a Manresa i de visitar Montserrat des de Manresa."
 				]
 			}
 		],
+		"availabilityNote": "Consulta disponibilitat per a les teves dates",
 		"apartmentTitle": "Reservar per al Camí Ignasià",
-		"apartmentText": "QEhome és al centre de Manresa. Mateixa fitxa de fets que a l'inici: pàrquing, entrada autònoma i bona valoració a Booking.",
+		"apartmentText": "Descansa en un apartament cèntric amb entrada autònoma, cuina equipada, WiFi i pàrquing privat si arribes en cotxe. 9,7 a Booking.",
 		"backHome": "Veure l'apartament turístic"
 	},
 	"montserratPage": {
@@ -327,47 +432,126 @@
 	},
 	"enoturismoPage": {
 		"h1": "Enoturisme al Pla de Bages des de Manresa",
-		"heroSubtitle": "Cellers i paisatge a mitja hora. Dorms al centre de Manresa i surts en cotxe a la ruta del vi.",
+		"heroSubtitle": "Ruta del vi DO Pla de Bages amb base a la ciutat. Dorms al centre, surts en cotxe als cellers i tornes sense buscar aparcament.",
+		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "Enoturisme Pla de Bages",
 		"sections": [
 			{
-				"title": "El Pla de Bages des de la ciutat",
+				"title": "Per què allotjar-te a Manresa per visitar el Pla de Bages",
 				"paragraphs": [
-					"El Pla de Bages concentra cellers, paisatge agrícola i experiències d'enoturisme a poca distància de Manresa.",
-					"QEhome no és una casa rural entre vinyes. És un apartament urbà amb pàrquing: surts de dia als cellers i tornes al centre."
+					"El Pla de Bages és una denominació d'origen amb cellers familiars, vinya i paisatge a poca distància de Manresa. La ruta del vi es fa millor en cotxe: visites concertades, tastos i tornada a la ciutat per sopar o descansar.",
+					"QEhome no és una casa rural entre vinyes. És un apartament urbà amb pàrquing privat i carregador elèctric: surts de dia als cellers i tornes al centre."
 				]
 			},
 			{
-				"title": "Com encaixa un cap de setmana",
+				"title": "Cellers a prop de Manresa (amb visita)",
+				"paragraphs": [
+					"Selecció curta de cellers DO Pla de Bages amb visites o tastos amb reserva prèvia. Confirma horaris i places a cada celler o a la Ruta del vi DO Pla de Bages / Bages Turisme abans d'anar-hi."
+				],
 				"items": [
-					"Arribada a Manresa i check-in autònom",
-					"Un dia de cellers i paisatge al Pla de Bages",
-					"Un altre dia per al centre de Manresa o Montserrat",
-					"Cuina completa si vols esmorzar o sopar a l'apartament"
+					"Heretat Oller del Mas (Manresa): visites al celler, vinya i entorn. Uns 10 minuts en cotxe des de QEhome.",
+					"Collbaix Celler el Molí (Manresa): visita guiada i tast de dilluns a dissabte amb reserva. Uns 15 minuts en cotxe.",
+					"Mas de Sant Iscle (Sant Fruitós de Bages): celler visitable de la DO. Uns 10 minuts en cotxe.",
+					"Abadal (Santa Maria d'Horta d'Avinyó): visites i tastos en un dels cellers de referència del Bages. Uns 25 minuts en cotxe.",
+					"Grau i Grau (Castellfollit del Boix): visites segons l'agenda del celler. Uns 25 a 30 minuts en cotxe."
 				]
 			},
 			{
-				"title": "Què aporta QEhome a aquesta ruta",
+				"title": "Ruta d'enoturisme de 2 dies",
 				"paragraphs": [
-					"Pàrquing privat a l'edifici. Carregador elèctric si vens en cotxe elèctric. Valoració 9,7 a Booking. Ubicació cèntrica per combinar vi, ciutat i tren."
+					"Un cap de setmana típic des de Manresa, sense pretendre visitar tots els cellers."
+				],
+				"items": [
+					"Divendres: arribada a Manresa, entrada autònoma a QEhome i sopar al centre.",
+					"Dissabte: matí en un celler proper (Oller del Mas o Collbaix). Dinar a la finca o de tornada a Manresa. Tarda de paisatge, tines o una segona visita curta.",
+					"Diumenge: centre històric de Manresa, o un celler una mica més llunyà (Abadal o Mas de Sant Iscle) abans de marxar.",
+					"Alternativa: un dia de cellers i un altre de Montserrat, a mitja hora en cotxe."
+				]
+			},
+			{
+				"title": "Distàncies en cotxe des de QEhome",
+				"paragraphs": [
+					"Temps orientatius des del Carrer Doctor Esteve, en condicions normals de trànsit. Convé reservar les visites amb antelació."
+				],
+				"items": [
+					"Oller del Mas: uns 10 minuts",
+					"Mas de Sant Iscle: uns 10 minuts",
+					"Collbaix Celler el Molí: uns 15 minuts",
+					"Abadal: uns 25 minuts",
+					"Grau i Grau (Castellfollit del Boix): uns 25 a 30 minuts",
+					"Montserrat (si combines vi i muntanya): uns 30 minuts"
+				]
+			},
+			{
+				"title": "Per què QEhome encaixa en aquesta ruta",
+				"paragraphs": [
+					"Després de recórrer els cellers del Pla de Bages, tornes al centre de Manresa. QEhome té pàrquing privat a l'edifici, carregador per a vehicle elèctric i cuina completa per a un cap de setmana còmode.",
+					"Dos dormitoris, WiFi, entrada autònoma i 9,7 a Booking. Si beus als tastos, el pàrquing al mateix edifici evita donar voltes pel centre."
+				],
+				"items": [
+					"Pàrquing privat a l'edifici",
+					"Carregador elèctric a la plaça",
+					"Cuina completa",
+					"2 dormitoris",
+					"Entrada autònoma",
+					"9,7/10 a Booking"
+				]
+			},
+			{
+				"title": "Més idees a prop",
+				"paragraphs": [
+					"Per combinar vi i ciutat, mira també què veure a Manresa, visitar Montserrat des de Manresa i la pàgina de pàrquing i carregador elèctric."
 				]
 			}
 		],
+		"availabilityNote": "Consulta disponibilitat per a les teves dates",
 		"apartmentTitle": "Allotjament per a enoturisme al Bages",
-		"apartmentText": "Base a Manresa amb pàrquing, 2 dormitoris i cuina completa. Reserva a Booking o Airbnb.",
+		"apartmentText": "Base a Manresa amb pàrquing, carregador elèctric, 2 dormitoris i cuina completa. Reserva a Booking o Airbnb.",
 		"backHome": "Veure l'apartament turístic"
 	},
 	"parkingPage": {
 		"h1": "Apartament amb pàrquing privat a Manresa",
 		"heroSubtitle": "Plaça d'aparcament a l'edifici i carregador elèctric gratuït inclosos.",
+		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "Pàrquing i carregador elèctric",
+		"benefitLead": "Arribes, aparques al mateix edifici i et oblides del cotxe.",
 		"parkingTitle": "Pàrquing privat a l'edifici",
-		"parkingText": "Una plaça d'aparcament privada al mateix edifici. Al centre de Manresa aparcar al carrer és difícil i sol ser de pagament.",
+		"parkingText": "Plaça interior privada a l'edifici de l'apartament, inclosa a l'estada. Hi cap un SUV. Accés amb comandament i ascensor directe al pis. Al centre de Manresa aparques i baixes a casa sense dependre del carrer.",
+		"parkingImageAlt": "Plaça de pàrquing privada de l'apartament QEhome a Manresa",
 		"evTitle": "Carregador per a vehicle elèctric",
-		"evText": "Recàrrega gratuïta mentre t'allotges. No cal buscar un punt públic ni pagar recàrrega a part.",
-		"apartmentTitle": "L'apartament",
+		"evText": "El carregador és a la mateixa plaça. Recàrrega gratuïta mentre t'allotges. No busques un punt públic ni pagues la recàrrega a part.",
+		"evImageAlt": "Carregador elèctric al pàrquing de QEhome Manresa",
+		"factsTitle": "Dades pràctiques",
+		"facts": [
+			{
+				"q": "La plaça és al mateix edifici?",
+				"a": "Sí. Plaça interior privada a l'edifici de l'apartament."
+			},
+			{
+				"q": "Hi cap un SUV?",
+				"a": "Sí. La plaça admet un SUV."
+			},
+			{
+				"q": "Com s'hi accedeix?",
+				"a": "Amb comandament. Hi ha ascensor directe entre la plaça i el pis."
+			},
+			{
+				"q": "Està inclosa a l'estada?",
+				"a": "Sí. Pàrquing i carregador van inclosos. No hi ha suplement a part."
+			},
+			{
+				"q": "Puc carregar el cotxe elèctric?",
+				"a": "Sí. El carregador és a la mateixa plaça. La recàrrega és gratuïta durant l'estada."
+			},
+			{
+				"q": "He d'aparcar al carrer?",
+				"a": "No. Uses la plaça de l'edifici i et oblides del cotxe mentre ets a Manresa."
+			}
+		],
+		"availabilityNote": "Consulta disponibilitat per a les teves dates",
+		"apartmentTitle": "L'apartament turístic",
 		"apartmentText": "Dos dormitoris al centre de Manresa. 9,7 a Booking. Entrada autònoma, cuina completa i estació FGC a pocs minuts.",
 		"backHome": "Veure l'apartament turístic"
 	},
