@@ -19,7 +19,7 @@
 		},
 		"parking": {
 			"title": "Apartamento turístico con parking en Manresa | Cargador eléctrico | QEhome",
-			"metaDescription": "Apartamento turístico con parking privado en el edificio, en el centro de Manresa. Cargador eléctrico gratuito incluido. 9,7 en Booking. Consulta disponibilidad."
+			"metaDescription": "Apartamento turístico con parking privado en el edificio, en el centro de Manresa. Cargador eléctrico disponible en la plaza. 9,7 en Booking. Consulta disponibilidad."
 		},
 		"umanresa": {
 			"title": "Alojamiento cerca de UManresa | Visitas y estancias cortas | QEhome",
@@ -66,7 +66,7 @@
 		]
 	},
 	"aboutustexts": {
-		"intro": "9,7 en Booking. Apartamento de dos dormitorios en el centro de Manresa, con parking privado en el edificio y cargador eléctrico gratuito. WiFi, cocina completa y entrada autónoma. La estación FGC está a pocos minutos.",
+		"intro": "9,7 en Booking. Apartamento de dos dormitorios en el centro de Manresa, con parking privado en el edificio y cargador eléctrico disponible en la plaza. WiFi, cocina completa y entrada autónoma. La estación FGC está a pocos minutos.",
 		"differentiators": [
 			{
 				"title": "Parking privado",
@@ -74,7 +74,7 @@
 			},
 			{
 				"title": "Cargador para vehículo eléctrico",
-				"description": "Recarga gratuita durante la estancia. No necesitas buscar un punto público."
+				"description": "Disponible en la misma plaza. Cada usuario paga el coste de su recarga."
 			},
 			{
 				"title": "Centro de Manresa y FGC cerca",
@@ -84,7 +84,7 @@
 		"highlights": [
 			"9,7/10 en Booking",
 			"Parking privado en el edificio",
-			"Cargador eléctrico gratuito",
+			"Cargador eléctrico en la plaza",
 			"2 dormitorios y baño completo",
 			"WiFi y mesa de trabajo",
 			"Cocina completa",
@@ -95,7 +95,7 @@
 	},
 	"maintexts": {
 		"headline": "Apartamento turístico en el centro de Manresa",
-		"subtitle": "Parking privado y cargador eléctrico incluidos. Dos dormitorios.",
+		"subtitle": "Parking privado y cargador eléctrico en la plaza. Dos dormitorios.",
 		"location": "WiFi, cocina completa y entrada autónoma. FGC a pocos minutos.",
 		"rating": {
 			"booking": {
@@ -427,7 +427,7 @@
 			}
 		],
 		"apartmentTitle": "Dónde alojarse para visitar Montserrat desde Manresa",
-		"apartmentText": "Apartamento turístico en el centro de Manresa. 9,7 en Booking. Parking y cargador eléctrico incluidos.",
+		"apartmentText": "Apartamento turístico en el centro de Manresa. 9,7 en Booking. Parking privado y cargador eléctrico disponible.",
 		"backHome": "Ver el apartamento turístico"
 	},
 	"enoturismoPage": {
@@ -512,7 +512,7 @@
 	},
 	"parkingPage": {
 		"h1": "Apartamento con parking privado en Manresa",
-		"heroSubtitle": "Plaza de aparcamiento en el edificio y cargador eléctrico gratuito incluidos.",
+		"heroSubtitle": "Plaza de aparcamiento incluida en el edificio y cargador eléctrico disponible.",
 		"ctaLabel": "Consultar disponibilidad",
 		"breadcrumbHome": "Inicio",
 		"breadcrumbCurrent": "Parking y cargador eléctrico",
@@ -521,7 +521,7 @@
 		"parkingText": "Plaza interior privada en el edificio del apartamento, incluida en la estancia. Cabe un SUV. Acceso con mando y ascensor directo al piso. En el centro de Manresa aparcas y bajas a casa sin depender de la calle.",
 		"parkingImageAlt": "Plaza de parking privada del apartamento QEhome en Manresa",
 		"evTitle": "Cargador para vehículo eléctrico",
-		"evText": "El cargador está en la misma plaza. Recarga gratuita mientras te alojas. No buscas un punto público ni pagas la recarga aparte.",
+		"evText": "El cargador está en la misma plaza. Puedes utilizarlo sin buscar un punto público. El coste de la recarga lo paga quien utiliza el cargador.",
 		"evImageAlt": "Cargador eléctrico en el parking de QEhome Manresa",
 		"factsTitle": "Datos prácticos",
 		"facts": [
@@ -539,11 +539,11 @@
 			},
 			{
 				"q": "¿Está incluida en la estancia?",
-				"a": "Sí. Parking y cargador van incluidos. No hay suplemento aparte."
+				"a": "La plaza de parking está incluida. El cargador está disponible, pero el consumo de la recarga se paga aparte."
 			},
 			{
 				"q": "¿Puedo cargar el coche eléctrico?",
-				"a": "Sí. El cargador está en la misma plaza. La recarga es gratuita durante la estancia."
+				"a": "Sí. El cargador está en la misma plaza y el coste de la recarga corre a cargo de quien lo utiliza."
 			},
 			{
 				"q": "¿Tengo que aparcar en la calle?",

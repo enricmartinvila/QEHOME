@@ -20,7 +20,7 @@ Todo texto visible o SEO debe ser **concreto, útil y natural**. Google penaliza
 
 ## Obligatorio
 
-- **Hechos verificables**: parking en el edificio, cargador gratuito, distancia a FGC, 2 habitaciones, nota Booking
+- **Hechos verificables**: parking en el edificio, cargador disponible con consumo de pago, distancia a FGC, 2 habitaciones, nota Booking
 - **Frases cortas**. Preferir punto y coma o dos frases antes que un guion largo
 - **Tres idiomas nativos**: escribir cada JSON (cat, es, eng) en ese idioma, no traducir palabra por palabra
 - **Una idea por frase** en badges y bullets
@@ -36,12 +36,11 @@ Todo texto visible o SEO debe ser **concreto, útil y natural**. Google penaliza
 ✅ FGC a pocos minutos. Barcelona en tren. Montserrat y el Pla de Bages, a media hora.
 
 ❌ Alojamiento sostenible sin complicaciones.
-✅ Recarga gratuita durante la estancia. No necesitas buscar un punto público.
+✅ Cargador en la misma plaza. Cada usuario paga el coste de su recarga.
 ```
 
 ## Archivos de copy
 
-- `src/languaguesFiles/cat.json`, `es.json`, `eng.json`
-- `index.html` (title, meta description, Schema.org)
+- `src/i18n/ca.json`, `es.json`, `en.json`
 
 Antes de cerrar cualquier cambio de textos, buscar `—`, `–` y `·` en estos archivos.

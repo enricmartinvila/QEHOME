@@ -19,7 +19,7 @@
 		},
 		"parking": {
 			"title": "Holiday apartment with parking in Manresa | EV charger | QEhome",
-			"metaDescription": "Holiday apartment with private parking in the building, in central Manresa. Free electric car charger included. 9.7 on Booking. Check availability."
+			"metaDescription": "Holiday apartment with private parking in the building, in central Manresa. Electric car charger available at the space. 9.7 on Booking. Check availability."
 		},
 		"umanresa": {
 			"title": "Accommodation near UManresa | Short stays and visits | QEhome",
@@ -66,7 +66,7 @@
 		]
 	},
 	"aboutustexts": {
-		"intro": "9.7 on Booking. Two-bedroom apartment in central Manresa with private parking in the building and a free electric car charger. WiFi, full kitchen and self check-in. The FGC station is a few minutes away.",
+		"intro": "9.7 on Booking. Two-bedroom apartment in central Manresa with private parking in the building and an electric car charger at the space. WiFi, full kitchen and self check-in. The FGC station is a few minutes away.",
 		"differentiators": [
 			{
 				"title": "Private parking",
@@ -74,7 +74,7 @@
 			},
 			{
 				"title": "Electric car charger",
-				"description": "Free charging during your stay. No need to find a public charger."
+				"description": "Available at the parking space. Guests pay for the electricity they use."
 			},
 			{
 				"title": "Central Manresa and FGC nearby",
@@ -84,7 +84,7 @@
 		"highlights": [
 			"9.7/10 on Booking",
 			"Private parking in the building",
-			"Free electric car charger",
+			"Electric car charger at the space",
 			"2 bedrooms and full bathroom",
 			"WiFi and desk",
 			"Full kitchen",
@@ -95,7 +95,7 @@
 	},
 	"maintexts": {
 		"headline": "Holiday apartment in central Manresa",
-		"subtitle": "Private parking and electric car charger included. Two bedrooms.",
+		"subtitle": "Private parking with an electric car charger. Two bedrooms.",
 		"location": "WiFi, full kitchen and self check-in. FGC a few minutes away.",
 		"rating": {
 			"booking": {
@@ -427,7 +427,7 @@
 			}
 		],
 		"apartmentTitle": "Where to stay to visit Montserrat from Manresa",
-		"apartmentText": "Holiday apartment in central Manresa. 9.7 on Booking. Parking and electric car charger included.",
+		"apartmentText": "Holiday apartment in central Manresa. 9.7 on Booking. Private parking with an electric car charger available.",
 		"backHome": "See the holiday apartment"
 	},
 	"enoturismoPage": {
@@ -512,7 +512,7 @@
 	},
 	"parkingPage": {
 		"h1": "Apartment with private parking in Manresa",
-		"heroSubtitle": "Parking space in the building and free electric car charger included.",
+		"heroSubtitle": "Parking space included in the building, with an electric car charger available.",
 		"ctaLabel": "Check availability",
 		"breadcrumbHome": "Home",
 		"breadcrumbCurrent": "Parking and electric charger",
@@ -521,7 +521,7 @@
 		"parkingText": "Indoor private space in the apartment building, included in your stay. Fits an SUV. Access with a remote and a direct lift to the flat. In central Manresa you park and go upstairs without relying on the street.",
 		"parkingImageAlt": "Private parking space at QEhome apartment in Manresa",
 		"evTitle": "Electric car charger",
-		"evText": "The charger is on the same parking space. Free charging while you stay. No need to find a public charger or pay for charging separately.",
+		"evText": "The charger is at the same parking space, so there is no need to find a public charger. Guests pay for the electricity they use.",
 		"evImageAlt": "Electric car charger at QEhome Manresa parking",
 		"factsTitle": "Practical details",
 		"facts": [
@@ -539,11 +539,11 @@
 			},
 			{
 				"q": "Is it included in the stay?",
-				"a": "Yes. Parking and charger are included. No separate surcharge."
+				"a": "The parking space is included. The charger is available, but electricity usage is paid separately."
 			},
 			{
 				"q": "Can I charge an electric car?",
-				"a": "Yes. The charger is on the same parking space. Charging is free during your stay."
+				"a": "Yes. The charger is at the same parking space, and the guest pays for the electricity used."
 			},
 			{
 				"q": "Do I need street parking?",
