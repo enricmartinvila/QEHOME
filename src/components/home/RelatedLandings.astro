@@ -20,18 +20,23 @@ const links = allLandings.filter((l) => l.slug !== excludeSlug)
 ---
 
 <nav class="mx-auto mt-16 max-w-3xl px-4" aria-label={t.relatedLandings.title}>
-	<h2 class="text-center text-lg font-semibold text-stone-900">
+	<h2 class="text-center text-xl font-bold text-stone-900 md:text-2xl">
 		{t.relatedLandings.title}
 	</h2>
-	<ul class="mt-6 flex flex-wrap justify-center gap-x-4 gap-y-3 text-sm">
+	<ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
 		{
 			links.map((landing) => (
 				<li>
 					<a
 						href={localizedPath(lang, landing.slug)}
-						class="text-stone-600 underline decoration-stone-300 underline-offset-4 transition hover:text-brand hover:decoration-brand"
+						class="group landing-related-card"
 					>
-						{labels[landing.key as keyof typeof labels]}
+						<span class="flex items-center justify-between gap-3">
+							<span>{labels[landing.key as keyof typeof labels]}</span>
+							<span class="text-brand transition group-hover:translate-x-0.5" aria-hidden="true">
+								→
+							</span>
+						</span>
 					</a>
 				</li>
 			))
