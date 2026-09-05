@@ -23,6 +23,7 @@ export const LANDING_SLUGS = [
 	"alojamiento-camino-ignaciano-manresa",
 	"visitar-montserrat-desde-manresa",
 	"enoturismo-pla-de-bages",
+	"apartamento-familias-manresa",
 ] as const
 
 export function localizedPath(lang: Lang, pathAfterLang = "") {

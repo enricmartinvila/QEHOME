@@ -189,4 +189,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://qehomemanresa.com/ca/apartamento-familias-manresa/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://qehomemanresa.com/ca/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qehomemanresa.com/es/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://qehomemanresa.com/en/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qehomemanresa.com/es/apartamento-familias-manresa/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qehomemanresa.com/es/apartamento-familias-manresa/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://qehomemanresa.com/ca/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qehomemanresa.com/es/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://qehomemanresa.com/en/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qehomemanresa.com/es/apartamento-familias-manresa/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qehomemanresa.com/en/apartamento-familias-manresa/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://qehomemanresa.com/ca/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qehomemanresa.com/es/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://qehomemanresa.com/en/apartamento-familias-manresa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qehomemanresa.com/es/apartamento-familias-manresa/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

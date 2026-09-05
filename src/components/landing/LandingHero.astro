@@ -11,6 +11,8 @@ interface Props {
 	breadcrumbCurrent: string
 	ctaLabel?: string
 	ctaHref?: string
+	secondaryCtaLabel?: string
+	secondaryCtaHref?: string
 }
 
 const {
@@ -22,6 +24,8 @@ const {
 	breadcrumbCurrent,
 	ctaLabel,
 	ctaHref = "#contacto",
+	secondaryCtaLabel,
+	secondaryCtaHref = localizedPath(lang),
 } = Astro.props
 const t = getTranslations(lang)
 const label = ctaLabel || t.titles.book_now
@@ -55,11 +59,25 @@ const label = ctaLabel || t.titles.book_now
 			{heroSubtitle}
 		</p>
 
-		<a
-			href={ctaHref}
-			class="landing-reveal landing-reveal-delay-3 mt-9 inline-flex items-center justify-center rounded-full bg-brand-cta px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-brand-ctaHover focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60"
+		<div
+			class="landing-reveal landing-reveal-delay-3 mt-9 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
 		>
-			{label}
-		</a>
+			<a
+				href={ctaHref}
+				class="inline-flex items-center justify-center rounded-full bg-brand-cta px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-brand-ctaHover focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60"
+			>
+				{label}
+			</a>
+			{
+				secondaryCtaLabel && (
+					<a
+						href={secondaryCtaHref}
+						class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-7 py-3 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+					>
+						{secondaryCtaLabel}
+					</a>
+				)
+			}
+		</div>
 	</div>
 </section>

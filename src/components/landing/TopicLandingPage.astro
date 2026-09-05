@@ -10,6 +10,26 @@ import {
 	type TopicLandingKey,
 } from "../../constants/landings"
 
+interface LandingLink {
+	label: string
+	slug: string
+}
+
+interface LandingSubsection {
+	title: string
+	paragraphs?: string[]
+	items?: string[]
+	link?: LandingLink
+}
+
+interface LandingSection {
+	title: string
+	paragraphs?: string[]
+	items?: string[]
+	subsections?: LandingSubsection[]
+	link?: LandingLink
+}
+
 interface Props {
 	lang: Lang
 	landingKey: TopicLandingKey
@@ -24,19 +44,17 @@ const page = t[landing.pageKey as keyof typeof t] as {
 	h1: string
 	heroSubtitle: string
 	ctaLabel?: string
+	secondaryCtaLabel?: string
 	breadcrumbHome: string
 	breadcrumbCurrent: string
-	sections: Array<{
-		title: string
-		paragraphs?: string[]
-		items?: string[]
-	}>
+	sections: LandingSection[]
+	faqs?: Array<{ q: string; a: string }>
+	faqsTitle?: string
 	availabilityNote?: string
 	apartmentTitle: string
 	apartmentText: string
 	backHome: string
 }
-
 ---
 
 <LandingHero
@@ -47,6 +65,7 @@ const page = t[landing.pageKey as keyof typeof t] as {
 	breadcrumbHome={page.breadcrumbHome}
 	breadcrumbCurrent={page.breadcrumbCurrent}
 	ctaLabel={page.ctaLabel}
+	secondaryCtaLabel={page.secondaryCtaLabel}
 />
 
 <section class="bg-stone-50 py-14 md:py-20">
@@ -85,11 +104,74 @@ const page = t[landing.pageKey as keyof typeof t] as {
 									))}
 								</ul>
 							)}
+							{section.subsections && (
+								<div class:list={["space-y-7", (section.paragraphs?.length || section.items?.length) && "mt-8"]}>
+									{section.subsections.map((sub) => (
+										<div>
+											<h3 class="text-base font-bold text-stone-900 md:text-lg">
+												{sub.title}
+											</h3>
+											{sub.paragraphs?.map((p) => (
+												<p class="landing-prose mt-2">{p}</p>
+											))}
+											{sub.items && (
+												<ul class="mt-3 space-y-2">
+													{sub.items.map((item) => (
+														<li class="flex gap-3 text-[15px] leading-relaxed text-stone-700">
+															<span
+																class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand"
+																aria-hidden="true"
+															/>
+															<span>{item}</span>
+														</li>
+													))}
+												</ul>
+											)}
+											{sub.link && (
+												<a
+													href={localizedPath(lang, sub.link.slug)}
+													class="mt-3 inline-block text-sm font-medium text-brand hover:underline"
+												>
+													{sub.link.label}
+												</a>
+											)}
+										</div>
+									))}
+								</div>
+							)}
+							{section.link && (
+								<a
+									href={localizedPath(lang, section.link.slug)}
+									class="mt-6 inline-block text-sm font-medium text-brand hover:underline"
+								>
+									{section.link.label}
+								</a>
+							)}
 						</div>
 					</article>
 				))
 			}
 		</div>
+
+		{
+			page.faqs && page.faqs.length > 0 && (
+				<section class="mt-10 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+					<div class="border-b border-stone-200 px-7 py-6 md:px-10 md:py-8">
+						<h2 class="text-xl font-bold text-stone-900 md:text-2xl">
+							{page.faqsTitle || "FAQ"}
+						</h2>
+					</div>
+					<dl>
+						{page.faqs.map((faq) => (
+							<div class="border-b border-stone-200 px-7 py-6 last:border-b-0 md:grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-10 md:px-10">
+								<dt class="font-semibold text-stone-900">{faq.q}</dt>
+								<dd class="landing-prose mt-2 md:mt-0">{faq.a}</dd>
+							</div>
+						))}
+					</dl>
+				</section>
+			)
+		}
 
 		<aside class="mt-10 rounded-2xl bg-brand p-8 text-white shadow-sm md:p-10">
 			<div class="grid items-center gap-7 md:grid-cols-[1fr_auto] md:gap-10">

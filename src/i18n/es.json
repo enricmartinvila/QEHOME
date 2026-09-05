@@ -40,6 +40,10 @@
 		"enoturismo": {
 			"title": "Enoturismo Pla de Bages desde Manresa | Ruta del vino | QEhome",
 			"metaDescription": "Fin de semana de enoturismo en el Pla de Bages alojándote en Manresa. Bodegas cerca (Oller del Mas, Collbaix, Abadal). Parking, cargador eléctrico y 9,7 en Booking."
+		},
+		"familias": {
+			"title": "Apartamento para familias en Manresa | QEhome",
+			"metaDescription": "Apartamento para familias en Manresa con 2 dormitorios, cocina equipada, parking privado y cargador eléctrico. Descubre QEhome y consulta disponibilidad."
 		}
 	},
 	"relatedLandings": {
@@ -50,7 +54,8 @@
 			"queVer": "Qué ver en Manresa",
 			"camino": "Camino Ignaciano",
 			"montserrat": "Montserrat desde Manresa",
-			"enoturismo": "Enoturismo Pla de Bages"
+			"enoturismo": "Enoturismo Pla de Bages",
+			"familias": "Apartamento para familias"
 		}
 	},
 	"differentiatorsLink": "Más sobre parking y cargador eléctrico",
@@ -63,7 +68,8 @@
 			"Entrada autónoma",
 			"Cocina completa",
 			"Parking en el edificio"
-		]
+		],
+		"familiesLink": "Más sobre el apartamento para familias"
 	},
 	"aboutustexts": {
 		"intro": "9,7 en Booking. Apartamento de dos dormitorios en el centro de Manresa, con parking privado en el edificio y cargador eléctrico disponible en la plaza. WiFi, cocina completa y entrada autónoma. La estación FGC está a pocos minutos.",
@@ -562,5 +568,196 @@
 	},
 	"scrollcta": {
 		"exp": "Explorar"
+	},
+	"familiasPage": {
+		"h1": "Apartamento para familias en Manresa",
+		"heroSubtitle": "Dos dormitorios, cocina equipada y parking privado. Más espacio para una estancia en familia en Manresa.",
+		"ctaLabel": "Consultar disponibilidad",
+		"secondaryCtaLabel": "Ver el apartamento",
+		"breadcrumbHome": "Inicio",
+		"breadcrumbCurrent": "Apartamento para familias",
+		"sections": [
+			{
+				"title": "Más espacio para viajar en familia",
+				"paragraphs": [
+					"Viajar en familia es más cómodo cuando no dependes de una única habitación.",
+					"QEhome es un apartamento turístico en Manresa con dos dormitorios, cocina equipada, zona de estar y parking privado en el mismo edificio. Encaja para unos días en la ciudad, visitar familiares o usar Manresa como base para el Bages y Montserrat."
+				],
+				"items": [
+					"2 dormitorios",
+					"Cocina equipada",
+					"Parking privado",
+					"Cargador para vehículo eléctrico",
+					"WiFi",
+					"Entrada autónoma"
+				]
+			},
+			{
+				"title": "Por qué un apartamento en lugar de un hotel",
+				"paragraphs": [
+					"Tener espacios distintos ayuda a organizar el día cuando viajáis varias personas.",
+					"En QEhome podéis preparar el desayuno o la cena, descansar en el salón y usar dormitorios independientes, con ubicación urbana en Manresa."
+				],
+				"subsections": [
+					{
+						"title": "Dos dormitorios",
+						"paragraphs": [
+							"Más privacidad que una única habitación de hotel para familias o grupos pequeños."
+						]
+					},
+					{
+						"title": "Cocina propia",
+						"paragraphs": [
+							"Útil para desayunos, cenas o alguna comida durante la estancia."
+						]
+					},
+					{
+						"title": "Zona de estar",
+						"paragraphs": [
+							"Espacio común para descansar después de recorrer Manresa o pasar el día fuera."
+						]
+					},
+					{
+						"title": "Entrada autónoma",
+						"paragraphs": [
+							"Llegáis con más flexibilidad, sin depender de horarios de recepción."
+						]
+					}
+				]
+			},
+			{
+				"title": "Venir a Manresa en coche",
+				"paragraphs": [
+					"Si viajáis en familia, el coche suele facilitar los desplazamientos.",
+					"QEhome tiene parking privado en el edificio: dejáis el coche aparcado y os movéis a pie por Manresa cuando os convenga.",
+					"Si venís con coche eléctrico, hay cargador en la misma plaza. El consumo de la recarga lo paga quien lo utiliza."
+				],
+				"link": {
+					"label": "Descubrir el parking y el cargador eléctrico",
+					"slug": "apartamento-parking-manresa"
+				}
+			},
+			{
+				"title": "Qué hacer en Manresa en familia",
+				"paragraphs": [
+					"QEhome sirve de base para conocer la ciudad y hacer salidas por los alrededores."
+				],
+				"subsections": [
+					{
+						"title": "Descubrir Manresa",
+						"paragraphs": [
+							"Centro histórico, La Seu, Cova de Sant Ignasi, Pont Vell y otros puntos para una jornada por la ciudad."
+						],
+						"link": {
+							"label": "Qué ver en Manresa",
+							"slug": "que-ver-manresa"
+						}
+					},
+					{
+						"title": "Pasar el día en Montserrat",
+						"paragraphs": [
+							"Montserrat es una de las excursiones más claras desde la zona y se combina bien con una estancia en Manresa."
+						],
+						"link": {
+							"label": "Visitar Montserrat desde Manresa",
+							"slug": "visitar-montserrat-desde-manresa"
+						}
+					},
+					{
+						"title": "Descubrir el Pla de Bages",
+						"paragraphs": [
+							"Paisaje, pueblos, gastronomía y bodegas para completar una estancia de varios días en la comarca."
+						],
+						"link": {
+							"label": "Enoturismo del Pla de Bages",
+							"slug": "enoturismo-pla-de-bages"
+						}
+					}
+				]
+			},
+			{
+				"title": "Para qué tipo de estancia encaja QEhome",
+				"paragraphs": [
+					"Es especialmente práctico en estos casos:"
+				],
+				"subsections": [
+					{
+						"title": "Escapadas familiares",
+						"paragraphs": [
+							"Un fin de semana o varios días con más independencia que en un hotel."
+						]
+					},
+					{
+						"title": "Visitas a familiares o amigos",
+						"paragraphs": [
+							"Si venís a Manresa por motivos personales y queréis vuestro propio espacio."
+						]
+					},
+					{
+						"title": "Familias vinculadas a UManresa",
+						"paragraphs": [
+							"Para familiares que visitan estudiantes, asisten a actos o pasan unos días en la ciudad."
+						],
+						"link": {
+							"label": "Alojamiento cerca de UManresa",
+							"slug": "alojamiento-umanresa"
+						}
+					},
+					{
+						"title": "Manresa y alrededores",
+						"paragraphs": [
+							"Para visitar Manresa y usarla como base para el Bages o Montserrat."
+						]
+					}
+				]
+			},
+			{
+				"title": "Lo que encontraréis en QEhome",
+				"paragraphs": [
+					"Todo lo necesario para una estancia cómoda en familia.",
+					"9,7/10 en Booking, según las valoraciones de huéspedes que ya se han alojado."
+				],
+				"items": [
+					"Dos dormitorios",
+					"Cocina equipada",
+					"Zona de estar",
+					"WiFi",
+					"Parking privado",
+					"Cargador para vehículo eléctrico",
+					"Entrada autónoma"
+				]
+			}
+		],
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Cuántos dormitorios tiene QEhome?",
+				"a": "Dos dormitorios."
+			},
+			{
+				"q": "¿El apartamento tiene cocina?",
+				"a": "Sí. Cocina equipada para preparar comidas durante la estancia."
+			},
+			{
+				"q": "¿Hay parking?",
+				"a": "Sí. Parking privado en el mismo edificio."
+			},
+			{
+				"q": "¿Hay cargador para coche eléctrico?",
+				"a": "Sí. Hay cargador en la misma plaza. El consumo de la recarga lo paga quien lo utiliza."
+			},
+			{
+				"q": "¿Hay que recoger las llaves presencialmente?",
+				"a": "No. QEhome tiene entrada autónoma."
+			},
+			{
+				"q": "¿Está bien situado para visitar Manresa?",
+				"a": "Sí. Está en Manresa y permite combinar la ciudad con salidas al Bages y Montserrat."
+			}
+		],
+		"availabilityNote": "Consulta disponibilidad para tus fechas",
+		"apartmentTitle": "¿Estáis preparando una estancia en Manresa?",
+		"apartmentText": "Dos dormitorios, cocina equipada, parking privado y 9,7 en Booking. Consultad fechas y reservad en Booking o Airbnb.",
+		"backHome": "Ver el apartamento"
 	}
 }

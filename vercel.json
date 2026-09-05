@@ -64,6 +64,16 @@
 			"source": "/enoturismo-pla-de-bages/",
 			"destination": "/es/enoturismo-pla-de-bages/",
 			"permanent": true
+		},
+		{
+			"source": "/apartamento-familias-manresa",
+			"destination": "/es/apartamento-familias-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/apartamento-familias-manresa/",
+			"destination": "/es/apartamento-familias-manresa/",
+			"permanent": true
 		}
 	]
 }

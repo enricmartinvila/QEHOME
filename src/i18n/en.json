@@ -40,6 +40,10 @@
 		"enoturismo": {
 			"title": "Wine tourism in Pla de Bages from Manresa | Wine route | QEhome",
 			"metaDescription": "A wine weekend in Pla de Bages while staying in Manresa. Nearby wineries (Oller del Mas, Collbaix, Abadal). Parking, EV charger and 9.7 on Booking."
+		},
+		"familias": {
+			"title": "Family apartment in Manresa | QEhome",
+			"metaDescription": "Family apartment in Manresa with 2 bedrooms, equipped kitchen, private parking and an electric car charger. Discover QEhome and check availability."
 		}
 	},
 	"relatedLandings": {
@@ -50,7 +54,8 @@
 			"queVer": "What to see in Manresa",
 			"camino": "Ignatian Way",
 			"montserrat": "Montserrat from Manresa",
-			"enoturismo": "Pla de Bages wine tourism"
+			"enoturismo": "Pla de Bages wine tourism",
+			"familias": "Family apartment"
 		}
 	},
 	"differentiatorsLink": "More about parking and electric charger",
@@ -63,7 +68,8 @@
 			"Self check-in",
 			"Full kitchen",
 			"Parking in the building"
-		]
+		],
+		"familiesLink": "More about the family apartment"
 	},
 	"aboutustexts": {
 		"intro": "9.7 on Booking. Two-bedroom apartment in central Manresa with private parking in the building and an electric car charger at the space. WiFi, full kitchen and self check-in. The FGC station is a few minutes away.",
@@ -562,5 +568,196 @@
 	},
 	"scrollcta": {
 		"exp": "Explore"
+	},
+	"familiasPage": {
+		"h1": "Family apartment in Manresa",
+		"heroSubtitle": "Two bedrooms, an equipped kitchen and private parking. More space for a family stay in Manresa.",
+		"ctaLabel": "Check availability",
+		"secondaryCtaLabel": "See the apartment",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Family apartment",
+		"sections": [
+			{
+				"title": "More space for a family trip",
+				"paragraphs": [
+					"Family travel is easier when you are not limited to a single hotel room.",
+					"QEhome is a holiday apartment in Manresa with two bedrooms, an equipped kitchen, a living area and private parking in the same building. It works for a few days in the city, visiting relatives, or using Manresa as a base for the Bages and Montserrat."
+				],
+				"items": [
+					"2 bedrooms",
+					"Equipped kitchen",
+					"Private parking",
+					"Electric car charger",
+					"WiFi",
+					"Self check-in"
+				]
+			},
+			{
+				"title": "Why an apartment instead of a hotel",
+				"paragraphs": [
+					"Separate spaces make it easier to organise the day when several people are travelling together.",
+					"At QEhome you can make breakfast or dinner, rest in the living room and use independent bedrooms, with an urban location in Manresa."
+				],
+				"subsections": [
+					{
+						"title": "Two bedrooms",
+						"paragraphs": [
+							"More privacy than a single hotel room for families or small groups."
+						]
+					},
+					{
+						"title": "Your own kitchen",
+						"paragraphs": [
+							"Practical for breakfasts, dinners or a meal during the stay."
+						]
+					},
+					{
+						"title": "Living area",
+						"paragraphs": [
+							"A shared space to rest after exploring Manresa or a day out."
+						]
+					},
+					{
+						"title": "Self check-in",
+						"paragraphs": [
+							"Arrive with more flexibility, without depending on reception hours."
+						]
+					}
+				]
+			},
+			{
+				"title": "Coming to Manresa by car",
+				"paragraphs": [
+					"If you are travelling as a family, a car often makes the trip simpler.",
+					"QEhome has private parking in the building: leave the car there and walk around Manresa when it suits you.",
+					"If you arrive with an electric car, there is a charger at the same space. Guests pay for the electricity they use."
+				],
+				"link": {
+					"label": "See parking and the electric charger",
+					"slug": "apartamento-parking-manresa"
+				}
+			},
+			{
+				"title": "What to do in Manresa with family",
+				"paragraphs": [
+					"QEhome works as a base to explore the city and day trips nearby."
+				],
+				"subsections": [
+					{
+						"title": "Explore Manresa",
+						"paragraphs": [
+							"The historic centre, La Seu, the Cave of Saint Ignatius, Pont Vell and other stops for a day in the city."
+						],
+						"link": {
+							"label": "What to see in Manresa",
+							"slug": "que-ver-manresa"
+						}
+					},
+					{
+						"title": "A day in Montserrat",
+						"paragraphs": [
+							"Montserrat is one of the clearest day trips from the area and combines well with a stay in Manresa."
+						],
+						"link": {
+							"label": "Visit Montserrat from Manresa",
+							"slug": "visitar-montserrat-desde-manresa"
+						}
+					},
+					{
+						"title": "Discover Pla de Bages",
+						"paragraphs": [
+							"Landscape, villages, food and wineries to round out a multi-day stay in the area."
+						],
+						"link": {
+							"label": "Pla de Bages wine tourism",
+							"slug": "enoturismo-pla-de-bages"
+						}
+					}
+				]
+			},
+			{
+				"title": "Who QEhome works especially well for",
+				"paragraphs": [
+					"It is particularly practical in these cases:"
+				],
+				"subsections": [
+					{
+						"title": "Family getaways",
+						"paragraphs": [
+							"A weekend or several days with more independence than a hotel."
+						]
+					},
+					{
+						"title": "Visiting family or friends",
+						"paragraphs": [
+							"If you are coming to Manresa for personal reasons and want your own space."
+						]
+					},
+					{
+						"title": "Families connected to UManresa",
+						"paragraphs": [
+							"For relatives visiting students, attending events or spending a few days in the city."
+						],
+						"link": {
+							"label": "Accommodation near UManresa",
+							"slug": "alojamiento-umanresa"
+						}
+					},
+					{
+						"title": "Manresa and the surrounding area",
+						"paragraphs": [
+							"To visit Manresa and use it as a base for the Bages or Montserrat."
+						]
+					}
+				]
+			},
+			{
+				"title": "What you will find at QEhome",
+				"paragraphs": [
+					"What you need for a comfortable family stay.",
+					"9.7/10 on Booking, based on reviews from guests who have already stayed."
+				],
+				"items": [
+					"Two bedrooms",
+					"Equipped kitchen",
+					"Living area",
+					"WiFi",
+					"Private parking",
+					"Electric car charger",
+					"Self check-in"
+				]
+			}
+		],
+		"faqsTitle": "Frequently asked questions",
+		"faqs": [
+			{
+				"q": "How many bedrooms does QEhome have?",
+				"a": "Two bedrooms."
+			},
+			{
+				"q": "Does the apartment have a kitchen?",
+				"a": "Yes. An equipped kitchen for meals during your stay."
+			},
+			{
+				"q": "Is there parking?",
+				"a": "Yes. Private parking in the same building."
+			},
+			{
+				"q": "Is there an electric car charger?",
+				"a": "Yes. There is a charger at the same parking space. Guests pay for the electricity they use."
+			},
+			{
+				"q": "Do I need to collect keys in person?",
+				"a": "No. QEhome has self check-in."
+			},
+			{
+				"q": "Is it well placed for visiting Manresa?",
+				"a": "Yes. It is in Manresa and works well with day trips to the Bages and Montserrat."
+			}
+		],
+		"availabilityNote": "Check availability for your dates",
+		"apartmentTitle": "Planning a stay in Manresa?",
+		"apartmentText": "Two bedrooms, equipped kitchen, private parking and 9.7 on Booking. Check dates and book on Booking or Airbnb.",
+		"backHome": "See the apartment"
 	}
 }

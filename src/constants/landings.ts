@@ -45,6 +45,13 @@ export const TOPIC_LANDINGS_CONFIG = [
 		pageKey: "enoturismoPage",
 		seoKey: "enoturismo",
 	},
+	{
+		key: "familias",
+		slug: "apartamento-familias-manresa",
+		heroImage: "/images/hab2.webp",
+		pageKey: "familiasPage",
+		seoKey: "familias",
+	},
 ] as const
 
 export type TopicLandingKey = (typeof TOPIC_LANDINGS_CONFIG)[number]["key"]

@@ -1,5 +1,7 @@
 ---
 import { getTranslations, type Lang } from "../../constants/i18n"
+import { localizedPath } from "../../constants/site"
+import { getTopicLanding } from "../../constants/landings"
 
 interface Props {
 	lang: Lang
@@ -8,6 +10,8 @@ interface Props {
 const { lang } = Astro.props
 const t = getTranslations(lang)
 const ideal = t.idealFor
+const familias = getTopicLanding("familias")!
+const familiesHref = localizedPath(lang, familias.slug)
 ---
 
 <section class="bg-white py-12 md:py-16">
@@ -28,5 +32,17 @@ const ideal = t.idealFor
 				))
 			}
 		</ul>
+		{
+			ideal.familiesLink && (
+				<div class="mt-8">
+					<a
+						href={familiesHref}
+						class="text-base font-medium text-brand hover:underline"
+					>
+						{ideal.familiesLink}
+					</a>
+				</div>
+			)
+		}
 	</div>
 </section>
