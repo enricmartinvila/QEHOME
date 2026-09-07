@@ -9,19 +9,29 @@ import {
 interface Props {
 	lang: Lang
 	excludeSlug?: string
+	includeKeys?: string[]
+	title?: string
 }
 
-const { lang, excludeSlug } = Astro.props
+const { lang, excludeSlug, includeKeys, title } = Astro.props
 const t = getTranslations(lang)
 const labels = t.relatedLandings.labels
 
 const allLandings = [PARKING_LANDING, ...TOPIC_LANDINGS_CONFIG]
-const links = allLandings.filter((l) => l.slug !== excludeSlug)
+
+const links = includeKeys?.length
+	? includeKeys
+			.map((key) => allLandings.find((l) => l.key === key))
+			.filter((l): l is (typeof allLandings)[number] => Boolean(l))
+			.filter((l) => l.slug !== excludeSlug)
+	: allLandings.filter((l) => l.slug !== excludeSlug)
+
+const heading = title || t.relatedLandings.title
 ---
 
-<nav class="mx-auto mt-16 max-w-3xl px-4" aria-label={t.relatedLandings.title}>
+<nav class="mx-auto mt-16 max-w-3xl px-4" aria-label={heading}>
 	<h2 class="text-center text-xl font-bold text-stone-900 md:text-2xl">
-		{t.relatedLandings.title}
+		{heading}
 	</h2>
 	<ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
 		{

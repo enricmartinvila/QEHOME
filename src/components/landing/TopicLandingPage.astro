@@ -54,6 +54,8 @@ const page = t[landing.pageKey as keyof typeof t] as {
 	apartmentTitle: string
 	apartmentText: string
 	backHome: string
+	relatedTitle?: string
+	relatedKeys?: string[]
 }
 ---
 
@@ -192,7 +194,12 @@ const page = t[landing.pageKey as keyof typeof t] as {
 	</div>
 
 	<BookingCtas heading={page.availabilityNote} />
-	<RelatedLandings lang={lang} excludeSlug={landing.slug} />
+	<RelatedLandings
+		lang={lang}
+		excludeSlug={landing.slug}
+		includeKeys={page.relatedKeys}
+		title={page.relatedTitle}
+	/>
 </section>
 
 <Contact lang={lang} />

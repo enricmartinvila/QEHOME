@@ -26,8 +26,8 @@
 			"metaDescription": "Apartment for families, lecturers and short stays near UManresa. WiFi, desk, self check-in, parking and 9.7 on Booking. Not a student residence."
 		},
 		"queVer": {
-			"title": "What to see in Manresa | 1 or 2 day guide | QEhome",
-			"metaDescription": "What to see in Manresa in half a day, one day or two: Seu, Carrer del Balç, Plaça Major, Pont Vell, Cave of Saint Ignatius and day trips to Montserrat or Pla de Bages."
+			"title": "What to see in Manresa: a 1 or 2 day guide | QEhome",
+			"metaDescription": "Discover what to see in Manresa in one or two days: La Seu, the Cave of Saint Ignatius, the historic centre, the Museu del Barroc and day trips from the city."
 		},
 		"camino": {
 			"title": "Ignatian Way accommodation in Manresa | Self check-in | QEhome",
@@ -245,94 +245,199 @@
 		"backHome": "See the holiday apartment"
 	},
 	"queVerPage": {
-		"h1": "What to see in Manresa",
-		"heroSubtitle": "Local guide for half a day, 1 or 2 days: historic centre, essentials and day trips to Montserrat and Pla de Bages.",
+		"h1": "What to see in Manresa: a guide to the city in 1 or 2 days",
+		"heroSubtitle": "Manresa has enough heritage, history and surroundings to deserve more than a few hours. This guide covers the places most worth seeing and a simple route for one or two days.",
 		"ctaLabel": "Check availability",
 		"breadcrumbHome": "Home",
 		"breadcrumbCurrent": "What to see in Manresa",
 		"sections": [
 			{
-				"title": "The simple route if you stay 1 or 2 nights",
+				"title": "What to see in Manresa: the essentials",
 				"paragraphs": [
-					"This guide does not try to list all of Manresa's heritage. It is the route we would recommend to someone staying one or two nights: the essentials on foot in the centre, with clear options if you have more time.",
-					"The old town is walkable. If you stay at QEhome, Manresa-Baixador FGC station is about 5 to 10 minutes on foot and the historic centre about 20 to 25 minutes."
+					"If you are looking for what to see in Manresa, these are the points a first visit usually starts with."
+				],
+				"subsections": [
+					{
+						"title": "La Seu de Manresa",
+						"paragraphs": [
+							"The Basilica of Santa Maria de Manresa, known as La Seu, is the city's main monumental landmark and one of the standout examples of Catalan Gothic.",
+							"The present building began in 1328 to designs by Berenguer de Montagut, also linked to Santa Maria del Mar in Barcelona. Alongside the architecture, it holds important works of art inside.",
+							"Tip: it is a good place to start. From the Seu area you walk straight into the historic core."
+						]
+					},
+					{
+						"title": "The Cave of Saint Ignatius",
+						"paragraphs": [
+							"The Cave of Saint Ignatius is one of Manresa's best-known places internationally.",
+							"Ignatius of Loyola spent a long period in the city in 1522. Tradition places part of his spiritual experience and the origins of the Spiritual Exercises in this cave. Over time the natural shelter became the present sanctuary, with views over the Cardener and towards Montserrat.",
+							"It is worth visiting for its religious significance, the architectural complex and its position above the valley."
+						]
+					},
+					{
+						"title": "The historic centre and Plaça Major",
+						"paragraphs": [
+							"Old Manresa still keeps the structure of the medieval city.",
+							"From La Seu you can walk to Plaça Major, streets such as Sant Miquel and Sobrerroca, Plana de l'Om and other historic routes. Manresa Tourism identifies this core as one of the city's main heritage areas.",
+							"It is a place to wander without heavy planning: much of the interest comes from linking streets, squares and buildings."
+						]
+					},
+					{
+						"title": "Carrer del Balç",
+						"paragraphs": [
+							"Carrer del Balç is one of the best places to imagine medieval Manresa.",
+							"It is a narrow, winding street, partly covered by structures built between the houses in the Middle Ages. The interpretation centre explains the fourteenth-century city with audiovisual materials.",
+							"Important: Manresa Tourism currently lists the centre as temporarily closed for accessibility works. Check its status before you go."
+						]
+					},
+					{
+						"title": "Museu del Barroc de Catalunya",
+						"paragraphs": [
+							"The Museu del Barroc de Catalunya is housed in the former College of Saint Ignatius and brings together around 200 works of painting, sculpture, altarpieces and decorative arts from the seventeenth and eighteenth centuries.",
+							"It is not only a local museum: it is presented as a reference centre for Catalan Baroque. If you have more than a few hours in Manresa, it deserves a place among the main visits."
+						]
+					},
+					{
+						"title": "Pont Vell and the River Cardener",
+						"paragraphs": [
+							"Pont Vell crosses the Cardener at the foot of the historic centre and forms part of Manresa's monumental image.",
+							"The route from La Seu to Pont Vell and the Cave of Saint Ignatius is one of the most visually rewarding in the city. This area also helps explain why the Cardener landscape is so closely tied to Ignatius's stay in Manresa."
+						]
+					},
+					{
+						"title": "Passeig Pere III and the modern centre",
+						"paragraphs": [
+							"After the medieval and Ignatian heritage, it is worth walking Manresa's more urban axis.",
+							"Passeig Pere III is the city's main boulevard. It links shopping areas and buildings from modern Manresa's growth. It is a good place to eat, have a drink or finish a walk through the centre."
+						]
+					}
 				]
 			},
 			{
-				"title": "If you only have a few hours (half a day)",
+				"title": "Manresa in half a day",
 				"paragraphs": [
-					"Prioritise the Seu, old town and river axis. It fits in a morning or an afternoon without rushing too hard."
+					"If you only have a few hours, prioritise this route: La Seu, Plaça Major and the historic centre, Pont Vell and the Cave of Saint Ignatius.",
+					"It is a clear way to get a first impression without trying to see everything. It combines the three main strands: medieval, Ignatian and the Cardener landscape."
 				],
 				"items": [
-					"The Seu (Basilica of Santa Maria)",
-					"Carrer del Balç and Barri Antic streets",
-					"Plaça Major",
+					"La Seu",
+					"Plaça Major and historic centre",
 					"Pont Vell",
-					"Cave of Saint Ignatius and a walk by the Cardener"
+					"Cave of Saint Ignatius"
 				]
 			},
 			{
-				"title": "Manresa in one day",
+				"title": "What to see in Manresa in one day",
 				"paragraphs": [
-					"A full day in the centre. Combine heritage, shopping streets and the Cardener setting."
+					"With a full day you can widen the route without packing the schedule too tightly."
+				],
+				"subsections": [
+					{
+						"title": "Morning",
+						"paragraphs": [
+							"Start at La Seu, the city's main monument. Continue towards Plaça Major, Sobrerroca and Plana de l'Om.",
+							"If Carrer del Balç is open on your dates, it is one of the best places to understand medieval Manresa. It is currently listed as temporarily closed for works; check the status before you go.",
+							"Keep part of the morning or midday for the Museu del Barroc. Usual published hours: Tuesday to Saturday 10:00 to 18:00, and Sundays and public holidays 10:00 to 15:00. Always confirm official hours before visiting."
+						]
+					},
+					{
+						"title": "Lunch",
+						"paragraphs": [
+							"For lunch, the centre and Passeig Pere III concentrate much of the offer. We will publish a concrete shortlist later; for now, choose according to timing and preference."
+						]
+					},
+					{
+						"title": "Afternoon",
+						"paragraphs": [
+							"Head down to the Cardener via Pont Vell. Leave time for the Cave of Saint Ignatius and its surroundings. Finish the day on Passeig Pere III or in the city centre."
+						]
+					}
+				]
+			},
+			{
+				"title": "If you have two days in Manresa",
+				"paragraphs": [
+					"The second day does not have to be an automatic trip out of town. You can keep exploring the city or head into the surrounding area."
+				],
+				"subsections": [
+					{
+						"title": "Option A: keep discovering Manresa",
+						"paragraphs": [
+							"Parc de l'Agulla: one of the city's main open spaces. Its lake covers about 64,000 m² and forms part of the water system linked to the historic Séquia de Manresa. There are green areas, services and leisure spaces. It works especially well for families or if you want a break from urban heritage.",
+							"Parc de la Séquia: the medieval canal is one of the most important elements in Manresa's history. Today it also forms part of nature and heritage routes.",
+							"Modernista heritage: Manresa also keeps Modernista and industrial architecture. Often-cited examples include Casa Torrents, Torre Lluvià and La Florinda. They show a Manresa beyond the purely medieval or Ignatian story."
+						]
+					},
+					{
+						"title": "Option B: a day trip from Manresa",
+						"paragraphs": [
+							"Montserrat is the clearest day trip to combine with a stay in Manresa.",
+							"Pla de Bages offers wine, landscape and wineries nearby.",
+							"Món Sant Benet can also work for heritage and food in the Bages area. Manresa Tourism includes it among the main attractions of the surrounding area."
+						],
+						"items": [
+							"Visit Montserrat from Manresa",
+							"Wine tourism in Pla de Bages",
+							"Món Sant Benet, in the Bages area"
+						],
+						"link": {
+							"label": "Wine tourism in Pla de Bages",
+							"slug": "enoturismo-pla-de-bages"
+						}
+					}
+				],
+				"link": {
+					"label": "Guide: visit Montserrat from Manresa",
+					"slug": "visitar-montserrat-desde-manresa"
+				}
+			},
+			{
+				"title": "What to see in Manresa with children",
+				"paragraphs": [
+					"If you visit Manresa as a family, not everything has to be historic heritage. Parc de l'Agulla offers open space and a play area. Some cultural venues run family activities on specific dates; check the official agenda."
+				],
+				"link": {
+					"label": "Family apartment in Manresa",
+					"slug": "apartamento-familias-manresa"
+				}
+			},
+			{
+				"title": "Manresa and Ignatius of Loyola",
+				"paragraphs": [
+					"The link between Manresa and Ignatius of Loyola sets the city apart from many inland Catalan destinations. Ignatius stayed here for about eleven months from 1522, and the city still has many places tied to that stay. Manresa Tourism currently identifies 22 Ignatian sites.",
+					"For a first visit, the most useful stops are usually the Cave of Saint Ignatius, La Seu, Espai Manresa 1522, Pou de la Gallina and spaces of the former Hospital of Santa Llúcia."
 				],
 				"items": [
-					"Morning: the Seu, Carrer del Balç, Plaça Major and the old town.",
-					"Midday: Passeig Pere III, shops and lunch in the centre.",
-					"Afternoon: Pont Vell, the Cave of Saint Ignatius and a walk by the Cardener.",
-					"Optional if you have time: Museu del Barroc de Catalunya (near the Cave)."
-				]
-			},
-			{
-				"title": "Essentials (short selection)",
-				"paragraphs": [
-					"Seven concrete stops. For opening times and tickets, check Manresa Turisme or each venue's website."
+					"Cave of Saint Ignatius",
+					"La Seu",
+					"Espai Manresa 1522",
+					"Pou de la Gallina",
+					"Former Hospital of Santa Llúcia"
 				],
-				"items": [
-					"The Seu: the Gothic basilica shapes the historic centre skyline.",
-					"Carrer del Balç: a covered medieval street, typical of the Barri Antic.",
-					"Plaça Major and old town: the city's commercial and urban heart.",
-					"Museu del Barroc de Catalunya: a Baroque collection in the Ignatian setting.",
-					"Pont Vell: historic bridge over the Cardener, on the way to the Cave.",
-					"Cave of Saint Ignatius: a key site on the Ignatian Way and of Saint Ignatius's memory in Manresa.",
-					"Passeig Pere III: a central promenade for lunch, shopping or ending the day."
-				]
+				"link": {
+					"label": "Accommodation for the Ignatian Way in Manresa",
+					"slug": "alojamiento-camino-ignaciano-manresa"
+				}
 			},
 			{
-				"title": "If you have two days",
+				"title": "Practical tips for visiting Manresa",
 				"paragraphs": [
-					"Day two does not have to be only a trip out of town. You can stay in Manresa or explore the county."
-				],
-				"items": [
-					"Option A, stay in Manresa: Museu del Barroc, Parc de l'Agulla, modernist buildings in the centre, or the Museu de l'Aigua i el Tèxtil / Séquia area.",
-					"Option B, day trip: Montserrat (about 30 minutes by car, depending on traffic), wine tourism in Pla de Bages, or Món Sant Benet.",
-					"If you choose Montserrat or wineries, leave the car in the building parking and avoid street parking when you return."
-				]
-			},
-			{
-				"title": "Practical details",
-				"paragraphs": [
-					"Manresa is best understood on foot in the centre. For Barcelona, the usual reference is FGC from Manresa-Baixador (R5 line toward Plaça Espanya)."
-				],
-				"items": [
-					"Manresa-Baixador FGC: about 5 to 10 minutes on foot from QEhome",
-					"Historic centre (Plaça Major): about 20 to 25 minutes on foot",
-					"Private parking in the building if you come by car",
-					"Full kitchen if you want breakfast or dinner in the apartment",
-					"Tourist Office: Plaça Major (hours on manresaturisme.cat)"
-				]
-			},
-			{
-				"title": "More guides from Manresa",
-				"paragraphs": [
-					"If you go deeper into one outing, use the pages on visiting Montserrat from Manresa, Pla de Bages wine tourism and Ignatian Way accommodation. For arriving by car, see parking and electric charger."
+					"Getting around: the historic centre and most of the main sights are walkable. For Parc de l'Agulla or trips into the Bages, a car is often more practical.",
+					"Arriving by train: Manresa has FGC and Renfe connections. Manresa Tourism cites FGC lines R5 and R50, and Renfe lines R4 and R12. We do not give fixed journey times because timetables and services can change.",
+					"Opening hours: for museums, monuments and visitor sites, always check official pages before you go. This matters especially for places such as Carrer del Balç, which is currently listed as temporarily closed."
 				]
 			}
 		],
 		"availabilityNote": "Check availability for your dates",
-		"apartmentTitle": "Staying one or two nights?",
-		"apartmentText": "QEhome is in central Manresa, with 2 bedrooms, private parking and an electric car charger. 9.7 on Booking.",
-		"backHome": "See the holiday apartment"
+		"apartmentTitle": "Where to stay while visiting Manresa",
+		"apartmentText": "If you are spending one or more nights in Manresa, QEhome has two bedrooms, an equipped kitchen, private parking and an electric car charger. 9.7/10 on Booking.",
+		"backHome": "See the apartment",
+		"relatedTitle": "Keep exploring the Bages",
+		"relatedKeys": [
+			"montserrat",
+			"camino",
+			"enoturismo",
+			"parking"
+		]
 	},
 	"caminoPage": {
 		"h1": "Accommodation in Manresa for the Ignatian Way",

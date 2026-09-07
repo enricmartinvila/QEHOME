@@ -26,8 +26,8 @@
 			"metaDescription": "Apartament per a familiars, docents i formacions a prop d'UManresa. WiFi, taula de treball, entrada autònoma, pàrquing i 9,7 a Booking. No és residència d'estudiants."
 		},
 		"queVer": {
-			"title": "Què veure a Manresa | Guia 1 o 2 dies | QEhome",
-			"metaDescription": "Què veure a Manresa en mig dia, un dia o dos: Seu, Carrer del Balç, Plaça Major, Pont Vell, Cova de Sant Ignasi i excursions a Montserrat o el Pla de Bages."
+			"title": "Què veure a Manresa: guia per a 1 o 2 dies | QEhome",
+			"metaDescription": "Descobreix què veure a Manresa en un o dos dies: La Seu, la Cova de Sant Ignasi, casc històric, Museu del Barroc i excursions des de la ciutat."
 		},
 		"camino": {
 			"title": "Allotjament Camí Ignasià Manresa | Entrada autònoma | QEhome",
@@ -245,94 +245,199 @@
 		"backHome": "Veure l'apartament turístic"
 	},
 	"queVerPage": {
-		"h1": "Què veure a Manresa",
-		"heroSubtitle": "Guia local per a mig dia, 1 o 2 dies: centre històric, imprescindibles i sortides a Montserrat i el Pla de Bages.",
+		"h1": "Què veure a Manresa: guia per descobrir la ciutat en 1 o 2 dies",
+		"heroSubtitle": "Manresa té patrimoni, història i entorn per dedicar-li alguna cosa més que unes hores. Aquesta guia reuneix els llocs que més val la pena conèixer i una ruta senzilla per a un o dos dies.",
 		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "Què veure a Manresa",
 		"sections": [
 			{
-				"title": "La ruta senzilla si t'allotges 1 o 2 nits",
+				"title": "Què veure a Manresa: els imprescindibles",
 				"paragraphs": [
-					"Aquesta guia no pretén llistar tot el patrimoni de Manresa. És la ruta que recomanaríem a algú que es queda una o dues nits: l'essencial a peu pel centre, amb opcions clares si tens més temps.",
-					"El casc antic es recorre caminant. Si dorms a QEhome, l'estació FGC Manresa-Baixador queda a uns 5 a 10 minuts a peu i el centre històric a uns 20 a 25 minuts."
+					"Si busques què veure a Manresa, aquests són els punts amb què sol començar una primera visita."
+				],
+				"subsections": [
+					{
+						"title": "La Seu de Manresa",
+						"paragraphs": [
+							"La Basílica de Santa Maria de Manresa, coneguda com La Seu, és el gran referent monumental de la ciutat i un dels exemples destacats del gòtic català.",
+							"L'edifici actual va començar a construir-se el 1328 seguint el projecte de Berenguer de Montagut, arquitecte també relacionat amb Santa Maria del Mar de Barcelona. A més de l'arquitectura, conserva obres artístiques rellevants a l'interior.",
+							"Consell: convé començar aquí. Des de la zona de La Seu s'entra directament al nucli històric."
+						]
+					},
+					{
+						"title": "La Cova de Sant Ignasi",
+						"paragraphs": [
+							"La Cova de Sant Ignasi és un dels llocs de Manresa amb més projecció internacional.",
+							"Ignasi de Loiola va passar una llarga temporada a la ciutat el 1522. La tradició situa en aquesta cova part de la seva experiència espiritual i la gènesi dels Exercicis Espirituals. Amb el temps, l'abric natural es va convertir en el santuari actual, amb vistes sobre el Cardener i cap a Montserrat.",
+							"Val la visita per l'interès religiós, pel conjunt arquitectònic i per la posició sobre la vall."
+						]
+					},
+					{
+						"title": "El centre històric i la Plaça Major",
+						"paragraphs": [
+							"La part antiga de Manresa conserva l'estructura de la ciutat medieval.",
+							"Des de La Seu es pot recórrer a peu la Plaça Major, carrers com Sant Miquel i Sobrerroca, la Plana de l'Om i altres vies del traçat històric. Turisme de Manresa identifica aquest nucli com un dels principals conjunts patrimonials de la ciutat.",
+							"És una zona per recórrer sense massa planificació: bona part de l'interès està a enllaçar carrers, places i edificis."
+						]
+					},
+					{
+						"title": "Carrer del Balç",
+						"paragraphs": [
+							"El Carrer del Balç és un dels espais que millor permeten imaginar la Manresa medieval.",
+							"És un carrer estret i sinuós, parcialment cobert per construccions aixecades entre les cases durant l'Edat Mitjana. El centre d'interpretació explica la ciutat del segle XIV amb recursos audiovisuals.",
+							"Important: Turisme de Manresa indica que el centre està tancat temporalment per obres de millora d'accessibilitat. Convé comprovar-ne l'estat abans de la visita."
+						]
+					},
+					{
+						"title": "Museu del Barroc de Catalunya",
+						"paragraphs": [
+							"El Museu del Barroc de Catalunya és a l'antic Col·legi de Sant Ignasi i aplega prop de 200 obres entre pintura, escultura, retaules i arts decoratives dels segles XVII i XVIII.",
+							"No és només un museu local: es planteja com a centre de referència per interpretar el barroc català. Si disposes de més d'unes poques hores a Manresa, mereix ser entre les visites principals."
+						]
+					},
+					{
+						"title": "Pont Vell i riu Cardener",
+						"paragraphs": [
+							"El Pont Vell creua el Cardener al peu del centre històric i forma part de la imatge monumental de Manresa.",
+							"El recorregut La Seu, Pont Vell i Cova de Sant Ignasi és un dels més interessants visualment. Aquesta zona ajuda a entendre per què el paisatge del Cardener està tan lligat a l'estada d'Ignasi de Loiola a Manresa."
+						]
+					},
+					{
+						"title": "Passeig Pere III i centre modern",
+						"paragraphs": [
+							"Després del patrimoni medieval i ignasià, convé recórrer l'eix més urbà de Manresa.",
+							"El Passeig Pere III és el principal bulevard de la ciutat. Connecta zones comercials i edificis del creixement de la Manresa moderna. És una bona zona per menjar, prendre alguna cosa o tancar el recorregut pel centre."
+						]
+					}
 				]
 			},
 			{
-				"title": "Si només tens unes hores (mig dia)",
+				"title": "Manresa en mig dia",
 				"paragraphs": [
-					"Prioritza l'eix Seu, casc antic i riu. Cap en un matí o una tarda sense presses exagerades."
+					"Si només tens unes hores, prioriza aquesta ruta: La Seu, Plaça Major i centre històric, Pont Vell i Cova de Sant Ignasi.",
+					"És una manera clara d'endur-te una primera impressió sense intentar veure-ho tot. Combina els tres eixos principals: medieval, ignasià i paisatge del Cardener."
 				],
 				"items": [
-					"La Seu (basílica de Santa Maria)",
-					"Carrer del Balç i carrers del Barri Antic",
-					"Plaça Major",
+					"La Seu",
+					"Plaça Major i centre històric",
 					"Pont Vell",
-					"Cova de Sant Ignasi i passeig al costat del Cardener"
+					"Cova de Sant Ignasi"
 				]
 			},
 			{
-				"title": "Manresa en un dia",
+				"title": "Què veure a Manresa en un dia",
 				"paragraphs": [
-					"Una jornada completa pel centre. Combina patrimoni, carrers comercials i l'entorn del Cardener."
+					"Amb un dia sencer pots ampliar el recorregut sense saturar la jornada."
+				],
+				"subsections": [
+					{
+						"title": "Matí",
+						"paragraphs": [
+							"Comença per La Seu, el principal monument de la ciutat. Continua cap a Plaça Major, Sobrerroca i Plana de l'Om.",
+							"Si el Carrer del Balç és obert en les teves dates, és un dels millors punts per entendre la Manresa medieval. Actualment figura com a tancat temporalment per obres; comprova l'estat abans d'anar-hi.",
+							"Dedica part del matí o el migdia al Museu del Barroc. Horari habitual publicat: de dimarts a dissabte de 10:00 a 18:00, i diumenges i festius de 10:00 a 15:00. Confirma sempre els horaris oficials abans d'anar-hi."
+						]
+					},
+					{
+						"title": "Menjar",
+						"paragraphs": [
+							"Per menjar, el centre i el Passeig Pere III concentren bona part de l'oferta. Més endavant publicarem una selecció concreta de llocs; de moment convé triar segons l'horari i les preferències."
+						]
+					},
+					{
+						"title": "Tarda",
+						"paragraphs": [
+							"Baixa cap al Cardener pel Pont Vell. Reserva una estona per a la Cova de Sant Ignasi i el seu entorn. Tanca la jornada pel Passeig Pere III o el centre comercial de la ciutat."
+						]
+					}
+				]
+			},
+			{
+				"title": "Si tens dos dies a Manresa",
+				"paragraphs": [
+					"El segon dia no ha de ser automàticament una excursió fora. Pots continuar a la ciutat o sortir a la comarca."
+				],
+				"subsections": [
+					{
+						"title": "Opció A: continuar descobrint Manresa",
+						"paragraphs": [
+							"Parc de l'Agulla: un dels principals espais oberts de la ciutat. El seu llac ocupa al voltant de 64.000 m² i forma part del sistema d'abastament lligat a la històrica Séquia de Manresa. Hi ha zona verda, serveis i espais d'oci. Encaixa especialment bé amb famílies o si vols descansar del patrimoni urbà.",
+							"Parc de la Séquia: el canal medieval és un dels elements més importants de la història de Manresa. Avui també forma part d'itineraris de natura i patrimoni.",
+							"Patrimoni modernista: Manresa conserva arquitectura modernista i industrial. Entre els exemples habitualment citats hi ha Casa Torrents, Torre Lluvià i La Florinda. Ajuda a veure una Manresa diferent de l'exclusivament medieval o ignasiana."
+						]
+					},
+					{
+						"title": "Opció B: una excursió des de Manresa",
+						"paragraphs": [
+							"Montserrat és l'excursió més clara per combinar amb una estada a Manresa.",
+							"El Pla de Bages ofereix vi, paisatge i cellers a poca distància.",
+							"Món Sant Benet també pot encaixar per patrimoni i gastronomia a l'entorn del Bages. Turisme de Manresa l'inclou entre els atractius principals de la comarca."
+						],
+						"items": [
+							"Visitar Montserrat des de Manresa",
+							"Enoturisme al Pla de Bages",
+							"Món Sant Benet, a l'entorn del Bages"
+						],
+						"link": {
+							"label": "Enoturisme al Pla de Bages",
+							"slug": "enoturismo-pla-de-bages"
+						}
+					}
+				],
+				"link": {
+					"label": "Guia: visitar Montserrat des de Manresa",
+					"slug": "visitar-montserrat-desde-manresa"
+				}
+			},
+			{
+				"title": "Què veure a Manresa amb nens",
+				"paragraphs": [
+					"Si visites Manresa en família, no tot ha de ser patrimoni històric. El Parc de l'Agulla ofereix espais oberts i zona de jocs. Alguns equipaments culturals organitzen activitats familiars en dates concretes; convé consultar l'agenda oficial."
+				],
+				"link": {
+					"label": "Apartament per a famílies a Manresa",
+					"slug": "apartamento-familias-manresa"
+				}
+			},
+			{
+				"title": "Manresa i Ignasi de Loiola",
+				"paragraphs": [
+					"La relació entre Manresa i Ignasi de Loiola diferencia la ciutat d'altres destins de l'interior de Catalunya. Ignasi hi va romandre uns onze mesos a partir de 1522, i la ciutat conserva nombrosos llocs vinculats a la seva estada. Turisme de Manresa identifica actualment 22 punts ignasians.",
+					"Per a una primera visita, els més útils solen ser la Cova de Sant Ignasi, La Seu, l'Espai Manresa 1522, el Pou de la Gallina i espais de l'antic Hospital de Santa Llúcia."
 				],
 				"items": [
-					"Matí: La Seu, Carrer del Balç, Plaça Major i casc antic.",
-					"Migdia: Passeig Pere III, comerços i dinar al centre.",
-					"Tarda: Pont Vell, Cova de Sant Ignasi i passeig al costat del riu Cardener.",
-					"Opcional si et queda temps: Museu del Barroc de Catalunya (a l'entorn de la Cova)."
-				]
-			},
-			{
-				"title": "Imprescindibles (selecció curta)",
-				"paragraphs": [
-					"Set punts concrets. Per a horaris i entrades, convé contrastar amb Manresa Turisme o la web de cada espai."
+					"Cova de Sant Ignasi",
+					"La Seu",
+					"Espai Manresa 1522",
+					"Pou de la Gallina",
+					"Antic Hospital de Santa Llúcia"
 				],
-				"items": [
-					"La Seu: la basílica gòtica marca el perfil del centre històric.",
-					"Carrer del Balç: carrer medieval cobert, molt representatiu del Barri Antic.",
-					"Plaça Major i casc antic: cor comercial i urbà de la ciutat.",
-					"Museu del Barroc de Catalunya: col·lecció barroca a l'entorn ignasià.",
-					"Pont Vell: pont històric sobre el Cardener, pas cap a la Cova.",
-					"Cova de Sant Ignasi: lloc clau del Camí Ignasià i de la memòria de Sant Ignasi a Manresa.",
-					"Passeig Pere III: passeig cèntric per dinar, comprar o tancar el dia."
-				]
+				"link": {
+					"label": "Allotjament per al Camí Ignasià a Manresa",
+					"slug": "alojamiento-camino-ignaciano-manresa"
+				}
 			},
 			{
-				"title": "Si tens dos dies",
+				"title": "Consells pràctics per visitar Manresa",
 				"paragraphs": [
-					"El segon dia no ha de ser només una excursió fora. Pots continuar a Manresa o sortir a la comarca."
-				],
-				"items": [
-					"Opció A, continuar a Manresa: Museu del Barroc, Parc de l'Agulla, modernisme al centre, o el Museu de l'Aigua i el Tèxtil / entorn de la Séquia.",
-					"Opció B, excursió: Montserrat (uns 30 minuts en cotxe, segons el trànsit), enoturisme al Pla de Bages, o Món Sant Benet.",
-					"Si tries Montserrat o cellers, deixa el cotxe al pàrquing de l'edifici i evita aparcar al centre en tornar."
-				]
-			},
-			{
-				"title": "Dades pràctiques",
-				"paragraphs": [
-					"Manresa s'entén millor a peu al centre. Per a Barcelona, la referència habitual és FGC des de Manresa-Baixador (línia R5 cap a Plaça Espanya)."
-				],
-				"items": [
-					"FGC Manresa-Baixador: uns 5 a 10 minuts a peu des de QEhome",
-					"Centre històric (Plaça Major): uns 20 a 25 minuts a peu",
-					"Pàrquing privat a l'edifici si vens en cotxe",
-					"Cuina completa si vols esmorzar o sopar a l'apartament",
-					"Oficina de Turisme: Plaça Major (horaris a manresaturisme.cat)"
-				]
-			},
-			{
-				"title": "Més guies des de Manresa",
-				"paragraphs": [
-					"Si aprofundeixes en una sortida concreta, fes servir les pàgines de visitar Montserrat des de Manresa, enoturisme Pla de Bages i allotjament Camí Ignasià. Per arribar en cotxe, la de pàrquing i carregador elèctric."
+					"Com moure's: el centre històric i bona part dels punts principals es recorren a peu. Per al Parc de l'Agulla o sortides pel Bages, el cotxe sol ser més pràctic.",
+					"Com arribar en tren: Manresa té connexions d'FGC i Renfe. Turisme de Manresa cita les línies FGC R5 i R50, i les línies Renfe R4 i R12. No fixem temps de viatge perquè horaris i serveis poden canviar.",
+					"Horaris: per a museus, monuments i espais visitables, consulta sempre les pàgines oficials abans d'anar-hi. És especialment rellevant en llocs com el Carrer del Balç, que actualment figura com a tancat temporalment."
 				]
 			}
 		],
 		"availabilityNote": "Consulta disponibilitat per a les teves dates",
-		"apartmentTitle": "Et quedes una o dues nits?",
-		"apartmentText": "QEhome és al centre de Manresa, amb 2 dormitoris, pàrquing privat i carregador per a vehicle elèctric. 9,7 a Booking.",
-		"backHome": "Veure l'apartament turístic"
+		"apartmentTitle": "On dormir per visitar Manresa?",
+		"apartmentText": "Si passes una o diverses nits a Manresa, QEhome ofereix dos dormitoris, cuina equipada, pàrquing privat i carregador per a vehicle elèctric. 9,7/10 a Booking.",
+		"backHome": "Veure l'apartament",
+		"relatedTitle": "Continua descobrint el Bages",
+		"relatedKeys": [
+			"montserrat",
+			"camino",
+			"enoturismo",
+			"parking"
+		]
 	},
 	"caminoPage": {
 		"h1": "Allotjament a Manresa per al Camí Ignasià",
