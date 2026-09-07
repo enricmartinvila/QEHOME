@@ -34,8 +34,8 @@
 			"metaDescription": "Central apartment in Manresa for the Ignatian Way. Self check-in if you arrive late, kitchen, 2 bedrooms, parking and 9.7 on Booking."
 		},
 		"montserrat": {
-			"title": "Visit Montserrat from Manresa | Where to stay | QEhome",
-			"metaDescription": "How to visit Montserrat from Manresa: distance, car and train. Central apartment with parking and 9.7 on Booking as your base."
+			"title": "Visit Montserrat from Manresa: how to get there and what to see | QEhome",
+			"metaDescription": "Guide to visiting Montserrat from Manresa: how to get there by car or train, what to see, where to park and how to plan a day trip."
 		},
 		"enoturismo": {
 			"title": "Wine tourism in Pla de Bages from Manresa | Wine route | QEhome",
@@ -509,37 +509,185 @@
 		"backHome": "See the holiday apartment"
 	},
 	"montserratPage": {
-		"h1": "Visit Montserrat from Manresa",
-		"heroSubtitle": "Montserrat about 30 minutes away. Manresa as your base: centre, parking and train to Barcelona.",
+		"h1": "Visit Montserrat from Manresa: a one-day trip guide",
+		"heroSubtitle": "How to get there, what to see and how to plan a Montserrat visit while staying in Manresa.",
+		"ctaLabel": "Check availability",
 		"breadcrumbHome": "Home",
 		"breadcrumbCurrent": "Montserrat from Manresa",
 		"sections": [
 			{
-				"title": "Manresa as a base, not a «hotel at Montserrat»",
+				"title": "Why visit Montserrat from Manresa?",
 				"paragraphs": [
-					"QEhome is in Manresa, not in Monistrol or on the mountain. The idea is to sleep in central Manresa and visit Montserrat for the day.",
-					"By car, Montserrat is about 30 minutes away. You can also combine the visit with Manresa's old town on the same trip."
+					"Montserrat is one of Catalonia's best-known day trips and combines well with a stay in Manresa.",
+					"From Manresa you can organise a half-day or full-day outing and return to the city afterwards, without changing accommodation.",
+					"Information reviewed in September 2026. Opening hours, transport and services at Montserrat can change: always check the official website before you leave."
 				]
 			},
 			{
-				"title": "How to plan the visit",
+				"title": "How to get to Montserrat from Manresa",
+				"paragraphs": [
+					"You can go by car or by train. The best option depends on whether you want to park in Monistrol, drive up to the monastery or travel only by public transport."
+				],
+				"subsections": [
+					{
+						"title": "By car",
+						"paragraphs": [
+							"From Manresa the road takes you towards Monistrol de Montserrat. From there you can drive up to the monastery area, park in Monistrol and take the rack railway (Cremallera), or go to the Aeri access and take the cable car.",
+							"We do not give a fixed journey time because it varies with traffic, your exact starting point and which Montserrat access you choose."
+						]
+					},
+					{
+						"title": "By train",
+						"paragraphs": [
+							"FGC line R5 links Manresa with the Montserrat access stations for both the Cremallera and the Aeri. The official Montserrat website notes that trains from Manresa connect with both systems.",
+							"This is useful if you are not travelling by car or prefer not to park on the mountain."
+						]
+					}
+				]
+			},
+			{
+				"title": "Cremallera or Aeri: which to choose",
+				"paragraphs": [
+					"Both systems take you from the base up to the monastery. The choice usually depends on where you park or which FGC station you use."
+				],
+				"subsections": [
+					{
+						"title": "Montserrat rack railway (Cremallera)",
+						"paragraphs": [
+							"The Cremallera connects Monistrol de Montserrat with the monastery in about 15 minutes. The usual frequency from Monistrol Vila is about every 20 minutes. Its station has free parking for around 900 cars, according to official information."
+						]
+					},
+					{
+						"title": "Montserrat cable car (Aeri)",
+						"paragraphs": [
+							"The cable car takes about 5 minutes and usually runs roughly every 15 minutes. There is also free parking at the lower station, according to official information."
+						]
+					}
+				]
+			},
+			{
+				"title": "What to see at Montserrat",
+				"paragraphs": [
+					"You do not need to see everything. These are the clearest stops for a first visit."
+				],
+				"subsections": [
+					{
+						"title": "Basilica of Santa Maria de Montserrat",
+						"paragraphs": [
+							"The basilica is the spiritual centre of the sanctuary. It houses the image of Our Lady of Montserrat, known as La Moreneta, a twelfth-century Romanesque carving."
+						]
+					},
+					{
+						"title": "La Moreneta",
+						"paragraphs": [
+							"Visiting the Virgin's chapel is one of the most emblematic moments. The official website publishes separate hours for access to the throne; check them on the day of your visit."
+						]
+					},
+					{
+						"title": "Montserrat Museum",
+						"paragraphs": [
+							"The museum holds collections of old and modern painting, archaeology, iconography and religious art. It is one of the main cultural attractions on the site."
+						]
+					},
+					{
+						"title": "Santa Cova",
+						"paragraphs": [
+							"According to tradition, this is where the image of the Virgin was found. The path also includes the Monumental Rosary, with important Modernista works."
+						]
+					},
+					{
+						"title": "Sant Joan funicular and viewpoints",
+						"paragraphs": [
+							"When it is running, it takes you up to Pla de les Taràntules for panoramic views and mountain walks. Check beforehand whether it is in service."
+						]
+					},
+					{
+						"title": "Hiking",
+						"paragraphs": [
+							"Montserrat offers walks from the monastery and harder routes such as the one towards Sant Jeroni. The official website describes a route of about 7 km and around 2 hours 30 minutes from the Sant Joan area. It only makes sense if you have time, fitness and good weather."
+						]
+					}
+				]
+			},
+			{
+				"title": "Half-day route",
+				"paragraphs": [
+					"If you only have a few hours, focus on the monastery without long hikes."
+				],
 				"items": [
-					"Morning departure to Montserrat",
-					"Monastery, reservoirs and walks depending on time",
-					"Return to Manresa in the afternoon",
-					"Dinner in the centre or in the apartment"
+					"Monastery",
+					"Basilica and La Moreneta",
+					"Viewpoints",
+					"Museum or a short walk"
 				]
 			},
 			{
-				"title": "Why sleeping in Manresa helps",
+				"title": "Full-day route",
 				"paragraphs": [
-					"Parking in the building if you drive. Self check-in. Two bedrooms. FGC nearby if you also want Barcelona another day."
+					"With a full day you can widen the visit without trying to cover every mountain route."
+				],
+				"subsections": [
+					{
+						"title": "Morning",
+						"paragraphs": [
+							"Arrive early. Basilica, La Moreneta and the Montserrat Museum."
+						]
+					},
+					{
+						"title": "Midday",
+						"paragraphs": [
+							"Lunch on site or a picnic if that suits you. Check café and service hours on the official website."
+						]
+					},
+					{
+						"title": "Afternoon",
+						"paragraphs": [
+							"Choose Santa Cova or, if it is running, Sant Joan and a short walk. Then return to Manresa."
+						]
+					}
 				]
+			},
+			{
+				"title": "What to check before you go",
+				"paragraphs": [
+					"Before leaving, check the official Montserrat website for the status of the funiculars, basilica hours, access to the Virgin's throne, the museum and ticket or service availability.",
+					"Current notice (September 2026): the official website states that the Santa Cova and Sant Joan funiculars are closed until further notice for annual maintenance. Confirm the status on the day of your visit."
+				]
+			},
+			{
+				"title": "Montserrat with children",
+				"paragraphs": [
+					"For families, the monastery, viewpoints, the audiovisual space and short walks are usually easier than long mountain routes.",
+					"Montserrat's educational offer includes nature and funicular activities for children and schools when those services are available."
+				],
+				"link": {
+					"label": "Family apartment in Manresa",
+					"slug": "apartamento-familias-manresa"
+				}
+			},
+			{
+				"title": "Montserrat and Ignatius of Loyola",
+				"paragraphs": [
+					"Montserrat and Manresa are linked on the Ignatian Way. The final official stage runs from Montserrat to Manresa, about 25 to 26 km according to the route published by Manresa Tourism.",
+					"If you are walking the route, Manresa is the natural arrival point after Montserrat."
+				],
+				"link": {
+					"label": "Accommodation in Manresa for the Ignatian Way",
+					"slug": "alojamiento-camino-ignaciano-manresa"
+				}
 			}
 		],
-		"apartmentTitle": "Where to stay to visit Montserrat from Manresa",
-		"apartmentText": "Holiday apartment in central Manresa. 9.7 on Booking. Private parking with an electric car charger available.",
-		"backHome": "See the holiday apartment"
+		"availabilityNote": "Check availability for your dates",
+		"apartmentTitle": "Where to stay when visiting Montserrat",
+		"apartmentText": "Manresa works as a base for Montserrat and the Bages. QEhome has two bedrooms, an equipped kitchen, private parking and an electric car charger. 9.7/10 on Booking.",
+		"backHome": "See the apartment",
+		"relatedTitle": "Continue the trip",
+		"relatedKeys": [
+			"queVer",
+			"camino",
+			"enoturismo",
+			"parking"
+		]
 	},
 	"enoturismoPage": {
 		"h1": "Wine tourism in Pla de Bages from Manresa",

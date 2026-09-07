@@ -34,8 +34,8 @@
 			"metaDescription": "Apartament al centre de Manresa per al Camí Ignasià. Entrada autònoma si arribes tard, cuina, 2 dormitoris, pàrquing i 9,7 a Booking."
 		},
 		"montserrat": {
-			"title": "Visitar Montserrat des de Manresa | On allotjar-se | QEhome",
-			"metaDescription": "Com visitar Montserrat des de Manresa: distància, cotxe i tren. Apartament al centre amb pàrquing i 9,7 a Booking com a base de la visita."
+			"title": "Visitar Montserrat des de Manresa: com arribar-hi i què veure | QEhome",
+			"metaDescription": "Guia per visitar Montserrat des de Manresa: com arribar-hi en cotxe o tren, què veure, on aparcar i com organitzar una excursió d'un dia."
 		},
 		"enoturismo": {
 			"title": "Enoturisme Pla de Bages des de Manresa | Ruta del vi | QEhome",
@@ -509,37 +509,185 @@
 		"backHome": "Veure l'apartament turístic"
 	},
 	"montserratPage": {
-		"h1": "Visitar Montserrat des de Manresa",
-		"heroSubtitle": "Montserrat a mitja hora. Manresa com a base: centre, pàrquing i tren cap a Barcelona.",
+		"h1": "Visitar Montserrat des de Manresa: guia per a una excursió d'un dia",
+		"heroSubtitle": "Com arribar-hi, què veure i com organitzar una visita a Montserrat allotjant-te a Manresa.",
+		"ctaLabel": "Consultar disponibilitat",
 		"breadcrumbHome": "Inici",
 		"breadcrumbCurrent": "Montserrat des de Manresa",
 		"sections": [
 			{
-				"title": "Manresa com a base, no com a «hotel a Montserrat»",
+				"title": "Per què visitar Montserrat des de Manresa?",
 				"paragraphs": [
-					"QEhome és a Manresa, no a Monistrol ni a la muntanya. La proposta és dormir al centre de Manresa i visitar Montserrat el mateix dia.",
-					"En cotxe, Montserrat queda a mitja hora aproximadament. També pots combinar la visita amb el casc antic de Manresa el mateix viatge."
+					"Montserrat és una de les excursions més conegudes de Catalunya i es combina bé amb una estada a Manresa.",
+					"Des de Manresa pots organitzar una sortida de mig dia o de jornada completa i tornar després a la ciutat, sense canviar d'allotjament.",
+					"Informació revisada el setembre de 2026. Horaris, transports i serveis de Montserrat poden canviar: convé contrastar sempre amb la web oficial abans de sortir."
 				]
 			},
 			{
-				"title": "Com organitzar la visita",
+				"title": "Com arribar a Montserrat des de Manresa",
+				"paragraphs": [
+					"Pots anar-hi en cotxe o en tren. L'opció depèn de si vols aparcar a Monistrol, pujar fins al monestir o moure't només en transport públic."
+				],
+				"subsections": [
+					{
+						"title": "En cotxe",
+						"paragraphs": [
+							"Des de Manresa s'arriba per carretera cap a Monistrol de Montserrat. Des d'allà pots triar entre pujar en cotxe fins al recinte del monestir, aparcar a Monistrol i pujar amb el Cremallera, o anar a l'accés de l'Aeri i pujar en telefèric.",
+							"No fixem un temps de trajecte concret perquè varia segons el trànsit, el punt exacte de sortida i l'accés triat dins de Montserrat."
+						]
+					},
+					{
+						"title": "En tren",
+						"paragraphs": [
+							"La línia R5 d'FGC connecta Manresa amb les estacions d'accés a Montserrat, tant per al Cremallera com per a l'Aeri. La web oficial de Montserrat indica que hi ha trens des de Manresa que enllacen amb tots dos sistemes.",
+							"És una opció útil si no véns en cotxe o prefereixes no aparcar a la muntanya."
+						]
+					}
+				]
+			},
+			{
+				"title": "Cremallera o Aeri: quin triar",
+				"paragraphs": [
+					"Tots dos sistemes porten al monestir des de la base. L'elecció sol dependre d'on aparquis o de quina estació d'FGC facis servir."
+				],
+				"subsections": [
+					{
+						"title": "Cremallera de Montserrat",
+						"paragraphs": [
+							"El Cremallera connecta Monistrol de Montserrat amb el monestir en uns 15 minuts. La freqüència habitual des de Monistrol Vila és d'uns 20 minuts. La seva estació disposa d'aparcament gratuït d'unes 900 places, segons dades de la web oficial."
+						]
+					},
+					{
+						"title": "Aeri de Montserrat",
+						"paragraphs": [
+							"El telefèric triga uns 5 minuts i sol sortir aproximadament cada 15 minuts. També disposa d'aparcament gratuït a l'estació inferior, segons la informació oficial."
+						]
+					}
+				]
+			},
+			{
+				"title": "Què veure a Montserrat",
+				"paragraphs": [
+					"No cal veure-ho tot. Aquests són els punts més clars per a una primera visita."
+				],
+				"subsections": [
+					{
+						"title": "Basílica de Santa Maria de Montserrat",
+						"paragraphs": [
+							"La basílica és el centre espiritual del santuari. Acull la imatge de la Mare de Déu de Montserrat, coneguda com La Moreneta, una talla romànica del segle XII."
+						]
+					},
+					{
+						"title": "La Moreneta",
+						"paragraphs": [
+							"La visita al cambril de la Mare de Déu és un dels moments més emblemàtics. La web oficial publica horaris diferenciats per a l'accés al tron; convé comprovar-los el mateix dia de la visita."
+						]
+					},
+					{
+						"title": "Museu de Montserrat",
+						"paragraphs": [
+							"El museu aplega col·leccions de pintura antiga i moderna, arqueologia, iconografia i art religiós. És un dels atractius culturals principals del recinte."
+						]
+					},
+					{
+						"title": "Santa Cova",
+						"paragraphs": [
+							"Segons la tradició, és el lloc on es va trobar la imatge de la Mare de Déu. El camí inclou el Rosari Monumental, amb obres modernistes rellevants."
+						]
+					},
+					{
+						"title": "Funicular de Sant Joan i miradors",
+						"paragraphs": [
+							"Quan està operatiu, permet pujar fins al Pla de les Taràntules i accedir a vistes panoràmiques i itineraris de muntanya. Revisa abans si està en servei."
+						]
+					},
+					{
+						"title": "Senderisme",
+						"paragraphs": [
+							"Montserrat ofereix rutes des del monestir i també itineraris més exigents, com el que porta cap a Sant Jeroni. La web oficial descriu un recorregut d'uns 7 km i unes 2 h 30 min des de la zona de Sant Joan. Només encaixa si tens temps, forma física i condicions meteorològiques favorables."
+						]
+					}
+				]
+			},
+			{
+				"title": "Ruta de mig dia",
+				"paragraphs": [
+					"Si només tens unes hores, prioriza el monestir sense posar-hi senderisme llarg."
+				],
 				"items": [
-					"Sortida al matí cap a Montserrat",
-					"Monestir, pantans i camins segons el temps disponible",
-					"Retorn a Manresa a la tarda",
-					"Sopar al centre o a l'apartament"
+					"Monestir",
+					"Basílica i Moreneta",
+					"Miradors",
+					"Museu o un passeig curt"
 				]
 			},
 			{
-				"title": "Avantatge de dormir a Manresa",
+				"title": "Ruta d'un dia sencer",
 				"paragraphs": [
-					"Pàrquing a l'edifici si vas en cotxe. Entrada autònoma. Dos dormitoris. FGC a prop si també vols baixar a Barcelona un altre dia."
+					"Amb un dia sencer pots ampliar la visita sense intentar cobrir totes les rutes de muntanya."
+				],
+				"subsections": [
+					{
+						"title": "Matí",
+						"paragraphs": [
+							"Arribada d'hora. Basílica, Moreneta i Museu de Montserrat."
+						]
+					},
+					{
+						"title": "Migdia",
+						"paragraphs": [
+							"Dinar al recinte o pícnic si escau. Comprova horaris de cafeteria i serveis a la web oficial."
+						]
+					},
+					{
+						"title": "Tarda",
+						"paragraphs": [
+							"Tria Santa Cova o, si està operatiu, Sant Joan i una ruta curta. Després, tornada a Manresa."
+						]
+					}
 				]
+			},
+			{
+				"title": "Què comprovar abans d'anar-hi",
+				"paragraphs": [
+					"Abans de sortir, revisa a la web oficial de Montserrat l'estat dels funiculars, els horaris de la basílica, l'accés al tron de la Mare de Déu, el museu i la disponibilitat d'entrades o serveis.",
+					"Avís actual (setembre de 2026): la web oficial indica que els funiculars de Santa Cova i Sant Joan estan tancats fins a nou avís per revisió anual. Confirma l'estat el dia de la visita."
+				]
+			},
+			{
+				"title": "Montserrat amb nens",
+				"paragraphs": [
+					"Per a famílies, el monestir, els miradors, l'espai audiovisual i els itineraris curts solen ser opcions més senzilles que les rutes llargues de muntanya.",
+					"L'oferta educativa de Montserrat inclou activitats de natura i funicular pensades per a nens i escoles, quan aquests serveis estan disponibles."
+				],
+				"link": {
+					"label": "Apartament per a famílies a Manresa",
+					"slug": "apartamento-familias-manresa"
+				}
+			},
+			{
+				"title": "Montserrat i Ignasi de Loiola",
+				"paragraphs": [
+					"Montserrat i Manresa estan vinculades en el Camí Ignasià. L'última etapa oficial discorre des de Montserrat fins a Manresa, amb uns 25 a 26 km segons el traçat publicat per Turisme de Manresa.",
+					"Si estàs fent la ruta a peu, Manresa és el punt d'arribada natural després de Montserrat."
+				],
+				"link": {
+					"label": "Allotjament a Manresa per al Camí Ignasià",
+					"slug": "alojamiento-camino-ignaciano-manresa"
+				}
 			}
 		],
-		"apartmentTitle": "On allotjar-se per visitar Montserrat des de Manresa",
-		"apartmentText": "Apartament turístic al centre de Manresa. 9,7 a Booking. Pàrquing privat i carregador elèctric disponible.",
-		"backHome": "Veure l'apartament turístic"
+		"availabilityNote": "Consulta disponibilitat per a les teves dates",
+		"apartmentTitle": "On dormir per visitar Montserrat?",
+		"apartmentText": "Manresa funciona com a base per descobrir Montserrat i el Bages. QEhome disposa de dos dormitoris, cuina equipada, pàrquing privat i carregador per a vehicle elèctric. 9,7/10 a Booking.",
+		"backHome": "Veure l'apartament",
+		"relatedTitle": "Continua l'escapada",
+		"relatedKeys": [
+			"queVer",
+			"camino",
+			"enoturismo",
+			"parking"
+		]
 	},
 	"enoturismoPage": {
 		"h1": "Enoturisme al Pla de Bages des de Manresa",
