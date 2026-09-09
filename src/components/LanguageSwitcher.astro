@@ -9,6 +9,12 @@ interface Props {
 
 const { lang, pathAfterLang = "" } = Astro.props
 const ariaLabel = uiChrome[lang].langLabel
+
+const LANG_NAMES: Record<Lang, { label: string; name: string }> = {
+	ca: { label: "CA", name: "Català" },
+	es: { label: "ES", name: "Español" },
+	en: { label: "EN", name: "English" },
+}
 ---
 
 <nav aria-label={ariaLabel} class="flex items-center gap-1 text-xs font-medium tracking-wide">
@@ -17,20 +23,23 @@ const ariaLabel = uiChrome[lang].langLabel
 			<span class="inline-flex items-center gap-1">
 				{i > 0 && (
 					<span aria-hidden="true" class="select-none text-white/35">
-						·
+						|
 					</span>
 				)}
 				<a
 					href={localizedPath(l, pathAfterLang)}
+					lang={l}
+					hreflang={l}
+					aria-label={LANG_NAMES[l].name}
 					class:list={[
-						"transition-colors",
+						"rounded px-1 py-0.5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70",
 						l === lang
 							? "text-white"
 							: "text-white/55 hover:text-white",
 					]}
 					aria-current={l === lang ? "page" : undefined}
 				>
-					{l.toUpperCase()}
+					{LANG_NAMES[l].label}
 				</a>
 			</span>
 		))

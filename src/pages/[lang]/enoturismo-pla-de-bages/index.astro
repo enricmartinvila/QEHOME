@@ -2,8 +2,8 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro"
 import TopicLandingPage from "../../../components/landing/TopicLandingPage.astro"
 import { getTranslations } from "../../../constants/i18n"
-import { lodgingJsonLd } from "../../../constants/schema"
-import { LANGS, localizedPath, type Lang } from "../../../constants/site"
+import { guideLandingJsonLd, GUIDE_REVIEWED_AT } from "../../../constants/pageSchema"
+import { LANGS, type Lang } from "../../../constants/site"
 import { getTopicLanding } from "../../../constants/landings"
 
 export function getStaticPaths() {
@@ -14,6 +14,7 @@ const lang = Astro.params.lang as Lang
 const landing = getTopicLanding("enoturismo")!
 const t = getTranslations(lang)
 const seo = t.seo.enoturismo
+const page = t.enoturismoPage
 ---
 
 <BaseLayout
@@ -21,7 +22,19 @@ const seo = t.seo.enoturismo
 	title={seo.title}
 	description={seo.metaDescription}
 	pathAfterLang={landing.slug}
-	jsonLd={lodgingJsonLd(localizedPath(lang, landing.slug), seo.metaDescription)}
+	ogImage={landing.heroImage}
+	ogType="article"
+	preloadImage={landing.heroImage}
+	jsonLd={guideLandingJsonLd({
+		lang,
+		slug: landing.slug,
+		headline: page.h1,
+		description: seo.metaDescription,
+		image: landing.heroImage,
+		homeLabel: page.breadcrumbHome,
+		currentLabel: page.breadcrumbCurrent,
+		dateModified: GUIDE_REVIEWED_AT.enoturismo,
+	})}
 >
 	<TopicLandingPage lang={lang} landingKey="enoturismo" />
 </BaseLayout>

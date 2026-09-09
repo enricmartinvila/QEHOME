@@ -10,9 +10,21 @@ interface Props {
 	description: string
 	pathAfterLang?: string
 	jsonLd?: Record<string, unknown> | null
+	ogImage?: string
+	ogType?: "website" | "article"
+	preloadImage?: string
 }
 
-const { lang, title, description, pathAfterLang = "", jsonLd = null } = Astro.props
+const {
+	lang,
+	title,
+	description,
+	pathAfterLang = "",
+	jsonLd = null,
+	ogImage,
+	ogType,
+	preloadImage,
+} = Astro.props
 ---
 
 <!doctype html>
@@ -31,6 +43,9 @@ const { lang, title, description, pathAfterLang = "", jsonLd = null } = Astro.pr
 			title={title}
 			description={description}
 			pathAfterLang={pathAfterLang}
+			ogImage={ogImage}
+			ogType={ogType}
+			preloadImage={preloadImage}
 		/>
 		{
 			jsonLd && (

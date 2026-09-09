@@ -19,6 +19,8 @@ const items = GALLERY_ITEMS.map((item) => {
 		id: item.id,
 		src: item.src,
 		category: item.category,
+		width: item.width,
+		height: item.height,
 		caption: photo.caption,
 		alt: photo.alt,
 		categoryLabel: g.categories[item.category as keyof typeof g.categories],
@@ -156,11 +158,25 @@ const galleryConfig = JSON.stringify({
 			const items = visibleItems()
 			grid.innerHTML = items
 				.map(
-					(item: { src: string; alt: string; caption: string; categoryLabel: string }, index: number) => {
+					(
+						item: {
+							src: string
+							alt: string
+							caption: string
+							categoryLabel: string
+							width?: number
+							height?: number
+						},
+						index: number,
+					) => {
 						const featured = index === 0
+						const dims =
+							item.width && item.height
+								? `width="${item.width}" height="${item.height}"`
+								: ""
 						return `<li class="${featured ? "col-span-2 md:col-span-2 md:row-span-2" : ""}">
 						<button type="button" data-open="${index}" class="group relative block w-full overflow-hidden bg-stone-200 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ca9b2c] focus-visible:ring-offset-2" aria-label="${config.openLabel}: ${item.alt}">
-							<img src="${item.src}" alt="${item.alt}" class="w-full object-cover transition duration-500 group-hover:scale-[1.02] ${featured ? "aspect-[4/3] md:aspect-auto md:h-full md:min-h-[28rem]" : "aspect-[4/3]"}" loading="${index < 3 ? "eager" : "lazy"}" decoding="async" />
+							<img src="${item.src}" alt="${item.alt}" ${dims} class="w-full object-cover transition duration-500 group-hover:scale-[1.02] ${featured ? "aspect-[4/3] md:aspect-auto md:h-full md:min-h-[28rem]" : "aspect-[4/3]"}" loading="${index < 3 ? "eager" : "lazy"}" decoding="async" ${index === 0 ? 'fetchpriority="high"' : ""} />
 							<span class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-3 pb-3 pt-10">
 								<span class="block text-xs font-medium uppercase tracking-wide text-white/80">${item.categoryLabel}</span>
 								<span class="mt-0.5 block text-sm font-medium text-white md:text-base">${item.caption}</span>

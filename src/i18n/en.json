@@ -8,42 +8,42 @@
 		"main": "Home",
 		"aboutus": "The apartment",
 		"contact": "Contact",
-		"book_now": "Book now",
+		"book_now": "Check availability",
 		"whats": "640 95 55 72"
 	},
 	"seo": {
 		"home": {
-			"title": "QEhome Manresa | Holiday apartment in the centre",
-			"metaDescription": "Holiday apartment in central Manresa. 9.7 on Booking. Private parking, electric car charger, 2 bedrooms, WiFi, full kitchen and self check-in. FGC nearby.",
+			"title": "Holiday apartment in Manresa | Private parking | QEhome",
+			"metaDescription": "Holiday apartment in central Manresa with 2 bedrooms, kitchen, private parking and an electric car charger. Check availability at QEhome.",
 			"jsonLdDescription": "Two-bedroom holiday apartment in central Manresa. 9.7 on Booking. Private parking, electric car charger, WiFi, full kitchen and self check-in. FGC a few minutes away."
 		},
 		"parking": {
-			"title": "Holiday apartment with parking in Manresa | EV charger | QEhome",
-			"metaDescription": "Holiday apartment with private parking in the building, in central Manresa. Electric car charger available at the space. 9.7 on Booking. Check availability."
+			"title": "Apartment with parking in Manresa and EV charger | QEhome",
+			"metaDescription": "Apartment in Manresa with private parking in the same building and an electric car charger. Discover QEhome and check availability."
 		},
 		"umanresa": {
-			"title": "Accommodation near UManresa | Short stays and visits | QEhome",
-			"metaDescription": "Apartment for families, lecturers and short stays near UManresa. WiFi, desk, self check-in, parking and 9.7 on Booking. Not a student residence."
+			"title": "Accommodation near UManresa | QEhome apartment",
+			"metaDescription": "Accommodation near UManresa for relatives, lecturers, short courses and short stays. Apartment with kitchen, WiFi and parking."
 		},
 		"queVer": {
 			"title": "What to see in Manresa: a 1 or 2 day guide | QEhome",
 			"metaDescription": "Discover what to see in Manresa in one or two days: La Seu, the Cave of Saint Ignatius, the historic centre, the Museu del Barroc and day trips from the city."
 		},
 		"camino": {
-			"title": "Ignatian Way accommodation in Manresa | Self check-in | QEhome",
-			"metaDescription": "Central apartment in Manresa for the Ignatian Way. Self check-in if you arrive late, kitchen, 2 bedrooms, parking and 9.7 on Booking."
+			"title": "Ignatian Way accommodation in Manresa | QEhome",
+			"metaDescription": "Accommodation in Manresa for the Ignatian Way with self check-in, kitchen, 2 bedrooms and parking. Useful information for your arrival in the city."
 		},
 		"montserrat": {
-			"title": "Visit Montserrat from Manresa: how to get there and what to see | QEhome",
-			"metaDescription": "Guide to visiting Montserrat from Manresa: how to get there by car or train, what to see, where to park and how to plan a day trip."
+			"title": "Visit Montserrat from Manresa: guide and how to get there | QEhome",
+			"metaDescription": "Guide to visiting Montserrat from Manresa: how to get there by car or train, what to see, transport and how to plan a day trip."
 		},
 		"enoturismo": {
-			"title": "Wine tourism in Pla de Bages from Manresa | Wine route | QEhome",
-			"metaDescription": "A wine weekend in Pla de Bages while staying in Manresa. Nearby wineries (Oller del Mas, Collbaix, Abadal). Parking, EV charger and 9.7 on Booking."
+			"title": "Wine tourism in Pla de Bages from Manresa | QEhome",
+			"metaDescription": "Discover wineries and wine experiences in Pla de Bages and plan a getaway from Manresa with QEhome as your base."
 		},
 		"familias": {
 			"title": "Family apartment in Manresa | QEhome",
-			"metaDescription": "Family apartment in Manresa with 2 bedrooms, equipped kitchen, private parking and an electric car charger. Discover QEhome and check availability."
+			"metaDescription": "Family apartment in Manresa with 2 bedrooms, equipped kitchen, private parking and self check-in. Check availability at QEhome."
 		}
 	},
 	"relatedLandings": {
@@ -310,7 +310,8 @@
 							"Passeig Pere III is the city's main boulevard. It links shopping areas and buildings from modern Manresa's growth. It is a good place to eat, have a drink or finish a walk through the centre."
 						]
 					}
-				]
+				],
+				"id": "imprescindibles"
 			},
 			{
 				"title": "Manresa in half a day",
@@ -323,7 +324,9 @@
 					"Plaça Major and historic centre",
 					"Pont Vell",
 					"Cave of Saint Ignatius"
-				]
+				],
+				"id": "medio-dia",
+				"tip": "If you only have a few hours, focus on La Seu, the historic centre, Pont Vell and the Cave of Saint Ignatius rather than trying to cover the whole city."
 			},
 			{
 				"title": "What to see in Manresa in one day",
@@ -351,7 +354,8 @@
 							"Head down to the Cardener via Pont Vell. Leave time for the Cave of Saint Ignatius and its surroundings. Finish the day on Passeig Pere III or in the city centre."
 						]
 					}
-				]
+				],
+				"id": "un-dia"
 			},
 			{
 				"title": "If you have two days in Manresa",
@@ -370,8 +374,8 @@
 					{
 						"title": "Option B: a day trip from Manresa",
 						"paragraphs": [
-							"Montserrat is the clearest day trip to combine with a stay in Manresa.",
-							"Pla de Bages offers wine, landscape and wineries nearby.",
+							"[[Montserrat|visitar-montserrat-desde-manresa]] is the clearest day trip to combine with a stay in Manresa.",
+							"[[Wine tourism in Pla de Bages|enoturismo-pla-de-bages]] offers wine, landscape and wineries nearby.",
 							"Món Sant Benet can also work for heritage and food in the Bages area. Manresa Tourism includes it among the main attractions of the surrounding area."
 						],
 						"items": [
@@ -388,7 +392,8 @@
 				"link": {
 					"label": "Guide: visit Montserrat from Manresa",
 					"slug": "visitar-montserrat-desde-manresa"
-				}
+				},
+				"id": "dos-dias"
 			},
 			{
 				"title": "What to see in Manresa with children",
@@ -398,12 +403,13 @@
 				"link": {
 					"label": "Family apartment in Manresa",
 					"slug": "apartamento-familias-manresa"
-				}
+				},
+				"id": "ninos"
 			},
 			{
 				"title": "Manresa and Ignatius of Loyola",
 				"paragraphs": [
-					"The link between Manresa and Ignatius of Loyola sets the city apart from many inland Catalan destinations. Ignatius stayed here for about eleven months from 1522, and the city still has many places tied to that stay. Manresa Tourism currently identifies 22 Ignatian sites.",
+					"The link between Manresa and Ignatius of Loyola sets the city apart from many inland Catalan destinations. Ignatius stayed here for about eleven months from 1522, and the city still has many places tied to that stay. Manresa Tourism currently identifies 22 Ignatian sites. If you arrive on the [[Ignatian Way|alojamiento-camino-ignaciano-manresa]], Manresa is the historic end of the route.",
 					"For a first visit, the most useful stops are usually the Cave of Saint Ignatius, La Seu, Espai Manresa 1522, Pou de la Gallina and spaces of the former Hospital of Santa Llúcia."
 				],
 				"items": [
@@ -416,15 +422,18 @@
 				"link": {
 					"label": "Accommodation for the Ignatian Way in Manresa",
 					"slug": "alojamiento-camino-ignaciano-manresa"
-				}
+				},
+				"id": "ignacio"
 			},
 			{
 				"title": "Practical tips for visiting Manresa",
 				"paragraphs": [
 					"Getting around: the historic centre and most of the main sights are walkable. For Parc de l'Agulla or trips into the Bages, a car is often more practical.",
 					"Arriving by train: Manresa has FGC and Renfe connections. Manresa Tourism cites FGC lines R5 and R50, and Renfe lines R4 and R12. We do not give fixed journey times because timetables and services can change.",
-					"Opening hours: for museums, monuments and visitor sites, always check official pages before you go. This matters especially for places such as Carrer del Balç, which is currently listed as temporarily closed."
-				]
+					"Opening hours: for museums, monuments and visitor sites, always check official pages before you go. This matters especially for places such as Carrer del Balç, which is currently listed as temporarily closed.",
+					"If you arrive by car, QEhome has [[private parking and an electric car charger|apartamento-parking-manresa]]."
+				],
+				"id": "consejos"
 			}
 		],
 		"availabilityNote": "Check availability for your dates",
@@ -437,7 +446,39 @@
 			"camino",
 			"enoturismo",
 			"parking"
-		]
+		],
+		"toc": [
+			{
+				"id": "imprescindibles",
+				"label": "The essentials of Manresa"
+			},
+			{
+				"id": "medio-dia",
+				"label": "Manresa in half a day"
+			},
+			{
+				"id": "un-dia",
+				"label": "What to see in one day"
+			},
+			{
+				"id": "dos-dias",
+				"label": "What to do with two days"
+			},
+			{
+				"id": "ninos",
+				"label": "Manresa with children"
+			},
+			{
+				"id": "ignacio",
+				"label": "Manresa and Ignatius of Loyola"
+			},
+			{
+				"id": "consejos",
+				"label": "Practical tips"
+			}
+		],
+		"reviewedLabel": "Last reviewed: September 2026",
+		"showAboutGuide": true
 	},
 	"caminoPage": {
 		"h1": "Accommodation in Manresa for the Ignatian Way",
@@ -449,7 +490,7 @@
 			{
 				"title": "Manresa, end of the Ignatian Way",
 				"paragraphs": [
-					"The Ignatian Way reaches Manresa, a city linked to Saint Ignatius's stay and the Cave of Saint Ignatius. For many pilgrims the route ends here, or it is a long stage before continuing.",
+					"The Ignatian Way reaches Manresa, a city linked to Saint Ignatius's stay and the [[Cave of Saint Ignatius|que-ver-manresa]]. For many pilgrims the route ends here, or it is a long stage before continuing.",
 					"In the centre you have services, shops and Ignatian heritage a short walk away. QEhome is on Carrer Doctor Esteve, near Manresa-Baixador FGC station."
 				]
 			},
@@ -506,7 +547,8 @@
 		"availabilityNote": "Check availability for your dates",
 		"apartmentTitle": "Book for the Ignatian Way",
 		"apartmentText": "Rest in a central apartment with self check-in, an equipped kitchen, WiFi and private parking if you arrive by car. 9.7 on Booking.",
-		"backHome": "See the holiday apartment"
+		"backHome": "See the holiday apartment",
+		"showAboutGuide": true
 	},
 	"montserratPage": {
 		"h1": "Visit Montserrat from Manresa: a one-day trip guide",
@@ -519,9 +561,10 @@
 				"title": "Why visit Montserrat from Manresa?",
 				"paragraphs": [
 					"Montserrat is one of Catalonia's best-known day trips and combines well with a stay in Manresa.",
-					"From Manresa you can organise a half-day or full-day outing and return to the city afterwards, without changing accommodation.",
+					"From Manresa you can organise a half-day or full-day outing and return to the city afterwards, without changing accommodation. If you also want to explore the city, see [[what to see in Manresa|que-ver-manresa]].",
 					"Information reviewed in September 2026. Opening hours, transport and services at Montserrat can change: always check the official website before you leave."
-				]
+				],
+				"id": "por-que"
 			},
 			{
 				"title": "How to get to Montserrat from Manresa",
@@ -543,7 +586,8 @@
 							"This is useful if you are not travelling by car or prefer not to park on the mountain."
 						]
 					}
-				]
+				],
+				"id": "como-llegar"
 			},
 			{
 				"title": "Cremallera or Aeri: which to choose",
@@ -563,7 +607,8 @@
 							"The cable car takes about 5 minutes and usually runs roughly every 15 minutes. There is also free parking at the lower station, according to official information."
 						]
 					}
-				]
+				],
+				"id": "cremallera-aeri"
 			},
 			{
 				"title": "What to see at Montserrat",
@@ -607,7 +652,8 @@
 							"Montserrat offers walks from the monastery and harder routes such as the one towards Sant Jeroni. The official website describes a route of about 7 km and around 2 hours 30 minutes from the Sant Joan area. It only makes sense if you have time, fitness and good weather."
 						]
 					}
-				]
+				],
+				"id": "que-ver"
 			},
 			{
 				"title": "Half-day route",
@@ -619,7 +665,8 @@
 					"Basilica and La Moreneta",
 					"Viewpoints",
 					"Museum or a short walk"
-				]
+				],
+				"id": "medio-dia"
 			},
 			{
 				"title": "Full-day route",
@@ -645,14 +692,15 @@
 							"Choose Santa Cova or, if it is running, Sant Joan and a short walk. Then return to Manresa."
 						]
 					}
-				]
+				],
+				"id": "dia-completo"
 			},
 			{
 				"title": "What to check before you go",
 				"paragraphs": [
-					"Before leaving, check the official Montserrat website for the status of the funiculars, basilica hours, access to the Virgin's throne, the museum and ticket or service availability.",
-					"Current notice (September 2026): the official website states that the Santa Cova and Sant Joan funiculars are closed until further notice for annual maintenance. Confirm the status on the day of your visit."
-				]
+					"Before leaving, check the official Montserrat website for the status of the funiculars, basilica hours, access to the Virgin's throne, the museum and ticket or service availability."
+				],
+				"id": "antes-de-ir"
 			},
 			{
 				"title": "Montserrat with children",
@@ -663,7 +711,8 @@
 				"link": {
 					"label": "Family apartment in Manresa",
 					"slug": "apartamento-familias-manresa"
-				}
+				},
+				"id": "ninos"
 			},
 			{
 				"title": "Montserrat and Ignatius of Loyola",
@@ -674,7 +723,8 @@
 				"link": {
 					"label": "Accommodation in Manresa for the Ignatian Way",
 					"slug": "alojamiento-camino-ignaciano-manresa"
-				}
+				},
+				"id": "ignacio"
 			}
 		],
 		"availabilityNote": "Check availability for your dates",
@@ -687,7 +737,54 @@
 			"camino",
 			"enoturismo",
 			"parking"
-		]
+		],
+		"toc": [
+			{
+				"id": "por-que",
+				"label": "Why visit Montserrat from Manresa"
+			},
+			{
+				"id": "como-llegar",
+				"label": "How to get there"
+			},
+			{
+				"id": "cremallera-aeri",
+				"label": "Cremallera or Aeri"
+			},
+			{
+				"id": "que-ver",
+				"label": "What to see at Montserrat"
+			},
+			{
+				"id": "medio-dia",
+				"label": "Half-day route"
+			},
+			{
+				"id": "dia-completo",
+				"label": "Full-day route"
+			},
+			{
+				"id": "antes-de-ir",
+				"label": "What to check before you go"
+			},
+			{
+				"id": "ninos",
+				"label": "Montserrat with children"
+			},
+			{
+				"id": "ignacio",
+				"label": "Montserrat and Ignatius of Loyola"
+			}
+		],
+		"reviewedLabel": "Last reviewed: September 2026",
+		"showAboutGuide": true,
+		"beforeLeave": {
+			"title": "Before you go",
+			"text": "Opening hours, access and services at Montserrat can change. Check the official information before you travel, especially the status of funiculars and transport."
+		},
+		"temporaryNotices": {
+			"funiculars": "Current notice: the official website states that the Santa Cova and Sant Joan funiculars are closed until further notice for annual maintenance. Confirm the status on the day of your visit."
+		}
 	},
 	"enoturismoPage": {
 		"h1": "Wine tourism in Pla de Bages from Manresa",
@@ -725,7 +822,7 @@
 					"Friday: arrive in Manresa, self check-in at QEhome and dinner in the centre.",
 					"Saturday: morning at a nearby winery (Oller del Mas or Collbaix). Lunch on the estate or back in Manresa. Afternoon landscape, stone wine vats or a short second visit.",
 					"Sunday: historic centre of Manresa, or a slightly farther winery (Abadal or Mas de Sant Iscle) before leaving.",
-					"Alternative: one day of wineries and another at Montserrat, about 30 minutes by car."
+					"Alternative: one day of wineries and another for Montserrat."
 				]
 			},
 			{
@@ -739,14 +836,14 @@
 					"Collbaix Celler el Molí: about 15 minutes",
 					"Abadal: about 25 minutes",
 					"Grau i Grau (Castellfollit del Boix): about 25 to 30 minutes",
-					"Montserrat (if you combine wine and mountain): about 30 minutes"
+					"Montserrat (if you combine wine and mountain): by car from Manresa"
 				]
 			},
 			{
 				"title": "Why QEhome fits this route",
 				"paragraphs": [
 					"After touring Pla de Bages wineries, you return to central Manresa. QEhome has private parking in the building, an electric car charger and a full kitchen for a comfortable weekend.",
-					"Two bedrooms, WiFi, self check-in and 9.7 on Booking. If you taste wine, parking in the same building means you avoid circling the centre."
+					"If you will take part in tastings, arrange transport in advance or designate a driver who will not drink. When you return to Manresa, QEhome has [[private parking|apartamento-parking-manresa]] in the same building."
 				],
 				"items": [
 					"Private parking in the building",
@@ -767,7 +864,9 @@
 		"availabilityNote": "Check availability for your dates",
 		"apartmentTitle": "Accommodation for wine tourism in Bages",
 		"apartmentText": "A Manresa base with parking, electric charger, 2 bedrooms and a full kitchen. Book on Booking or Airbnb.",
-		"backHome": "See the holiday apartment"
+		"backHome": "See the holiday apartment",
+		"showAboutGuide": true,
+		"reviewedLabel": "Last reviewed: September 2026"
 	},
 	"parkingPage": {
 		"h1": "Apartment with private parking in Manresa",
@@ -815,9 +914,12 @@
 		"backHome": "See the holiday apartment"
 	},
 	"contacto": {
-		"check": "Book QEhome",
+		"check": "Want to stay at QEhome?",
 		"crossSell": "Looking for a rural stay?",
-		"crossSellLink": "Also discover Cal Masses"
+		"crossSellLink": "Also discover Cal Masses",
+		"checkLead": "Check availability for your dates and choose where you want to complete the booking.",
+		"bookingLabel": "Book on Booking",
+		"airbnbLabel": "Book on Airbnb"
 	},
 	"scrollcta": {
 		"exp": "Explore"
@@ -1012,5 +1114,57 @@
 		"apartmentTitle": "Planning a stay in Manresa?",
 		"apartmentText": "Two bedrooms, equipped kitchen, private parking and 9.7 on Booking. Check dates and book on Booking or Airbnb.",
 		"backHome": "See the apartment"
+	},
+	"equipment": {
+		"title": "Everything you need for a comfortable stay",
+		"intro": "QEhome combines the independence of an apartment with a practical location in Manresa. It has separate spaces to rest, cook and organise a multi-day stay more comfortably.",
+		"items": [
+			{
+				"label": "2 bedrooms",
+				"icon": "bed"
+			},
+			{
+				"label": "Equipped kitchen",
+				"icon": "kitchen"
+			},
+			{
+				"label": "Living area",
+				"icon": "living"
+			},
+			{
+				"label": "WiFi",
+				"icon": "wifi"
+			},
+			{
+				"label": "Work desk",
+				"icon": "desk"
+			},
+			{
+				"label": "Private parking",
+				"icon": "parking"
+			},
+			{
+				"label": "Electric car charger",
+				"icon": "charger"
+			},
+			{
+				"label": "Self check-in",
+				"icon": "key"
+			}
+		]
+	},
+	"aboutGuide": {
+		"title": "About this guide",
+		"text": "This guide was prepared by QEhome, a holiday apartment in Manresa, to help our guests plan their stay. We periodically review distances, access details and recommendations to keep the information as up to date as possible."
+	},
+	"guideUi": {
+		"title": "In this guide",
+		"reviewed": "Last reviewed: September 2026",
+		"tipLabel": "QEhome tip",
+		"beforeLeaveTitle": "Before you go"
+	},
+	"bookingCtas": {
+		"bookingLabel": "Book on Booking",
+		"airbnbLabel": "Book on Airbnb"
 	}
 }

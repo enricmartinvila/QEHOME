@@ -2,19 +2,21 @@
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import HomePage from "../../components/HomePage.astro"
 import { getTranslations } from "../../constants/i18n"
-import { lodgingJsonLd } from "../../constants/schema"
-import { localizedPath } from "../../constants/site"
+import { homeJsonLd } from "../../constants/pageSchema"
 
 const lang = "es"
 const t = getTranslations(lang)
 const seo = t.seo.home
+const heroImage = "/images/menjador12.webp"
 ---
 
 <BaseLayout
 	lang={lang}
 	title={seo.title}
 	description={seo.metaDescription}
-	jsonLd={lodgingJsonLd(localizedPath(lang), seo.jsonLdDescription)}
+	ogImage={heroImage}
+	preloadImage={heroImage}
+	jsonLd={homeJsonLd(lang, seo.jsonLdDescription, heroImage)}
 >
 	<HomePage lang={lang} />
 </BaseLayout>

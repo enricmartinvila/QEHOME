@@ -12,23 +12,42 @@ interface Props {
 	title: string
 	description: string
 	pathAfterLang?: string
+	ogImage?: string
+	ogType?: "website" | "article"
+	preloadImage?: string
+	robots?: string
 }
 
-const { lang, title, description, pathAfterLang = "" } = Astro.props
+const {
+	lang,
+	title,
+	description,
+	pathAfterLang = "",
+	ogImage: ogImageProp,
+	ogType = "website",
+	preloadImage,
+	robots = "index,follow",
+} = Astro.props
 
 const suffix = pathAfterLang.replace(/^\//, "")
 const canonicalPath = suffix ? `/${lang}/${suffix}/` : `/${lang}/`
 const canonical = `${SITE_URL}${canonicalPath}`
-const ogImage = `${SITE_URL}/images/hab3.webp`
+const ogImagePath = ogImageProp || "/images/hab3.webp"
+const ogImage = ogImagePath.startsWith("http")
+	? ogImagePath
+	: `${SITE_URL}${ogImagePath}`
 
 function hreflangPath(l: Lang) {
 	if (!suffix) return `${SITE_URL}/${l}/`
 	return `${SITE_URL}/${l}/${suffix}/`
 }
+
+const alternateLocales = LANGS.filter((l) => l !== lang)
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
+<meta name="robots" content={robots} />
 <link rel="canonical" href={canonical} />
 {
 	LANGS.map((l) => (
@@ -41,10 +60,25 @@ function hreflangPath(l: Lang) {
 <meta property="og:url" content={canonical} />
 <meta property="og:site_name" content="QEhome Manresa" />
 <meta property="og:locale" content={OG_LOCALE[lang]} />
-<meta property="og:type" content="website" />
+{
+	alternateLocales.map((l) => (
+		<meta property="og:locale:alternate" content={OG_LOCALE[l]} />
+	))
+}
+<meta property="og:type" content={ogType} />
 <meta property="og:image" content={ogImage} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
-<link rel="icon" type="image/svg+xml" href="/logo/logoshort.webp" />
+{
+	preloadImage && (
+		<link
+			rel="preload"
+			as="image"
+			href={preloadImage}
+			fetchpriority="high"
+		/>
+	)
+}
+<link rel="icon" type="image/webp" href="/logo/logoshort.webp" />

@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "astro dev",
-		"build": "astro build",
+		"generate:sitemap": "node scripts/generate-sitemap.mjs",
+		"build": "node scripts/generate-sitemap.mjs && astro build",
 		"preview": "astro preview",
 		"compress:images": "node scripts/compress-images.mjs"
 	},
