@@ -1,9 +1,18 @@
 import { SITE_URL, type Lang } from "./site"
+import { AIRBNB_URL, BOOKING_URL, EMAIL, MAPS_URL } from "./links"
 
 const lodgingBase = {
 	"@type": "LodgingBusiness",
+	"@id": `${SITE_URL}/#lodging`,
 	name: "QEhome Manresa",
 	telephone: "+34 640 95 55 72",
+	email: EMAIL,
+	hasMap: MAPS_URL,
+	sameAs: [BOOKING_URL, AIRBNB_URL],
+	areaServed: {
+		"@type": "City",
+		name: "Manresa",
+	},
 	address: {
 		"@type": "PostalAddress",
 		streetAddress: "Carrer Doctor Esteve 9, 1º 2ª",
@@ -146,6 +155,21 @@ export function breadcrumbListJsonLd(
 			item: item.path.startsWith("http")
 				? item.path
 				: `${SITE_URL}${item.path}`,
+		})),
+	}
+}
+
+export function faqPageJsonLd(items: Array<{ q: string; a: string }>) {
+	return {
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		mainEntity: items.map((item) => ({
+			"@type": "Question",
+			name: item.q,
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: item.a,
+			},
 		})),
 	}
 }

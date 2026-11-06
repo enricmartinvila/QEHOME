@@ -1,0 +1,44 @@
+---
+import { getTranslations, type Lang } from "../../constants/i18n"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const faq = getTranslations(lang).homeFaq
+---
+
+<section class="bg-stone-50 py-14 md:py-20" aria-labelledby="home-faq-title">
+	<div class="mx-auto max-w-3xl px-4">
+		<header class="text-center">
+			<h2 id="home-faq-title" class="text-3xl font-bold text-stone-900 md:text-4xl">
+				{faq.title}
+			</h2>
+			<p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-600 md:text-lg">
+				{faq.intro}
+			</p>
+		</header>
+
+		<div class="mt-10 space-y-3">
+			{
+				faq.items.map((item) => (
+					<details class="group rounded-2xl border border-stone-200 bg-white px-5 py-1 shadow-sm open:shadow-md md:px-7">
+						<summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-stone-900 marker:content-none">
+							<span>{item.q}</span>
+							<span
+								class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-100 text-xl text-brand transition group-open:rotate-45"
+								aria-hidden="true"
+							>
+								+
+							</span>
+						</summary>
+						<p class="border-t border-stone-100 pb-5 pt-4 leading-relaxed text-stone-600">
+							{item.a}
+						</p>
+					</details>
+				))
+			}
+		</div>
+	</div>
+</section>

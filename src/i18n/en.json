@@ -143,6 +143,36 @@
 			}
 		]
 	},
+	"homeFaq": {
+		"title": "Frequently asked questions about QEhome Manresa",
+		"intro": "Clear answers about the apartment, how to get there and what is included in your stay.",
+		"items": [
+			{
+				"q": "Where is QEhome?",
+				"a": "QEhome is at Carrer Doctor Esteve 9 in central Manresa. Manresa-Baixador FGC station is a few minutes away on foot."
+			},
+			{
+				"q": "Is parking included?",
+				"a": "Yes. Your stay includes a private parking space in the same building, with remote access and a lift to the apartment."
+			},
+			{
+				"q": "Is there an electric car charger?",
+				"a": "Yes. A charger is available at the same parking space. The electricity used for charging is paid separately."
+			},
+			{
+				"q": "What rooms and facilities does the apartment have?",
+				"a": "The apartment has two bedrooms, a full bathroom, a living room, an equipped kitchen, WiFi and a desk."
+			},
+			{
+				"q": "Is self check-in available?",
+				"a": "Yes. The apartment offers self check-in. Access instructions are provided to guests before arrival."
+			},
+			{
+				"q": "How can I check availability and book?",
+				"a": "You can check dates and complete your booking through QEhome's official Booking and Airbnb links."
+			}
+		]
+	},
 	"gallery": {
 		"title": "The apartment in photos",
 		"subtitle": "Living room, bedrooms, kitchen and bathroom. Open any photo to inspect it.",
