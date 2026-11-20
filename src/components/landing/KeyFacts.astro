@@ -1,20 +1,28 @@
 ---
+import Icon from "./Icon.astro"
+import type { IconName } from "./icons"
+
 interface Props {
 	title: string
 	items: Array<{ label: string; value: string }>
+	icons?: IconName[]
 }
 
-const { title, items } = Astro.props
+const { title, items, icons = [] } = Astro.props
 ---
 
-<section class="mb-8 rounded-2xl border border-stone-200 bg-white p-6 shadow-sm md:p-8">
-	<h2 class="text-lg font-bold text-stone-900 md:text-xl">{title}</h2>
-	<dl class="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+<section class="relative z-10 mx-auto -mt-20 max-w-6xl px-4 md:-mt-24" aria-label={title}>
+	<dl class="grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-stone-200 shadow-xl shadow-stone-900/10 ring-1 ring-stone-200 lg:grid-cols-4">
 		{
-			items.map((item) => (
-				<div class="border-l-2 border-brand/40 pl-4">
-					<dt class="text-xs font-semibold uppercase tracking-wider text-stone-500">{item.label}</dt>
-					<dd class="mt-1 text-[15px] font-medium leading-snug text-stone-900">{item.value}</dd>
+			items.map((item, i) => (
+				<div class="flex flex-col items-start gap-3 bg-white p-4 sm:flex-row sm:gap-4 md:p-6">
+					<span class="flex h-9 w-9 flex-shrink-0 sm:h-11 sm:w-11 items-center justify-center rounded-2xl bg-brand/10 text-brand">
+						<Icon name={icons[i] ?? "check"} class="h-5 w-5" />
+					</span>
+					<div class="min-w-0">
+						<dt class="text-[11px] font-semibold sm:text-xs uppercase tracking-wider text-stone-500">{item.label}</dt>
+						<dd class="mt-1 text-sm font-semibold sm:text-[15px] leading-snug text-stone-900">{item.value}</dd>
+					</div>
 				</div>
 			))
 		}

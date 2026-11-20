@@ -1,7 +1,9 @@
 ---
 import { getTranslations, type Lang } from "../../constants/i18n"
 import { localizedPath } from "../../constants/site"
-import { renderInline } from "./renderInline"
+import type { SectionDecor } from "../../constants/landingDecor"
+import Icon from "./Icon.astro"
+import RichText from "./RichText.astro"
 
 export interface LandingLink {
 	label: string
@@ -28,135 +30,224 @@ export interface LandingSection {
 interface Props {
 	lang: Lang
 	sections: LandingSection[]
+	decor?: SectionDecor[]
 }
 
-const { lang, sections } = Astro.props
-const guideUi = getTranslations(lang).guideUi
+const { lang, sections, decor = [] } = Astro.props
+const t = getTranslations(lang)
+const guideUi = t.guideUi
+const photos = t.gallery.photos as Record<string, { alt: string }>
+
+/** Splits "Label: text" items so the label can be emphasised. */
+function splitLabel(item: string): [string, string] | null {
+	const idx = item.indexOf(": ")
+	if (idx < 2 || idx > 70) return null
+	const label = item.slice(0, idx)
+	if (/[.!?]\s/.test(label.replace(/\[\[[^\]]+\]\]/g, ""))) return null
+	return [label, item.slice(idx + 2)]
+}
+
+function itemsMode(items: string[]): "chips" | "labelled" | "list" {
+	if (items.every((i) => i.length <= 48 && !splitLabel(i))) return "chips"
+	const labelled = items.filter((i) => splitLabel(i)).length
+	return labelled >= Math.ceil(items.length / 2) ? "labelled" : "list"
+}
 ---
 
-<div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+<div class="space-y-6 md:space-y-8">
 	{
-		sections.map((section, sectionIndex) => (
-			<article
-				id={section.id}
-				class:list={[
-					"scroll-mt-28 grid gap-5 p-7 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.7fr)] md:gap-12 md:p-10",
-					sectionIndex > 0 && "border-t border-stone-200",
-				]}
-			>
-				<div>
-					<p class="text-xs font-semibold uppercase tracking-wider text-brand">
-						{String(sectionIndex + 1).padStart(2, "0")}
-					</p>
-					<h2 class="mt-2 text-xl font-bold leading-snug text-stone-900 md:text-2xl">
-						{section.title}
-					</h2>
-				</div>
-				<div>
-					{section.paragraphs?.map((p, paragraphIndex) => (
-						<p class:list={["landing-prose", paragraphIndex > 0 && "mt-4"]}>
-							{renderInline(p).map((part) =>
-								part.slug ? (
-									<a href={localizedPath(lang, part.slug)} class="font-medium text-brand hover:underline">
-										{part.value}
-									</a>
-								) : (
-									part.value
-								),
-							)}
-						</p>
-					))}
-					{section.tip && (
-						<aside class="mt-6 rounded-xl border border-brand/25 bg-brand/5 p-4">
-							<p class="text-sm font-semibold text-brand">{guideUi.tipLabel}</p>
-							<p class="landing-prose mt-2">{section.tip}</p>
-						</aside>
+		sections.map((section, sectionIndex) => {
+			const d = decor[sectionIndex]
+			const isTimeline = d?.variant === "timeline"
+			const mode = section.items ? itemsMode(section.items) : null
+			const hasBody = Boolean(section.paragraphs?.length)
+			return (
+				<article
+					id={section.id}
+					class="reveal scroll-mt-28 overflow-hidden rounded-3xl border border-stone-200/80 bg-white shadow-sm"
+				>
+					{d?.image && (
+						<img
+							src={d.image}
+							alt={(d.imageAltKey && photos[d.imageAltKey]?.alt) || ""}
+							class="aspect-[16/7] w-full object-cover"
+							loading="lazy"
+							decoding="async"
+							width="1920"
+							height="840"
+						/>
 					)}
-					{section.items && (
-						<ul class:list={["space-y-3", (section.paragraphs?.length || section.tip) && "mt-6"]}>
-							{section.items.map((item) => (
-								<li class="flex gap-3 text-[15px] leading-relaxed text-stone-700 md:text-base">
-									<span class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand" aria-hidden="true" />
-									<span>
-										{renderInline(item).map((part) =>
-											part.slug ? (
-												<a href={localizedPath(lang, part.slug)} class="font-medium text-brand hover:underline">
-													{part.value}
-												</a>
-											) : (
-												part.value
-											),
-										)}
-									</span>
-								</li>
-							))}
-						</ul>
-					)}
-					{section.subsections && (
-						<div
-							class:list={[
-								"space-y-7",
-								(section.paragraphs?.length || section.items?.length || section.tip) && "mt-8",
-							]}
-						>
-							{section.subsections.map((sub) => (
-								<div>
-									<h3 class="text-base font-bold text-stone-900 md:text-lg">{sub.title}</h3>
-									{sub.paragraphs?.map((p) => (
-										<p class="landing-prose mt-2">
-											{renderInline(p).map((part) =>
-												part.slug ? (
-													<a href={localizedPath(lang, part.slug)} class="font-medium text-brand hover:underline">
-														{part.value}
-													</a>
-												) : (
-													part.value
-												),
-											)}
-										</p>
-									))}
-									{sub.items && (
-										<ul class="mt-3 space-y-2">
-											{sub.items.map((item) => (
-												<li class="flex gap-3 text-[15px] leading-relaxed text-stone-700">
-													<span class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand" aria-hidden="true" />
-													<span>
-														{renderInline(item).map((part) =>
-															part.slug ? (
-																<a href={localizedPath(lang, part.slug)} class="font-medium text-brand hover:underline">
-																	{part.value}
-																</a>
-															) : (
-																part.value
-															),
-														)}
-													</span>
-												</li>
+					<div class="p-6 sm:p-8 md:p-10">
+						<header class="flex items-start gap-4">
+							<span class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-brand/10 text-brand">
+								<Icon name={d?.icon ?? "sparkles"} class="h-6 w-6" />
+							</span>
+							<div class="min-w-0 pt-0.5">
+								<p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+									{String(sectionIndex + 1).padStart(2, "0")}
+								</p>
+								<h2 class="mt-1 text-xl font-bold leading-snug text-stone-900 md:text-[1.7rem]">
+									{section.title}
+								</h2>
+							</div>
+						</header>
+
+						{hasBody && (
+							<div class="mt-6 max-w-3xl space-y-4">
+								{section.paragraphs!.map((p) => (
+									<p class="landing-prose">
+										<RichText lang={lang} text={p} />
+									</p>
+								))}
+							</div>
+						)}
+
+						{section.items && mode === "chips" && (
+							<ul class="mt-6 grid gap-2.5 sm:grid-cols-2">
+								{section.items.map((item) => (
+									<li class="flex items-center gap-3 rounded-xl bg-stone-50 px-4 py-3 text-[15px] font-medium text-stone-800 ring-1 ring-stone-100">
+										<Icon name="check" class="h-5 w-5 flex-shrink-0 text-brand" />
+										<span>
+											<RichText lang={lang} text={item} />
+										</span>
+									</li>
+								))}
+							</ul>
+						)}
+
+						{section.items && mode === "labelled" && !isTimeline && (
+							<dl class="mt-6 divide-y divide-stone-100 overflow-hidden rounded-2xl bg-stone-50 ring-1 ring-stone-100">
+								{section.items.map((item) => {
+									const parts = splitLabel(item)
+									return (
+										<div class="grid gap-1 px-5 py-4 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.6fr)] sm:gap-6">
+											<dt class="font-semibold text-stone-900">
+												<RichText lang={lang} text={parts ? parts[0] : item} />
+											</dt>
+											<dd class="text-[15px] leading-relaxed text-stone-600">
+												{parts && <RichText lang={lang} text={parts[1]} />}
+											</dd>
+										</div>
+									)
+								})}
+							</dl>
+						)}
+
+						{section.items && mode === "labelled" && isTimeline && (
+							<ol class="relative mt-8 space-y-6 border-l-2 border-brand/25 pl-7">
+								{section.items.map((item) => {
+									const parts = splitLabel(item)
+									return (
+										<li class="relative">
+											<span class="absolute -left-[2.15rem] top-1 h-4 w-4 rounded-full border-4 border-white bg-brand shadow" />
+											<p class="font-bold text-stone-900">{parts ? parts[0] : ""}</p>
+											<p class="landing-prose mt-1">
+												<RichText lang={lang} text={parts ? parts[1] : item} />
+											</p>
+										</li>
+									)
+								})}
+							</ol>
+						)}
+
+						{section.items && mode === "list" && (
+							<ul class="mt-6 space-y-3">
+								{section.items.map((item) => (
+									<li class="flex gap-3 text-[15px] leading-relaxed text-stone-700 md:text-base">
+										<Icon name="check" class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand" />
+										<span>
+											<RichText lang={lang} text={item} />
+										</span>
+									</li>
+								))}
+							</ul>
+						)}
+
+						{section.subsections && isTimeline && (
+							<ol class="relative mt-8 space-y-8 border-l-2 border-brand/25 pl-7">
+								{section.subsections.map((sub, i) => (
+									<li class="relative">
+										<span class="absolute -left-[2.6rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-brand text-sm font-bold text-white ring-4 ring-white">
+											{i + 1}
+										</span>
+										<h3 class="text-lg font-bold text-stone-900">{sub.title}</h3>
+										<div class="mt-2 space-y-3">
+											{sub.paragraphs?.map((p) => (
+												<p class="landing-prose">
+													<RichText lang={lang} text={p} />
+												</p>
 											))}
-										</ul>
-									)}
-									{sub.link && (
-										<a
-											href={localizedPath(lang, sub.link.slug)}
-											class="mt-3 inline-block text-sm font-medium text-brand hover:underline"
-										>
-											{sub.link.label}
-										</a>
-									)}
+										</div>
+									</li>
+								))}
+							</ol>
+						)}
+
+						{section.subsections && !isTimeline && (
+							<div class:list={["mt-8 grid gap-4", section.subsections.length > 1 && "md:grid-cols-2"]}>
+								{section.subsections.map((sub) => (
+									<div class="flex flex-col rounded-2xl bg-stone-50 p-5 ring-1 ring-stone-100 transition hover:bg-white hover:shadow-md hover:ring-brand/25 md:p-6">
+										<h3 class="flex items-center gap-2.5 text-base font-bold text-stone-900 md:text-lg">
+											<span class="h-2 w-2 flex-shrink-0 rounded-full bg-brand" aria-hidden="true" />
+											{sub.title}
+										</h3>
+										<div class="mt-3 space-y-3">
+											{sub.paragraphs?.map((p) => (
+												<p class="text-[15px] leading-relaxed text-stone-600">
+													<RichText lang={lang} text={p} />
+												</p>
+											))}
+										</div>
+										{sub.items && (
+											<ul class="mt-3 space-y-2">
+												{sub.items.map((item) => (
+													<li class="flex gap-2.5 text-[15px] leading-relaxed text-stone-700">
+														<Icon name="check" class="mt-0.5 h-4 w-4 flex-shrink-0 text-brand" />
+														<span>
+															<RichText lang={lang} text={item} />
+														</span>
+													</li>
+												))}
+											</ul>
+										)}
+										{sub.link && (
+											<a
+												href={localizedPath(lang, sub.link.slug)}
+												class="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-brand hover:underline"
+											>
+												{sub.link.label}
+												<Icon name="arrow" class="h-4 w-4" />
+											</a>
+										)}
+									</div>
+								))}
+							</div>
+						)}
+
+						{section.tip && (
+							<aside class="mt-7 flex gap-4 rounded-2xl bg-gradient-to-br from-amber-50 to-brand/10 p-5 ring-1 ring-brand/20">
+								<span class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white text-brand shadow-sm">
+									<Icon name="bulb" class="h-5 w-5" />
+								</span>
+								<div>
+									<p class="text-sm font-bold uppercase tracking-wider text-brand">{guideUi.tipLabel}</p>
+									<p class="mt-1 text-[15px] leading-relaxed text-stone-700">{section.tip}</p>
 								</div>
-							))}
-						</div>
-					)}
-					{section.link && (
-						<a
-							href={localizedPath(lang, section.link.slug)}
-							class="mt-6 inline-block text-sm font-medium text-brand hover:underline"
-						>
-							{section.link.label}
-						</a>
-					)}
-				</div>
-			</article>
-		))
+							</aside>
+						)}
+
+						{section.link && (
+							<a
+								href={localizedPath(lang, section.link.slug)}
+								class="mt-7 inline-flex items-center gap-2 rounded-full bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-stone-800"
+							>
+								{section.link.label}
+								<Icon name="arrow" class="h-4 w-4" />
+							</a>
+						)}
+					</div>
+				</article>
+			)
+		})
 	}
 </div>

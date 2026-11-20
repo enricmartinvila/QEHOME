@@ -1,13 +1,15 @@
 ---
 import LandingHero from "./LandingHero.astro"
-import BookingCtas from "./BookingCtas.astro"
 import RelatedLandings from "../home/RelatedLandings.astro"
 import Contact from "../home/Contact.astro"
 import { getTranslations, type Lang } from "../../constants/i18n"
-import { localizedPath } from "../../constants/site"
 import { PARKING_LANDING } from "../../constants/landings"
+import { getLandingDecor } from "../../constants/landingDecor"
 import LandingSections from "./LandingSections.astro"
 import LandingFaqs from "./LandingFaqs.astro"
+import KeyFacts from "./KeyFacts.astro"
+import ApartmentPromo from "./ApartmentPromo.astro"
+import RevealScript from "./RevealScript.astro"
 
 interface Props {
 	lang: Lang
@@ -16,9 +18,12 @@ interface Props {
 const { lang } = Astro.props
 const t = getTranslations(lang)
 const page = t.parkingPage
-const slug = PARKING_LANDING.slug
-const parkingImage = PARKING_LANDING.parkingImage
-const evImage = PARKING_LANDING.evImage
+const decor = getLandingDecor("parking")
+
+const features = [
+	{ image: PARKING_LANDING.parkingImage, alt: page.parkingImageAlt, title: page.parkingTitle, text: page.parkingText, kind: "parking" },
+	{ image: PARKING_LANDING.evImage, alt: page.evImageAlt, title: page.evTitle, text: page.evText, kind: "ev" },
+] as const
 ---
 
 <LandingHero
@@ -29,110 +34,71 @@ const evImage = PARKING_LANDING.evImage
 	breadcrumbHome={page.breadcrumbHome}
 	breadcrumbCurrent={page.breadcrumbCurrent}
 	ctaLabel={page.ctaLabel}
+	overlap
 />
 
-<section class="bg-stone-50 py-14 md:py-20">
-	<div class="mx-auto max-w-5xl px-4">
-		{
-			page.benefitLead && (
-				<header class="landing-reveal mx-auto max-w-3xl text-center">
-					<p class="text-xl font-semibold leading-relaxed text-stone-900 md:text-2xl">
-						{page.benefitLead}
-					</p>
-				</header>
-			)
-		}
+<KeyFacts title={page.keyFacts.title} items={page.keyFacts.items} icons={decor.keyFactIcons} />
 
-		<div class="mt-10 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-2 md:gap-8">
-			<article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-				{
-					parkingImage ? (
-						<img
-							src={parkingImage}
-							alt={page.parkingImageAlt}
-							class="aspect-[4/3] w-full object-cover"
-							loading="lazy"
-							decoding="async"
-						/>
-					) : (
-						<div
-							class="flex aspect-[4/3] items-center justify-center bg-stone-100"
-							aria-hidden="true"
-						>
-							<svg class="h-14 w-14 text-brand/60" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M5.25 6A2.25 2.25 0 0 0 3 8.25v7.5A2.25 2.25 0 0 0 5.25 18h.75a2.25 2.25 0 0 1 4.5 0h3a2.25 2.25 0 0 1 4.5 0h.75A2.25 2.25 0 0 0 21 15.75v-1.5h-7.5V6H5.25Z" />
-								<path d="M15 6v6.75h6v-4.5A2.25 2.25 0 0 0 18.75 6H15Z" />
-							</svg>
+<section class="bg-stone-50 pb-16 pt-14 md:pb-24 md:pt-20">
+	<div class="mx-auto max-w-4xl px-4">
+		<p class="reveal mx-auto max-w-2xl text-center text-2xl font-semibold leading-snug text-stone-900 md:text-3xl">
+			{page.benefitLead}
+		</p>
+
+		<div class="mt-10 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-2">
+			{
+				features.map((f) => (
+					<article class="reveal overflow-hidden rounded-3xl border border-stone-200/80 bg-white shadow-sm">
+						{f.image ? (
+							<img src={f.image} alt={f.alt} class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async" />
+						) : (
+							<div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden bg-gradient-to-br from-stone-900 via-stone-800 to-stone-700" aria-hidden="true">
+								{f.kind === "parking" ? (
+									<svg class="absolute inset-0 h-full w-full" viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice">
+										<g stroke="#ffffff" stroke-opacity="0.18" stroke-width="3">
+											{[40, 120, 200, 280, 360].map((x) => <line x1={x} y1="150" x2={x} y2="250" />)}
+										</g>
+										<rect x="135" y="160" width="50" height="80" rx="12" fill="#ECB434" fill-opacity="0.9" />
+										<rect x="142" y="172" width="36" height="18" rx="5" fill="#1c1917" fill-opacity="0.55" />
+										<rect x="160" y="40" width="80" height="80" rx="18" fill="#ffffff" fill-opacity="0.08" stroke="#ECB434" stroke-width="4" />
+										<text x="200" y="102" text-anchor="middle" font-size="58" font-weight="700" fill="#ECB434" font-family="Fira Sans, sans-serif">P</text>
+									</svg>
+								) : (
+									<svg class="absolute inset-0 h-full w-full" viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice">
+										<circle cx="200" cy="120" r="78" fill="#ECB434" fill-opacity="0.12" />
+										<circle cx="200" cy="120" r="54" fill="none" stroke="#ECB434" stroke-width="4" />
+										<path d="M206 82 178 126h22l-6 38 28-46h-22z" fill="#ECB434" />
+										<path d="M278 120c40 0 30 80 80 80" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round" />
+									</svg>
+								)}
+							</div>
+						)}
+						<div class="p-7 md:p-8">
+							<h2 class="text-xl font-bold text-stone-900 md:text-2xl">{f.title}</h2>
+							<p class="landing-prose mt-3">{f.text}</p>
 						</div>
-					)
-				}
-				<div class="p-7 md:p-8">
-					<h2 class="text-xl font-bold text-stone-900 md:text-2xl">
-						{page.parkingTitle}
-					</h2>
-					<p class="landing-prose mt-4">{page.parkingText}</p>
-				</div>
-			</article>
-			<article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-				{
-					evImage ? (
-						<img
-							src={evImage}
-							alt={page.evImageAlt}
-							class="aspect-[4/3] w-full object-cover"
-							loading="lazy"
-							decoding="async"
-						/>
-					) : (
-						<div
-							class="flex aspect-[4/3] items-center justify-center bg-stone-100"
-							aria-hidden="true"
-						>
-							<svg class="h-14 w-14 text-brand/60" viewBox="0 0 24 24" fill="currentColor">
-								<path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
-							</svg>
-						</div>
-					)
-				}
-				<div class="p-7 md:p-8">
-					<h2 class="text-xl font-bold text-stone-900 md:text-2xl">
-						{page.evTitle}
-					</h2>
-					<p class="landing-prose mt-4">{page.evText}</p>
-				</div>
-			</article>
+					</article>
+				))
+			}
 		</div>
 
-		{
-			page.sections && page.sections.length > 0 && (
-				<div class="mt-14 md:mt-16">
-					<LandingSections lang={lang} sections={page.sections} />
-				</div>
-			)
-		}
+		<div class="mt-12 md:mt-16">
+			<LandingSections lang={lang} sections={page.sections} decor={decor.sections} />
+		</div>
 
-		{page.faqs && <LandingFaqs title={page.faqsTitle} faqs={page.faqs} />}
-
-		<aside class="mx-auto mt-10 max-w-3xl rounded-2xl bg-brand p-8 text-white shadow-sm md:mt-12 md:p-10">
-			<div class="grid items-center gap-7 md:grid-cols-[1fr_auto] md:gap-10">
-				<div>
-					<h2 class="text-2xl font-bold md:text-3xl">{page.apartmentTitle}</h2>
-					<p class="mt-3 max-w-xl text-[15px] leading-relaxed text-white/90 md:text-base">
-						{page.apartmentText}
-					</p>
-				</div>
-				<a
-					href={localizedPath(lang)}
-					class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-stone-900 transition hover:bg-stone-100"
-				>
-					{page.backHome}
-				</a>
-			</div>
-		</aside>
+		<LandingFaqs title={page.faqsTitle} faqs={page.faqs} />
 	</div>
 
-	<BookingCtas heading={page.availabilityNote} lang={lang} />
-	<RelatedLandings lang={lang} excludeSlug={slug} />
+	<ApartmentPromo
+		lang={lang}
+		title={page.apartmentTitle}
+		text={page.apartmentText}
+		backHome={page.backHome}
+		availabilityNote={page.availabilityNote}
+	/>
+
+	<RelatedLandings lang={lang} excludeSlug={PARKING_LANDING.slug} />
 </section>
 
 <Contact lang={lang} />
+<RevealScript />

@@ -1293,7 +1293,28 @@
 				"q": "¿A qué hora puedo llegar?",
 				"a": "La entrada es a partir de las 15:00 y es autónoma, así que puedes llegar más tarde sin depender de nadie. La salida es antes de las 11:00."
 			}
-		]
+		],
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Parking",
+					"value": "Plaza privada en el edificio"
+				},
+				{
+					"label": "Acceso",
+					"value": "Mando y ascensor directo al piso"
+				},
+				{
+					"label": "Coche eléctrico",
+					"value": "Cargador en la misma plaza"
+				},
+				{
+					"label": "Centro",
+					"value": "FGC a pocos minutos a pie"
+				}
+			]
+		}
 	},
 	"contacto": {
 		"check": "¿Quieres alojarte en QEhome?",
@@ -1618,7 +1639,8 @@
 		"title": "En esta guía",
 		"reviewed": "Última revisión: septiembre de 2026",
 		"tipLabel": "Consejo de QEhome",
-		"beforeLeaveTitle": "Antes de salir"
+		"beforeLeaveTitle": "Antes de salir",
+		"readingTime": "{n} min de lectura"
 	},
 	"bookingCtas": {
 		"bookingLabel": "Reservar en Booking",

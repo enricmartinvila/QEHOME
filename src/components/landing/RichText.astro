@@ -1,0 +1,27 @@
+---
+import type { Lang } from "../../constants/i18n"
+import { localizedPath } from "../../constants/site"
+import { renderInline } from "./renderInline"
+
+interface Props {
+	lang: Lang
+	text: string
+}
+
+const { lang, text } = Astro.props
+---
+
+{
+	renderInline(text).map((part) =>
+		part.slug ? (
+			<a
+				href={localizedPath(lang, part.slug)}
+				class="font-semibold text-brand underline decoration-brand/30 underline-offset-4 transition hover:decoration-brand"
+			>
+				{part.value}
+			</a>
+		) : (
+			part.value
+		),
+	)
+}

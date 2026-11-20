@@ -1293,7 +1293,28 @@
 				"q": "What time can I arrive?",
 				"a": "Check-in is from 15:00 and it is self check-in, so you can arrive later without depending on anyone. Check-out is by 11:00."
 			}
-		]
+		],
+		"keyFacts": {
+			"title": "At a glance",
+			"items": [
+				{
+					"label": "Parking",
+					"value": "Private space in the building"
+				},
+				{
+					"label": "Access",
+					"value": "Remote control and lift to the flat"
+				},
+				{
+					"label": "Electric car",
+					"value": "Charger at the same space"
+				},
+				{
+					"label": "Centre",
+					"value": "FGC station a few minutes' walk"
+				}
+			]
+		}
 	},
 	"contacto": {
 		"check": "Want to stay at QEhome?",
@@ -1618,7 +1639,8 @@
 		"title": "In this guide",
 		"reviewed": "Last reviewed: September 2026",
 		"tipLabel": "QEhome tip",
-		"beforeLeaveTitle": "Before you go"
+		"beforeLeaveTitle": "Before you go",
+		"readingTime": "{n} min read"
 	},
 	"bookingCtas": {
 		"bookingLabel": "Book on Booking",

@@ -5,6 +5,9 @@ import {
 	PARKING_LANDING,
 	TOPIC_LANDINGS_CONFIG,
 } from "../../constants/landings"
+import { getLandingDecor } from "../../constants/landingDecor"
+import LandingIllustration from "../landing/LandingIllustration.astro"
+import Icon from "../landing/Icon.astro"
 
 interface Props {
 	lang: Lang
@@ -29,27 +32,43 @@ const links = includeKeys?.length
 const heading = title || t.relatedLandings.title
 ---
 
-<nav class="mx-auto mt-16 max-w-3xl px-4" aria-label={heading}>
-	<h2 class="text-center text-xl font-bold text-stone-900 md:text-2xl">
-		{heading}
-	</h2>
-	<ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+<nav class="mx-auto mt-16 max-w-6xl px-4 md:mt-20" aria-label={heading}>
+	<h2 class="text-2xl font-bold text-stone-900 md:text-3xl">{heading}</h2>
+	<ul class:list={["mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2", links.length % 3 === 1 ? "lg:grid-cols-4" : "lg:grid-cols-3"]}>
 		{
-			links.map((landing) => (
-				<li>
-					<a
-						href={localizedPath(lang, landing.slug)}
-						class="group landing-related-card"
-					>
-						<span class="flex items-center justify-between gap-3">
-							<span>{labels[landing.key as keyof typeof labels]}</span>
-							<span class="text-brand transition group-hover:translate-x-0.5" aria-hidden="true">
-								→
+			links.map((landing) => {
+				const illustration = getLandingDecor(landing.key).illustration
+				return (
+					<li>
+						<a
+							href={localizedPath(lang, landing.slug)}
+							class="group flex h-full flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg"
+						>
+							<div class="relative aspect-[16/9] overflow-hidden bg-stone-900">
+								{illustration ? (
+									<LandingIllustration
+										variant={illustration}
+										idSuffix={`${illustration}-card-${landing.key}`}
+										class="h-full w-full transition duration-500 group-hover:scale-105"
+									/>
+								) : (
+									<img
+										src={landing.heroImage}
+										alt=""
+										class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+										loading="lazy"
+										decoding="async"
+									/>
+								)}
+							</div>
+							<span class="flex flex-1 items-center justify-between gap-3 px-5 py-4 font-semibold text-stone-800 group-hover:text-brand">
+								{labels[landing.key as keyof typeof labels]}
+								<Icon name="arrow" class="h-4 w-4 flex-shrink-0 text-brand transition group-hover:translate-x-1" />
 							</span>
-						</span>
-					</a>
-				</li>
-			))
+						</a>
+					</li>
+				)
+			})
 		}
 	</ul>
 </nav>

@@ -1,0 +1,107 @@
+---
+import Icon from "./Icon.astro"
+
+interface Props {
+	title: string
+	items: Array<{ id: string; label: string }>
+	reviewedLabel?: string
+	ctaLabel: string
+}
+
+const { title, items, reviewedLabel, ctaLabel } = Astro.props
+---
+
+<!-- Mobile: collapsible -->
+<details class="mb-6 rounded-2xl border border-stone-200 bg-white shadow-sm lg:hidden">
+	<summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 font-semibold text-stone-900 [&::-webkit-details-marker]:hidden">
+		<span class="flex items-center gap-2.5">
+			<Icon name="book" class="h-5 w-5 text-brand" />
+			{title}
+		</span>
+		<svg class="h-4 w-4 text-stone-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+			<path d="m6 9 6 6 6-6" />
+		</svg>
+	</summary>
+	<ol class="space-y-1 border-t border-stone-100 px-3 py-3">
+		{
+			items.map((item, i) => (
+				<li>
+					<a href={`#${item.id}`} class="flex gap-3 rounded-lg px-2 py-2 text-[15px] text-stone-700 hover:bg-stone-50 hover:text-brand">
+						<span class="w-5 text-right text-xs font-semibold leading-6 text-stone-400">{i + 1}</span>
+						{item.label}
+					</a>
+				</li>
+			))
+		}
+	</ol>
+</details>
+
+<!-- Desktop: sticky sidebar -->
+<aside class="hidden lg:block">
+	<div class="sticky top-28">
+		<p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
+			<Icon name="book" class="h-4 w-4 text-brand" />
+			{title}
+		</p>
+		<ol class="mt-4 space-y-0.5 border-l border-stone-200" data-toc>
+			{
+				items.map((item) => (
+					<li>
+						<a
+							href={`#${item.id}`}
+							data-toc-link={item.id}
+							class="-ml-px block border-l-2 border-transparent py-1.5 pl-4 text-sm leading-snug text-stone-600 transition hover:border-stone-300 hover:text-stone-900"
+						>
+							{item.label}
+						</a>
+					</li>
+				))
+			}
+		</ol>
+		{reviewedLabel && <p class="mt-6 text-xs text-stone-400">{reviewedLabel}</p>}
+		<a
+			href="#contacto"
+			class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-cta px-5 py-3 text-sm font-semibold text-stone-900 shadow-sm transition hover:bg-brand-ctaHover"
+		>
+			{ctaLabel}
+			<Icon name="arrow" class="h-4 w-4" />
+		</a>
+	</div>
+</aside>
+
+<script>
+	const links = [...document.querySelectorAll<HTMLAnchorElement>("[data-toc-link]")]
+	const targets = links
+		.map((a) => document.getElementById(a.dataset.tocLink!))
+		.filter((el): el is HTMLElement => Boolean(el))
+	if (targets.length) {
+		let current = ""
+		const update = () => {
+			const line = window.innerHeight * 0.3
+			let active = targets[0].id
+			for (const el of targets) if (el.getBoundingClientRect().top <= line) active = el.id
+			if (active === current) return
+			current = active
+			for (const a of links) {
+				const on = a.dataset.tocLink === active
+				a.classList.toggle("!border-brand", on)
+				a.classList.toggle("!text-stone-900", on)
+				a.classList.toggle("font-semibold", on)
+			}
+		}
+		let ticking = false
+		window.addEventListener(
+			"scroll",
+			() => {
+				if (ticking) return
+				ticking = true
+				requestAnimationFrame(() => {
+					update()
+					ticking = false
+				})
+			},
+			{ passive: true },
+		)
+		update()
+	}
+</script>

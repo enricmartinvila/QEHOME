@@ -48,7 +48,7 @@ export const TOPIC_LANDINGS_CONFIG = [
 	{
 		key: "familias",
 		slug: "apartamento-familias-manresa",
-		heroImage: "/images/hab2.webp",
+		heroImage: "/images/menjador11.webp",
 		pageKey: "familiasPage",
 		seoKey: "familias",
 	},
