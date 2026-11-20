@@ -1,5 +1,6 @@
 import {
 	breadcrumbListJsonLd,
+	faqPageJsonLd,
 	guideArticleJsonLd,
 	lodgingJsonLd,
 	parkingLodgingJsonLd,
@@ -8,8 +9,16 @@ import {
 import { absoluteUrl, localizedPath, type Lang } from "./site"
 import { GUIDE_REVIEWED_AT } from "./montserratNotices"
 
-export function homeJsonLd(lang: Lang, description: string, image: string) {
-	return lodgingJsonLd(localizedPath(lang), description, lang, image)
+export function homeJsonLd(
+	lang: Lang,
+	description: string,
+	image: string,
+	faqs: Array<{ q: string; a: string }>,
+) {
+	return schemaGraph(
+		lodgingJsonLd(localizedPath(lang), description, lang, image),
+		faqPageJsonLd(faqs),
+	)
 }
 
 export function lodgingLandingJsonLd(opts: {
@@ -37,10 +46,12 @@ export function parkingLandingJsonLd(opts: {
 	image: string
 	homeLabel: string
 	currentLabel: string
+	faqs: Array<{ q: string; a: string }>
 }) {
 	const path = localizedPath(opts.lang, opts.slug)
 	return schemaGraph(
 		parkingLodgingJsonLd(path, opts.description, opts.lang, opts.image),
+		faqPageJsonLd(opts.faqs),
 		breadcrumbListJsonLd([
 			{ name: opts.homeLabel, path: localizedPath(opts.lang) },
 			{ name: opts.currentLabel, path },

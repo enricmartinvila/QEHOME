@@ -16,7 +16,7 @@ const heroImage = "/images/menjador12.webp"
 	description={seo.metaDescription}
 	ogImage={heroImage}
 	preloadImage={heroImage}
-	jsonLd={homeJsonLd(lang, seo.jsonLdDescription, heroImage)}
+	jsonLd={homeJsonLd(lang, seo.jsonLdDescription, heroImage, t.homeFaq.items)}
 >
 	<HomePage lang={lang} />
 </BaseLayout>
