@@ -6,6 +6,8 @@ import Contact from "../home/Contact.astro"
 import { getTranslations, type Lang } from "../../constants/i18n"
 import { localizedPath } from "../../constants/site"
 import { PARKING_LANDING } from "../../constants/landings"
+import LandingSections from "./LandingSections.astro"
+import LandingFaqs from "./LandingFaqs.astro"
 
 interface Props {
 	lang: Lang
@@ -102,20 +104,14 @@ const evImage = PARKING_LANDING.evImage
 		</div>
 
 		{
-			page.facts?.length > 0 && (
-				<section class="mx-auto mt-14 max-w-3xl md:mt-16">
-					<h2 class="landing-section-title text-center">{page.factsTitle}</h2>
-					<dl class="mt-8 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-						{page.facts.map((fact) => (
-							<div class="grid gap-2 border-b border-stone-200 p-6 last:border-b-0 sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-8">
-								<dt class="font-semibold text-stone-900">{fact.q}</dt>
-								<dd class="landing-prose">{fact.a}</dd>
-							</div>
-						))}
-					</dl>
-				</section>
+			page.sections && page.sections.length > 0 && (
+				<div class="mt-14 md:mt-16">
+					<LandingSections lang={lang} sections={page.sections} />
+				</div>
 			)
 		}
+
+		{page.faqs && <LandingFaqs title={page.faqsTitle} faqs={page.faqs} />}
 
 		<aside class="mx-auto mt-10 max-w-3xl rounded-2xl bg-brand p-8 text-white shadow-sm md:mt-12 md:p-10">
 			<div class="grid items-center gap-7 md:grid-cols-[1fr_auto] md:gap-10">

@@ -219,6 +219,34 @@
 				]
 			},
 			{
+				"title": "Cómo llegar a Manresa desde fuera",
+				"paragraphs": [
+					"En tren, la opción más directa para la universidad es la línea R5 de FGC desde Barcelona-Plaça Espanya hasta Manresa-Baixador, la parada que recomienda UManresa. Desde allí tienes unos minutos a pie hasta QEhome.",
+					"Con Renfe, las líneas R4 (Rodalies) y R12 (regional) llegan a la estación de Manresa, en la parte baja de la ciudad, junto al río Cardener. Desde allí hasta el apartamento es mejor ir en taxi o calcular un paseo más largo.",
+					"En coche, desde Barcelona se llega por la C-16 (con peaje) o por la A-2 y la C-55 (sin peaje), en torno a una hora. Si vienes desde el aeropuerto de El Prat, el tiempo es parecido en coche; en transporte público hay que enlazar en Barcelona."
+				]
+			},
+			{
+				"title": "Cuándo suele hacer falta alojamiento",
+				"paragraphs": [
+					"Las visitas vinculadas a la universidad se concentran en momentos concretos del calendario académico. Si tus fechas coinciden con alguno de ellos, conviene reservar con antelación:"
+				],
+				"items": [
+					"Inicio de curso, cuando muchas familias acompañan a los estudiantes y ayudan con la mudanza.",
+					"Jornadas de puertas abiertas para futuros estudiantes y sus familias.",
+					"Graduaciones y actos académicos de final de curso.",
+					"Congresos, jornadas profesionales y formaciones de varios días.",
+					"Estancias de docentes invitados, tribunales o investigación."
+				]
+			},
+			{
+				"title": "Si vienes a buscar piso para el curso",
+				"paragraphs": [
+					"Cuando un estudiante empieza en UManresa, a menudo hay que pasar unos días en la ciudad visitando pisos o habitaciones. QEhome sirve como base para esos días: dos dormitorios si viene la familia, cocina para no comer siempre fuera y WiFi para gestionar citas y contratos.",
+					"A la hora de elegir piso, ten en cuenta la distancia a pie al campus de Av. Universitària y a la estación FGC Manresa-Baixador, sobre todo si el estudiante no tendrá coche."
+				]
+			},
+			{
 				"title": "Por qué QEhome encaja",
 				"paragraphs": [
 					"Para una visita corta importa poder trabajar, cocinar y entrar a cualquier hora. WiFi y mesa de trabajo, cocina completa, dos dormitorios y entrada autónoma. Si vienes en coche, parking privado en el edificio."
@@ -235,14 +263,58 @@
 			{
 				"title": "Más cerca",
 				"paragraphs": [
-					"Si combinas universidad y ciudad, también tienes las guías de qué ver en Manresa, parking y cargador eléctrico, y Camino Ignaciano."
+					"Si aprovechas la visita para conocer la ciudad, tienes la guía de [[qué ver en Manresa|que-ver-manresa]]. Si llegas en coche, consulta los detalles del [[parking privado y el cargador eléctrico|apartamento-parking-manresa]]. Y si vienes en familia, la página de [[apartamento para familias|apartamento-familias-manresa]]."
 				]
 			}
 		],
 		"availabilityNote": "Consulta disponibilidad para tus fechas",
 		"apartmentTitle": "Reservar cerca de UManresa",
 		"apartmentText": "Una opción cómoda para estancias vinculadas a UManresa, con cocina, zona de trabajo, entrada autónoma y parking privado.",
-		"backHome": "Ver el apartamento turístico"
+		"backHome": "Ver el apartamento turístico",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "A UManresa",
+					"value": "10-15 min a pie · 5 min en coche"
+				},
+				{
+					"label": "FGC Manresa-Baixador",
+					"value": "5-10 min a pie"
+				},
+				{
+					"label": "Entrada",
+					"value": "Autónoma, desde las 15:00"
+				},
+				{
+					"label": "Si vienes en coche",
+					"value": "Parking privado en el edificio"
+				}
+			]
+		},
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿QEhome es una residencia de estudiantes?",
+				"a": "No. Es un apartamento turístico para estancias de días o semanas: visitas de familiares, docentes, formaciones o búsqueda de piso. No está pensado para alojarse todo el curso."
+			},
+			{
+				"q": "¿Cuánto se tarda a pie hasta UManresa?",
+				"a": "Unos 10-15 minutos andando hasta el campus de Av. Universitària, o unos 5 minutos en coche."
+			},
+			{
+				"q": "¿Se puede trabajar desde el apartamento?",
+				"a": "Sí. Hay WiFi y mesa de trabajo, útil para preparar una ponencia, teletrabajar o seguir clases en línea."
+			},
+			{
+				"q": "¿Puedo llegar tarde después de un acto o un viaje largo?",
+				"a": "Sí. La entrada es autónoma a partir de las 15:00, sin horario de recepción."
+			},
+			{
+				"q": "¿Hay parking?",
+				"a": "Sí. Plaza privada en el mismo edificio, incluida en la estancia, con ascensor directo al piso."
+			}
+		]
 	},
 	"queVerPage": {
 		"h1": "Qué ver en Manresa: guía para descubrir la ciudad en 1 o 2 días",
@@ -426,6 +498,20 @@
 				"id": "ignacio"
 			},
 			{
+				"id": "fiestas",
+				"title": "Fiestas y agenda de Manresa",
+				"paragraphs": [
+					"Algunas fechas cambian mucho el ambiente de la ciudad. Si podéis elegir cuándo venir, estas son las citas más conocidas:"
+				],
+				"items": [
+					"Festa de la Llum (febrero): la gran fiesta tradicional de Manresa, alrededor del 21 de febrero, que recuerda la leyenda de la luz de 1345 ligada a la Séquia.",
+					"Fira de l'Aixada (febrero): mercado y recreación medieval por las calles del centro histórico, coincidiendo con la Festa de la Llum.",
+					"Festa Major (finales de agosto): conciertos, cultura popular y actividades por toda la ciudad.",
+					"Fira Mediterrània (otoño): uno de los principales mercados de artes escénicas y cultura popular de Cataluña, con espectáculos en calles y teatros."
+				],
+				"tip": "En fechas de fiesta la ocupación sube y el aparcamiento en el centro se complica. Si venís en coche, reservar con plaza incluida evita buscar sitio."
+			},
+			{
 				"title": "Consejos prácticos para visitar Manresa",
 				"paragraphs": [
 					"Cómo moverse: el centro histórico y buena parte de los puntos principales se recorren a pie. Para el Parc de l'Agulla o salidas por el Bages, el coche suele ser más práctico.",
@@ -473,12 +559,35 @@
 				"label": "Manresa e Ignacio de Loyola"
 			},
 			{
+				"id": "fiestas",
+				"label": "Fiestas y agenda"
+			},
+			{
 				"id": "consejos",
 				"label": "Consejos prácticos"
 			}
 		],
 		"reviewedLabel": "Última revisión: septiembre de 2026",
-		"showAboutGuide": true
+		"showAboutGuide": true,
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Cuántos días hacen falta para ver Manresa?",
+				"a": "Un día completo permite ver los imprescindibles: La Seu, el centro histórico, el Museu del Barroc, el Pont Vell y la Cova de Sant Ignasi. Con dos días podéis añadir el Parc de l'Agulla, el modernismo o una excursión a Montserrat."
+			},
+			{
+				"q": "¿Se puede visitar Manresa a pie?",
+				"a": "Sí. El centro histórico y los principales monumentos están a distancias caminables. Para el Parc de l'Agulla o salidas por el Bages, el coche es más práctico."
+			},
+			{
+				"q": "¿Cómo se llega a Manresa desde Barcelona?",
+				"a": "En tren con FGC (R5 y R50 desde Plaça Espanya) o Renfe (R4 y R12), o en coche por la C-16 o la C-55, en torno a una hora."
+			},
+			{
+				"q": "¿Qué es lo más importante de Manresa?",
+				"a": "La Seu, la basílica gótica que domina la ciudad, y la Cova de Sant Ignasi, ligada a la estancia de Ignacio de Loyola en 1522."
+			}
+		]
 	},
 	"caminoPage": {
 		"h1": "Alojamiento en Manresa para el Camino Ignaciano",
@@ -492,6 +601,20 @@
 				"paragraphs": [
 					"El Camino Ignaciano llega a Manresa, ciudad ligada a la estancia de San Ignacio y a la [[Cova de Sant Ignasi|que-ver-manresa]]. Aquí termina la ruta para muchos peregrinos, o es una etapa larga antes de seguir viaje.",
 					"En el centro tienes servicios, comercios y el patrimonio ignaciano a poca distancia a pie. QEhome está en Carrer Doctor Esteve, cerca de la estación FGC Manresa-Baixador."
+				]
+			},
+			{
+				"title": "El Camino Ignaciano en pocas palabras",
+				"paragraphs": [
+					"El Camino Ignaciano reproduce el viaje que hizo Ignacio de Loyola en 1522 desde su casa natal en Loyola (Azpeitia, Gipuzkoa) hasta Manresa. Son unos 650 km repartidos en 27 etapas que cruzan el País Vasco, La Rioja, Navarra, Aragón y Cataluña.",
+					"Muchos peregrinos no lo hacen entero: es habitual recorrer solo el tramo catalán, desde Lleida o desde Montserrat, y terminar en Manresa con visita a la Cova de Sant Ignasi."
+				]
+			},
+			{
+				"title": "La última etapa: de Montserrat a Manresa",
+				"paragraphs": [
+					"La etapa final sale del monasterio de Montserrat y llega a Manresa tras unos 25-26 km, según el trazado publicado por Turismo de Manresa. Es una jornada larga y con desnivel que conviene empezar temprano.",
+					"En verano el calor aprieta en los tramos sin sombra: lleva agua suficiente y protección solar. Si quieres dormir en Montserrat la noche anterior, tienes información para organizar la visita en la guía de [[Montserrat desde Manresa|visitar-montserrat-desde-manresa]]."
 				]
 			},
 			{
@@ -538,9 +661,23 @@
 				]
 			},
 			{
+				"title": "Volver a casa desde Manresa",
+				"paragraphs": [
+					"Desde Manresa salen trenes hacia Barcelona tanto de FGC como de Renfe. La línea R5 de FGC sale de Manresa-Baixador, cerca de QEhome, y llega a Barcelona-Plaça Espanya. Las líneas R4 y R12 de Renfe salen de la estación de Manresa, en la parte baja de la ciudad; la R12 también conecta con Lleida.",
+					"Para coger un avión en Barcelona-El Prat hay que enlazar en Barcelona. Si alguien viene a recogerte en coche, puede aparcar en la plaza privada del edificio."
+				]
+			},
+			{
+				"title": "Si viajas con coche de apoyo",
+				"paragraphs": [
+					"Algunos grupos hacen el Camino con un vehículo que lleva el equipaje o recoge a quien lo necesita. En QEhome el coche se queda en el [[parking privado del edificio|apartamento-parking-manresa]], con ascensor directo al piso para subir mochilas y maletas."
+				]
+			},
+			{
 				"title": "Si te quedas un día más",
 				"paragraphs": [
-					"Con una noche extra puedes visitar el centro histórico o Montserrat. En esta web también tienes las guías de qué ver en Manresa y de visitar Montserrat desde Manresa."
+					"Con una noche extra puedes recorrer con calma los lugares ignacianos y el centro histórico: la guía de [[qué ver en Manresa|que-ver-manresa]] reúne La Seu, el Pont Vell, la Cova y los 22 puntos ignacianos de la ciudad.",
+					"Si llegaste a Manresa sin pasar por Montserrat, también puedes volver a la montaña en tren o en coche y regresar a dormir al mismo apartamento."
 				]
 			}
 		],
@@ -548,7 +685,51 @@
 		"apartmentTitle": "Reservar para el Camino Ignaciano",
 		"apartmentText": "Descansa en un apartamento céntrico con entrada autónoma, cocina equipada, WiFi y parking privado si llegas en coche. 9,7 en Booking.",
 		"backHome": "Ver el apartamento turístico",
-		"showAboutGuide": true
+		"showAboutGuide": true,
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Última etapa",
+					"value": "Montserrat → Manresa, unos 25 km"
+				},
+				{
+					"label": "Sello de la credencial",
+					"value": "Centro de Acogida, Via Sant Ignasi, 40"
+				},
+				{
+					"label": "Certificado (Ignaciana)",
+					"value": "Oficina de Turismo, Plaça Major"
+				},
+				{
+					"label": "Entrada en QEhome",
+					"value": "Autónoma, desde las 15:00"
+				}
+			]
+		},
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Dónde se sella la credencial en Manresa?",
+				"a": "En el Centro de Acogida de Peregrinos, Via Sant Ignasi, 40, normalmente de 10:00 a 18:00 todos los días, excepto el 25 y 26 de diciembre y el 1 y 6 de enero."
+			},
+			{
+				"q": "¿Dónde se recoge el certificado del Camino Ignaciano?",
+				"a": "La Ignaciana se recoge en la Oficina de Turismo de Manresa, en la Plaça Major, presentando la credencial sellada."
+			},
+			{
+				"q": "¿Puedo llegar tarde después de la etapa?",
+				"a": "Sí. La entrada es autónoma a partir de las 15:00, sin depender de recepción."
+			},
+			{
+				"q": "¿Se admiten mascotas?",
+				"a": "No. QEhome no admite mascotas, algo a tener en cuenta si haces el Camino con perro."
+			},
+			{
+				"q": "¿Está cerca de la Cova de Sant Ignasi?",
+				"a": "La Cova está a unos 30 minutos a pie desde el apartamento, y el Centro de Acogida a unos 25 minutos."
+			}
+		]
 	},
 	"montserratPage": {
 		"h1": "Visitar Montserrat desde Manresa: guía para una excursión de un día",
@@ -784,7 +965,26 @@
 		},
 		"temporaryNotices": {
 			"funiculars": "Aviso actual: la web oficial indica que los funiculares de Santa Cova y Sant Joan están cerrados hasta nuevo aviso por revisión anual. Confirma el estado el día de tu visita."
-		}
+		},
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Cuánto se tarda de Manresa a Montserrat?",
+				"a": "En coche, unos 25 minutos hasta Monistrol para coger el Cremallera o el Aeri, y unos 35-40 minutos si subes en coche hasta el monasterio. En tren, la R5 de FGC enlaza con ambos sistemas."
+			},
+			{
+				"q": "¿Hay que pagar para entrar en la basílica?",
+				"a": "El acceso a la basílica es libre. El museo, los funiculares, el Cremallera y el Aeri son de pago. Comprueba tarifas en la web oficial."
+			},
+			{
+				"q": "¿Mejor Cremallera o Aeri?",
+				"a": "El Aeri es más rápido (unos 5 minutos) y vistoso; el Cremallera tarda unos 15 minutos y tiene aparcamiento grande en Monistrol. Depende sobre todo de dónde aparques o de qué estación de FGC uses."
+			},
+			{
+				"q": "¿Se puede ir y volver en el día desde Manresa?",
+				"a": "Sí. Es una de las ventajas de alojarse en Manresa: sales por la mañana, visitas Montserrat y vuelves a dormir al mismo sitio sin cambiar de alojamiento."
+			}
+		]
 	},
 	"enoturismoPage": {
 		"h1": "Enoturismo en el Pla de Bages desde Manresa",
@@ -801,6 +1001,23 @@
 				]
 			},
 			{
+				"id": "do-pla-de-bages",
+				"title": "Qué es la DO Pla de Bages",
+				"paragraphs": [
+					"La DO Pla de Bages es una de las denominaciones de origen más pequeñas de Cataluña. Ocupa el llano que rodea Manresa, con viñedos entre bosques, masías y relieves como Montserrat y Sant Llorenç del Munt de fondo.",
+					"En el siglo XIX el Bages fue una de las comarcas con más viña de Cataluña, hasta que la filoxera arrasó los viñedos a finales de siglo. La recuperación llegó mucho más tarde, con bodegas familiares que apuestan por producciones cortas y variedades propias.",
+					"La variedad que distingue la zona es el Picapoll blanco, una uva casi exclusiva del Bages que da blancos frescos y aromáticos. También se cultivan Macabeo y Chardonnay, y tintas como Merlot, Cabernet Sauvignon, Ull de Llebre (Tempranillo), Garnacha y la recuperada Sumoll."
+				]
+			},
+			{
+				"id": "tines",
+				"title": "Las tines de viña, un patrimonio único",
+				"paragraphs": [
+					"Las tines son construcciones de piedra seca levantadas en medio de los viñedos para fermentar la uva allí mismo, sin transportarla hasta el pueblo. La mayoría son de los siglos XVIII y XIX y son uno de los elementos más característicos del paisaje del vino del Bages.",
+					"Hay grupos especialmente bien conservados en la Vall del Flequer, entre Mura y Talamanca, dentro del Parque Natural de Sant Llorenç del Munt i l'Obac. Se pueden visitar en rutas a pie señalizadas que combinan bien con una mañana de bodega."
+				]
+			},
+			{
 				"title": "Bodegas cerca de Manresa (con visita)",
 				"paragraphs": [
 					"Selección corta de bodegas DO Pla de Bages con visitas o catas con reserva previa. Confirma horarios y plazas en cada bodega o en la Ruta del vino DO Pla de Bages / Bages Turisme antes de ir."
@@ -811,7 +1028,8 @@
 					"Mas de Sant Iscle (Sant Fruitós de Bages): bodega visitable de la DO. Unos 10 minutos en coche.",
 					"Abadal (Santa Maria d'Horta d'Avinyó): visitas y catas en una de las bodegas de referencia del Bages. Unos 25 minutos en coche.",
 					"Grau i Grau (Castellfollit del Boix): visitas según agenda de la bodega. Unos 25 a 30 minutos en coche."
-				]
+				],
+				"id": "bodegas"
 			},
 			{
 				"title": "Ruta de enoturismo de 2 días",
@@ -823,7 +1041,8 @@
 					"Sábado: mañana en una bodega cercana (Oller del Mas o Collbaix). Comida en la finca o de vuelta a Manresa. Tarde de paisaje, tinas o segunda visita corta.",
 					"Domingo: centro histórico de Manresa, o una bodega un poco más lejos (Abadal o Mas de Sant Iscle) antes de marchar.",
 					"Alternativa: un día de bodegas y otro de visita a Montserrat."
-				]
+				],
+				"id": "ruta"
 			},
 			{
 				"title": "Distancias en coche desde QEhome",
@@ -855,9 +1074,35 @@
 				]
 			},
 			{
+				"id": "cuando-ir",
+				"title": "Cuándo ir",
+				"paragraphs": [
+					"La vendimia, entre finales de agosto y septiembre, es el momento con más actividad: algunas bodegas organizan jornadas especiales y se ve el trabajo en la viña. Primavera y otoño son cómodos por temperatura y paisaje.",
+					"En verano conviene programar las visitas a primera hora o al final de la tarde. En invierno hay menos oferta, pero las visitas con reserva suelen ser más tranquilas."
+				]
+			},
+			{
+				"id": "consejos",
+				"title": "Consejos para organizar la visita",
+				"items": [
+					"Reserva siempre antes: la mayoría de bodegas solo abren con visita concertada y plazas limitadas.",
+					"Pregunta si la visita incluye viña y cata, y cuánto dura, para encadenar dos bodegas el mismo día sin prisas.",
+					"Designa un conductor que no beba o combina las visitas con desplazamientos cortos: las bodegas más cercanas están a 10-15 minutos de Manresa.",
+					"Lleva calzado cómodo si la visita incluye paseo por los viñedos o las tines.",
+					"Si compras vino, el maletero queda en el [[parking privado|apartamento-parking-manresa]] del edificio, sin dejarlo en la calle."
+				]
+			},
+			{
+				"id": "mon-sant-benet",
+				"title": "Món Sant Benet y gastronomía",
+				"paragraphs": [
+					"A unos 15 minutos de Manresa, Món Sant Benet reúne un monasterio medieval con claustro románico y un espacio dedicado a la cocina y la alimentación. Encaja bien como complemento a una ruta de bodegas, sobre todo con mal tiempo o si viajas con niños."
+				]
+			},
+			{
 				"title": "Más ideas cerca",
 				"paragraphs": [
-					"Para combinar vino y ciudad, mira también qué ver en Manresa, visitar Montserrat desde Manresa y la página de parking y cargador eléctrico."
+					"Para combinar vino y ciudad, tienes la guía de [[qué ver en Manresa|que-ver-manresa]]. Si quieres un día de montaña entre visita y visita, consulta cómo [[visitar Montserrat desde Manresa|visitar-montserrat-desde-manresa]]."
 				]
 			}
 		],
@@ -866,7 +1111,73 @@
 		"apartmentText": "Base en Manresa con parking, cargador eléctrico, 2 dormitorios y cocina completa. Reserva en Booking o Airbnb.",
 		"backHome": "Ver el apartamento turístico",
 		"showAboutGuide": true,
-		"reviewedLabel": "Última revisión: septiembre de 2026"
+		"reviewedLabel": "Última revisión: septiembre de 2026",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Denominación",
+					"value": "DO Pla de Bages"
+				},
+				{
+					"label": "Uva emblemática",
+					"value": "Picapoll blanco"
+				},
+				{
+					"label": "Bodegas más cercanas",
+					"value": "A 10-15 min en coche"
+				},
+				{
+					"label": "Visitas",
+					"value": "Con reserva previa"
+				}
+			]
+		},
+		"toc": [
+			{
+				"id": "do-pla-de-bages",
+				"label": "Qué es la DO Pla de Bages"
+			},
+			{
+				"id": "tines",
+				"label": "Las tines de viña"
+			},
+			{
+				"id": "bodegas",
+				"label": "Bodegas con visita"
+			},
+			{
+				"id": "ruta",
+				"label": "Ruta de 2 días"
+			},
+			{
+				"id": "cuando-ir",
+				"label": "Cuándo ir"
+			},
+			{
+				"id": "consejos",
+				"label": "Consejos para la visita"
+			}
+		],
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Hace falta reservar para visitar bodegas del Pla de Bages?",
+				"a": "Sí, en la práctica casi siempre. La mayoría de bodegas trabajan con visitas concertadas y plazas limitadas; consulta su web o la Ruta del vino DO Pla de Bages."
+			},
+			{
+				"q": "¿Qué vino es típico del Bages?",
+				"a": "El blanco de Picapoll, una variedad casi exclusiva de la zona. También hay buenos tintos de Merlot, Cabernet Sauvignon y Sumoll."
+			},
+			{
+				"q": "¿Se puede hacer la ruta sin coche?",
+				"a": "Es complicado: el transporte público hasta las bodegas es limitado. Las más cercanas a Manresa, como Oller del Mas, están a pocos minutos en taxi."
+			},
+			{
+				"q": "¿Cuándo es la vendimia?",
+				"a": "Normalmente entre finales de agosto y septiembre, según la variedad y la añada."
+			}
+		]
 	},
 	"parkingPage": {
 		"h1": "Apartamento con parking privado en Manresa",
@@ -881,8 +1192,75 @@
 		"evTitle": "Cargador para vehículo eléctrico",
 		"evText": "El cargador está en la misma plaza. Puedes utilizarlo sin buscar un punto público. El coste de la recarga lo paga quien utiliza el cargador.",
 		"evImageAlt": "Cargador eléctrico en el parking de QEhome Manresa",
-		"factsTitle": "Datos prácticos",
-		"facts": [
+		"availabilityNote": "Consulta disponibilidad para tus fechas",
+		"apartmentTitle": "El apartamento turístico",
+		"apartmentText": "Dos dormitorios en el centro de Manresa. 9,7 en Booking. Entrada autónoma, cocina completa y estación FGC a pocos minutos.",
+		"backHome": "Ver el apartamento turístico",
+		"sections": [
+			{
+				"id": "llegada",
+				"title": "Cómo funciona la llegada en coche",
+				"paragraphs": [
+					"QEhome está en Carrer Doctor Esteve, 9, en el centro de Manresa. Antes de la llegada recibes las instrucciones de entrada autónoma, también las del parking.",
+					"Entras con el mando, dejas el coche en la plaza y subes en ascensor directamente al piso con el equipaje. No hace falta descargar en la calle ni dar vueltas buscando sitio.",
+					"La entrada es a partir de las 15:00 y la salida antes de las 11:00. Mientras dura la estancia, la plaza es tuya: puedes entrar y salir con el coche tantas veces como necesites."
+				],
+				"items": [
+					"Dirección: Carrer Doctor Esteve, 9 (Manresa)",
+					"Acceso al parking con mando",
+					"Ascensor directo de la plaza al apartamento",
+					"Check-in desde las 15:00, salida antes de las 11:00"
+				]
+			},
+			{
+				"id": "aparcar-centro",
+				"title": "Aparcar en el centro de Manresa",
+				"paragraphs": [
+					"El centro de Manresa combina calles estrechas del casco antiguo con zonas de aparcamiento regulado en superficie. Encontrar sitio libre cerca de casa, sobre todo por la tarde, no siempre es fácil, y los aparcamientos públicos se pagan por horas.",
+					"Con plaza propia en el edificio, el coche se queda guardado y te mueves a pie por la ciudad: la estación FGC Manresa-Baixador está a pocos minutos y la Plaça Major a unos 20-25 minutos andando. El coche solo sale cuando vas de excursión."
+				]
+			},
+			{
+				"id": "como-llegar",
+				"title": "Cómo llegar a Manresa en coche",
+				"paragraphs": [
+					"Manresa está en el centro de Cataluña y conecta por autovía con Barcelona, Lleida, Girona y el Pirineo. Distancias y tiempos orientativos hasta QEhome, sin tráfico denso:"
+				],
+				"items": [
+					"Desde Barcelona (unos 65 km, alrededor de 1 h): por la C-16 a través de los Túnels de Vallvidrera y Terrassa (con peaje), o por la A-2 y la C-55 pasando por Martorell y Abrera (sin peaje, con más tráfico).",
+					"Desde el aeropuerto de Barcelona-El Prat: alrededor de 1 h, enlazando con la C-16 o con la A-2 y la C-55.",
+					"Desde Lleida (unos 115 km, alrededor de 1 h 15 min): A-2 hasta Cervera y después Eix Transversal (C-25).",
+					"Desde Girona (unos 130 km, alrededor de 1 h 20 min): Eix Transversal (C-25) pasando por Vic.",
+					"Desde Vic (unos 55 km, unos 45 min): Eix Transversal (C-25).",
+					"Desde Berga y el Pirineo: C-16 en dirección sur, unos 50 km desde Berga."
+				]
+			},
+			{
+				"id": "coche-electrico",
+				"title": "Viajar a Manresa con coche eléctrico",
+				"paragraphs": [
+					"El cargador está en la misma plaza de parking, así que puedes cargar por la noche mientras descansas y salir por la mañana con la batería llena hacia Montserrat, las bodegas del Pla de Bages o de vuelta a casa.",
+					"El coste de la energía que consumas corre a cargo de quien utiliza el cargador. Si necesitas confirmar el tipo de conector o cualquier detalle de la recarga, escríbenos por WhatsApp antes de reservar y te lo confirmamos."
+				],
+				"tip": "Con unos 65 km desde Barcelona y las excursiones principales a menos de 40 minutos, la mayoría de estancias se resuelven cargando solo en la plaza, sin buscar puntos públicos."
+			},
+			{
+				"id": "excursiones",
+				"title": "Excursiones en coche desde QEhome",
+				"paragraphs": [
+					"Tener el coche a mano en el mismo edificio hace fácil usar Manresa como base. Tiempos orientativos desde el apartamento:"
+				],
+				"items": [
+					"[[Montserrat|visitar-montserrat-desde-manresa]]: unos 25 minutos hasta Monistrol (Cremallera o Aeri) y unos 35-40 minutos subiendo en coche hasta el monasterio.",
+					"Bodegas de la [[DO Pla de Bages|enoturismo-pla-de-bages]]: las más cercanas a 10-15 minutos.",
+					"Món Sant Benet (Sant Fruitós de Bages): unos 15 minutos.",
+					"Muntanya de Sal y castillo de Cardona: unos 35 minutos.",
+					"Parque Natural de Sant Llorenç del Munt i l'Obac (Mura, Talamanca): unos 30 minutos."
+				]
+			}
+		],
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
 			{
 				"q": "¿La plaza está en el mismo edificio?",
 				"a": "Sí. Plaza interior privada en el edificio del apartamento."
@@ -906,12 +1284,16 @@
 			{
 				"q": "¿Tengo que aparcar en la calle?",
 				"a": "No. Usas la plaza del edificio y te olvidas del coche mientras estás en Manresa."
+			},
+			{
+				"q": "¿Puedo ir al centro de Manresa a pie?",
+				"a": "Sí. La estación FGC Manresa-Baixador está a pocos minutos y la Plaça Major a unos 20-25 minutos andando. El coche puede quedarse en la plaza durante toda la estancia."
+			},
+			{
+				"q": "¿A qué hora puedo llegar?",
+				"a": "La entrada es a partir de las 15:00 y es autónoma, así que puedes llegar más tarde sin depender de nadie. La salida es antes de las 11:00."
 			}
-		],
-		"availabilityNote": "Consulta disponibilidad para tus fechas",
-		"apartmentTitle": "El apartamento turístico",
-		"apartmentText": "Dos dormitorios en el centro de Manresa. 9,7 en Booking. Entrada autónoma, cocina completa y estación FGC a pocos minutos.",
-		"backHome": "Ver el apartamento turístico"
+		]
 	},
 	"contacto": {
 		"check": "¿Quieres alojarte en QEhome?",
@@ -1031,6 +1413,48 @@
 				]
 			},
 			{
+				"title": "Planes con niños cerca de Manresa",
+				"paragraphs": [
+					"Además de la ciudad, en menos de 40 minutos en coche tenéis planes pensados para todas las edades:"
+				],
+				"subsections": [
+					{
+						"title": "Parc de l'Agulla (Manresa)",
+						"paragraphs": [
+							"El gran parque de la ciudad, con un lago de unos 64.000 m², zonas de juego y espacio para correr y hacer pícnic. Ideal para una tarde tranquila sin coger el coche lejos."
+						]
+					},
+					{
+						"title": "Muntanya de Sal de Cardona",
+						"paragraphs": [
+							"A unos 35 minutos. Visita guiada al interior de una antigua mina de sal, con galerías y formaciones salinas que suelen fascinar a los niños. En lo alto del pueblo está el castillo de Cardona. Consultad edades mínimas y horarios antes de ir."
+						]
+					},
+					{
+						"title": "Montserrat en cremallera o teleférico",
+						"paragraphs": [
+							"Subir en el Cremallera o en el Aeri ya es parte de la excursión. Arriba, miradores y paseos cortos adaptados a niños."
+						],
+						"link": {
+							"label": "Montserrat con niños",
+							"slug": "visitar-montserrat-desde-manresa"
+						}
+					},
+					{
+						"title": "Món Sant Benet",
+						"paragraphs": [
+							"A unos 15 minutos, en Sant Fruitós de Bages. Monasterio medieval, jardines y actividades relacionadas con la cocina y la alimentación en determinadas fechas."
+						]
+					},
+					{
+						"title": "Sant Llorenç del Munt i l'Obac",
+						"paragraphs": [
+							"Parque natural a unos 30 minutos, con rutas cortas desde Mura o Talamanca y las tines de piedra entre viñedos. Para familias con niños pequeños, mejor elegir itinerarios llanos y cortos."
+						]
+					}
+				]
+			},
+			{
 				"title": "Para qué tipo de estancia encaja QEhome",
 				"paragraphs": [
 					"Es especialmente práctico en estos casos:"
@@ -1108,12 +1532,45 @@
 			{
 				"q": "¿Está bien situado para visitar Manresa?",
 				"a": "Sí. Está en Manresa y permite combinar la ciudad con salidas al Bages y Montserrat."
+			},
+			{
+				"q": "¿A qué hora es la entrada y la salida?",
+				"a": "La entrada es a partir de las 15:00 y la salida antes de las 11:00."
+			},
+			{
+				"q": "¿Se admiten mascotas?",
+				"a": "No. QEhome no admite mascotas."
+			},
+			{
+				"q": "¿Es fácil subir el equipaje?",
+				"a": "Sí. Desde la plaza de parking hay ascensor directo al piso, así que no hace falta cargar con maletas ni sillitas por la calle."
 			}
 		],
 		"availabilityNote": "Consulta disponibilidad para tus fechas",
 		"apartmentTitle": "¿Estáis preparando una estancia en Manresa?",
 		"apartmentText": "Dos dormitorios, cocina equipada, parking privado y 9,7 en Booking. Consultad fechas y reservad en Booking o Airbnb.",
-		"backHome": "Ver el apartamento"
+		"backHome": "Ver el apartamento",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Espacio",
+					"value": "2 dormitorios, salón y cocina"
+				},
+				{
+					"label": "Coche",
+					"value": "Parking en el edificio con ascensor"
+				},
+				{
+					"label": "Horario",
+					"value": "Entrada desde las 15:00 · salida antes de las 11:00"
+				},
+				{
+					"label": "Mascotas",
+					"value": "No admitidas"
+				}
+			]
+		}
 	},
 	"equipment": {
 		"title": "Todo lo necesario para una estancia cómoda",
@@ -1166,5 +1623,35 @@
 	"bookingCtas": {
 		"bookingLabel": "Reservar en Booking",
 		"airbnbLabel": "Reservar en Airbnb"
+	},
+	"practicalInfo": {
+		"title": "Información práctica",
+		"intro": "Lo que conviene saber antes de llegar a QEhome.",
+		"items": [
+			{
+				"title": "Entrada y salida",
+				"text": "Entrada autónoma a partir de las 15:00 y salida antes de las 11:00. Recibes las instrucciones antes de la llegada, sin depender de recepción."
+			},
+			{
+				"title": "Ubicación",
+				"text": "Carrer Doctor Esteve, 9, en el centro de Manresa. FGC Manresa-Baixador a pocos minutos a pie y Plaça Major a unos 20-25 minutos andando."
+			},
+			{
+				"title": "En coche",
+				"text": "Desde Barcelona, unos 65 km por la C-16 o la C-55. Plaza privada en el edificio, con ascensor directo al piso y cargador eléctrico."
+			},
+			{
+				"title": "En tren",
+				"text": "FGC R5 desde Barcelona-Plaça Espanya hasta Manresa-Baixador, la parada más cercana. Renfe R4 y R12 llegan a la estación de Manresa."
+			},
+			{
+				"title": "Excursiones",
+				"text": "Montserrat a unos 25-40 minutos, bodegas DO Pla de Bages a 10-15 minutos y Cardona a unos 35 minutos en coche."
+			},
+			{
+				"title": "Normas",
+				"text": "No se admiten mascotas. Para cualquier duda antes de reservar, escríbenos por WhatsApp."
+			}
+		]
 	}
 }

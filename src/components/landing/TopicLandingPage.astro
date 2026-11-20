@@ -10,28 +10,9 @@ import {
 	type TopicLandingKey,
 } from "../../constants/landings"
 import { MONTSERRAT_NOTICES } from "../../constants/montserratNotices"
-
-interface LandingLink {
-	label: string
-	slug: string
-}
-
-interface LandingSubsection {
-	title: string
-	paragraphs?: string[]
-	items?: string[]
-	link?: LandingLink
-}
-
-interface LandingSection {
-	id?: string
-	title: string
-	paragraphs?: string[]
-	items?: string[]
-	subsections?: LandingSubsection[]
-	link?: LandingLink
-	tip?: string
-}
+import LandingSections, { type LandingSection } from "./LandingSections.astro"
+import LandingFaqs from "./LandingFaqs.astro"
+import KeyFacts from "./KeyFacts.astro"
 
 interface Props {
 	lang: Lang
@@ -51,6 +32,7 @@ const page = t[landing.pageKey as keyof typeof t] as {
 	breadcrumbHome: string
 	breadcrumbCurrent: string
 	sections: LandingSection[]
+	keyFacts?: { title: string; items: Array<{ label: string; value: string }> }
 	toc?: Array<{ id: string; label: string }>
 	reviewedLabel?: string
 	showAboutGuide?: boolean
@@ -74,24 +56,6 @@ const activeFunicularNotice =
 	MONTSERRAT_NOTICES.temporary.some((n) => n.id === "funiculars" && n.active)
 		? page.temporaryNotices?.funiculars
 		: null
-
-function renderInline(text: string) {
-	const parts: Array<{ type: "text" | "link"; value: string; slug?: string }> =
-		[]
-	const re = /\[\[([^\]|]+)\|([^\]]+)\]\]/g
-	let last = 0
-	let match: RegExpExecArray | null
-	while ((match = re.exec(text)) !== null) {
-		if (match.index > last) {
-			parts.push({ type: "text", value: text.slice(last, match.index) })
-		}
-		parts.push({ type: "link", value: match[1], slug: match[2] })
-		last = match.index + match[0].length
-	}
-	if (last < text.length) parts.push({ type: "text", value: text.slice(last) })
-	if (parts.length === 0) parts.push({ type: "text", value: text })
-	return parts
-}
 ---
 
 <LandingHero
@@ -150,139 +114,9 @@ function renderInline(text: string) {
 			)
 		}
 
-		<div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-			{
-				page.sections.map((section, sectionIndex) => (
-					<article
-						id={section.id}
-						class:list={[
-							"scroll-mt-28 grid gap-5 p-7 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.7fr)] md:gap-12 md:p-10",
-							sectionIndex > 0 && "border-t border-stone-200",
-						]}
-					>
-						<div>
-							<p class="text-xs font-semibold uppercase tracking-wider text-brand">
-								{String(sectionIndex + 1).padStart(2, "0")}
-							</p>
-							<h2 class="mt-2 text-xl font-bold leading-snug text-stone-900 md:text-2xl">
-								{section.title}
-							</h2>
-						</div>
-						<div>
-							{section.paragraphs?.map((p, paragraphIndex) => (
-								<p class:list={["landing-prose", paragraphIndex > 0 && "mt-4"]}>
-									{renderInline(p).map((part) =>
-										part.type === "link" && part.slug ? (
-											<a
-												href={localizedPath(lang, part.slug)}
-												class="font-medium text-brand hover:underline"
-											>
-												{part.value}
-											</a>
-										) : (
-											part.value
-										),
-									)}
-								</p>
-							))}
-							{section.tip && (
-								<aside class="mt-6 rounded-xl border border-brand/25 bg-brand/5 p-4">
-									<p class="text-sm font-semibold text-brand">{guideUi.tipLabel}</p>
-									<p class="landing-prose mt-2">{section.tip}</p>
-								</aside>
-							)}
-							{section.items && (
-								<ul class:list={["space-y-3", (section.paragraphs?.length || section.tip) ? "mt-6" : ""]}>
-									{section.items.map((item) => (
-										<li class="flex gap-3 text-[15px] leading-relaxed text-stone-700 md:text-base">
-											<span
-												class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand"
-												aria-hidden="true"
-											/>
-											<span>
-												{renderInline(item).map((part) =>
-													part.type === "link" && part.slug ? (
-														<a
-															href={localizedPath(lang, part.slug)}
-															class="font-medium text-brand hover:underline"
-														>
-															{part.value}
-														</a>
-													) : (
-														part.value
-													),
-												)}
-											</span>
-										</li>
-									))}
-								</ul>
-							)}
-							{section.subsections && (
-								<div
-									class:list={[
-										"space-y-7",
-										(section.paragraphs?.length || section.items?.length || section.tip) && "mt-8",
-									]}
-								>
-									{section.subsections.map((sub) => (
-										<div>
-											<h3 class="text-base font-bold text-stone-900 md:text-lg">
-												{sub.title}
-											</h3>
-											{sub.paragraphs?.map((p) => (
-												<p class="landing-prose mt-2">
-													{renderInline(p).map((part) =>
-														part.type === "link" && part.slug ? (
-															<a
-																href={localizedPath(lang, part.slug)}
-																class="font-medium text-brand hover:underline"
-															>
-																{part.value}
-															</a>
-														) : (
-															part.value
-														),
-													)}
-												</p>
-											))}
-											{sub.items && (
-												<ul class="mt-3 space-y-2">
-													{sub.items.map((item) => (
-														<li class="flex gap-3 text-[15px] leading-relaxed text-stone-700">
-															<span
-																class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand"
-																aria-hidden="true"
-															/>
-															<span>{item}</span>
-														</li>
-													))}
-												</ul>
-											)}
-											{sub.link && (
-												<a
-													href={localizedPath(lang, sub.link.slug)}
-													class="mt-3 inline-block text-sm font-medium text-brand hover:underline"
-												>
-													{sub.link.label}
-												</a>
-											)}
-										</div>
-									))}
-								</div>
-							)}
-							{section.link && (
-								<a
-									href={localizedPath(lang, section.link.slug)}
-									class="mt-6 inline-block text-sm font-medium text-brand hover:underline"
-								>
-									{section.link.label}
-								</a>
-							)}
-						</div>
-					</article>
-				))
-			}
-		</div>
+		{page.keyFacts && <KeyFacts title={page.keyFacts.title} items={page.keyFacts.items} />}
+
+		<LandingSections lang={lang} sections={page.sections} />
 
 		{
 			page.showAboutGuide && (
@@ -293,25 +127,7 @@ function renderInline(text: string) {
 			)
 		}
 
-		{
-			page.faqs && page.faqs.length > 0 && (
-				<section class="mt-10 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-					<div class="border-b border-stone-200 px-7 py-6 md:px-10 md:py-8">
-						<h2 class="text-xl font-bold text-stone-900 md:text-2xl">
-							{page.faqsTitle || "FAQ"}
-						</h2>
-					</div>
-					<dl>
-						{page.faqs.map((faq) => (
-							<div class="border-b border-stone-200 px-7 py-6 last:border-b-0 md:grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-10 md:px-10">
-								<dt class="font-semibold text-stone-900">{faq.q}</dt>
-								<dd class="landing-prose mt-2 md:mt-0">{faq.a}</dd>
-							</div>
-						))}
-					</dl>
-				</section>
-			)
-		}
+		{page.faqs && <LandingFaqs title={page.faqsTitle} faqs={page.faqs} />}
 
 		<aside class="mt-10 rounded-2xl bg-brand p-8 text-white shadow-sm md:p-10">
 			<div class="grid items-center gap-7 md:grid-cols-[1fr_auto] md:gap-10">
