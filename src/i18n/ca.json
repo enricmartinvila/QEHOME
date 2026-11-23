@@ -237,12 +237,12 @@
 				"alt": "Zona d'estar de l'apartament QEhome a Manresa"
 			},
 			"hab2": {
-				"caption": "Dormitori principal",
-				"alt": "Dormitori principal de l'apartament QEhome a Manresa"
-			},
-			"hab3": {
 				"caption": "Segon dormitori",
 				"alt": "Segon dormitori de l'apartament QEhome a Manresa"
+			},
+			"hab3": {
+				"caption": "Dormitori principal",
+				"alt": "Dormitori principal de l'apartament QEhome a Manresa"
 			},
 			"cuina2": {
 				"caption": "Cuina",

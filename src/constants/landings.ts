@@ -13,14 +13,14 @@ export const TOPIC_LANDINGS_CONFIG = [
 	{
 		key: "umanresa",
 		slug: "alojamiento-umanresa",
-		heroImage: "/images/hab2.webp",
+		heroImage: "/images/hab3.webp",
 		pageKey: "umanresaPage",
 		seoKey: "umanresa",
 	},
 	{
 		key: "camino",
 		slug: "alojamiento-camino-ignaciano-manresa",
-		heroImage: "/images/hab2.webp",
+		heroImage: "/images/hab3.webp",
 		pageKey: "caminoPage",
 		seoKey: "camino",
 	},
@@ -55,7 +55,7 @@ export const TOPIC_LANDINGS_CONFIG = [
 	{
 		key: "hospital",
 		slug: "alojamiento-hospital-manresa",
-		heroImage: "/images/hab2.webp",
+		heroImage: "/images/hab3.webp",
 		pageKey: "hospitalPage",
 		seoKey: "hospital",
 	},

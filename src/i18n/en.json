@@ -237,12 +237,12 @@
 				"alt": "Sitting area at QEhome apartment in Manresa"
 			},
 			"hab2": {
-				"caption": "Main bedroom",
-				"alt": "Main bedroom at QEhome apartment in Manresa"
-			},
-			"hab3": {
 				"caption": "Second bedroom",
 				"alt": "Second bedroom at QEhome apartment in Manresa"
+			},
+			"hab3": {
+				"caption": "Main bedroom",
+				"alt": "Main bedroom at QEhome apartment in Manresa"
 			},
 			"cuina2": {
 				"caption": "Kitchen",

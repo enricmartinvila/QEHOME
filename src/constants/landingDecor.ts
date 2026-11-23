@@ -115,7 +115,7 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 		location: true,
 		keyFactIcons: ["bed", "car", "clock", "info"],
 		sections: [
-			{ icon: "users", ...photo("hab2") },
+			{ icon: "users", ...photo("hab3") },
 			{ icon: "home", ...photo("menjador12") },
 			{ icon: "car" },
 			{ icon: "map" },
