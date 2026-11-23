@@ -20,7 +20,7 @@ export const TOPIC_LANDINGS_CONFIG = [
 	{
 		key: "camino",
 		slug: "alojamiento-camino-ignaciano-manresa",
-		heroImage: "/images/hab3.webp",
+		heroImage: "/images/hab2.webp",
 		pageKey: "caminoPage",
 		seoKey: "camino",
 	},
@@ -55,7 +55,7 @@ export const TOPIC_LANDINGS_CONFIG = [
 	{
 		key: "hospital",
 		slug: "alojamiento-hospital-manresa",
-		heroImage: "/images/hab3.webp",
+		heroImage: "/images/hab2.webp",
 		pageKey: "hospitalPage",
 		seoKey: "hospital",
 	},
