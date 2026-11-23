@@ -5,13 +5,21 @@ export default {
 		extend: {
 			colors: {
 				brand: {
-					DEFAULT: "#ca9b2c",
+					DEFAULT: "#c48f12",
 					cta: "#ECB434",
-					ctaHover: "#d3a32e",
+					ctaHover: "#f6c452",
 				},
+				night: {
+					DEFAULT: "#15181d",
+					2: "#1f242b",
+				},
+				paper: "#faf9f7",
+				sand: "#f0ece4",
+				ink: "#1b1e24",
 			},
 			fontFamily: {
-				sans: ['"Fira Sans"', "Roboto", "system-ui", "sans-serif"],
+				sans: ['"Fira Sans"', "system-ui", "sans-serif"],
+				serif: ['"DM Serif Display"', "Georgia", "serif"],
 			},
 		},
 	},

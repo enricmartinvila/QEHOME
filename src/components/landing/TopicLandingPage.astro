@@ -13,6 +13,7 @@ import KeyFacts from "./KeyFacts.astro"
 import ApartmentPromo from "./ApartmentPromo.astro"
 import RevealScript from "./RevealScript.astro"
 import Icon from "./Icon.astro"
+import LocationCard from "./LocationCard.astro"
 
 interface Props {
 	lang: Lang
@@ -84,7 +85,7 @@ const meta = toc ? [guideUi.readingTime.replace("{n}", String(readingMinutes))] 
 
 {page.keyFacts && <KeyFacts title={page.keyFacts.title} items={page.keyFacts.items} icons={decor.keyFactIcons} />}
 
-<section class="bg-stone-50 pb-16 pt-12 md:pb-24 md:pt-16">
+<section class="bg-paper pb-16 pt-12 md:pb-24 md:pt-16">
 	<div
 		class:list={[
 			"mx-auto px-4",
@@ -110,7 +111,7 @@ const meta = toc ? [guideUi.readingTime.replace("{n}", String(readingMinutes))] 
 							<Icon name="info" class="h-6 w-6" />
 						</span>
 						<div>
-							<h2 class="text-lg font-bold text-stone-900">{page.beforeLeave.title}</h2>
+							<h2 class="text-lg font-bold text-ink">{page.beforeLeave.title}</h2>
 							<p class="landing-prose mt-2">{page.beforeLeave.text}</p>
 							{activeFunicularNotice && (
 								<p class="mt-3 rounded-xl bg-white/70 px-4 py-3 text-[15px] font-medium text-stone-800">
@@ -124,14 +125,16 @@ const meta = toc ? [guideUi.readingTime.replace("{n}", String(readingMinutes))] 
 
 			<LandingSections lang={lang} sections={page.sections} decor={decor.sections} />
 
+			{decor.location && <LocationCard lang={lang} />}
+
 			{page.faqs && <LandingFaqs title={page.faqsTitle} faqs={page.faqs} />}
 
 			{
 				page.showAboutGuide && (
 					<section class="reveal mt-10 flex gap-4 rounded-3xl border border-dashed border-stone-300 p-6 md:p-8">
-						<img src="/logo/logoshort.webp" alt="" class="h-11 w-11 flex-shrink-0 rounded-2xl bg-stone-900 object-contain p-2" loading="lazy" />
+						<img src="/logo/logoshort.webp" alt="" class="h-11 w-11 flex-shrink-0 rounded-2xl bg-night object-contain p-2" loading="lazy" />
 						<div>
-							<h2 class="text-lg font-bold text-stone-900">{aboutGuide.title}</h2>
+							<h2 class="text-lg font-bold text-ink">{aboutGuide.title}</h2>
 							<p class="landing-prose mt-2">{aboutGuide.text}</p>
 							{page.reviewedLabel && <p class="mt-3 text-sm font-medium text-stone-500">{page.reviewedLabel}</p>}
 						</div>

@@ -9,64 +9,44 @@ interface Props {
 const { lang } = Astro.props
 const t = getTranslations(lang)
 const m = t.maintexts
-const booking = m.rating.booking
-const airbnb = m.rating.airbnb
-
-const ratingCardClass =
-	"group inline-flex flex-col items-center rounded-2xl border border-white/30 bg-white/10 px-5 py-4 backdrop-blur-sm transition hover:bg-white/20 sm:px-6"
+const ui = t.homeUi
+const [before, after] = m.headline.includes(ui.heroHighlight)
+	? m.headline.split(ui.heroHighlight)
+	: [m.headline, null]
+const ratings = [
+	{ ...m.rating.booking, href: BOOKING_URL },
+	{ ...m.rating.airbnb, href: AIRBNB_URL },
+]
 ---
 
 <section
-	class="relative flex h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-white"
-	style="background-image: url('/images/menjador12.webp')"
+	class="relative flex min-h-screen items-center justify-center bg-cover bg-center px-5 pb-[90px] pt-[120px] text-center text-white"
+	style="background-image: linear-gradient(180deg, rgba(21,24,29,.7), rgba(21,24,29,.55) 50%, rgba(21,24,29,.9)), url('/images/menjador12.webp')"
 >
-	<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/50"></div>
-	<div class="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center">
-		<h1 class="text-3xl font-bold drop-shadow-lg sm:text-5xl lg:text-6xl">
-			{m.headline}
+	<div class="mx-auto max-w-[1180px]">
+		<h1 class="mx-auto mb-8 max-w-[900px] text-[clamp(2.8rem,7vw,5.8rem)] leading-[1.08]">
+			{before}{after !== null && <em class="text-brand-cta">{ui.heroHighlight}</em>}{after}
 		</h1>
-		<div class="mt-6 flex flex-wrap items-stretch justify-center gap-3 sm:gap-4">
-			<a
-				href={BOOKING_URL}
-				target="_blank"
-				rel="noopener noreferrer"
-				class={ratingCardClass}
-			>
-				<span class="text-xl font-semibold tracking-wide sm:text-2xl">
-					★ {booking.score}
-				</span>
-				<span class="mt-1 text-sm font-medium text-white/95">{booking.label}</span>
-				<span class="mt-0.5 text-xs text-white/75 sm:text-sm">{booking.guests}</span>
-			</a>
-			<a
-				href={AIRBNB_URL}
-				target="_blank"
-				rel="noopener noreferrer"
-				class={ratingCardClass}
-			>
-				<span class="text-xl font-semibold tracking-wide sm:text-2xl">
-					★ {airbnb.score}
-				</span>
-				<span class="mt-1 text-sm font-medium text-white/95">{airbnb.label}</span>
-				<span class="mt-0.5 text-xs text-white/75 sm:text-sm">{airbnb.guests}</span>
-			</a>
-		</div>
-		<p class="mt-6 text-lg drop-shadow-md sm:text-xl">{m.subtitle}</p>
-		<p class="mt-2 text-base text-white/90 drop-shadow-md sm:text-lg">{m.location}</p>
-		<div class="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+		<div class="mb-8 flex flex-wrap justify-center gap-4">
 			{
-				m.badges.map((badge) => (
-					<span class="inline-flex items-center rounded-full border border-white/25 bg-white/15 px-3 py-1.5 text-sm font-medium backdrop-blur-sm transition hover:bg-white/25">
-						{badge}
-					</span>
+				ratings.map((r) => (
+					<a
+						href={r.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="min-w-[150px] rounded-[18px] border border-white/20 bg-white/10 px-5 py-3 backdrop-blur-md transition hover:bg-white/20 sm:min-w-[190px] sm:px-7 sm:py-3.5"
+					>
+						<b class="block text-[1.6rem] font-semibold"><i class="mr-1 not-italic text-brand-cta">★</i>{r.score}</b>
+						<small class="text-[0.82rem] opacity-80">{r.label} · {r.guests}</small>
+					</a>
 				))
 			}
 		</div>
-		<a
-			href="#contacto"
-			class="mt-10 rounded-full bg-brand-cta px-8 py-3 text-lg font-semibold text-white shadow-lg transition hover:bg-brand-ctaHover focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ECB434]/60"
-		>
-			{t.titles.book_now}
-		</a>
+		<p class="mx-auto max-w-[620px] text-[1.15rem] opacity-90">{m.subtitle}</p>
+		<p class="mx-auto mt-1.5 max-w-[620px] opacity-80">{m.location}</p>
+		<div class="mb-9 mt-7 flex flex-wrap justify-center gap-2.5">
+			{m.badges.map((badge) => <span class="rounded-full border border-white/35 px-[18px] py-[7px] text-[0.85rem]">{badge}</span>)}
+		</div>
+		<a href="#contacto" class="btn btn-amber">{t.titles.book_now}</a>
 	</div>
 </section>

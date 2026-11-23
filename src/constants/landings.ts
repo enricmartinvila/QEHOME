@@ -52,6 +52,27 @@ export const TOPIC_LANDINGS_CONFIG = [
 		pageKey: "familiasPage",
 		seoKey: "familias",
 	},
+	{
+		key: "hospital",
+		slug: "alojamiento-hospital-manresa",
+		heroImage: "/images/hab3.webp",
+		pageKey: "hospitalPage",
+		seoKey: "hospital",
+	},
+	{
+		key: "trabajo",
+		slug: "apartamento-trabajo-manresa",
+		heroImage: "/images/menjador12.webp",
+		pageKey: "trabajoPage",
+		seoKey: "trabajo",
+	},
+	{
+		key: "cardona",
+		slug: "visitar-cardona-desde-manresa",
+		heroImage: "/images/menjador11.webp",
+		pageKey: "cardonaPage",
+		seoKey: "cardona",
+	},
 ] as const
 
 export type TopicLandingKey = (typeof TOPIC_LANDINGS_CONFIG)[number]["key"]

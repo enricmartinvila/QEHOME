@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import TopicLandingPage from "../../../components/landing/TopicLandingPage.astro"
+import { getTranslations } from "../../../constants/i18n"
+import { guideLandingJsonLd, GUIDE_REVIEWED_AT } from "../../../constants/pageSchema"
+import { LANGS, type Lang } from "../../../constants/site"
+import { getTopicLanding } from "../../../constants/landings"
+
+export function getStaticPaths() {
+	return LANGS.map((lang) => ({ params: { lang } }))
+}
+
+const lang = Astro.params.lang as Lang
+const landing = getTopicLanding("cardona")!
+const t = getTranslations(lang)
+const seo = t.seo.cardona
+const page = t.cardonaPage
+---
+
+<BaseLayout
+	lang={lang}
+	title={seo.title}
+	description={seo.metaDescription}
+	pathAfterLang={landing.slug}
+	ogImage={landing.heroImage}
+	ogType="article"
+	jsonLd={guideLandingJsonLd({
+		lang,
+		slug: landing.slug,
+		headline: page.h1,
+		description: seo.metaDescription,
+		image: landing.heroImage,
+		homeLabel: page.breadcrumbHome,
+		currentLabel: page.breadcrumbCurrent,
+		faqs: page.faqs,
+		dateModified: GUIDE_REVIEWED_AT.cardona,
+	})}
+>
+	<TopicLandingPage lang={lang} landingKey="cardona" />
+</BaseLayout>

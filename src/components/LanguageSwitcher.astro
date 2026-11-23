@@ -17,15 +17,10 @@ const LANG_NAMES: Record<Lang, { label: string; name: string }> = {
 }
 ---
 
-<nav aria-label={ariaLabel} class="flex items-center gap-1 text-xs font-medium tracking-wide">
+<nav aria-label={ariaLabel} class="flex items-center gap-2.5 text-[0.78rem] font-semibold tracking-[0.08em]">
 	{
-		LANGS.map((l, i) => (
+		LANGS.map((l) => (
 			<span class="inline-flex items-center gap-1">
-				{i > 0 && (
-					<span aria-hidden="true" class="select-none text-white/35">
-						|
-					</span>
-				)}
 				<a
 					href={localizedPath(l, pathAfterLang)}
 					lang={l}
@@ -34,8 +29,8 @@ const LANG_NAMES: Record<Lang, { label: string; name: string }> = {
 					class:list={[
 						"rounded px-1 py-0.5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70",
 						l === lang
-							? "text-white"
-							: "text-white/55 hover:text-white",
+							? "text-brand-cta"
+							: "text-white/80 hover:text-white",
 					]}
 					aria-current={l === lang ? "page" : undefined}
 				>

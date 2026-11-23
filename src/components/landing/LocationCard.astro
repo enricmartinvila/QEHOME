@@ -1,0 +1,53 @@
+---
+import Icon from "./Icon.astro"
+import type { IconName } from "./icons"
+import { getTranslations, type Lang } from "../../constants/i18n"
+import { MAPS_URL } from "../../constants/links"
+
+interface Props {
+	lang: Lang
+}
+
+const { lang } = Astro.props
+const card = getTranslations(lang).locationCard
+const icons: IconName[] = ["train", "academic", "landmark", "car"]
+---
+
+<section class="reveal mt-10 overflow-hidden rounded-3xl bg-night text-white shadow-xl shadow-night/10" aria-labelledby="location-card-title">
+	<div class="grid gap-8 p-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:p-8">
+		<div>
+			<span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-brand">
+				<Icon name="pin" class="h-6 w-6" />
+			</span>
+			<h2 id="location-card-title" class="mt-4 text-xl font-bold md:text-2xl">{card.title}</h2>
+			<p class="mt-2 text-[15px] text-stone-300">{card.address}</p>
+			<a
+				href={MAPS_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-stone-100"
+			>
+				<Icon name="map" class="h-4 w-4" />
+				{card.mapsLabel}
+			</a>
+		</div>
+		<div>
+			<dl class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+				{
+					card.items.map((item, i) => (
+						<div class="flex items-center gap-3 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+							<span class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-white/10 text-brand">
+								<Icon name={icons[i] ?? "pin"} class="h-5 w-5" />
+							</span>
+							<div class="min-w-0">
+								<dt class="text-xs font-medium text-stone-400">{item.label}</dt>
+								<dd class="text-[15px] font-semibold">{item.value}</dd>
+							</div>
+						</div>
+					))
+				}
+			</dl>
+			<p class="mt-4 text-xs text-stone-400">{card.note}</p>
+		</div>
+	</div>
+</section>

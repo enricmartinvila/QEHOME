@@ -101,6 +101,36 @@
 			"source": "/apartamento-familias-manresa/",
 			"destination": "/es/apartamento-familias-manresa/",
 			"permanent": true
+		},
+		{
+			"source": "/alojamiento-hospital-manresa",
+			"destination": "/es/alojamiento-hospital-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/alojamiento-hospital-manresa/",
+			"destination": "/es/alojamiento-hospital-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/apartamento-trabajo-manresa",
+			"destination": "/es/apartamento-trabajo-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/apartamento-trabajo-manresa/",
+			"destination": "/es/apartamento-trabajo-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/visitar-cardona-desde-manresa",
+			"destination": "/es/visitar-cardona-desde-manresa/",
+			"permanent": true
+		},
+		{
+			"source": "/visitar-cardona-desde-manresa/",
+			"destination": "/es/visitar-cardona-desde-manresa/",
+			"permanent": true
 		}
 	]
 }

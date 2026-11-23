@@ -10,39 +10,61 @@ interface Props {
 const { lang } = Astro.props
 const t = getTranslations(lang)
 const ideal = t.idealFor
-const familias = getTopicLanding("familias")!
-const familiesHref = localizedPath(lang, familias.slug)
+const ui = t.homeUi
+const photos = t.gallery.photos
+const cards = [
+	{
+		title: ui.familiesTitle,
+		text: ideal.families,
+		tags: [ideal.items[2], ideal.items[3]],
+		image: "/images/hab2.webp",
+		alt: photos.hab2.alt,
+		href: localizedPath(lang, getTopicLanding("familias")!.slug),
+		link: ideal.familiesLink,
+	},
+	{
+		title: ui.workTitle,
+		text: ideal.work,
+		tags: [ideal.items[0], ideal.items[1]],
+		image: "/images/menjador11.webp",
+		alt: photos.menjador11.alt,
+		href: localizedPath(lang, getTopicLanding("trabajo")!.slug),
+		link: ui.workLink,
+	},
+]
 ---
 
-<section class="bg-white py-12 md:py-16">
-	<div class="mx-auto max-w-4xl px-4 text-center">
-		<h2 class="text-2xl font-bold text-stone-900 md:text-3xl">{ideal.title}</h2>
-		<p class="mt-4 text-[15px] leading-relaxed text-stone-600 md:text-base">
-			{ideal.families}
-		</p>
-		<p class="mt-3 text-[15px] leading-relaxed text-stone-600 md:text-base">
-			{ideal.work}
-		</p>
-		<ul class="mt-8 flex flex-wrap justify-center gap-3">
+<section class="py-[74px] lg:py-[100px]">
+	<div class="mx-auto max-w-[1180px] px-5 sm:px-7">
+		<div class="reveal mb-11">
+			<span class="kicker">{ui.kickers.who}</span>
+			<h2 class="text-[clamp(2.1rem,4.2vw,3.2rem)] leading-[1.08]">{ideal.title}</h2>
+		</div>
+		<div class="grid gap-[26px] lg:grid-cols-2">
 			{
-				ideal.items.map((item) => (
-					<li class="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-sm text-stone-700">
-						{item}
-					</li>
+				cards.map((card) => (
+					<article class="reveal group relative flex min-h-[420px] items-end overflow-hidden rounded-[26px] text-white lg:min-h-[520px]">
+						<img
+							src={card.image}
+							alt={card.alt}
+							loading="lazy"
+							decoding="async"
+							width="1600"
+							height="1067"
+							class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-b from-night/15 to-night/90" />
+						<div class="relative p-7 sm:p-[38px]">
+							<h3 class="mb-2 font-serif text-[2rem] leading-[1.08]">{card.title}</h3>
+							<p class="max-w-[420px] text-[0.97rem] leading-relaxed opacity-90">{card.text}</p>
+							<ul class="mb-1 mt-4 flex flex-wrap gap-2">
+								{card.tags.map((tag) => <li class="rounded-full border border-white/40 px-3 py-1 text-[0.78rem]">{tag}</li>)}
+							</ul>
+							<a href={card.href} class="more-link !text-brand-cta">{card.link} →</a>
+						</div>
+					</article>
 				))
 			}
-		</ul>
-		{
-			ideal.familiesLink && (
-				<div class="mt-8">
-					<a
-						href={familiesHref}
-						class="text-base font-medium text-brand hover:underline"
-					>
-						{ideal.familiesLink}
-					</a>
-				</div>
-			)
-		}
+		</div>
 	</div>
 </section>

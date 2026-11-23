@@ -1,6 +1,6 @@
 import type { IconName } from "../components/landing/icons"
 
-export type IllustrationVariant = "montserrat" | "vineyard" | "city"
+export type IllustrationVariant = "montserrat" | "vineyard" | "city" | "cardona"
 
 export interface SectionDecor {
 	icon: IconName
@@ -15,6 +15,8 @@ export interface LandingDecor {
 	/** Guides use an illustrated hero instead of an apartment photo */
 	illustration?: IllustrationVariant
 	keyFactIcons?: IconName[]
+	/** Show the "where is QEhome" card (lodging landings) */
+	location?: boolean
 	/** Positional: same section order in every language */
 	sections: SectionDecor[]
 }
@@ -36,6 +38,7 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 		],
 	},
 	umanresa: {
+		location: true,
 		keyFactIcons: ["academic", "train", "key", "car"],
 		sections: [
 			{ icon: "users" },
@@ -48,6 +51,7 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 		],
 	},
 	camino: {
+		location: true,
 		keyFactIcons: ["route", "landmark", "sparkles", "key"],
 		sections: [
 			{ icon: "landmark" },
@@ -63,6 +67,7 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 	},
 	queVer: {
 		illustration: "city",
+		keyFactIcons: ["landmark", "calendar", "pin", "sparkles"],
 		sections: [
 			{ icon: "landmark" },
 			{ icon: "clock" },
@@ -76,6 +81,7 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 	},
 	montserrat: {
 		illustration: "montserrat",
+		keyFactIcons: ["car", "train", "landmark", "clock"],
 		sections: [
 			{ icon: "mountain" },
 			{ icon: "car" },
@@ -106,6 +112,7 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 		],
 	},
 	familias: {
+		location: true,
 		keyFactIcons: ["bed", "car", "clock", "info"],
 		sections: [
 			{ icon: "users", ...photo("hab2") },
@@ -115,6 +122,44 @@ export const LANDING_DECOR: Record<string, LandingDecor> = {
 			{ icon: "smile" },
 			{ icon: "heart" },
 			{ icon: "sparkles", ...photo("cuina2") },
+		],
+	},
+	hospital: {
+		location: true,
+		keyFactIcons: ["heart", "key", "car", "bed"],
+		sections: [
+			{ icon: "heart", ...photo("hab2") },
+			{ icon: "route" },
+			{ icon: "home", ...photo("menjador12") },
+			{ icon: "bulb" },
+			{ icon: "academic" },
+			{ icon: "map" },
+		],
+	},
+	trabajo: {
+		location: true,
+		keyFactIcons: ["wifi", "bed", "briefcase", "bolt"],
+		sections: [
+			{ icon: "briefcase" },
+			{ icon: "route" },
+			{ icon: "home", ...photo("menjador11") },
+			{ icon: "clock" },
+			{ icon: "bolt" },
+			{ icon: "calendar" },
+		],
+	},
+	cardona: {
+		illustration: "cardona",
+		keyFactIcons: ["car", "mountain", "clock", "smile"],
+		sections: [
+			{ icon: "sparkles" },
+			{ icon: "car" },
+			{ icon: "mountain" },
+			{ icon: "landmark" },
+			{ icon: "pin" },
+			{ icon: "sun", variant: "timeline" },
+			{ icon: "smile" },
+			{ icon: "bulb" },
 		],
 	},
 }

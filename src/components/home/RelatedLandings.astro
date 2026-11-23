@@ -33,7 +33,7 @@ const heading = title || t.relatedLandings.title
 ---
 
 <nav class="mx-auto mt-16 max-w-6xl px-4 md:mt-20" aria-label={heading}>
-	<h2 class="text-2xl font-bold text-stone-900 md:text-3xl">{heading}</h2>
+	<h2 class="text-2xl font-bold text-ink md:text-3xl">{heading}</h2>
 	<ul class:list={["mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2", links.length % 3 === 1 ? "lg:grid-cols-4" : "lg:grid-cols-3"]}>
 		{
 			links.map((landing) => {
@@ -44,7 +44,7 @@ const heading = title || t.relatedLandings.title
 							href={localizedPath(lang, landing.slug)}
 							class="group flex h-full flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg"
 						>
-							<div class="relative aspect-[16/9] overflow-hidden bg-stone-900">
+							<div class="relative aspect-[16/9] overflow-hidden bg-night">
 								{illustration ? (
 									<LandingIllustration
 										variant={illustration}

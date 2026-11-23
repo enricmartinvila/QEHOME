@@ -13,7 +13,7 @@ const { title, items, reviewedLabel, ctaLabel } = Astro.props
 
 <!-- Mobile: collapsible -->
 <details class="mb-6 rounded-2xl border border-stone-200 bg-white shadow-sm lg:hidden">
-	<summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 font-semibold text-stone-900 [&::-webkit-details-marker]:hidden">
+	<summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 font-semibold text-ink [&::-webkit-details-marker]:hidden">
 		<span class="flex items-center gap-2.5">
 			<Icon name="book" class="h-5 w-5 text-brand" />
 			{title}
@@ -26,7 +26,7 @@ const { title, items, reviewedLabel, ctaLabel } = Astro.props
 		{
 			items.map((item, i) => (
 				<li>
-					<a href={`#${item.id}`} class="flex gap-3 rounded-lg px-2 py-2 text-[15px] text-stone-700 hover:bg-stone-50 hover:text-brand">
+					<a href={`#${item.id}`} class="flex gap-3 rounded-lg px-2 py-2 text-[15px] text-stone-700 hover:bg-paper hover:text-brand">
 						<span class="w-5 text-right text-xs font-semibold leading-6 text-stone-400">{i + 1}</span>
 						{item.label}
 					</a>
@@ -50,7 +50,7 @@ const { title, items, reviewedLabel, ctaLabel } = Astro.props
 						<a
 							href={`#${item.id}`}
 							data-toc-link={item.id}
-							class="-ml-px block border-l-2 border-transparent py-1.5 pl-4 text-sm leading-snug text-stone-600 transition hover:border-stone-300 hover:text-stone-900"
+							class="-ml-px block border-l-2 border-transparent py-1.5 pl-4 text-sm leading-snug text-stone-600 transition hover:border-stone-300 hover:text-ink"
 						>
 							{item.label}
 						</a>
@@ -61,7 +61,7 @@ const { title, items, reviewedLabel, ctaLabel } = Astro.props
 		{reviewedLabel && <p class="mt-6 text-xs text-stone-400">{reviewedLabel}</p>}
 		<a
 			href="#contacto"
-			class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-cta px-5 py-3 text-sm font-semibold text-stone-900 shadow-sm transition hover:bg-brand-ctaHover"
+			class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-cta px-5 py-3 text-sm font-semibold text-ink shadow-sm transition hover:bg-brand-ctaHover"
 		>
 			{ctaLabel}
 			<Icon name="arrow" class="h-4 w-4" />
@@ -85,7 +85,7 @@ const { title, items, reviewedLabel, ctaLabel } = Astro.props
 			for (const a of links) {
 				const on = a.dataset.tocLink === active
 				a.classList.toggle("!border-brand", on)
-				a.classList.toggle("!text-stone-900", on)
+				a.classList.toggle("!text-ink", on)
 				a.classList.toggle("font-semibold", on)
 			}
 		}

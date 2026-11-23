@@ -11,6 +11,30 @@
 		"book_now": "Consultar disponibilidad",
 		"whats": "640 95 55 72"
 	},
+	"homeUi": {
+		"kickers": {
+			"reviews": "Opiniones",
+			"why": "Por qué QEhome",
+			"apartment": "El apartamento",
+			"who": "Para quién",
+			"photos": "Fotos",
+			"info": "Información práctica",
+			"faq": "Preguntas frecuentes",
+			"contact": "Contacto"
+		},
+		"heroHighlight": "centro de Manresa",
+		"contactHighlight": "QEhome",
+		"whyTitle": "Aparcar, cargar y llegar sin complicaciones",
+		"familiesTitle": "Familias y parejas",
+		"workTitle": "Estancias de trabajo",
+		"workLink": "Más sobre estancias de trabajo",
+		"infoTitle": "Lo que conviene saber antes de llegar",
+		"faqTitle": "Sobre QEhome Manresa",
+		"bookTitle": "Reserva tus fechas",
+		"bookText": "9,7 en Booking y 4,92 en Airbnb. Elige tu plataforma.",
+		"explore": "Explorar",
+		"mobileAvailability": "Disponibilidad"
+	},
 	"seo": {
 		"home": {
 			"title": "Apartamento turístico en Manresa | Parking privado | QEhome",
@@ -44,6 +68,18 @@
 		"familias": {
 			"title": "Apartamento para familias en Manresa | QEhome",
 			"metaDescription": "Apartamento para familias en Manresa con 2 dormitorios, cocina equipada, parking privado y entrada autónoma. Consulta disponibilidad en QEhome."
+		},
+		"hospital": {
+			"title": "Alojamiento cerca del Hospital de Manresa | QEhome",
+			"metaDescription": "Apartamento a 7 minutos en coche del Hospital Sant Joan de Déu (Althaia) de Manresa, con 2 dormitorios, cocina, parking y entrada autónoma."
+		},
+		"trabajo": {
+			"title": "Apartamento para estancias de trabajo en Manresa | QEhome",
+			"metaDescription": "Apartamento para trabajadores y equipos desplazados en Manresa: 2 dormitorios, WiFi, mesa de trabajo, cocina y parking privado en el edificio."
+		},
+		"cardona": {
+			"title": "Visitar Cardona desde Manresa: Muntanya de Sal | QEhome",
+			"metaDescription": "Guía para visitar Cardona desde Manresa: cómo llegar, la Muntanya de Sal, el castillo y la colegiata, ruta de medio día y consejos con niños."
 		}
 	},
 	"relatedLandings": {
@@ -55,7 +91,10 @@
 			"camino": "Camino Ignaciano",
 			"montserrat": "Montserrat desde Manresa",
 			"enoturismo": "Enoturismo Pla de Bages",
-			"familias": "Apartamento para familias"
+			"familias": "Apartamento para familias",
+			"hospital": "Cerca del Hospital de Manresa",
+			"trabajo": "Estancias de trabajo",
+			"cardona": "Cardona desde Manresa"
 		}
 	},
 	"differentiatorsLink": "Más sobre parking y cargador eléctrico",
@@ -242,10 +281,10 @@
 					"Tiempos orientativos a ritmo de caminata (unos 4 a 5 km/h) o en coche con tráfico normal."
 				],
 				"items": [
-					"UManresa (Av. Universitària): unos 10 a 15 minutos a pie, o unos 5 minutos en coche",
-					"Zona universitaria: el mismo trayecto; el campus queda en ese entorno",
-					"FGC Manresa-Baixador (parada recomendada por UManresa): unos 5 a 10 minutos a pie",
-					"Centro histórico (Plaça Major): unos 20 a 25 minutos a pie, o unos 5 minutos en coche"
+					"UManresa (Av. Universitària): unos 8 minutos a pie (algo más de 500 m)",
+					"EPSEM, Escola Politècnica Superior d'Enginyeria de Manresa (UPC): unos 10 minutos a pie",
+					"FGC Manresa-Baixador (parada recomendada por UManresa): unos 6 minutos a pie",
+					"Centro histórico (Plaça Major): unos 20 minutos a pie, o unos 5 minutos en coche"
 				]
 			},
 			{
@@ -279,7 +318,8 @@
 			{
 				"title": "Por qué QEhome encaja",
 				"paragraphs": [
-					"Para una visita corta importa poder trabajar, cocinar y entrar a cualquier hora. WiFi y mesa de trabajo, cocina completa, dos dormitorios y entrada autónoma. Si vienes en coche, parking privado en el edificio."
+					"Para una visita corta importa poder trabajar, cocinar y entrar a cualquier hora. WiFi y mesa de trabajo, cocina completa, dos dormitorios y entrada autónoma. Si vienes en coche, parking privado en el edificio.",
+					"Si vienes por trabajo o por una estancia en el hospital, consulta también las páginas de [[estancias de trabajo|apartamento-trabajo-manresa]] y de [[alojamiento cerca del Hospital de Manresa|alojamiento-hospital-manresa]]."
 				],
 				"items": [
 					"WiFi y mesa de trabajo",
@@ -306,11 +346,11 @@
 			"items": [
 				{
 					"label": "A UManresa",
-					"value": "10-15 min a pie · 5 min en coche"
+					"value": "Unos 8 min a pie"
 				},
 				{
 					"label": "FGC Manresa-Baixador",
-					"value": "5-10 min a pie"
+					"value": "Unos 6 min a pie"
 				},
 				{
 					"label": "Entrada",
@@ -330,7 +370,7 @@
 			},
 			{
 				"q": "¿Cuánto se tarda a pie hasta UManresa?",
-				"a": "Unos 10-15 minutos andando hasta el campus de Av. Universitària, o unos 5 minutos en coche."
+				"a": "Unos 8 minutos andando hasta el campus de Av. Universitària, algo más de medio kilómetro. La EPSEM de la UPC queda a unos 10 minutos."
 			},
 			{
 				"q": "¿Se puede trabajar desde el apartamento?",
@@ -344,6 +384,12 @@
 				"q": "¿Hay parking?",
 				"a": "Sí. Plaza privada en el mismo edificio, incluida en la estancia, con ascensor directo al piso."
 			}
+		],
+		"relatedKeys": [
+			"trabajo",
+			"hospital",
+			"parking",
+			"queVer"
 		]
 	},
 	"queVerPage": {
@@ -352,6 +398,27 @@
 		"ctaLabel": "Consultar disponibilidad",
 		"breadcrumbHome": "Inicio",
 		"breadcrumbCurrent": "Qué ver en Manresa",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Imprescindibles",
+					"value": "La Seu y la Cova de Sant Ignasi"
+				},
+				{
+					"label": "Tiempo recomendado",
+					"value": "1 día completo, o 2 con excursión"
+				},
+				{
+					"label": "Desde QEhome",
+					"value": "Plaça Major a unos 20 min a pie"
+				},
+				{
+					"label": "Fiesta principal",
+					"value": "Festa de la Llum, en febrero"
+				}
+			]
+		},
 		"sections": [
 			{
 				"title": "Qué ver en Manresa: los imprescindibles",
@@ -547,7 +614,8 @@
 					"Cómo moverse: el centro histórico y buena parte de los puntos principales se recorren a pie. Para el Parc de l'Agulla o salidas por el Bages, el coche suele ser más práctico.",
 					"Cómo llegar en tren: Manresa tiene conexiones de FGC y Renfe. Turismo de Manresa cita las líneas FGC R5 y R50, y las líneas Renfe R4 y R12. No fijamos tiempos de viaje porque horarios y servicios pueden cambiar.",
 					"Horarios: para museos, monumentos y espacios visitables, consulta siempre las páginas oficiales antes de ir. Es especialmente relevante en lugares como el Carrer del Balç, que actualmente figura como cerrado temporalmente.",
-					"Si vienes en coche, QEhome dispone de [[parking privado y cargador para vehículo eléctrico|apartamento-parking-manresa]]."
+					"Si vienes en coche, QEhome dispone de [[parking privado y cargador para vehículo eléctrico|apartamento-parking-manresa]].",
+					"Para una excursión de medio día, [[Cardona y su Muntanya de Sal|visitar-cardona-desde-manresa]] queda a unos 35 minutos en coche."
 				],
 				"id": "consejos"
 			}
@@ -559,9 +627,9 @@
 		"relatedTitle": "Continúa descubriendo el Bages",
 		"relatedKeys": [
 			"montserrat",
+			"cardona",
 			"camino",
-			"enoturismo",
-			"parking"
+			"enoturismo"
 		],
 		"toc": [
 			{
@@ -684,9 +752,9 @@
 					"Desde QEhome (Carrer Doctor Esteve) hasta los puntos ignacianos del centro son trayectos caminables. Los tiempos son orientativos a ritmo de caminata (unos 4 a 5 km/h), sin contar pausas."
 				],
 				"items": [
-					"Centro de Acogida de Peregrinos (Via Sant Ignasi, 40): unos 25 minutos a pie",
-					"Cova de Sant Ignasi: unos 30 minutos a pie",
-					"Plaça Major (Oficina de Turismo): unos 25 minutos a pie",
+					"Centro de Acogida de Peregrinos (Via Sant Ignasi, 40): unos 20 minutos a pie",
+					"Cova de Sant Ignasi: unos 25 minutos a pie",
+					"Plaça Major (Oficina de Turismo): unos 20 minutos a pie",
 					"Estación FGC Manresa-Baixador: a pocos minutos a pie"
 				]
 			},
@@ -757,8 +825,14 @@
 			},
 			{
 				"q": "¿Está cerca de la Cova de Sant Ignasi?",
-				"a": "La Cova está a unos 30 minutos a pie desde el apartamento, y el Centro de Acogida a unos 25 minutos."
+				"a": "La Cova está a unos 25 minutos a pie desde el apartamento, y el Centro de Acogida a unos 20 minutos."
 			}
+		],
+		"relatedKeys": [
+			"queVer",
+			"montserrat",
+			"parking",
+			"familias"
 		]
 	},
 	"montserratPage": {
@@ -767,6 +841,27 @@
 		"ctaLabel": "Consultar disponibilidad",
 		"breadcrumbHome": "Inicio",
 		"breadcrumbCurrent": "Montserrat desde Manresa",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "En coche",
+					"value": "20-25 min a Monistrol · 35 min al monasterio"
+				},
+				{
+					"label": "En tren",
+					"value": "FGC R5 + Cremallera o Aeri"
+				},
+				{
+					"label": "Basílica",
+					"value": "Entrada libre"
+				},
+				{
+					"label": "Tiempo",
+					"value": "Medio día o día completo"
+				}
+			]
+		},
 		"sections": [
 			{
 				"title": "¿Por qué visitar Montserrat desde Manresa?",
@@ -929,7 +1024,8 @@
 				"title": "Montserrat e Ignacio de Loyola",
 				"paragraphs": [
 					"Montserrat y Manresa están vinculadas en el Camino Ignaciano. La última etapa oficial discurre desde Montserrat hasta Manresa, con unos 25 a 26 km según el trazado publicado por Turismo de Manresa.",
-					"Si estás haciendo la ruta a pie, Manresa es el punto de llegada natural después de Montserrat."
+					"Si estás haciendo la ruta a pie, Manresa es el punto de llegada natural después de Montserrat.",
+					"Si te queda otro día, [[Cardona y su Muntanya de Sal|visitar-cardona-desde-manresa]] está a unos 35 minutos de Manresa por la C-55."
 				],
 				"link": {
 					"label": "Alojamiento en Manresa para el Camino Ignaciano",
@@ -944,10 +1040,10 @@
 		"backHome": "Ver el apartamento",
 		"relatedTitle": "Continúa la escapada",
 		"relatedKeys": [
+			"cardona",
 			"queVer",
 			"camino",
-			"enoturismo",
-			"parking"
+			"enoturismo"
 		],
 		"toc": [
 			{
@@ -1132,7 +1228,8 @@
 			{
 				"title": "Más ideas cerca",
 				"paragraphs": [
-					"Para combinar vino y ciudad, tienes la guía de [[qué ver en Manresa|que-ver-manresa]]. Si quieres un día de montaña entre visita y visita, consulta cómo [[visitar Montserrat desde Manresa|visitar-montserrat-desde-manresa]]."
+					"Para combinar vino y ciudad, tienes la guía de [[qué ver en Manresa|que-ver-manresa]]. Si quieres un día de montaña entre visita y visita, consulta cómo [[visitar Montserrat desde Manresa|visitar-montserrat-desde-manresa]].",
+					"Y para otro día, [[Cardona y su Muntanya de Sal|visitar-cardona-desde-manresa]] está a unos 35 minutos de Manresa."
 				]
 			}
 		],
@@ -1207,6 +1304,12 @@
 				"q": "¿Cuándo es la vendimia?",
 				"a": "Normalmente entre finales de agosto y septiembre, según la variedad y la añada."
 			}
+		],
+		"relatedKeys": [
+			"montserrat",
+			"cardona",
+			"queVer",
+			"parking"
 		]
 	},
 	"parkingPage": {
@@ -1247,7 +1350,7 @@
 				"title": "Aparcar en el centro de Manresa",
 				"paragraphs": [
 					"El centro de Manresa combina calles estrechas del casco antiguo con zonas de aparcamiento regulado en superficie. Encontrar sitio libre cerca de casa, sobre todo por la tarde, no siempre es fácil, y los aparcamientos públicos se pagan por horas.",
-					"Con plaza propia en el edificio, el coche se queda guardado y te mueves a pie por la ciudad: la estación FGC Manresa-Baixador está a pocos minutos y la Plaça Major a unos 20-25 minutos andando. El coche solo sale cuando vas de excursión."
+					"Con plaza propia en el edificio, el coche se queda guardado y te mueves a pie por la ciudad: la estación FGC Manresa-Baixador está a pocos minutos y la Plaça Major a unos 20 minutos andando. El coche solo sale cuando vas de excursión."
 				]
 			},
 			{
@@ -1257,11 +1360,11 @@
 					"Manresa está en el centro de Cataluña y conecta por autovía con Barcelona, Lleida, Girona y el Pirineo. Distancias y tiempos orientativos hasta QEhome, sin tráfico denso:"
 				],
 				"items": [
-					"Desde Barcelona (unos 65 km, alrededor de 1 h): por la C-16 a través de los Túnels de Vallvidrera y Terrassa (con peaje), o por la A-2 y la C-55 pasando por Martorell y Abrera (sin peaje, con más tráfico).",
+					"Desde Barcelona (unos 60 km, alrededor de 1 h): por la C-16 a través de los Túnels de Vallvidrera y Terrassa (con peaje), o por la A-2 y la C-55 pasando por Martorell y Abrera (sin peaje, con más tráfico).",
 					"Desde el aeropuerto de Barcelona-El Prat: alrededor de 1 h, enlazando con la C-16 o con la A-2 y la C-55.",
 					"Desde Lleida (unos 115 km, alrededor de 1 h 15 min): A-2 hasta Cervera y después Eix Transversal (C-25).",
-					"Desde Girona (unos 130 km, alrededor de 1 h 20 min): Eix Transversal (C-25) pasando por Vic.",
-					"Desde Vic (unos 55 km, unos 45 min): Eix Transversal (C-25).",
+					"Desde Girona (unos 120 km, alrededor de 1 h 30 min): Eix Transversal (C-25) pasando por Vic.",
+					"Desde Vic (unos 50 km, unos 40 min): Eix Transversal (C-25).",
 					"Desde Berga y el Pirineo: C-16 en dirección sur, unos 50 km desde Berga."
 				]
 			},
@@ -1272,7 +1375,7 @@
 					"El cargador está en la misma plaza de parking, así que puedes cargar por la noche mientras descansas y salir por la mañana con la batería llena hacia Montserrat, las bodegas del Pla de Bages o de vuelta a casa.",
 					"El coste de la energía que consumas corre a cargo de quien utiliza el cargador. Si necesitas confirmar el tipo de conector o cualquier detalle de la recarga, escríbenos por WhatsApp antes de reservar y te lo confirmamos."
 				],
-				"tip": "Con unos 65 km desde Barcelona y las excursiones principales a menos de 40 minutos, la mayoría de estancias se resuelven cargando solo en la plaza, sin buscar puntos públicos."
+				"tip": "Con unos 60 km desde Barcelona y las excursiones principales a menos de 40 minutos, la mayoría de estancias se resuelven cargando solo en la plaza, sin buscar puntos públicos."
 			},
 			{
 				"id": "excursiones",
@@ -1285,7 +1388,7 @@
 					"Bodegas de la [[DO Pla de Bages|enoturismo-pla-de-bages]]: las más cercanas a 10-15 minutos.",
 					"Món Sant Benet (Sant Fruitós de Bages): unos 15 minutos.",
 					"Muntanya de Sal y castillo de Cardona: unos 35 minutos.",
-					"Parque Natural de Sant Llorenç del Munt i l'Obac (Mura, Talamanca): unos 30 minutos."
+					"Parque Natural de Sant Llorenç del Munt i l'Obac (Mura, Talamanca): unos 35 minutos."
 				]
 			}
 		],
@@ -1317,7 +1420,7 @@
 			},
 			{
 				"q": "¿Puedo ir al centro de Manresa a pie?",
-				"a": "Sí. La estación FGC Manresa-Baixador está a pocos minutos y la Plaça Major a unos 20-25 minutos andando. El coche puede quedarse en la plaza durante toda la estancia."
+				"a": "Sí. La estación FGC Manresa-Baixador está a pocos minutos y la Plaça Major a unos 20 minutos andando. El coche puede quedarse en la plaza durante toda la estancia."
 			},
 			{
 				"q": "¿A qué hora puedo llegar?",
@@ -1344,7 +1447,13 @@
 					"value": "FGC a pocos minutos a pie"
 				}
 			]
-		}
+		},
+		"relatedKeys": [
+			"trabajo",
+			"familias",
+			"montserrat",
+			"cardona"
+		]
 	},
 	"contacto": {
 		"check": "¿Quieres alojarte en QEhome?",
@@ -1460,6 +1569,16 @@
 							"label": "Enoturismo del Pla de Bages",
 							"slug": "enoturismo-pla-de-bages"
 						}
+					},
+					{
+						"title": "Entrar en una montaña de sal en Cardona",
+						"paragraphs": [
+							"La Muntanya de Sal de Cardona, a unos 35 minutos, es una de las visitas que más gustan a los niños."
+						],
+						"link": {
+							"label": "Visitar Cardona desde Manresa",
+							"slug": "visitar-cardona-desde-manresa"
+						}
 					}
 				]
 			},
@@ -1500,7 +1619,7 @@
 					{
 						"title": "Sant Llorenç del Munt i l'Obac",
 						"paragraphs": [
-							"Parque natural a unos 30 minutos, con rutas cortas desde Mura o Talamanca y las tines de piedra entre viñedos. Para familias con niños pequeños, mejor elegir itinerarios llanos y cortos."
+							"Parque natural a unos 35 minutos, con rutas cortas desde Mura o Talamanca y las tines de piedra entre viñedos. Para familias con niños pequeños, mejor elegir itinerarios llanos y cortos."
 						]
 					}
 				]
@@ -1621,7 +1740,441 @@
 					"value": "No admitidas"
 				}
 			]
-		}
+		},
+		"relatedKeys": [
+			"cardona",
+			"montserrat",
+			"queVer",
+			"parking"
+		]
+	},
+	"hospitalPage": {
+		"h1": "Alojamiento cerca del Hospital Sant Joan de Déu de Manresa",
+		"heroSubtitle": "Un apartamento tranquilo con dos dormitorios, cocina y parking para acompañar a un familiar ingresado, venir a pruebas o hacer una rotación en Althaia.",
+		"ctaLabel": "Consultar disponibilidad",
+		"secondaryCtaLabel": "Ver el apartamento",
+		"breadcrumbHome": "Inicio",
+		"breadcrumbCurrent": "Cerca del Hospital de Manresa",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Hospital Sant Joan de Déu",
+					"value": "Unos 7 min en coche"
+				},
+				{
+					"label": "Entrada",
+					"value": "Autónoma, desde las 15:00"
+				},
+				{
+					"label": "Coche",
+					"value": "Parking privado incluido"
+				},
+				{
+					"label": "Espacio",
+					"value": "2 dormitorios, salón y cocina"
+				}
+			]
+		},
+		"sections": [
+			{
+				"title": "Un sitio para descansar cuando hay que estar cerca",
+				"paragraphs": [
+					"Cuando un familiar está ingresado o tiene un tratamiento de varios días en Manresa, se agradece tener cerca un lugar donde dormir bien, ducharse y cocinar algo sencillo entre visitas.",
+					"El Hospital Sant Joan de Déu de Manresa, gestionado por Althaia, es el hospital de referencia de la Cataluña central, así que muchas familias vienen de otras comarcas. QEhome es un apartamento turístico particular: no tiene relación con el hospital ni ofrece ningún servicio sanitario, pero sí la comodidad de una casa a pocos minutos."
+				],
+				"items": [
+					"Familiares que acompañan a un paciente ingresado",
+					"Pacientes de fuera de la comarca con pruebas o tratamientos de varios días",
+					"Profesionales sanitarios en rotación, formación o sustituciones",
+					"Visitas a la Clínica Sant Josep u otros centros de Althaia"
+				]
+			},
+			{
+				"title": "Distancias desde el apartamento",
+				"paragraphs": [
+					"QEhome está en Carrer Doctor Esteve, 9. Tiempos calculados con rutas de OpenStreetMap, sin contar esperas ni aparcamiento:"
+				],
+				"items": [
+					"Hospital Sant Joan de Déu (Carrer del Dr. Joan Soler): unos 7 minutos en coche, o unos 30 minutos a pie (2,3 km)",
+					"Clínica Sant Josep (Althaia): unos 25 minutos a pie",
+					"En tren: FGC desde Manresa-Baixador (a 6 minutos del apartamento) hasta Manresa-Viladordis, y desde allí unos 10 minutos a pie hasta el hospital",
+					"Plaça Major y centro histórico: unos 20 minutos a pie"
+				],
+				"tip": "Si vais y venís varias veces al día, el coche ahorra mucho tiempo: son unos 7 minutos, y al volver lo dejáis en la plaza privada del edificio sin buscar aparcamiento."
+			},
+			{
+				"title": "Por qué un apartamento en estos días",
+				"paragraphs": [
+					"Las estancias por motivos médicos rara vez tienen horarios fijos. Una casa con entrada autónoma y cocina permite adaptarse a lo que vaya surgiendo, sin depender de horarios de recepción ni de comer siempre fuera.",
+					"Con dos dormitorios, dos personas pueden turnarse para acompañar al paciente y descansar por separado."
+				],
+				"items": [
+					"Entrada autónoma a cualquier hora",
+					"Cocina equipada",
+					"2 dormitorios independientes",
+					"Salón para descansar",
+					"WiFi y mesa de trabajo",
+					"Parking privado en el edificio"
+				]
+			},
+			{
+				"title": "Consejos prácticos",
+				"items": [
+					"Consulta en la web de Althaia los horarios de visita y de acompañamiento: cambian según la unidad.",
+					"Si llegas de noche tras una urgencia, puedes entrar igualmente: la entrada es autónoma a partir de las 15:00.",
+					"Si no sabes cuántas noches vas a necesitar, escríbenos por WhatsApp y te decimos qué fechas siguen libres en el calendario.",
+					"Con el coche en el parking del edificio puedes moverte a pie por el barrio y usarlo solo para ir al hospital."
+				]
+			},
+			{
+				"title": "Para profesionales en rotación o formación",
+				"paragraphs": [
+					"Residentes, estudiantes en prácticas y profesionales que cubren una sustitución suelen pasar en Manresa una o varias semanas. El apartamento tiene WiFi y mesa de trabajo para estudiar o preparar guardias, y la universidad UManresa, con estudios de ciencias de la salud, queda a unos 8 minutos a pie.",
+					"Más información en la página de [[alojamiento cerca de UManresa|alojamiento-umanresa]] y en la de [[estancias de trabajo en Manresa|apartamento-trabajo-manresa]]."
+				]
+			},
+			{
+				"title": "Más cerca",
+				"paragraphs": [
+					"Si viajáis varios miembros de la familia, mirad también la página de [[apartamento para familias|apartamento-familias-manresa]]. Y si venís en coche, los detalles del [[parking privado y el cargador eléctrico|apartamento-parking-manresa]]."
+				]
+			}
+		],
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿A qué distancia está QEhome del Hospital Sant Joan de Déu?",
+				"a": "Unos 2,8 km en coche, alrededor de 7 minutos sin tráfico. A pie son unos 2,3 km, aproximadamente 30 minutos."
+			},
+			{
+				"q": "¿Puedo llegar de madrugada?",
+				"a": "Sí. La entrada es autónoma a partir de las 15:00, así que puedes llegar a cualquier hora sin depender de recepción."
+			},
+			{
+				"q": "¿Hay parking?",
+				"a": "Sí. Plaza privada en el mismo edificio, incluida en la estancia, con ascensor directo al piso."
+			},
+			{
+				"q": "¿QEhome tiene relación con el hospital?",
+				"a": "No. Es un apartamento turístico particular. Para horarios de visita, acompañamiento o información médica, consulta siempre con Althaia."
+			},
+			{
+				"q": "¿Y si la estancia se alarga?",
+				"a": "Depende de la disponibilidad del calendario. Escríbenos por WhatsApp y te decimos qué fechas siguen libres."
+			}
+		],
+		"availabilityNote": "Consulta disponibilidad para tus fechas",
+		"apartmentTitle": "Un lugar tranquilo a pocos minutos del hospital",
+		"apartmentText": "Dos dormitorios, cocina equipada, entrada autónoma y parking privado en el edificio. 9,7/10 en Booking.",
+		"backHome": "Ver el apartamento",
+		"relatedKeys": [
+			"familias",
+			"umanresa",
+			"trabajo",
+			"parking"
+		]
+	},
+	"trabajoPage": {
+		"h1": "Apartamento para estancias de trabajo en Manresa",
+		"heroSubtitle": "Para técnicos, equipos desplazados y profesionales que pasan días o semanas en Manresa: dos dormitorios, WiFi, mesa de trabajo, cocina y parking en el edificio.",
+		"ctaLabel": "Consultar disponibilidad",
+		"secondaryCtaLabel": "Ver el apartamento",
+		"breadcrumbHome": "Inicio",
+		"breadcrumbCurrent": "Estancias de trabajo",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Para trabajar",
+					"value": "WiFi y mesa de trabajo"
+				},
+				{
+					"label": "Equipos",
+					"value": "2 dormitorios independientes"
+				},
+				{
+					"label": "Polígonos",
+					"value": "Els Dolors y Bufalvent a 7-10 min"
+				},
+				{
+					"label": "Coche",
+					"value": "Parking privado y cargador"
+				}
+			]
+		},
+		"sections": [
+			{
+				"title": "Para quién es",
+				"paragraphs": [
+					"Manresa es la capital del Bages y un nudo de carreteras de la Cataluña central, con polígonos industriales, el hospital de referencia de la zona y empresas que reciben técnicos y equipos de fuera. Para estancias de varios días, un apartamento resulta más cómodo y práctico que una habitación de hotel."
+				],
+				"items": [
+					"Técnicos de mantenimiento, montaje o puesta en marcha",
+					"Equipos de obra o instalaciones que trabajan en la zona",
+					"Auditorías, consultoría y formaciones en empresas",
+					"Comerciales que recorren la Cataluña central",
+					"Profesionales en sustituciones o proyectos de semanas"
+				]
+			},
+			{
+				"title": "Ubicación para moverte por trabajo",
+				"paragraphs": [
+					"Desde Manresa salen la C-16 hacia Barcelona y Berga, la C-55 hacia Martorell y Solsona y el Eix Transversal (C-25) hacia Lleida, Vic y Girona. Tiempos orientativos en coche desde QEhome, sin tráfico denso:"
+				],
+				"items": [
+					"Polígono Els Dolors: unos 7 minutos",
+					"Polígono Bufalvent: unos 10 minutos",
+					"Hospital Sant Joan de Déu: unos 7 minutos",
+					"Terrassa: unos 35 minutos por la C-16",
+					"Igualada: unos 35 minutos",
+					"Vic: unos 40 minutos por la C-25",
+					"Barcelona: alrededor de 1 hora (unos 60 km)"
+				]
+			},
+			{
+				"title": "Lo que necesita una estancia de trabajo",
+				"paragraphs": [
+					"Después de la jornada importa poder descansar bien, cenar sin depender de restaurantes y preparar el día siguiente. Si viajáis dos personas, cada una tiene su propio dormitorio."
+				],
+				"items": [
+					"WiFi",
+					"Mesa de trabajo",
+					"Cocina completa",
+					"2 dormitorios independientes",
+					"Entrada autónoma",
+					"Parking privado en el edificio",
+					"Cargador para vehículo eléctrico"
+				]
+			},
+			{
+				"title": "Horarios flexibles",
+				"paragraphs": [
+					"Muchos trabajos empiezan temprano o terminan tarde. Con entrada autónoma y acceso al parking con mando, sales y entras a la hora que necesites sin avisar a nadie.",
+					"El coche, o el vehículo de empresa, queda guardado en la plaza privada del edificio y subes en ascensor directamente al piso con el material o el equipaje."
+				]
+			},
+			{
+				"title": "Coche eléctrico de empresa",
+				"paragraphs": [
+					"Si la empresa trabaja con vehículos eléctricos, el cargador está en la misma plaza: cargas por la noche y sales con batería para toda la jornada. El consumo de la recarga lo paga quien utiliza el cargador.",
+					"Más detalles en la página de [[parking privado y cargador eléctrico|apartamento-parking-manresa]]."
+				]
+			},
+			{
+				"title": "Reservas para empresas",
+				"paragraphs": [
+					"Puedes reservar directamente en Booking o Airbnb. Si necesitas confirmar algún detalle antes, como fechas largas, medidas del vehículo o datos para la factura, escríbenos por WhatsApp o por email y te respondemos."
+				]
+			}
+		],
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Pueden alojarse dos compañeros con habitaciones separadas?",
+				"a": "Sí. El apartamento tiene dos dormitorios independientes, además de salón y cocina compartidos."
+			},
+			{
+				"q": "¿Hay buena conexión para trabajar?",
+				"a": "Hay WiFi y una mesa de trabajo en el apartamento."
+			},
+			{
+				"q": "¿Puedo salir muy temprano por la mañana?",
+				"a": "Sí. La entrada y salida son autónomas y el parking se abre con mando, sin horarios de recepción."
+			},
+			{
+				"q": "¿Cabe una furgoneta en el parking?",
+				"a": "La plaza admite un SUV. Para furgonetas u otros vehículos grandes, consúltanos las medidas antes de reservar."
+			},
+			{
+				"q": "¿Puedo pedir factura a nombre de la empresa?",
+				"a": "Escríbenos antes de reservar por WhatsApp o por email con los datos que necesitas y te confirmamos cómo hacerlo."
+			}
+		],
+		"availabilityNote": "Consulta disponibilidad para tus fechas",
+		"apartmentTitle": "Tu base para trabajar en Manresa",
+		"apartmentText": "Dos dormitorios, WiFi, mesa de trabajo, cocina y parking privado con cargador eléctrico. 9,7/10 en Booking.",
+		"backHome": "Ver el apartamento",
+		"relatedKeys": [
+			"parking",
+			"hospital",
+			"umanresa",
+			"queVer"
+		]
+	},
+	"cardonaPage": {
+		"h1": "Visitar Cardona desde Manresa: Muntanya de Sal y castillo",
+		"heroSubtitle": "Una excursión de medio día o de día completo a unos 35 minutos de Manresa: la antigua mina de sal, el castillo con la colegiata de Sant Vicenç y el casco antiguo.",
+		"ctaLabel": "Consultar disponibilidad",
+		"breadcrumbHome": "Inicio",
+		"breadcrumbCurrent": "Cardona desde Manresa",
+		"keyFacts": {
+			"title": "En resumen",
+			"items": [
+				{
+					"label": "Distancia",
+					"value": "Unos 31 km · 35 min por la C-55"
+				},
+				{
+					"label": "Imprescindibles",
+					"value": "Muntanya de Sal y castillo"
+				},
+				{
+					"label": "Tiempo",
+					"value": "Medio día o día completo"
+				},
+				{
+					"label": "Con niños",
+					"value": "Muy recomendable"
+				}
+			]
+		},
+		"sections": [
+			{
+				"id": "por-que",
+				"title": "Por qué visitar Cardona",
+				"paragraphs": [
+					"Cardona reúne dos de los lugares más singulares de Cataluña en un mismo pueblo: una montaña de sal que se ha explotado desde hace miles de años y una fortaleza medieval que domina el valle del Cardener.",
+					"Desde Manresa es una de las excursiones más fáciles de organizar: se llega en poco más de media hora y se puede volver a dormir al mismo apartamento. Combina bien con la visita a [[Montserrat|visitar-montserrat-desde-manresa]] o con un día por [[Manresa|que-ver-manresa]]."
+				]
+			},
+			{
+				"id": "como-llegar",
+				"title": "Cómo llegar desde Manresa",
+				"subsections": [
+					{
+						"title": "En coche",
+						"paragraphs": [
+							"Por la C-55 en dirección Solsona, remontando el valle del Cardener y pasando por Súria. Son unos 31 km y unos 35 minutos desde QEhome. Es la opción más cómoda para combinar la mina y el castillo, que están en extremos distintos del pueblo."
+						]
+					},
+					{
+						"title": "En autobús",
+						"paragraphs": [
+							"Hay autobuses interurbanos entre Manresa y Cardona. Consulta horarios y frecuencias antes de salir, sobre todo en fin de semana, porque el servicio es más limitado."
+						]
+					}
+				]
+			},
+			{
+				"id": "muntanya-sal",
+				"title": "La Muntanya de Sal",
+				"paragraphs": [
+					"La Muntanya de Sal es un afloramiento de sal que sale a la superficie junto al río Cardener. La sal de Cardona se ha aprovechado desde la prehistoria y durante siglos fue la gran riqueza de los señores de Cardona. En el siglo XX se explotó como mina de potasa hasta su cierre.",
+					"Hoy el Parque Cultural de la Muntanya de Sal organiza visitas guiadas al interior de la antigua mina: galerías excavadas en la sal, formaciones salinas y la explicación de cómo se trabajaba bajo tierra."
+				],
+				"tip": "Reserva la visita a la mina con antelación en temporada alta y fines de semana, y consulta la edad mínima si vas con niños pequeños. Lleva calzado cómodo."
+			},
+			{
+				"id": "castillo",
+				"title": "El castillo y la colegiata de Sant Vicenç",
+				"paragraphs": [
+					"En lo alto del pueblo se levanta el castillo de Cardona, una de las fortalezas medievales más importantes de Cataluña y antigua residencia de los duques de Cardona. Hoy alberga un Parador de Turismo, pero el recinto se puede visitar.",
+					"Dentro del recinto está la colegiata de Sant Vicenç, consagrada en el siglo XI y considerada una de las obras clave del románico lombardo en Cataluña. Desde las murallas hay vistas sobre el pueblo y la Muntanya de Sal."
+				]
+			},
+			{
+				"id": "pueblo",
+				"title": "El casco antiguo de Cardona",
+				"paragraphs": [
+					"Entre la mina y el castillo vale la pena recorrer las calles del casco antiguo, con la Plaça de la Fira y la iglesia gótica de Sant Miquel. Es una zona pequeña que se recorre a pie en poco tiempo y donde se concentran los sitios para comer."
+				]
+			},
+			{
+				"id": "ruta",
+				"title": "Ruta de un día desde Manresa",
+				"items": [
+					"Mañana: salida desde Manresa y visita guiada a la Muntanya de Sal.",
+					"Mediodía: comida en el casco antiguo de Cardona.",
+					"Tarde: castillo, colegiata de Sant Vicenç y vistas desde las murallas.",
+					"Regreso: vuelta a Manresa por la C-55; si hay tiempo, parada en el núcleo antiguo de Súria."
+				]
+			},
+			{
+				"id": "ninos",
+				"title": "Cardona con niños",
+				"paragraphs": [
+					"La mina es uno de los planes que más gustan a los niños en la zona: entrar en una montaña de sal no se olvida fácilmente. El castillo, con murallas y torres, completa bien el día.",
+					"Para familias, conviene empezar por la mina por la mañana y dejar el castillo para la tarde, sin intentar meter más visitas. Más ideas en la página de [[apartamento para familias|apartamento-familias-manresa]]."
+				]
+			},
+			{
+				"id": "consejos",
+				"title": "Consejos y qué combinar",
+				"items": [
+					"Comprueba horarios y reservas en las webs oficiales de la Muntanya de Sal y del castillo antes de salir.",
+					"Si te sobra tiempo, Solsona está a unos 20 minutos más al norte por la C-55.",
+					"Para un fin de semana completo: un día en Cardona, otro en [[Montserrat|visitar-montserrat-desde-manresa]] y una tarde por el centro de Manresa.",
+					"Al volver, el coche queda en el [[parking privado|apartamento-parking-manresa]] del edificio de QEhome."
+				]
+			}
+		],
+		"toc": [
+			{
+				"id": "por-que",
+				"label": "Por qué visitar Cardona"
+			},
+			{
+				"id": "como-llegar",
+				"label": "Cómo llegar"
+			},
+			{
+				"id": "muntanya-sal",
+				"label": "La Muntanya de Sal"
+			},
+			{
+				"id": "castillo",
+				"label": "Castillo y colegiata"
+			},
+			{
+				"id": "pueblo",
+				"label": "Casco antiguo"
+			},
+			{
+				"id": "ruta",
+				"label": "Ruta de un día"
+			},
+			{
+				"id": "ninos",
+				"label": "Cardona con niños"
+			},
+			{
+				"id": "consejos",
+				"label": "Consejos"
+			}
+		],
+		"reviewedLabel": "Última revisión: noviembre de 2026",
+		"showAboutGuide": true,
+		"faqsTitle": "Preguntas frecuentes",
+		"faqs": [
+			{
+				"q": "¿Cuánto se tarda de Manresa a Cardona?",
+				"a": "Unos 35 minutos en coche por la C-55, aproximadamente 31 km. También hay autobuses interurbanos."
+			},
+			{
+				"q": "¿Se puede visitar la mina de sal con niños?",
+				"a": "Sí, es una visita muy popular entre familias. Consulta la edad mínima y reserva con antelación en fines de semana."
+			},
+			{
+				"q": "¿Da tiempo a ver la mina y el castillo en un día?",
+				"a": "Sí. Con la mina por la mañana, comida en el pueblo y el castillo por la tarde, se ve lo esencial sin prisas."
+			},
+			{
+				"q": "¿Qué más se puede ver cerca de Cardona?",
+				"a": "Solsona está a unos 20 minutos al norte, y de vuelta a Manresa se puede parar en Súria."
+			}
+		],
+		"availabilityNote": "Consulta disponibilidad para tus fechas",
+		"apartmentTitle": "¿Dónde dormir para visitar Cardona?",
+		"apartmentText": "Manresa queda a 35 minutos de Cardona y a menos de 40 de Montserrat. QEhome tiene dos dormitorios, cocina, parking privado y cargador eléctrico. 9,7/10 en Booking.",
+		"backHome": "Ver el apartamento",
+		"relatedTitle": "Más escapadas desde Manresa",
+		"relatedKeys": [
+			"montserrat",
+			"queVer",
+			"enoturismo",
+			"familias"
+		]
 	},
 	"equipment": {
 		"title": "Todo lo necesario para una estancia cómoda",
@@ -1686,11 +2239,11 @@
 			},
 			{
 				"title": "Ubicación",
-				"text": "Carrer Doctor Esteve, 9, en el centro de Manresa. FGC Manresa-Baixador a pocos minutos a pie y Plaça Major a unos 20-25 minutos andando."
+				"text": "Carrer Doctor Esteve, 9, en el centro de Manresa. FGC Manresa-Baixador a pocos minutos a pie y Plaça Major a unos 20 minutos andando."
 			},
 			{
 				"title": "En coche",
-				"text": "Desde Barcelona, unos 65 km por la C-16 o la C-55. Plaza privada en el edificio, con ascensor directo al piso y cargador eléctrico."
+				"text": "Desde Barcelona, unos 60 km por la C-16 o la C-55. Plaza privada en el edificio, con ascensor directo al piso y cargador eléctrico."
 			},
 			{
 				"title": "En tren",
@@ -1705,5 +2258,29 @@
 				"text": "No se admiten mascotas. Para cualquier duda antes de reservar, escríbenos por WhatsApp."
 			}
 		]
+	},
+	"locationCard": {
+		"title": "Dónde está QEhome",
+		"address": "Carrer Doctor Esteve, 9 · Manresa",
+		"mapsLabel": "Abrir en Google Maps",
+		"items": [
+			{
+				"label": "FGC Manresa-Baixador",
+				"value": "6 min a pie"
+			},
+			{
+				"label": "UManresa",
+				"value": "8 min a pie"
+			},
+			{
+				"label": "Plaça Major",
+				"value": "20 min a pie"
+			},
+			{
+				"label": "Hospital Sant Joan de Déu",
+				"value": "7 min en coche"
+			}
+		],
+		"note": "Tiempos calculados con rutas de OpenStreetMap; pueden variar según el tráfico y el ritmo."
 	}
 }

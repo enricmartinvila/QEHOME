@@ -12,7 +12,7 @@ const { title, items, icons = [] } = Astro.props
 ---
 
 <section class="relative z-10 mx-auto -mt-20 max-w-6xl px-4 md:-mt-24" aria-label={title}>
-	<dl class="grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-stone-200 shadow-xl shadow-stone-900/10 ring-1 ring-stone-200 lg:grid-cols-4">
+	<dl class="grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-stone-200 shadow-xl shadow-night/10 ring-1 ring-stone-200 lg:grid-cols-4">
 		{
 			items.map((item, i) => (
 				<div class="flex flex-col items-start gap-3 bg-white p-4 sm:flex-row sm:gap-4 md:p-6">
@@ -21,7 +21,7 @@ const { title, items, icons = [] } = Astro.props
 					</span>
 					<div class="min-w-0">
 						<dt class="text-[11px] font-semibold sm:text-xs uppercase tracking-wider text-stone-500">{item.label}</dt>
-						<dd class="mt-1 text-sm font-semibold sm:text-[15px] leading-snug text-stone-900">{item.value}</dd>
+						<dd class="mt-1 text-sm font-semibold sm:text-[15px] leading-snug text-ink">{item.value}</dd>
 					</div>
 				</div>
 			))

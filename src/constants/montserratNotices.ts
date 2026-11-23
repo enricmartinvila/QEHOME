@@ -14,8 +14,9 @@ export const MONTSERRAT_NOTICES = {
 } as const
 
 export const GUIDE_REVIEWED_AT = {
-	queVer: "2026-09-01",
-	montserrat: "2026-09-01",
-	enoturismo: "2026-09-09",
-	camino: "2026-09-09",
+	queVer: "2026-11-23",
+	montserrat: "2026-11-23",
+	enoturismo: "2026-11-23",
+	camino: "2026-11-23",
+	cardona: "2026-11-23",
 } as const

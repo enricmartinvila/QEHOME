@@ -88,7 +88,39 @@ const massifSmall = pinnacleRidge({ x0: 760, x1: 1300, base: 450, peak: 110, see
 const vineHill = hills([520, 470, 440, 455, 500, 480, 450])
 const rows = vineRows(9, 470, 22)
 
-const sunPos = variant === "montserrat" ? { x: 330, y: 300 } : variant === "vineyard" ? { x: 1080, y: 330 } : { x: 1300, y: 210 }
+const sunPos =
+	variant === "montserrat"
+		? { x: 330, y: 300 }
+		: variant === "vineyard"
+			? { x: 1080, y: 330 }
+			: variant === "cardona"
+				? { x: 760, y: 250 }
+				: { x: 1300, y: 210 }
+
+/** Jagged pale salt outcrop with gullies (Muntanya de Sal, Cardona) */
+function saltMountain(x0: number, x1: number, base: number, peak: number, seed: number) {
+	const r = rng(seed)
+	const bump = (t: number, c: number, w: number) => Math.exp(-(((t - c) / w) ** 2))
+	const n = 48
+	const pts: Array<[number, number]> = []
+	for (let i = 0; i <= n; i++) {
+		const t = i / n
+		const env = Math.min(1, 0.55 * bump(t, 0.3, 0.2) + bump(t, 0.6, 0.18) + 0.35 * bump(t, 0.85, 0.1))
+		pts.push([x0 + t * (x1 - x0), base - peak * env - 6 - r() * 16])
+	}
+	const outline = `M${x0} ${base + 10} ` + pts.map(([x, y]) => `L${x.toFixed(1)} ${y.toFixed(1)}`).join(" ") + ` L${x1} ${base + 10} Z`
+	const gullies = pts
+		.filter(([, y], i) => i % 2 === 0 && base - y > 50)
+		.map(([x, y]) => {
+			const len = (base - y) * (0.35 + r() * 0.4)
+			return `M${x.toFixed(1)} ${(y + 6).toFixed(1)} l${(r() * 8 - 4).toFixed(1)} ${len.toFixed(1)}`
+		})
+	return { outline, gullies }
+}
+const saltBack = saltMountain(300, 960, 560, 200, 9)
+const salt = saltMountain(120, 860, 570, 170, 5)
+const crenels = (x: number, y: number, w: number, step = 14) =>
+	Array.from({ length: Math.floor(w / step) }, (_, i) => `M${x + i * step} ${y} h${step / 2} v-10 h-${step / 2} Z`).join(" ")
 
 // Pont Vell: deck with pointed arch openings over the river
 const bridge =
@@ -189,6 +221,39 @@ const bridge =
 				<path d={bridge} fill="#241b10" fill-rule="evenodd" transform="translate(-120 0)" />
 				</g>
 				<path d={hills([620, 600, 610, 590, 575, 560, 545])} fill="#1f170e" />
+			</g>
+		)
+	}
+	{
+		variant === "cardona" && (
+			<g>
+				<path d={hills([440, 420, 450, 405, 430, 410, 425])} fill="#9a7840" opacity="0.6" />
+				{/* Castle hill with the fortress, collegiate church and Torre de la Minyona */}
+				<path d="M760 600 Q900 400 1060 372 Q1240 366 1440 470 L1440 600 Z" fill="#5a4222" />
+				<g fill="#2f2415">
+					<rect x="905" y="300" width="330" height="80" />
+					<path d={crenels(905, 300, 330)} />
+					<rect x="975" y="262" width="150" height="48" />
+					<path d="M970 264 L1050 228 L1130 264 Z" />
+					<rect x="935" y="214" width="42" height="96" />
+					<path d="M931 216 L956 194 L981 216 Z" />
+					<rect x="1160" y="196" width="52" height="120" rx="4" />
+					<path d={crenels(1158, 196, 56, 14)} />
+				</g>
+				<g fill="#d9ad52" opacity="0.5">
+					<path d="M1040 290 a10 10 0 0 1 20 0 v20 h-20 Z" />
+					<rect x="950" y="236" width="8" height="18" rx="4" />
+					<rect x="1180" y="222" width="8" height="18" rx="4" />
+				</g>
+				{/* Salt mountain */}
+				<path d={saltBack.outline} fill="#c4ad85" />
+				<path d={salt.outline} fill="#e6d9c2" />
+				<g stroke="#b59e74" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6">
+					{salt.gullies.map((d) => <path d={d} />)}
+				</g>
+				<path d={hills([640, 610, 590, 600, 580, 570, 560])} fill="#241b10" opacity="0.6" />
+				<rect x="0" y="590" width={W} height="26" fill="#b88a3a" opacity="0.3" />
+				<path d={hills([630, 620, 615, 625, 612, 620, 610])} fill="#1f170e" />
 			</g>
 		)
 	}

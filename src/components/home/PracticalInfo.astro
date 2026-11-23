@@ -6,21 +6,23 @@ interface Props {
 }
 
 const { lang } = Astro.props
-const info = getTranslations(lang).practicalInfo
+const t = getTranslations(lang)
+const info = t.practicalInfo
+const ui = t.homeUi
 ---
 
-<section id="info" class="scroll-mt-24 bg-stone-50 py-14 md:py-16">
-	<div class="mx-auto max-w-5xl px-4">
-		<div class="mx-auto max-w-3xl text-center">
-			<h2 class="text-2xl font-bold text-stone-900 md:text-3xl">{info.title}</h2>
-			<p class="mt-4 text-[15px] leading-relaxed text-stone-600 md:text-base">{info.intro}</p>
+<section id="info" class="scroll-mt-24 bg-sand py-[74px] lg:py-[100px]">
+	<div class="mx-auto grid max-w-[1180px] gap-11 px-5 sm:px-7 lg:grid-cols-[1fr_1.7fr] lg:gap-20">
+		<div class="reveal">
+			<span class="kicker">{ui.kickers.info}</span>
+			<h2 class="text-[clamp(2.1rem,4.2vw,3.2rem)] leading-[1.08]">{ui.infoTitle}</h2>
 		</div>
-		<dl class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
+		<dl class="reveal grid gap-x-10 sm:grid-cols-2">
 			{
 				info.items.map((item) => (
-					<div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
-						<dt class="text-base font-bold text-stone-900">{item.title}</dt>
-						<dd class="landing-prose mt-2">{item.text}</dd>
+					<div class="border-b border-[#d6d1c4] py-[26px]">
+						<dt class="mb-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-brand">{item.title}</dt>
+						<dd class="text-[0.97rem] leading-relaxed text-[#3d424a]">{item.text}</dd>
 					</div>
 				))
 			}

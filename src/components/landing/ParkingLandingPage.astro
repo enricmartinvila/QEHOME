@@ -39,9 +39,9 @@ const features = [
 
 <KeyFacts title={page.keyFacts.title} items={page.keyFacts.items} icons={decor.keyFactIcons} />
 
-<section class="bg-stone-50 pb-16 pt-14 md:pb-24 md:pt-20">
+<section class="bg-paper pb-16 pt-14 md:pb-24 md:pt-20">
 	<div class="mx-auto max-w-4xl px-4">
-		<p class="reveal mx-auto max-w-2xl text-center text-2xl font-semibold leading-snug text-stone-900 md:text-3xl">
+		<p class="reveal mx-auto max-w-2xl text-center text-2xl font-semibold leading-snug text-ink md:text-3xl">
 			{page.benefitLead}
 		</p>
 
@@ -74,7 +74,7 @@ const features = [
 							</div>
 						)}
 						<div class="p-7 md:p-8">
-							<h2 class="text-xl font-bold text-stone-900 md:text-2xl">{f.title}</h2>
+							<h2 class="text-xl font-bold text-ink md:text-2xl">{f.title}</h2>
 							<p class="landing-prose mt-3">{f.text}</p>
 						</div>
 					</article>
@@ -97,7 +97,7 @@ const features = [
 		availabilityNote={page.availabilityNote}
 	/>
 
-	<RelatedLandings lang={lang} excludeSlug={PARKING_LANDING.slug} />
+	<RelatedLandings lang={lang} excludeSlug={PARKING_LANDING.slug} includeKeys={page.relatedKeys} />
 </section>
 
 <Contact lang={lang} />

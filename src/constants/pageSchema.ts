@@ -28,10 +28,12 @@ export function lodgingLandingJsonLd(opts: {
 	image: string
 	homeLabel: string
 	currentLabel: string
+	faqs?: Array<{ q: string; a: string }>
 }) {
 	const path = localizedPath(opts.lang, opts.slug)
 	return schemaGraph(
 		lodgingJsonLd(path, opts.description, opts.lang, opts.image),
+		...(opts.faqs?.length ? [faqPageJsonLd(opts.faqs)] : []),
 		breadcrumbListJsonLd([
 			{ name: opts.homeLabel, path: localizedPath(opts.lang) },
 			{ name: opts.currentLabel, path },
@@ -68,6 +70,7 @@ export function guideLandingJsonLd(opts: {
 	homeLabel: string
 	currentLabel: string
 	dateModified: string
+	faqs?: Array<{ q: string; a: string }>
 }) {
 	const path = localizedPath(opts.lang, opts.slug)
 	return schemaGraph(
@@ -78,6 +81,7 @@ export function guideLandingJsonLd(opts: {
 			image: opts.image,
 			dateModified: opts.dateModified,
 		}),
+		...(opts.faqs?.length ? [faqPageJsonLd(opts.faqs)] : []),
 		breadcrumbListJsonLd([
 			{ name: opts.homeLabel, path: localizedPath(opts.lang) },
 			{ name: opts.currentLabel, path },

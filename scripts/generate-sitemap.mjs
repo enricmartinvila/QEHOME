@@ -12,18 +12,24 @@ const LANDING_SLUGS = [
 	"visitar-montserrat-desde-manresa",
 	"enoturismo-pla-de-bages",
 	"apartamento-familias-manresa",
+	"alojamiento-hospital-manresa",
+	"apartamento-trabajo-manresa",
+	"visitar-cardona-desde-manresa",
 ]
 
 /** Keep in sync with src/constants/sitemap.ts */
 const SITEMAP_LASTMOD = {
-	home: "2026-09-09",
-	"apartamento-parking-manresa": "2026-09-09",
-	"alojamiento-umanresa": "2026-09-09",
-	"que-ver-manresa": "2026-09-07",
-	"alojamiento-camino-ignaciano-manresa": "2026-09-09",
-	"visitar-montserrat-desde-manresa": "2026-09-07",
-	"enoturismo-pla-de-bages": "2026-09-09",
-	"apartamento-familias-manresa": "2026-09-05",
+	home: "2026-11-23",
+	"apartamento-parking-manresa": "2026-11-23",
+	"alojamiento-umanresa": "2026-11-23",
+	"que-ver-manresa": "2026-11-23",
+	"alojamiento-camino-ignaciano-manresa": "2026-11-23",
+	"visitar-montserrat-desde-manresa": "2026-11-23",
+	"enoturismo-pla-de-bages": "2026-11-23",
+	"apartamento-familias-manresa": "2026-11-23",
+	"alojamiento-hospital-manresa": "2026-11-23",
+	"apartamento-trabajo-manresa": "2026-11-23",
+	"visitar-cardona-desde-manresa": "2026-11-23",
 }
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..")

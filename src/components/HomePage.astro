@@ -6,11 +6,9 @@ import Equipment from "./home/Equipment.astro"
 import IdealFor from "./home/IdealFor.astro"
 import PhotoGallery from "./home/PhotoGallery.astro"
 import HomeFaq from "./home/HomeFaq.astro"
-import RelatedLandings from "./home/RelatedLandings.astro"
-import Apartment from "./home/Apartment.astro"
 import PracticalInfo from "./home/PracticalInfo.astro"
 import Contact from "./home/Contact.astro"
-import ScrollCTA from "./ScrollCTA.astro"
+import RevealScript from "./landing/RevealScript.astro"
 import type { Lang } from "../constants/i18n"
 
 interface Props {
@@ -28,9 +26,5 @@ const { lang } = Astro.props
 <PhotoGallery lang={lang} />
 <PracticalInfo lang={lang} />
 <HomeFaq lang={lang} />
-<section class="bg-white pb-14 md:pb-16">
-	<RelatedLandings lang={lang} />
-</section>
-<Apartment lang={lang} />
 <Contact lang={lang} />
-<ScrollCTA lang={lang} />
+<RevealScript />

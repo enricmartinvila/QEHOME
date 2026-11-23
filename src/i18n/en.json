@@ -11,6 +11,30 @@
 		"book_now": "Check availability",
 		"whats": "640 95 55 72"
 	},
+	"homeUi": {
+		"kickers": {
+			"reviews": "Reviews",
+			"why": "Why QEhome",
+			"apartment": "The apartment",
+			"who": "Who it's for",
+			"photos": "Photos",
+			"info": "Practical information",
+			"faq": "FAQ",
+			"contact": "Contact"
+		},
+		"heroHighlight": "central Manresa",
+		"contactHighlight": "QEhome",
+		"whyTitle": "Park, charge and arrive without hassle",
+		"familiesTitle": "Families and couples",
+		"workTitle": "Work stays",
+		"workLink": "More about work stays",
+		"infoTitle": "Good to know before you arrive",
+		"faqTitle": "About QEhome Manresa",
+		"bookTitle": "Book your dates",
+		"bookText": "9.7 on Booking and 4.92 on Airbnb. Choose your platform.",
+		"explore": "Explore",
+		"mobileAvailability": "Availability"
+	},
 	"seo": {
 		"home": {
 			"title": "Holiday apartment in Manresa | Private parking | QEhome",
@@ -44,6 +68,18 @@
 		"familias": {
 			"title": "Family apartment in Manresa | QEhome",
 			"metaDescription": "Family apartment in Manresa with 2 bedrooms, equipped kitchen, private parking and self check-in. Check availability at QEhome."
+		},
+		"hospital": {
+			"title": "Accommodation near Manresa Hospital | QEhome",
+			"metaDescription": "Apartment 7 minutes by car from Hospital Sant Joan de Déu (Althaia) in Manresa, with 2 bedrooms, kitchen, parking and self check-in."
+		},
+		"trabajo": {
+			"title": "Apartment for work stays in Manresa | QEhome",
+			"metaDescription": "Apartment for travelling workers and teams in Manresa: 2 bedrooms, WiFi, desk, kitchen and private parking in the building."
+		},
+		"cardona": {
+			"title": "Visiting Cardona from Manresa: Salt Mountain | QEhome",
+			"metaDescription": "Guide to visiting Cardona from Manresa: getting there, the Salt Mountain mine, the castle and collegiate church, a day plan and tips with kids."
 		}
 	},
 	"relatedLandings": {
@@ -55,7 +91,10 @@
 			"camino": "Ignatian Way",
 			"montserrat": "Montserrat from Manresa",
 			"enoturismo": "Pla de Bages wine tourism",
-			"familias": "Family apartment"
+			"familias": "Family apartment",
+			"hospital": "Near Manresa Hospital",
+			"trabajo": "Work stays",
+			"cardona": "Cardona from Manresa"
 		}
 	},
 	"differentiatorsLink": "More about parking and electric charger",
@@ -242,10 +281,10 @@
 					"Times are approximate at a walking pace (about 4 to 5 km/h) or by car in normal traffic."
 				],
 				"items": [
-					"UManresa (Av. Universitària): about 10 to 15 minutes on foot, or about 5 minutes by car",
-					"University area: the same trip; the campus sits in that area",
-					"Manresa-Baixador FGC (stop recommended by UManresa): about 5 to 10 minutes on foot",
-					"Historic centre (Plaça Major): about 20 to 25 minutes on foot, or about 5 minutes by car"
+					"UManresa (Av. Universitària): about 8 minutes on foot (just over 500 m)",
+					"EPSEM, the UPC's Manresa School of Engineering: about 10 minutes on foot",
+					"Manresa-Baixador FGC (stop recommended by UManresa): about 6 minutes on foot",
+					"Historic centre (Plaça Major): about 20 minutes on foot, or about 5 minutes by car"
 				]
 			},
 			{
@@ -279,7 +318,8 @@
 			{
 				"title": "Why QEhome fits",
 				"paragraphs": [
-					"On a short visit it helps to work, cook and arrive at any hour. WiFi and a desk, full kitchen, two bedrooms and self check-in. If you come by car, private parking in the building."
+					"On a short visit it helps to work, cook and arrive at any hour. WiFi and a desk, full kitchen, two bedrooms and self check-in. If you come by car, private parking in the building.",
+					"If you're coming for work or a hospital stay, see also the [[work stays|apartamento-trabajo-manresa]] and [[accommodation near Manresa Hospital|alojamiento-hospital-manresa]] pages."
 				],
 				"items": [
 					"WiFi and desk",
@@ -306,11 +346,11 @@
 			"items": [
 				{
 					"label": "To UManresa",
-					"value": "10-15 min walk · 5 min by car"
+					"value": "About 8 min walk"
 				},
 				{
 					"label": "Manresa-Baixador FGC",
-					"value": "5-10 min walk"
+					"value": "About 6 min walk"
 				},
 				{
 					"label": "Check-in",
@@ -330,7 +370,7 @@
 			},
 			{
 				"q": "How long is the walk to UManresa?",
-				"a": "About 10-15 minutes on foot to the Av. Universitària campus, or around 5 minutes by car."
+				"a": "About 8 minutes on foot to the Av. Universitària campus, just over half a kilometre. The UPC's EPSEM engineering school is about 10 minutes away."
 			},
 			{
 				"q": "Can I work from the apartment?",
@@ -344,6 +384,12 @@
 				"q": "Is there parking?",
 				"a": "Yes. A private space in the same building, included in the stay, with a lift straight to the flat."
 			}
+		],
+		"relatedKeys": [
+			"trabajo",
+			"hospital",
+			"parking",
+			"queVer"
 		]
 	},
 	"queVerPage": {
@@ -352,6 +398,27 @@
 		"ctaLabel": "Check availability",
 		"breadcrumbHome": "Home",
 		"breadcrumbCurrent": "What to see in Manresa",
+		"keyFacts": {
+			"title": "At a glance",
+			"items": [
+				{
+					"label": "Must-sees",
+					"value": "La Seu and the Cave of Saint Ignatius"
+				},
+				{
+					"label": "Time needed",
+					"value": "1 full day, or 2 with a day trip"
+				},
+				{
+					"label": "From QEhome",
+					"value": "Plaça Major about 20 min on foot"
+				},
+				{
+					"label": "Main festival",
+					"value": "Festa de la Llum, in February"
+				}
+			]
+		},
 		"sections": [
 			{
 				"title": "What to see in Manresa: the essentials",
@@ -547,7 +614,8 @@
 					"Getting around: the historic centre and most of the main sights are walkable. For Parc de l'Agulla or trips into the Bages, a car is often more practical.",
 					"Arriving by train: Manresa has FGC and Renfe connections. Manresa Tourism cites FGC lines R5 and R50, and Renfe lines R4 and R12. We do not give fixed journey times because timetables and services can change.",
 					"Opening hours: for museums, monuments and visitor sites, always check official pages before you go. This matters especially for places such as Carrer del Balç, which is currently listed as temporarily closed.",
-					"If you arrive by car, QEhome has [[private parking and an electric car charger|apartamento-parking-manresa]]."
+					"If you arrive by car, QEhome has [[private parking and an electric car charger|apartamento-parking-manresa]].",
+					"For a half-day trip, [[Cardona and its Salt Mountain|visitar-cardona-desde-manresa]] is about 35 minutes away by car."
 				],
 				"id": "consejos"
 			}
@@ -559,9 +627,9 @@
 		"relatedTitle": "Keep exploring the Bages",
 		"relatedKeys": [
 			"montserrat",
+			"cardona",
 			"camino",
-			"enoturismo",
-			"parking"
+			"enoturismo"
 		],
 		"toc": [
 			{
@@ -684,9 +752,9 @@
 					"From QEhome (Carrer Doctor Esteve) to the Ignatian points in the centre are walkable trips. Times are approximate at a walking pace (about 4 to 5 km/h), without stops."
 				],
 				"items": [
-					"Pilgrim Welcome Centre (Via Sant Ignasi, 40): about 25 minutes on foot",
-					"Cave of Saint Ignatius: about 30 minutes on foot",
-					"Plaça Major (Tourist Office): about 25 minutes on foot",
+					"Pilgrim Welcome Centre (Via Sant Ignasi, 40): about 20 minutes on foot",
+					"Cave of Saint Ignatius: about 25 minutes on foot",
+					"Plaça Major (Tourist Office): about 20 minutes on foot",
 					"Manresa-Baixador FGC station: a few minutes on foot"
 				]
 			},
@@ -757,8 +825,14 @@
 			},
 			{
 				"q": "Is it close to the Cave of Saint Ignatius?",
-				"a": "The Cave is about 30 minutes' walk from the apartment, and the Pilgrim Centre about 25 minutes."
+				"a": "The Cave is about 25 minutes' walk from the apartment, and the Pilgrim Centre about 20 minutes."
 			}
+		],
+		"relatedKeys": [
+			"queVer",
+			"montserrat",
+			"parking",
+			"familias"
 		]
 	},
 	"montserratPage": {
@@ -767,6 +841,27 @@
 		"ctaLabel": "Check availability",
 		"breadcrumbHome": "Home",
 		"breadcrumbCurrent": "Montserrat from Manresa",
+		"keyFacts": {
+			"title": "At a glance",
+			"items": [
+				{
+					"label": "By car",
+					"value": "20-25 min to Monistrol · 35 min to the monastery"
+				},
+				{
+					"label": "By train",
+					"value": "FGC R5 + rack railway or cable car"
+				},
+				{
+					"label": "Basilica",
+					"value": "Free entry"
+				},
+				{
+					"label": "Time",
+					"value": "Half a day or a full day"
+				}
+			]
+		},
 		"sections": [
 			{
 				"title": "Why visit Montserrat from Manresa?",
@@ -929,7 +1024,8 @@
 				"title": "Montserrat and Ignatius of Loyola",
 				"paragraphs": [
 					"Montserrat and Manresa are linked on the Ignatian Way. The final official stage runs from Montserrat to Manresa, about 25 to 26 km according to the route published by Manresa Tourism.",
-					"If you are walking the route, Manresa is the natural arrival point after Montserrat."
+					"If you are walking the route, Manresa is the natural arrival point after Montserrat.",
+					"If you have another day, [[Cardona and its Salt Mountain|visitar-cardona-desde-manresa]] is about 35 minutes from Manresa on the C-55."
 				],
 				"link": {
 					"label": "Accommodation in Manresa for the Ignatian Way",
@@ -944,10 +1040,10 @@
 		"backHome": "See the apartment",
 		"relatedTitle": "Continue the trip",
 		"relatedKeys": [
+			"cardona",
 			"queVer",
 			"camino",
-			"enoturismo",
-			"parking"
+			"enoturismo"
 		],
 		"toc": [
 			{
@@ -1132,7 +1228,8 @@
 			{
 				"title": "More ideas nearby",
 				"paragraphs": [
-					"To combine wine and city, see our guide to [[what to see in Manresa|que-ver-manresa]]. If you fancy a mountain day between visits, find out how to [[visit Montserrat from Manresa|visitar-montserrat-desde-manresa]]."
+					"To combine wine and city, see our guide to [[what to see in Manresa|que-ver-manresa]]. If you fancy a mountain day between visits, find out how to [[visit Montserrat from Manresa|visitar-montserrat-desde-manresa]].",
+					"And for another day, [[Cardona and its Salt Mountain|visitar-cardona-desde-manresa]] is about 35 minutes from Manresa."
 				]
 			}
 		],
@@ -1207,6 +1304,12 @@
 				"q": "When is the harvest?",
 				"a": "Usually from late August into September, depending on the variety and the vintage."
 			}
+		],
+		"relatedKeys": [
+			"montserrat",
+			"cardona",
+			"queVer",
+			"parking"
 		]
 	},
 	"parkingPage": {
@@ -1247,7 +1350,7 @@
 				"title": "Parking in central Manresa",
 				"paragraphs": [
 					"Central Manresa mixes the narrow streets of the old town with regulated on-street parking zones. Finding a free space near where you are staying, especially in the evening, is not always easy, and public car parks charge by the hour.",
-					"With your own space in the building, the car stays put and you get around on foot: Manresa-Baixador FGC station is a few minutes away and Plaça Major about 20-25 minutes' walk. The car only comes out for day trips."
+					"With your own space in the building, the car stays put and you get around on foot: Manresa-Baixador FGC station is a few minutes away and Plaça Major about 20 minutes' walk. The car only comes out for day trips."
 				]
 			},
 			{
@@ -1257,11 +1360,11 @@
 					"Manresa sits in the middle of Catalonia, with dual carriageways to Barcelona, Lleida, Girona and the Pyrenees. Approximate distances and times to QEhome without heavy traffic:"
 				],
 				"items": [
-					"From Barcelona (about 65 km, around 1 h): the C-16 through the Vallvidrera Tunnels and Terrassa (toll), or the A-2 and C-55 via Martorell and Abrera (toll-free, busier).",
+					"From Barcelona (about 60 km, around 1 h): the C-16 through the Vallvidrera Tunnels and Terrassa (toll), or the A-2 and C-55 via Martorell and Abrera (toll-free, busier).",
 					"From Barcelona-El Prat airport: around 1 h, joining the C-16 or the A-2 and C-55.",
 					"From Lleida (about 115 km, around 1 h 15 min): A-2 to Cervera, then the Eix Transversal (C-25).",
-					"From Girona (about 130 km, around 1 h 20 min): Eix Transversal (C-25) via Vic.",
-					"From Vic (about 55 km, around 45 min): Eix Transversal (C-25).",
+					"From Girona (about 120 km, around 1 h 30 min): Eix Transversal (C-25) via Vic.",
+					"From Vic (about 50 km, around 40 min): Eix Transversal (C-25).",
 					"From Berga and the Pyrenees: C-16 southbound, about 50 km from Berga."
 				]
 			},
@@ -1272,7 +1375,7 @@
 					"The charger is at the parking space itself, so you can charge overnight while you rest and set off in the morning with a full battery for Montserrat, the Pla de Bages wineries or the drive home.",
 					"The cost of the energy you use is paid by whoever uses the charger. If you need to confirm the connector type or any other charging detail, message us on WhatsApp before booking and we will confirm it."
 				],
-				"tip": "With Barcelona about 65 km away and the main day trips under 40 minutes, most stays only need charging at the space, with no need to look for public chargers."
+				"tip": "With Barcelona about 60 km away and the main day trips under 40 minutes, most stays only need charging at the space, with no need to look for public chargers."
 			},
 			{
 				"id": "day-trips",
@@ -1285,7 +1388,7 @@
 					"[[DO Pla de Bages|enoturismo-pla-de-bages]] wineries: the nearest are 10-15 minutes away.",
 					"Món Sant Benet (Sant Fruitós de Bages): about 15 minutes.",
 					"Cardona Salt Mountain and castle: about 35 minutes.",
-					"Sant Llorenç del Munt i l'Obac Natural Park (Mura, Talamanca): about 30 minutes."
+					"Sant Llorenç del Munt i l'Obac Natural Park (Mura, Talamanca): about 35 minutes."
 				]
 			}
 		],
@@ -1317,7 +1420,7 @@
 			},
 			{
 				"q": "Can I walk to the centre of Manresa?",
-				"a": "Yes. Manresa-Baixador FGC station is a few minutes away and Plaça Major about 20-25 minutes on foot. The car can stay in the space for the whole stay."
+				"a": "Yes. Manresa-Baixador FGC station is a few minutes away and Plaça Major about 20 minutes on foot. The car can stay in the space for the whole stay."
 			},
 			{
 				"q": "What time can I arrive?",
@@ -1344,7 +1447,13 @@
 					"value": "FGC station a few minutes' walk"
 				}
 			]
-		}
+		},
+		"relatedKeys": [
+			"trabajo",
+			"familias",
+			"montserrat",
+			"cardona"
+		]
 	},
 	"contacto": {
 		"check": "Want to stay at QEhome?",
@@ -1460,6 +1569,16 @@
 							"label": "Pla de Bages wine tourism",
 							"slug": "enoturismo-pla-de-bages"
 						}
+					},
+					{
+						"title": "Going inside a salt mountain in Cardona",
+						"paragraphs": [
+							"Cardona's Salt Mountain, about 35 minutes away, is one of the visits children enjoy most."
+						],
+						"link": {
+							"label": "Visiting Cardona from Manresa",
+							"slug": "visitar-cardona-desde-manresa"
+						}
 					}
 				]
 			},
@@ -1500,7 +1619,7 @@
 					{
 						"title": "Sant Llorenç del Munt i l'Obac",
 						"paragraphs": [
-							"A natural park about 30 minutes away, with short walks from Mura or Talamanca and stone tines among the vineyards. With young children, choose short, flat routes."
+							"A natural park about 35 minutes away, with short walks from Mura or Talamanca and stone tines among the vineyards. With young children, choose short, flat routes."
 						]
 					}
 				]
@@ -1621,7 +1740,441 @@
 					"value": "Not allowed"
 				}
 			]
-		}
+		},
+		"relatedKeys": [
+			"cardona",
+			"montserrat",
+			"queVer",
+			"parking"
+		]
+	},
+	"hospitalPage": {
+		"h1": "Accommodation near Hospital Sant Joan de Déu in Manresa",
+		"heroSubtitle": "A quiet apartment with two bedrooms, a kitchen and parking for staying close to a relative in hospital, coming for tests or doing a placement at Althaia.",
+		"ctaLabel": "Check availability",
+		"secondaryCtaLabel": "See the apartment",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Near Manresa Hospital",
+		"keyFacts": {
+			"title": "At a glance",
+			"items": [
+				{
+					"label": "Hospital Sant Joan de Déu",
+					"value": "About 7 min by car"
+				},
+				{
+					"label": "Check-in",
+					"value": "Self check-in from 15:00"
+				},
+				{
+					"label": "Car",
+					"value": "Private parking included"
+				},
+				{
+					"label": "Space",
+					"value": "2 bedrooms, living room and kitchen"
+				}
+			]
+		},
+		"sections": [
+			{
+				"title": "Somewhere to rest when you need to be close",
+				"paragraphs": [
+					"When a relative is in hospital or has several days of treatment in Manresa, it helps to have somewhere nearby to sleep properly, shower and cook something simple between visits.",
+					"Hospital Sant Joan de Déu in Manresa, run by Althaia, is the main hospital for central Catalonia, so many families come from other areas. QEhome is a privately run holiday apartment: it has no connection with the hospital and offers no medical services, just the comfort of a home a few minutes away."
+				],
+				"items": [
+					"Relatives staying with an inpatient",
+					"Patients from outside the area with several days of tests or treatment",
+					"Healthcare professionals on placements, training or locum cover",
+					"Visits to Clínica Sant Josep or other Althaia centres"
+				]
+			},
+			{
+				"title": "Distances from the apartment",
+				"paragraphs": [
+					"QEhome is at Carrer Doctor Esteve, 9. Times calculated with OpenStreetMap routes, not counting waiting or parking:"
+				],
+				"items": [
+					"Hospital Sant Joan de Déu (Carrer del Dr. Joan Soler): about 7 minutes by car, or about 30 minutes on foot (2.3 km)",
+					"Clínica Sant Josep (Althaia): about 25 minutes on foot",
+					"By train: FGC from Manresa-Baixador (6 minutes from the apartment) to Manresa-Viladordis, then about a 10-minute walk to the hospital",
+					"Plaça Major and the old town: about 20 minutes on foot"
+				],
+				"tip": "If you go back and forth several times a day, the car saves a lot of time: it is about 7 minutes, and when you return you leave it in the building's private space without looking for parking."
+			},
+			{
+				"title": "Why an apartment at a time like this",
+				"paragraphs": [
+					"Stays for medical reasons rarely follow fixed hours. A home with self check-in and a kitchen lets you adapt to whatever comes up, without depending on reception hours or eating out every meal.",
+					"With two bedrooms, two people can take turns staying with the patient and rest separately."
+				],
+				"items": [
+					"Self check-in at any hour",
+					"Equipped kitchen",
+					"2 separate bedrooms",
+					"Living room to rest",
+					"WiFi and desk",
+					"Private parking in the building"
+				]
+			},
+			{
+				"title": "Practical tips",
+				"items": [
+					"Check visiting and companion hours on the Althaia website: they vary by ward.",
+					"If you arrive late at night after an emergency, you can still get in: self check-in is available from 15:00.",
+					"If you don't know how many nights you'll need, message us on WhatsApp and we'll tell you which dates are still free.",
+					"With the car in the building's car park you can get around the neighbourhood on foot and use it only to go to the hospital."
+				]
+			},
+			{
+				"title": "For professionals on placement or training",
+				"paragraphs": [
+					"Residents, students on placement and professionals covering a post often spend one or several weeks in Manresa. The apartment has WiFi and a desk for studying or preparing shifts, and UManresa university, which offers health sciences degrees, is about 8 minutes away on foot.",
+					"More information on the [[accommodation near UManresa|alojamiento-umanresa]] page and the [[work stays in Manresa|apartamento-trabajo-manresa]] page."
+				]
+			},
+			{
+				"title": "Also nearby",
+				"paragraphs": [
+					"If several family members are travelling, see also the [[family apartment|apartamento-familias-manresa]] page. And if you're coming by car, the details of the [[private parking and EV charger|apartamento-parking-manresa]]."
+				]
+			}
+		],
+		"faqsTitle": "Frequently asked questions",
+		"faqs": [
+			{
+				"q": "How far is QEhome from Hospital Sant Joan de Déu?",
+				"a": "About 2.8 km by car, around 7 minutes without traffic. On foot it is about 2.3 km, roughly 30 minutes."
+			},
+			{
+				"q": "Can I arrive in the middle of the night?",
+				"a": "Yes. Self check-in is available from 15:00, so you can arrive at any hour without depending on a reception desk."
+			},
+			{
+				"q": "Is there parking?",
+				"a": "Yes. A private space in the same building, included in the stay, with a lift straight up to the flat."
+			},
+			{
+				"q": "Is QEhome connected with the hospital?",
+				"a": "No. It is a privately run holiday apartment. For visiting hours, companion rules or medical information, always check with Althaia."
+			},
+			{
+				"q": "What if the stay gets longer?",
+				"a": "It depends on calendar availability. Message us on WhatsApp and we'll tell you which dates are still free."
+			}
+		],
+		"availabilityNote": "Check availability for your dates",
+		"apartmentTitle": "A quiet place a few minutes from the hospital",
+		"apartmentText": "Two bedrooms, equipped kitchen, self check-in and private parking in the building. Rated 9.7/10 on Booking.",
+		"backHome": "See the apartment",
+		"relatedKeys": [
+			"familias",
+			"umanresa",
+			"trabajo",
+			"parking"
+		]
+	},
+	"trabajoPage": {
+		"h1": "Apartment for work stays in Manresa",
+		"heroSubtitle": "For technicians, travelling teams and professionals spending days or weeks in Manresa: two bedrooms, WiFi, a desk, a kitchen and parking in the building.",
+		"ctaLabel": "Check availability",
+		"secondaryCtaLabel": "See the apartment",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Work stays",
+		"keyFacts": {
+			"title": "At a glance",
+			"items": [
+				{
+					"label": "For working",
+					"value": "WiFi and desk"
+				},
+				{
+					"label": "Teams",
+					"value": "2 separate bedrooms"
+				},
+				{
+					"label": "Industrial estates",
+					"value": "Els Dolors and Bufalvent 7-10 min"
+				},
+				{
+					"label": "Car",
+					"value": "Private parking and charger"
+				}
+			]
+		},
+		"sections": [
+			{
+				"title": "Who it's for",
+				"paragraphs": [
+					"Manresa is the capital of the Bages area and a road hub for central Catalonia, with industrial estates, the area's main hospital and companies that host technicians and teams from elsewhere. For stays of several days, an apartment is more comfortable and practical than a hotel room."
+				],
+				"items": [
+					"Maintenance, installation or commissioning technicians",
+					"Construction or installation crews working in the area",
+					"Audits, consulting and in-company training",
+					"Sales reps covering central Catalonia",
+					"Professionals on cover or projects lasting weeks"
+				]
+			},
+			{
+				"title": "A location for getting around for work",
+				"paragraphs": [
+					"From Manresa the C-16 runs to Barcelona and Berga, the C-55 to Martorell and Solsona, and the Eix Transversal (C-25) to Lleida, Vic and Girona. Approximate driving times from QEhome, without heavy traffic:"
+				],
+				"items": [
+					"Els Dolors industrial estate: about 7 minutes",
+					"Bufalvent industrial estate: about 10 minutes",
+					"Hospital Sant Joan de Déu: about 7 minutes",
+					"Terrassa: about 35 minutes on the C-16",
+					"Igualada: about 35 minutes",
+					"Vic: about 40 minutes on the C-25",
+					"Barcelona: around 1 hour (about 60 km)"
+				]
+			},
+			{
+				"title": "What a work stay needs",
+				"paragraphs": [
+					"After the working day what matters is resting well, having dinner without relying on restaurants and getting ready for the next day. If two of you are travelling, each has their own bedroom."
+				],
+				"items": [
+					"WiFi",
+					"Desk",
+					"Full kitchen",
+					"2 separate bedrooms",
+					"Self check-in",
+					"Private parking in the building",
+					"Electric vehicle charger"
+				]
+			},
+			{
+				"title": "Flexible hours",
+				"paragraphs": [
+					"Many jobs start early or finish late. With self check-in and remote-controlled access to the car park, you come and go whenever you need without telling anyone.",
+					"Your car, or the company vehicle, stays in the building's private space and you take the lift straight up to the flat with your gear or luggage."
+				]
+			},
+			{
+				"title": "Company electric cars",
+				"paragraphs": [
+					"If your company uses electric vehicles, the charger is in the same parking space: charge overnight and leave with enough battery for the whole day. The charging cost is paid by whoever uses the charger.",
+					"More details on the [[private parking and EV charger|apartamento-parking-manresa]] page."
+				]
+			},
+			{
+				"title": "Company bookings",
+				"paragraphs": [
+					"You can book directly on Booking or Airbnb. If you need to confirm anything first, such as long dates, vehicle size or invoice details, message us on WhatsApp or by email and we'll get back to you."
+				]
+			}
+		],
+		"faqsTitle": "Frequently asked questions",
+		"faqs": [
+			{
+				"q": "Can two colleagues stay with separate rooms?",
+				"a": "Yes. The apartment has two separate bedrooms, plus a shared living room and kitchen."
+			},
+			{
+				"q": "Is the connection good enough for work?",
+				"a": "There is WiFi and a desk in the apartment."
+			},
+			{
+				"q": "Can I leave very early in the morning?",
+				"a": "Yes. Check-in and check-out are self-service and the car park opens with a remote, with no reception hours."
+			},
+			{
+				"q": "Will a van fit in the car park?",
+				"a": "The space fits an SUV. For vans or other large vehicles, ask us about the dimensions before booking."
+			},
+			{
+				"q": "Can I get an invoice in the company's name?",
+				"a": "Message us on WhatsApp or by email before booking with the details you need and we'll confirm how to do it."
+			}
+		],
+		"availabilityNote": "Check availability for your dates",
+		"apartmentTitle": "Your base for working in Manresa",
+		"apartmentText": "Two bedrooms, WiFi, desk, kitchen and private parking with an EV charger. Rated 9.7/10 on Booking.",
+		"backHome": "See the apartment",
+		"relatedKeys": [
+			"parking",
+			"hospital",
+			"umanresa",
+			"queVer"
+		]
+	},
+	"cardonaPage": {
+		"h1": "Visiting Cardona from Manresa: Salt Mountain and castle",
+		"heroSubtitle": "A half-day or full-day trip about 35 minutes from Manresa: the old salt mine, the castle with the collegiate church of Sant Vicenç, and the old town.",
+		"ctaLabel": "Check availability",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Cardona from Manresa",
+		"keyFacts": {
+			"title": "At a glance",
+			"items": [
+				{
+					"label": "Distance",
+					"value": "About 31 km · 35 min on the C-55"
+				},
+				{
+					"label": "Must-sees",
+					"value": "Salt Mountain and castle"
+				},
+				{
+					"label": "Time",
+					"value": "Half a day or a full day"
+				},
+				{
+					"label": "With kids",
+					"value": "Highly recommended"
+				}
+			]
+		},
+		"sections": [
+			{
+				"id": "why",
+				"title": "Why visit Cardona",
+				"paragraphs": [
+					"Cardona brings together two of the most unusual places in Catalonia in a single town: a mountain of salt that has been worked for thousands of years and a medieval fortress overlooking the Cardener valley.",
+					"From Manresa it is one of the easiest trips to plan: you get there in just over half an hour and can be back to sleep in the same apartment. It pairs well with a visit to [[Montserrat|visitar-montserrat-desde-manresa]] or a day in [[Manresa|que-ver-manresa]]."
+				]
+			},
+			{
+				"id": "getting-there",
+				"title": "Getting there from Manresa",
+				"subsections": [
+					{
+						"title": "By car",
+						"paragraphs": [
+							"Take the C-55 towards Solsona, up the Cardener valley and through Súria. It is about 31 km and about 35 minutes from QEhome. This is the easiest option for combining the mine and the castle, which are at opposite ends of town."
+						]
+					},
+					{
+						"title": "By bus",
+						"paragraphs": [
+							"There are intercity buses between Manresa and Cardona. Check times and frequency before you set off, especially at weekends, when the service is more limited."
+						]
+					}
+				]
+			},
+			{
+				"id": "salt-mountain",
+				"title": "The Salt Mountain",
+				"paragraphs": [
+					"The Muntanya de Sal is an outcrop of salt that reaches the surface beside the river Cardener. Cardona's salt has been used since prehistoric times and for centuries was the great source of wealth of the lords of Cardona. In the 20th century it was worked as a potash mine until it closed.",
+					"Today the Muntanya de Sal Cultural Park runs guided tours inside the old mine: galleries dug into the salt, salt formations and an explanation of how people worked underground."
+				],
+				"tip": "Book the mine tour in advance in high season and at weekends, and check the minimum age if you're going with young children. Wear comfortable shoes."
+			},
+			{
+				"id": "castle",
+				"title": "The castle and the collegiate church of Sant Vicenç",
+				"paragraphs": [
+					"Above the town stands Cardona Castle, one of the most important medieval fortresses in Catalonia and the former residence of the Dukes of Cardona. Today it houses a Parador hotel, but the site can be visited.",
+					"Inside the walls is the collegiate church of Sant Vicenç, consecrated in the 11th century and considered one of the key works of Lombard Romanesque in Catalonia. From the walls there are views over the town and the Salt Mountain."
+				]
+			},
+			{
+				"id": "old-town",
+				"title": "Cardona's old town",
+				"paragraphs": [
+					"Between the mine and the castle it is worth walking the streets of the old town, with Plaça de la Fira and the Gothic church of Sant Miquel. It is a small area you can cover on foot quickly, and it is where most places to eat are."
+				]
+			},
+			{
+				"id": "itinerary",
+				"title": "A day trip from Manresa",
+				"items": [
+					"Morning: leave Manresa and take the guided tour of the Salt Mountain.",
+					"Midday: lunch in Cardona's old town.",
+					"Afternoon: castle, collegiate church of Sant Vicenç and views from the walls.",
+					"Return: back to Manresa on the C-55; if there's time, stop in Súria's old quarter."
+				]
+			},
+			{
+				"id": "kids",
+				"title": "Cardona with kids",
+				"paragraphs": [
+					"The mine is one of the outings children enjoy most in the area: going inside a mountain of salt is hard to forget. The castle, with its walls and towers, rounds off the day nicely.",
+					"For families, it's best to start with the mine in the morning and leave the castle for the afternoon, without trying to squeeze in more visits. More ideas on the [[family apartment|apartamento-familias-manresa]] page."
+				]
+			},
+			{
+				"id": "tips",
+				"title": "Tips and what to combine",
+				"items": [
+					"Check opening times and bookings on the official Salt Mountain and castle websites before you go.",
+					"If you have time left, Solsona is about 20 minutes further north on the C-55.",
+					"For a full weekend: one day in Cardona, another in [[Montserrat|visitar-montserrat-desde-manresa]] and an afternoon in central Manresa.",
+					"When you get back, the car goes in the [[private parking|apartamento-parking-manresa]] in QEhome's building."
+				]
+			}
+		],
+		"toc": [
+			{
+				"id": "why",
+				"label": "Why visit Cardona"
+			},
+			{
+				"id": "getting-there",
+				"label": "Getting there"
+			},
+			{
+				"id": "salt-mountain",
+				"label": "The Salt Mountain"
+			},
+			{
+				"id": "castle",
+				"label": "Castle and collegiate church"
+			},
+			{
+				"id": "old-town",
+				"label": "Old town"
+			},
+			{
+				"id": "itinerary",
+				"label": "Day trip"
+			},
+			{
+				"id": "kids",
+				"label": "Cardona with kids"
+			},
+			{
+				"id": "tips",
+				"label": "Tips"
+			}
+		],
+		"reviewedLabel": "Last reviewed: November 2026",
+		"showAboutGuide": true,
+		"faqsTitle": "Frequently asked questions",
+		"faqs": [
+			{
+				"q": "How long does it take from Manresa to Cardona?",
+				"a": "About 35 minutes by car on the C-55, roughly 31 km. There are also intercity buses."
+			},
+			{
+				"q": "Can you visit the salt mine with children?",
+				"a": "Yes, it is a very popular visit with families. Check the minimum age and book ahead at weekends."
+			},
+			{
+				"q": "Is there time to see the mine and the castle in one day?",
+				"a": "Yes. With the mine in the morning, lunch in town and the castle in the afternoon, you see the essentials without rushing."
+			},
+			{
+				"q": "What else is there to see near Cardona?",
+				"a": "Solsona is about 20 minutes north, and on the way back to Manresa you can stop in Súria."
+			}
+		],
+		"availabilityNote": "Check availability for your dates",
+		"apartmentTitle": "Where to stay to visit Cardona?",
+		"apartmentText": "Manresa is 35 minutes from Cardona and under 40 from Montserrat. QEhome has two bedrooms, a kitchen, private parking and an EV charger. Rated 9.7/10 on Booking.",
+		"backHome": "See the apartment",
+		"relatedTitle": "More trips from Manresa",
+		"relatedKeys": [
+			"montserrat",
+			"queVer",
+			"enoturismo",
+			"familias"
+		]
 	},
 	"equipment": {
 		"title": "Everything you need for a comfortable stay",
@@ -1686,11 +2239,11 @@
 			},
 			{
 				"title": "Location",
-				"text": "Carrer Doctor Esteve, 9, in central Manresa. Manresa-Baixador FGC station a few minutes' walk away and Plaça Major about 20-25 minutes on foot."
+				"text": "Carrer Doctor Esteve, 9, in central Manresa. Manresa-Baixador FGC station a few minutes' walk away and Plaça Major about 20 minutes on foot."
 			},
 			{
 				"title": "By car",
-				"text": "From Barcelona, about 65 km on the C-16 or C-55. Private space in the building with a lift straight to the flat and an EV charger."
+				"text": "From Barcelona, about 60 km on the C-16 or C-55. Private space in the building with a lift straight to the flat and an EV charger."
 			},
 			{
 				"title": "By train",
@@ -1705,5 +2258,29 @@
 				"text": "Pets are not allowed. If you have any questions before booking, message us on WhatsApp."
 			}
 		]
+	},
+	"locationCard": {
+		"title": "Where QEhome is",
+		"address": "Carrer Doctor Esteve, 9 · Manresa",
+		"mapsLabel": "Open in Google Maps",
+		"items": [
+			{
+				"label": "FGC Manresa-Baixador",
+				"value": "6 min walk"
+			},
+			{
+				"label": "UManresa",
+				"value": "8 min walk"
+			},
+			{
+				"label": "Plaça Major",
+				"value": "20 min walk"
+			},
+			{
+				"label": "Hospital Sant Joan de Déu",
+				"value": "7 min by car"
+			}
+		],
+		"note": "Times calculated with OpenStreetMap routes; they vary with traffic and pace."
 	}
 }

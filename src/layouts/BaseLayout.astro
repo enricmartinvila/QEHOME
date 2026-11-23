@@ -1,6 +1,8 @@
 ---
 import Seo from "../components/Seo.astro"
 import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import MobileBar from "../components/MobileBar.astro"
 import { HTML_LANG, type Lang } from "../constants/site"
 import "../styles/global.css"
 
@@ -35,7 +37,7 @@ const {
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
 			rel="stylesheet"
 		/>
 		<Seo
@@ -53,10 +55,12 @@ const {
 			)
 		}
 	</head>
-	<body class="min-h-screen bg-stone-50 text-stone-900 antialiased">
+	<body class="min-h-screen bg-paper pb-[70px] text-ink antialiased sm:pb-0">
 		<Header lang={lang} pathAfterLang={pathAfterLang} />
 		<main>
 			<slot />
 		</main>
+		<Footer />
+		<MobileBar lang={lang} />
 	</body>
 </html>

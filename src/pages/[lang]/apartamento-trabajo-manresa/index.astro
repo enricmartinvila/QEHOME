@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import TopicLandingPage from "../../../components/landing/TopicLandingPage.astro"
+import { getTranslations } from "../../../constants/i18n"
+import { lodgingLandingJsonLd } from "../../../constants/pageSchema"
+import { LANGS, type Lang } from "../../../constants/site"
+import { getTopicLanding } from "../../../constants/landings"
+
+export function getStaticPaths() {
+	return LANGS.map((lang) => ({ params: { lang } }))
+}
+
+const lang = Astro.params.lang as Lang
+const landing = getTopicLanding("trabajo")!
+const t = getTranslations(lang)
+const seo = t.seo.trabajo
+const page = t.trabajoPage
+---
+
+<BaseLayout
+	lang={lang}
+	title={seo.title}
+	description={seo.metaDescription}
+	pathAfterLang={landing.slug}
+	ogImage={landing.heroImage}
+	preloadImage={landing.heroImage}
+	jsonLd={lodgingLandingJsonLd({
+		lang,
+		slug: landing.slug,
+		description: seo.metaDescription,
+		image: landing.heroImage,
+		homeLabel: page.breadcrumbHome,
+		currentLabel: page.breadcrumbCurrent,
+		faqs: page.faqs,
+	})}
+>
+	<TopicLandingPage lang={lang} landingKey="trabajo" />
+</BaseLayout>
