@@ -1,28 +1,39 @@
 # QEhome Manresa
 
-QEhome is a holiday apartment in central Manresa, Catalonia. It offers two bedrooms, an equipped kitchen, WiFi, self check-in, a private parking space in the same building and an electric car charger. Guests pay separately for the electricity used to charge a vehicle.
+> QEhome is a two-bedroom holiday apartment in central Manresa (Catalonia, Spain) with a private parking space in the same building, an electric car charger, an equipped kitchen, WiFi, a desk and self check-in. The website is available in Spanish (/es/), Catalan (/ca/) and English (/en/).
 
-Official website: https://qehomemanresa.com/
-Address: Carrer Doctor Esteve 9, Manresa, Barcelona, Spain
-Telephone: +34 640 95 55 72
-Email: qehomemanresa@gmail.com
+Key facts:
 
-## Main pages
+- Address: Carrer Doctor Esteve 9, Manresa, Barcelona, Spain
+- Phone and WhatsApp: +34 640 95 55 72
+- Email: qehomemanresa@gmail.com
+- Ratings: 9.7/10 on Booking.com and 4.92/5 on Airbnb
+- Check-in from 15:00 (self check-in), check-out before 11:00; no pets
+- Parking is included; guests pay separately for the electricity used to charge a vehicle
+- Bookings are made through Booking.com or Airbnb; the linked pages below are the authoritative source
 
-- Spanish home: https://qehomemanresa.com/es/
-- Catalan home: https://qehomemanresa.com/ca/
-- English home: https://qehomemanresa.com/en/
-- Private parking and electric charger: https://qehomemanresa.com/es/apartamento-parking-manresa/
-- Accommodation near UManresa: https://qehomemanresa.com/es/alojamiento-umanresa/
-- Family apartment in Manresa: https://qehomemanresa.com/es/apartamento-familias-manresa/
-- Camino Ignaciano accommodation: https://qehomemanresa.com/es/alojamiento-camino-ignaciano-manresa/
+## Apartment
+
+- [Home (English)](https://qehomemanresa.com/en/): photos, equipment, practical information, FAQ and booking links
+- [Home (Spanish)](https://qehomemanresa.com/es/): Spanish version of the home page
+- [Home (Catalan)](https://qehomemanresa.com/ca/): Catalan version of the home page
+- [Private parking and EV charger](https://qehomemanresa.com/en/apartamento-parking-manresa/): parking space in the building, access and charging
+- [Family apartment](https://qehomemanresa.com/en/apartamento-familias-manresa/): two bedrooms, kitchen and ideas for families
+
+## Stays for a reason
+
+- [Accommodation near UManresa](https://qehomemanresa.com/en/alojamiento-umanresa/): walking times to the university and FGC stations
+- [Accommodation near Manresa Hospital](https://qehomemanresa.com/en/alojamiento-hospital-manresa/): about 7 minutes by car from Hospital Sant Joan de Déu (Althaia); not affiliated with the hospital
+- [Work stays](https://qehomemanresa.com/en/apartamento-trabajo-manresa/): two separate bedrooms, desk, parking and driving times to industrial estates
+- [Ignatian Way accommodation](https://qehomemanresa.com/en/alojamiento-camino-ignaciano-manresa/): arriving in Manresa on the Camino Ignaciano
 
 ## Local guides
 
-- What to see in Manresa: https://qehomemanresa.com/es/que-ver-manresa/
-- Visiting Montserrat from Manresa: https://qehomemanresa.com/es/visitar-montserrat-desde-manresa/
-- Wine tourism in Pla de Bages: https://qehomemanresa.com/es/enoturismo-pla-de-bages/
+- [What to see in Manresa](https://qehomemanresa.com/en/que-ver-manresa/): La Seu, the Cave of Saint Ignatius, the old town and a day plan
+- [Visiting Montserrat from Manresa](https://qehomemanresa.com/en/visitar-montserrat-desde-manresa/): by car or train, rack railway, cable car and timings
+- [Visiting Cardona from Manresa](https://qehomemanresa.com/en/visitar-cardona-desde-manresa/): Salt Mountain mine, castle and collegiate church
+- [Pla de Bages wine tourism](https://qehomemanresa.com/en/enoturismo-pla-de-bages/): DO Pla de Bages wineries and wine routes
 
-## Booking
+## Optional
 
-Availability and bookings are completed through the official Booking.com and Airbnb links shown on the QEhome website. Information on this file is a concise summary; the linked pages are the authoritative source.
+- [Sitemap](https://qehomemanresa.com/sitemap.xml): all pages in Spanish, Catalan and English
