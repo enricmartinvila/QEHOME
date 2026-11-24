@@ -1,0 +1,41 @@
+---
+import { reservarCopy } from "../constants/reservar"
+import { BOOKING_API, EMAIL, WHATSAPP_URL, directBookingUrl } from "../constants/links"
+import type { Lang } from "../constants/site"
+import "../styles/reservar.css"
+
+interface Props {
+	lang: Lang
+	/** On the booking page changes apply at once; elsewhere the button leads to it. */
+	page?: boolean
+}
+const { lang, page = false } = Astro.props
+const c = reservarCopy[lang]
+const field = "bk-field"
+---
+
+<form class:list={["rv bk", page && "bk-page"]} id="fechas" action={directBookingUrl(lang)} data-api={BOOKING_API} data-lang={lang} data-page={page ? "" : undefined}>
+	<button type="button" class={field} data-open><small>{c.inLabel}</small><b id="bk-in" data-empty={c.pick}>{c.pick}</b></button>
+	<button type="button" class={field} data-open><small>{c.outLabel}</small><b id="bk-out" data-empty={c.pick}>{c.pick}</b></button>
+	<button type="button" class={`${field} bk-guests`} data-open="guests"><small>{c.guestsLabel}</small><b id="bk-guests">{`2 ${c.js.adults}`}</b></button>
+	{!page && <button class="btn btn-amber bk-go">{c.book}</button>}
+	{!page && <p class="bk-total" id="bk-total" aria-live="polite" hidden></p>}
+</form>
+<dialog class="rv bk-dlg" id="bk-dlg" aria-labelledby="bk-title" data-state="loading">
+	<div class="bk-head"><strong id="bk-title">{c.dialogTitle}</strong><button type="button" class="bk-x" data-close aria-label={c.close}>×</button></div>
+	<div class="bk-body">
+		<p class="rv-loading" role="status">{c.loading}</p>
+		<div class="rv-msg" role="alert"></div>
+		<div class="on-open">
+			<div class="rv-calhead"><button type="button" class="rv-arrow" id="prev" aria-label={c.prev}>‹</button><p id="status" aria-live="polite"></p><button type="button" class="rv-arrow" id="next" aria-label={c.next}>›</button></div>
+			<div class="rv-cals" id="months"></div>
+			<div class="rv-legend"><span id="minstay"></span><button type="button" class="rv-link" id="clear" hidden>{c.clear}</button></div>
+			<p class="rv-err" id="dateError" role="alert"></p>
+			<div class="rv-row2 bk-people"><label>{c.adults}<small>{c.adultsHint}</small><select id="adults"></select></label><label>{c.children}<small>{c.childrenHint}</small><select id="children"></select></label></div>
+		</div>
+	</div>
+	<div class="bk-foot on-open"><div><small id="bk-sum"></small><b id="bk-price"></b></div><button type="button" class="btn btn-amber" data-close>{c.done}</button></div>
+	<template id="bk-help"><div class="rv-help"><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp</a><a href={`mailto:${EMAIL}`}>{EMAIL}</a></div></template>
+</dialog>
+<script is:inline type="application/json" id="rvt" set:html={JSON.stringify(c.js).replaceAll("<", "\\u003c")} />
+<script src="../scripts/reservar.ts"></script>

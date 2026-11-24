@@ -2,7 +2,7 @@
 import LanguageSwitcher from "./LanguageSwitcher.astro"
 import { localizedPath, type Lang } from "../constants/site"
 import { getTranslations } from "../constants/i18n"
-import { PHONE_DISPLAY, PHONE_TEL } from "../constants/links"
+import { BOOKING_SLUG, directBookingUrl, PHONE_DISPLAY, PHONE_TEL } from "../constants/links"
 
 interface Props {
 	lang: Lang
@@ -11,6 +11,7 @@ interface Props {
 
 const { lang, pathAfterLang = "" } = Astro.props
 const t = getTranslations(lang)
+const bookHref = pathAfterLang === BOOKING_SLUG ? "#fechas" : directBookingUrl(lang) || "#contacto"
 const homeHref = localizedPath(lang)
 ---
 
@@ -27,7 +28,7 @@ const homeHref = localizedPath(lang)
 				</svg>
 				<span class="hidden lg:inline">{PHONE_DISPLAY}</span>
 			</a>
-			<a href="#contacto" class="btn btn-amber hidden !px-6 !py-[11px] !text-[0.9rem] sm:inline-flex">{t.titles.book_now}</a>
+			<a href={bookHref} class="btn btn-amber hidden !px-6 !py-[11px] !text-[0.9rem] sm:inline-flex">{t.titles.book_now}</a>
 		</div>
 	</div>
 </header>

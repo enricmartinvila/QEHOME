@@ -95,6 +95,7 @@ const meta = toc ? [guideUi.readingTime.replace("{n}", String(readingMinutes))] 
 		{
 			toc && (
 				<LandingToc
+					lang={lang}
 					title={guideUi.title}
 					items={toc}
 					reviewedLabel={page.reviewedLabel}

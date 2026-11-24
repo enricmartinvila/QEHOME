@@ -1,10 +1,11 @@
 ---
-import { getTranslations, type Lang } from "../../constants/i18n"
+import { directBookingLabel, getTranslations, type Lang } from "../../constants/i18n"
 import {
 	ADDRESS,
 	AIRBNB_URL,
 	BOOKING_URL,
 	CAL_MASSES_URL,
+	directBookingUrl,
 	EMAIL,
 	MAPS_URL,
 	PHONE_DISPLAY,
@@ -19,6 +20,7 @@ interface Props {
 const { lang } = Astro.props
 const t = getTranslations(lang)
 const ui = t.homeUi
+const direct = directBookingUrl(lang)
 const [before, after] = t.contacto.check.includes(ui.contactHighlight)
 	? t.contacto.check.split(ui.contactHighlight)
 	: [t.contacto.check, null]
@@ -76,8 +78,9 @@ const contactLinks = [
 			<div class="reveal rounded-[28px] border border-white/[0.08] bg-night-2 px-[26px] py-[34px] sm:px-[42px] sm:py-12">
 				<h3 class="mb-3 font-serif text-[1.9rem] leading-[1.08]">{ui.bookTitle}</h3>
 				<p class="mb-7 text-[#a9afb8]">{ui.bookText}</p>
-				<a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" class="btn btn-amber mb-3 w-full">{t.contacto.bookingLabel || t.bookingCtas.bookingLabel}</a>
-				<a href={AIRBNB_URL} target="_blank" rel="noopener noreferrer" class="btn btn-ghost w-full">{t.contacto.airbnbLabel || t.bookingCtas.airbnbLabel}</a>
+				{direct && <a href={direct} class="btn btn-amber mb-3 w-full">{directBookingLabel[lang]}</a>}
+				<a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" class={`btn w-full ${direct ? "btn-ghost" : "btn-amber mb-3"}`}>{t.contacto.bookingLabel || t.bookingCtas.bookingLabel}</a>
+				{!direct && <a href={AIRBNB_URL} target="_blank" rel="noopener noreferrer" class="btn btn-ghost w-full">{t.contacto.airbnbLabel || t.bookingCtas.airbnbLabel}</a>}
 			</div>
 		</div>
 		<div class="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-7 text-[#a9afb8]">

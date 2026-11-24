@@ -1,4 +1,5 @@
 ---
+import { DIRECT_BOOKING, directBookingUrl } from "../../constants/links"
 import { getTranslations, type Lang } from "../../constants/i18n"
 import { localizedPath } from "../../constants/site"
 import type { IllustrationVariant } from "../../constants/landingDecor"
@@ -32,7 +33,7 @@ const {
 	breadcrumbHome,
 	breadcrumbCurrent,
 	ctaLabel,
-	ctaHref = "#contacto",
+	ctaHref = directBookingUrl(Astro.props.lang) || "#contacto",
 	secondaryCtaLabel,
 	secondaryCtaHref = localizedPath(lang),
 	meta = [],
@@ -116,10 +117,10 @@ const rating = t.maintexts.rating
 					<Icon name="star" class="h-4 w-4 fill-brand-cta text-brand-cta" />
 					{rating.booking.score} · {rating.booking.label}
 				</li>
-				<li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1.5 font-medium ring-1 ring-white/20 backdrop-blur-sm">
+				{!DIRECT_BOOKING && (<li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1.5 font-medium ring-1 ring-white/20 backdrop-blur-sm">
 					<Icon name="star" class="h-4 w-4 fill-brand-cta text-brand-cta" />
 					{rating.airbnb.score} · {rating.airbnb.label}
-				</li>
+				</li>)}
 				{
 					meta.map((m) => (
 						<li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1.5 font-medium ring-1 ring-white/20 backdrop-blur-sm">

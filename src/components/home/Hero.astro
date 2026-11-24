@@ -1,6 +1,7 @@
 ---
+import BookingBar from "../BookingBar.astro"
 import { getTranslations, type Lang } from "../../constants/i18n"
-import { AIRBNB_URL, BOOKING_URL } from "../../constants/links"
+import { AIRBNB_URL, BOOKING_URL, DIRECT_BOOKING } from "../../constants/links"
 
 interface Props {
 	lang: Lang
@@ -15,7 +16,7 @@ const [before, after] = m.headline.includes(ui.heroHighlight)
 	: [m.headline, null]
 const ratings = [
 	{ ...m.rating.booking, href: BOOKING_URL },
-	{ ...m.rating.airbnb, href: AIRBNB_URL },
+	...(DIRECT_BOOKING ? [] : [{ ...m.rating.airbnb, href: AIRBNB_URL }]),
 ]
 ---
 
@@ -47,6 +48,6 @@ const ratings = [
 		<div class="mb-9 mt-7 flex flex-wrap justify-center gap-2.5">
 			{m.badges.map((badge) => <span class="rounded-full border border-white/35 px-[18px] py-[7px] text-[0.85rem]">{badge}</span>)}
 		</div>
-		<a href="#contacto" class="btn btn-amber">{t.titles.book_now}</a>
+		{DIRECT_BOOKING ? <BookingBar lang={lang} /> : <a href="#contacto" class="btn btn-amber">{t.titles.book_now}</a>}
 	</div>
 </section>

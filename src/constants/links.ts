@@ -3,6 +3,13 @@ export const BOOKING_URL =
 
 export const AIRBNB_URL = "https://www.airbnb.es/rooms/1292748522071548966"
 
+// Address of the direct booking app. Empty: the site keeps linking to Booking and Airbnb.
+const DIRECT_BASE = (import.meta.env.PUBLIC_DIRECT_BOOKING_URL ?? "").replace(/\/$/, "")
+export const BOOKING_API = DIRECT_BASE
+export const DIRECT_BOOKING = DIRECT_BASE !== ""
+export const BOOKING_SLUG = "reservar"
+export const directBookingUrl = (lang: string) => (DIRECT_BOOKING ? `/${lang}/${BOOKING_SLUG}/` : "")
+
 export const CAL_MASSES_URL = "https://calmasses.com"
 
 export const WHATSAPP_URL =

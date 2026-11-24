@@ -15,6 +15,8 @@ interface Props {
 	ogImage?: string
 	ogType?: "website" | "article"
 	preloadImage?: string
+	/** The booking page has its own bar with the total. */
+	mobileBar?: boolean
 }
 
 const {
@@ -26,6 +28,7 @@ const {
 	ogImage,
 	ogType,
 	preloadImage,
+	mobileBar = true,
 } = Astro.props
 ---
 
@@ -61,6 +64,6 @@ const {
 			<slot />
 		</main>
 		<Footer />
-		<MobileBar lang={lang} />
+		{mobileBar && <MobileBar lang={lang} />}
 	</body>
 </html>

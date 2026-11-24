@@ -71,6 +71,11 @@ for (const slug of LANDING_SLUGS) {
 	}
 }
 
+// Only exists once direct booking is switched on.
+if (process.env.PUBLIC_DIRECT_BOOKING_URL) {
+	for (const lang of LANGS) entries.push(urlEntry(lang, "reservar", "2026-11-24", "0.9"))
+}
+
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${entries.join("\n")}

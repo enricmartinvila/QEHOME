@@ -1,5 +1,5 @@
 import { SITE_URL, type Lang } from "./site"
-import { AIRBNB_URL, BOOKING_URL, EMAIL, MAPS_URL } from "./links"
+import { AIRBNB_URL, BOOKING_URL, DIRECT_BOOKING, EMAIL, MAPS_URL } from "./links"
 
 const lodgingBase = {
 	"@type": "LodgingBusiness",
@@ -8,7 +8,7 @@ const lodgingBase = {
 	telephone: "+34 640 95 55 72",
 	email: EMAIL,
 	hasMap: MAPS_URL,
-	sameAs: [BOOKING_URL, AIRBNB_URL],
+	sameAs: DIRECT_BOOKING ? [BOOKING_URL] : [BOOKING_URL, AIRBNB_URL],
 	areaServed: {
 		"@type": "City",
 		name: "Manresa",

@@ -1,14 +1,17 @@
 ---
+import { directBookingUrl } from "../../constants/links"
+import type { Lang } from "../../constants/site"
 import Icon from "./Icon.astro"
 
 interface Props {
+	lang: Lang
 	title: string
 	items: Array<{ id: string; label: string }>
 	reviewedLabel?: string
 	ctaLabel: string
 }
 
-const { title, items, reviewedLabel, ctaLabel } = Astro.props
+const { lang, title, items, reviewedLabel, ctaLabel } = Astro.props
 ---
 
 <!-- Mobile: collapsible -->
@@ -60,7 +63,7 @@ const { title, items, reviewedLabel, ctaLabel } = Astro.props
 		</ol>
 		{reviewedLabel && <p class="mt-6 text-xs text-stone-400">{reviewedLabel}</p>}
 		<a
-			href="#contacto"
+			href={directBookingUrl(lang) || "#contacto"}
 			class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-cta px-5 py-3 text-sm font-semibold text-ink shadow-sm transition hover:bg-brand-ctaHover"
 		>
 			{ctaLabel}
