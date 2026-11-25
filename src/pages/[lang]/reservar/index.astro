@@ -22,6 +22,7 @@ const term = "mb-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text
 				<h1 class="mb-7 text-[clamp(2.1rem,4.2vw,3.2rem)] leading-[1.08]">{c.h1} {c.h1em}</h1>
 				<BookingBar lang={lang} page />
 				<p class="rv rv-notice mt-5" id="test" hidden></p>
+				<p class="rv rv-notice mt-5 whitespace-pre-line" id="notice" hidden></p>
 				<noscript><p class="rv rv-notice mt-5">{c.noscript}</p></noscript>
 				<div class="rv rv-msg mt-5" role="alert"></div>
 			</div>
@@ -34,10 +35,12 @@ const term = "mb-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text
 					<div class="rv-row2"><div><label for="name">{c.name}</label><input id="name" autocomplete="name" maxlength="120" required aria-describedby="e-name" /><p class="rv-err" id="e-name"></p></div><div><label for="phone">{c.phone}</label><input id="phone" type="tel" autocomplete="tel" maxlength="25" required aria-describedby="e-phone" /><p class="rv-err" id="e-phone"></p></div></div>
 					<label for="email">{c.email}</label><input id="email" type="email" autocomplete="email" maxlength="200" required aria-describedby="e-email" /><p class="rv-err" id="e-email"></p>
 					<label for="message" style="margin-top:14px">{c.message}<small>{c.messageHint}</small></label><textarea id="message" rows="3" maxlength="2000" aria-describedby="e-message"></textarea><p class="rv-err" id="e-message"></p>
+					<div id="extrasBox" hidden><p class="mb-2 mt-4 font-semibold">{c.extras}</p><div id="extras"></div></div>
+					<details class="rv-code"><summary>{c.coupon}</summary><div><input id="coupon" maxlength="40" aria-label={c.coupon} autocomplete="off" /><button type="button" class="btn btn-amber" id="apply">{c.apply}</button></div><p class="rv-err" id="couponError" role="alert"></p></details>
 					<div class="rv-hp" aria-hidden="true"><label>Website<input id="website" tabindex="-1" autocomplete="off" /></label></div>
 					<div class="rv-chk"><input type="checkbox" id="terms" required aria-describedby="e-terms" /><label for="terms">{c.accept} <a href={legal("condiciones")} target="_blank" rel="noopener">{c.conditions}</a> {c.and} <a href={legal("privacidad")} target="_blank" rel="noopener">{c.privacy}</a>.</label></div><p class="rv-err" id="e-terms"></p>
 					<button class="btn btn-amber mt-2 w-full sm:w-auto" id="send">{c.send}</button>
-					<p class="mt-3 text-[0.9rem] text-[#646a73]">{c.noCharge}</p>
+					<p class="mt-3 text-[0.9rem] text-[#646a73]" id="noCharge">{c.noCharge}</p>
 					<p class="rv-err" id="error" role="alert"></p>
 				</div>
 				<aside class="rv-aside on-open" aria-label={c.summaryLabel}>
@@ -50,7 +53,7 @@ const term = "mb-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text
 			<div class="mx-auto grid max-w-[1180px] gap-11 px-5 sm:px-7 lg:grid-cols-[1fr_1.7fr] lg:gap-20">
 				<h2 class="text-[clamp(2.1rem,4.2vw,3.2rem)] leading-[1.08]">{c.before}</h2>
 				<dl class="grid gap-x-10 sm:grid-cols-2">
-					<div class="rv-dl"><dt class={term}>{c.how}</dt><dd><ol class="list-decimal space-y-1 pl-5">{c.steps.map((s) => <li>{s}</li>)}</ol></dd></div>
+					<div class="rv-dl"><dt class={term}>{c.how}</dt><dd><ol id="steps" class="list-decimal space-y-1 pl-5">{c.steps.map((s) => <li>{s}</li>)}</ol></dd></div>
 					<div class="rv-dl" id="cancelBox" hidden><dt class={term}>{c.cancellation}</dt><dd><ul class="space-y-1" id="cancel"></ul></dd></div>
 					<div class="rv-dl"><dt class={term}>{c.rules}</dt><dd><ul class="space-y-1">{c.ruleList.map((r) => <li>{r}</li>)}</ul></dd></div>
 					<div class="rv-dl"><dt class={term}>{c.questions}</dt><dd class="space-y-1"><a class="block underline" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp +34 {PHONE_DISPLAY}</a><a class="block underline" href={`mailto:${EMAIL}`}>{EMAIL}</a><p id="reg" hidden>{c.reg}: <span></span></p></dd></div>

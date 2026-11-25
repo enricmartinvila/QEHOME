@@ -1,9 +1,9 @@
 import { addDays, eachNight, fmtDate, fmtRange, money, weekday } from "../lib/booking/dates"
-import { minNightsFor, nightPrice, quote, type Quote, type Season, type Settings } from "../lib/booking/pricing"
+import { minNightsFor, nightPrice, quote, type Coupon, type Quote, type Season, type Settings } from "../lib/booking/pricing"
 
 interface Data {
 	enabled: boolean; mode: "test" | "live"; today: string; seasons: Season[]; settings: Settings; busy: [string, string][]
-	registration: string; requestHours: number; freeCancelDays: number | null; stripe: boolean; cancellation: string[]
+	instant: boolean; notice: string; registration: string; requestHours: number; freeCancelDays: number | null; stripe: boolean; cancellation: string[]
 }
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T
 /** The bar is on the home and on the booking page; `page` only exists on the latter. */
@@ -19,13 +19,16 @@ const shortDate = (d: string, wd = false) => new Intl.DateTimeFormat(loc, { time
 const addMonth = (m: string, n: number) => { const d = new Date(m + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + n); return d.toISOString().slice(0, 7) }
 
 let D: Data, S: Settings, taken = new Set<string>(), first = "", last = "", month = ""
+let coupon: Coupon | null = null
 let from: string | null = null, to: string | null = null, current: Quote | null = null
 
 const free = (n: string) => n >= first && n < last && !taken.has(n) && !!nightPrice(n, S, D.seasons)
 /** Furthest departure for an arrival: up to the first taken night. */
 const limit = (a: string) => { let d = a; while (free(d) && d < addDays(a, S.max_nights)) d = addDays(d, 1); return d }
 const minOut = (a: string) => addDays(a, minNightsFor(a, S, D.seasons))
-const fits = (a: string) => free(a) && limit(a) >= minOut(a)
+const fits = (a: string) => free(a) && !S.no_arrival.includes(weekday(a)) && limit(a) >= minOut(a)
+const picked = () => Object.fromEntries([...document.querySelectorAll<HTMLSelectElement>("[data-extra]")].map((x) => [x.dataset.extra!, Number(x.value)] as const).filter(([, n]) => n))
+const textOf = (n: Record<string, string>) => n[lang] || n.es || n.ca || n.en
 const adults = () => Number($<HTMLSelectElement>("adults").value), children = () => Number($<HTMLSelectElement>("children").value)
 
 async function load(): Promise<Data> {
@@ -63,21 +66,34 @@ async function start() {
 	const iso = (k: string) => (/^\d{4}-\d{2}-\d{2}$/.test(q.get(k) ?? "") ? q.get(k)! : "")
 	month = first.slice(0, 7)
 	if (iso("in") && fits(iso("in"))) { from = iso("in"); month = from.slice(0, 7); const o = iso("out"); if (o && o >= minOut(from) && o <= limit(from)) to = o }
+	if (page) extras()
 	state("open"); facts(); draw(); price()
 }
 function options(sel: HTMLElement, a: number, b: number, value: number) {
 	sel.replaceChildren(...Array.from({ length: Math.max(0, b - a + 1) }, (_, i) => { const o = el("option", "", String(a + i)); o.value = String(a + i); return o }))
 	;(sel as HTMLSelectElement).value = String(Math.min(Math.max(value, a), b))
 }
+function extras() {
+	$("extrasBox").hidden = S.extras.length === 0
+	$("extras").replaceChildren(...S.extras.map((x) => {
+		const row = el("label", "rv-extra"), sel = el("select")
+		options(sel, 0, x.max, 0); sel.dataset.extra = x.id; sel.onchange = price
+		const text = el("span", "", textOf(x.name)); text.append(el("small", "", `${money(x.cents, lang)} ${t.per[x.per]}`))
+		row.append(text, sel)
+		return row
+	}))
+}
 function facts() {
 	$("minstay").textContent = `${t.perNight}. ${t.minStay.replace("{n}", nightsText(S.min_nights))} ${t.maxGuests.replace("{n}", String(S.max_guests))}`
 	if (!page) return
 	for (const ul of document.querySelectorAll("[data-trust]")) {
-		const items = [t.trustReview.replace("{n}", String(D.requestHours))]
+		const items = [D.instant ? t.trustInstant : t.trustReview.replace("{n}", String(D.requestHours))]
 		if (D.freeCancelDays != null) items.push(t.trustCancel.replace("{n}", String(D.freeCancelDays)))
 		if (D.stripe) items.push(t.trustStripe)
 		ul.replaceChildren(...items.map((x) => el("li", "", x)))
 	}
+	$("notice").textContent = D.notice; $("notice").hidden = !D.notice
+	if (D.instant) { $("steps").replaceChildren(...t.stepsInstant.map((x: string) => el("li", "", x))); $("noCharge").textContent = t.noChargeInstant; t.send = t.sendInstant; $("send").textContent = t.send }
 	$("cancel").replaceChildren(...D.cancellation.map((x) => el("li", "", x)))
 	$("cancelBox").hidden = D.cancellation.length === 0
 	$("reg").hidden = !D.registration
@@ -97,7 +113,7 @@ function draw(focus?: string) {
 			const b = el("button", "day")
 			b.type = "button"; b.dataset.d = d
 			b.append(el("b", "", String(Number(d.slice(8)))))
-			const asOut = picking && d >= min && d <= max
+			const asOut = picking && d >= min && d <= max && !S.no_departure.includes(weekday(d))
 			// While choosing the departure, too-short stays are not clickable.
 			const ok = asOut || d === from || (fits(d) && !(picking && d > from! && d < min))
 			const edge = d === from || d === to, busy = d >= D.today && taken.has(d), cents = nightPrice(d, S, D.seasons)
@@ -131,13 +147,15 @@ function price() {
 	current = null
 	let message = t.empty, bad = false, lines: [string, string, number][] = []
 	if (from && to) {
-		const r = quote({ checkIn: from, checkOut: to, adults: adults(), children: children() }, S, D.seasons, D.today)
+		const r = quote({ checkIn: from, checkOut: to, adults: adults(), children: children(), extras: picked(), coupon }, S, D.seasons, D.today)
 		if (!r.ok) { message = t.err[r.error] ?? t.err.generic; bad = true }
 		else {
 			const q = (current = r.quote), same = q.nightly.every((n) => n.cents === q.nightly[0].cents)
 			lines.push([same ? `${nightsText(q.nights)} × ${euros(q.nightly[0].cents)}` : `${t.accommodation} · ${nightsText(q.nights)}`, "", q.accommodation])
 			if (q.discount) lines.push([`${t.discount} (${q.discountPct} %)`, "", -q.discount])
 			if (q.extraGuests) lines.push([t.extra, "", q.extraGuests])
+			if (q.couponOff) lines.push([`${t.coupon} ${q.coupon}`, "", -q.couponOff])
+			for (const x of q.extras) lines.push([`${textOf(x.name)}${x.qty > 1 ? ` × ${x.qty}` : ""}`, "", x.cents])
 			if (q.cleaning) lines.push([t.cleaning, "", q.cleaning])
 			if (q.tax) lines.push([t.tax, `${count(adults(), t.adult, t.adults)} × ${nightsText(q.taxNights)} × ${euros(q.taxRate)}`, q.tax])
 		}
@@ -188,6 +206,17 @@ $("children").onchange = price
 
 if (page) {
 $("mgo").onclick = () => { if (current) $("datos").scrollIntoView(); else open() }
+$("apply").onclick = async () => {
+	const code = $<HTMLInputElement>("coupon").value.trim(), err = $("couponError")
+	err.textContent = ""; coupon = null
+	if (code) try {
+		const r = await fetch(`${api}/api/coupon?property=qehome&code=${encodeURIComponent(code)}`)
+		if (r.ok) coupon = await r.json(); else err.textContent = r.status === 404 ? t.err.coupon : t.err.generic
+	} catch { err.textContent = t.err.generic }
+	price()
+	if (coupon && current && !current.coupon) err.textContent = t.err.coupon
+}
+$("coupon").addEventListener("keydown", (e) => { if ((e as KeyboardEvent).key === "Enter") { e.preventDefault(); $("apply").click() } })
 const FIELDS = ["name", "phone", "email", "message", "terms"]
 function mark(ids: string[]) {
 	for (const id of FIELDS) { const bad = ids.includes(id); $(id).toggleAttribute("aria-invalid", false); if (bad) $(id).setAttribute("aria-invalid", "true"); $("e-" + id).textContent = bad ? t.fields[id] : "" }
@@ -210,7 +239,7 @@ $<HTMLFormElement>("rvf").onsubmit = async (e) => {
 	if (bad.length) { err.textContent = t.err.form; return }
 	btn.disabled = true; btn.textContent = t.sending
 	try {
-		const r = await fetch(`${api}/api/requests`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ property: "qehome", lang, checkIn: from, checkOut: to, adults: adults(), children: children(), name: v("name"), email: v("email"), phone: v("phone"), message: v("message"), website: v("website"), terms: true, expectedTotal: current.total }) })
+		const r = await fetch(`${api}/api/requests`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ property: "qehome", lang, checkIn: from, checkOut: to, adults: adults(), children: children(), name: v("name"), email: v("email"), phone: v("phone"), message: v("message"), website: v("website"), terms: true, extras: picked(), coupon: current.coupon, expectedTotal: current.total }) })
 		const j = await r.json()
 		if (r.ok) { location.href = new URL(j.url, api).href; return }
 		if (j.fields) mark(j.fields)

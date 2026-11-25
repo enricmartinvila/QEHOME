@@ -117,3 +117,11 @@
 	.rv-cals { grid-template-columns: minmax(0, 1fr); }
 	.rv-row2:not(.bk-people) { grid-template-columns: minmax(0, 1fr); }
 }
+
+.rv .rv-extra { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid #e7e2d8; }
+.rv .rv-extra small { display: block; font-weight: 400; color: #646a73; }
+.rv .rv-extra select { width: 84px; flex: none; margin: 0; }
+.rv .rv-code { margin: 14px 0; }
+.rv .rv-code summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; text-decoration: underline; }
+.rv .rv-code div { display: flex; gap: 10px; align-items: stretch; }
+.rv .rv-code input { min-width: 0; margin: 0; }

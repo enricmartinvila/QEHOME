@@ -17,7 +17,9 @@ const es = {
 	loading: "Cargando el calendario…", noscript: "Para ver el calendario necesitas activar JavaScript. También puedes escribirnos.",
 	contact: "Contacto", owner: "Responsable", address: "Dirección", phoneLabel: "Teléfono",
 	reg: "Registro turístico",
+	extras: "Extras", coupon: "Código de descuento", apply: "Aplicar",
 	js: {
+		coupon: "Código de descuento", per: { stay: "por estancia", night: "por noche", guest: "por persona", guest_night: "por persona y noche" } as Record<string, string>, stepsInstant: ["Eliges las fechas y envías tus datos.", "Pagas con tarjeta, Bizum o transferencia, según lo disponible.", "Al recibir el pago, la reserva queda confirmada."], sendInstant: "Reservar", noChargeInstant: "El pago se hace en el paso siguiente.", trustInstant: "Pagas en el paso siguiente y la reserva queda confirmada.",
 		minStay: "Estancia mínima: {n}.", maxGuests: "Máximo {n} huéspedes.", perNight: "Precio por noche", night: "noche", nights: "noches", adult: "adulto", adults: "adultos", child: "niño", children: "niños",
 		from: "Desde", fromAfter: "por noche", weekend: "viernes y sábado",
 		pickIn: "Elige el día de llegada", pickOut: "Elige el día de salida", arrival: "Llegada", departure: "Salida", takenDay: "ocupado", unavailable: "no disponible",
@@ -27,7 +29,7 @@ const es = {
 		closedTitle: "La reserva directa todavía no está abierta", closedText: "Escríbenos y te diremos qué fechas tenemos.", downTitle: "Ahora mismo no podemos mostrar el calendario", downText: "Escríbenos y te diremos qué fechas tenemos. También puedes volver a intentarlo.", retry: "Volver a intentarlo",
 		test: "Modo de prueba: no se cobra dinero de verdad y las reservas no son válidas.",
 		fields: { name: "Escribe tu nombre y apellidos.", email: "Escribe un correo válido.", phone: "Escribe un teléfono válido, con prefijo.", terms: "Acepta las condiciones para continuar.", message: "El mensaje es demasiado largo." } as Record<string, string>,
-		err: { dates: "Elige las fechas de llegada y salida.", past: "Esa fecha ya ha pasado.", lead: "Necesitamos más antelación para esa llegada.", horizon: "Todavía no aceptamos reservas para esas fechas.", min_nights: "La estancia es más corta que el mínimo.", max_nights: "La estancia es más larga que el máximo.", guests: "Revisa el número de huéspedes.", price: "No tenemos precio para esas fechas. Escríbenos.", taken: "Estas fechas acaban de ocuparse. Elige otras; tus datos siguen aquí.", price_changed: "El precio ha cambiado. Revísalo y vuelve a enviar la solicitud.", closed: "La reserva directa está cerrada.", rate: "Demasiados intentos. Espera un rato o escríbenos.", form: "Revisa los datos marcados.", generic: "No se ha podido enviar. Inténtalo otra vez o escríbenos." } as Record<string, string>,
+		err: { coupon: "El código no es válido para estas fechas.", no_arrival: "Ese día no hay llegadas. Elige otro.", no_departure: "Ese día no hay salidas. Elige otro.", dates: "Elige las fechas de llegada y salida.", past: "Esa fecha ya ha pasado.", lead: "Necesitamos más antelación para esa llegada.", horizon: "Todavía no aceptamos reservas para esas fechas.", min_nights: "La estancia es más corta que el mínimo.", max_nights: "La estancia es más larga que el máximo.", guests: "Revisa el número de huéspedes.", price: "No tenemos precio para esas fechas. Escríbenos.", taken: "Estas fechas acaban de ocuparse. Elige otras; tus datos siguen aquí.", price_changed: "El precio ha cambiado. Revísalo y vuelve a enviar la solicitud.", closed: "La reserva directa está cerrada.", rate: "Demasiados intentos. Espera un rato o escríbenos.", form: "Revisa los datos marcados.", generic: "No se ha podido enviar. Inténtalo otra vez o escríbenos." } as Record<string, string>,
 	},
 }
 type Copy = typeof es
@@ -49,7 +51,9 @@ const ca: Copy = {
 	loading: "Carregant el calendari…", noscript: "Per veure el calendari cal activar JavaScript. També pots escriure'ns.",
 	contact: "Contacte", owner: "Responsable", address: "Adreça", phoneLabel: "Telèfon",
 	reg: "Registre turístic",
+	extras: "Extres", coupon: "Codi de descompte", apply: "Aplicar",
 	js: {
+		coupon: "Codi de descompte", per: { stay: "per estada", night: "per nit", guest: "per persona", guest_night: "per persona i nit" }, stepsInstant: ["Tries les dates i envies les teves dades.", "Pagues amb targeta, Bizum o transferència, segons el que hi hagi disponible.", "Quan rebem el pagament, la reserva queda confirmada."], sendInstant: "Reservar", noChargeInstant: "El pagament es fa al pas següent.", trustInstant: "Pagues al pas següent i la reserva queda confirmada.",
 		minStay: "Estada mínima: {n}.", maxGuests: "Màxim {n} hostes.", perNight: "Preu per nit", night: "nit", nights: "nits", adult: "adult", adults: "adults", child: "infant", children: "infants",
 		from: "Des de", fromAfter: "per nit", weekend: "divendres i dissabte",
 		pickIn: "Tria el dia d'arribada", pickOut: "Tria el dia de sortida", arrival: "Arribada", departure: "Sortida", takenDay: "ocupat", unavailable: "no disponible",
@@ -59,7 +63,7 @@ const ca: Copy = {
 		closedTitle: "La reserva directa encara no està oberta", closedText: "Escriu-nos i et direm quines dates tenim.", downTitle: "Ara mateix no podem mostrar el calendari", downText: "Escriu-nos i et direm quines dates tenim. També ho pots tornar a provar.", retry: "Tornar-ho a provar",
 		test: "Mode de prova: no es cobren diners de veritat i les reserves no són vàlides.",
 		fields: { name: "Escriu el teu nom i cognoms.", email: "Escriu un correu vàlid.", phone: "Escriu un telèfon vàlid, amb prefix.", terms: "Accepta les condicions per continuar.", message: "El missatge és massa llarg." },
-		err: { dates: "Tria les dates d'arribada i sortida.", past: "Aquesta data ja ha passat.", lead: "Necessitem més antelació per a aquesta arribada.", horizon: "Encara no acceptem reserves per a aquestes dates.", min_nights: "L'estada és més curta que el mínim.", max_nights: "L'estada és més llarga que el màxim.", guests: "Revisa el nombre d'hostes.", price: "No tenim preu per a aquestes dates. Escriu-nos.", taken: "Aquestes dates s'acaben d'ocupar. Tria'n unes altres; les teves dades continuen aquí.", price_changed: "El preu ha canviat. Revisa'l i torna a enviar la sol·licitud.", closed: "La reserva directa està tancada.", rate: "Massa intents. Espera una estona o escriu-nos.", form: "Revisa les dades marcades.", generic: "No s'ha pogut enviar. Torna-ho a provar o escriu-nos." },
+		err: { coupon: "El codi no és vàlid per a aquestes dates.", no_arrival: "Aquest dia no hi ha arribades. Tria'n un altre.", no_departure: "Aquest dia no hi ha sortides. Tria'n un altre.", dates: "Tria les dates d'arribada i sortida.", past: "Aquesta data ja ha passat.", lead: "Necessitem més antelació per a aquesta arribada.", horizon: "Encara no acceptem reserves per a aquestes dates.", min_nights: "L'estada és més curta que el mínim.", max_nights: "L'estada és més llarga que el màxim.", guests: "Revisa el nombre d'hostes.", price: "No tenim preu per a aquestes dates. Escriu-nos.", taken: "Aquestes dates s'acaben d'ocupar. Tria'n unes altres; les teves dades continuen aquí.", price_changed: "El preu ha canviat. Revisa'l i torna a enviar la sol·licitud.", closed: "La reserva directa està tancada.", rate: "Massa intents. Espera una estona o escriu-nos.", form: "Revisa les dades marcades.", generic: "No s'ha pogut enviar. Torna-ho a provar o escriu-nos." },
 	},
 }
 
@@ -80,7 +84,9 @@ const en: Copy = {
 	loading: "Loading the calendar…", noscript: "The calendar needs JavaScript. You can also write to us.",
 	contact: "Contact", owner: "Contact person", address: "Address", phoneLabel: "Phone",
 	reg: "Tourist registration",
+	extras: "Extras", coupon: "Discount code", apply: "Apply",
 	js: {
+		coupon: "Discount code", per: { stay: "per stay", night: "per night", guest: "per person", guest_night: "per person per night" }, stepsInstant: ["Choose your dates and send your details.", "Pay by card, Bizum or bank transfer, depending on what is available.", "Your booking is confirmed once we receive the payment."], sendInstant: "Book now", noChargeInstant: "You pay in the next step.", trustInstant: "You pay in the next step and your booking is confirmed.",
 		minStay: "Minimum stay: {n}.", maxGuests: "Up to {n} guests.", perNight: "Price per night", night: "night", nights: "nights", adult: "adult", adults: "adults", child: "child", children: "children",
 		from: "From", fromAfter: "per night", weekend: "Friday and Saturday",
 		pickIn: "Choose your arrival day", pickOut: "Choose your departure day", arrival: "Arrival", departure: "Departure", takenDay: "taken", unavailable: "unavailable",
@@ -90,7 +96,7 @@ const en: Copy = {
 		closedTitle: "Direct booking is not open yet", closedText: "Write to us and we will tell you which dates are free.", downTitle: "We cannot show the calendar right now", downText: "Write to us and we will tell you which dates are free. You can also try again.", retry: "Try again",
 		test: "Test mode: no real money is charged and bookings are not valid.",
 		fields: { name: "Enter your full name.", email: "Enter a valid email.", phone: "Enter a valid phone number with country code.", terms: "Accept the conditions to continue.", message: "The message is too long." },
-		err: { dates: "Choose your arrival and departure dates.", past: "That date has passed.", lead: "We need more notice for that arrival.", horizon: "We are not taking bookings that far ahead yet.", min_nights: "The stay is shorter than the minimum.", max_nights: "The stay is longer than the maximum.", guests: "Check the number of guests.", price: "We have no price for those dates. Write to us.", taken: "Those dates have just been taken. Choose others; your details are still here.", price_changed: "The price has changed. Check it and send the request again.", closed: "Direct booking is closed.", rate: "Too many attempts. Wait a while or write to us.", form: "Check the marked fields.", generic: "It could not be sent. Try again or write to us." },
+		err: { coupon: "The code is not valid for these dates.", no_arrival: "There are no arrivals on that day. Choose another.", no_departure: "There are no departures on that day. Choose another.", dates: "Choose your arrival and departure dates.", past: "That date has passed.", lead: "We need more notice for that arrival.", horizon: "We are not taking bookings that far ahead yet.", min_nights: "The stay is shorter than the minimum.", max_nights: "The stay is longer than the maximum.", guests: "Check the number of guests.", price: "We have no price for those dates. Write to us.", taken: "Those dates have just been taken. Choose others; your details are still here.", price_changed: "The price has changed. Check it and send the request again.", closed: "Direct booking is closed.", rate: "Too many attempts. Wait a while or write to us.", form: "Check the marked fields.", generic: "It could not be sent. Try again or write to us." },
 	},
 }
 export const reservarCopy: Record<Lang, Copy> = { es, ca, en }
